@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.9
+Fontbakery version: 0.8.10
 
 <details><summary><b>[4] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
 
@@ -131,11 +131,7 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
 
 
 * 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannada-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -147,16 +143,16 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* kassanocrestknda
-	* dhaviramaknda
-	* nasubscriptaltknda
-	* jhasubscriptrightknda
-	* naviramaknda
-	* ddivowelknda
+	* aaknda
+	* aavowelsignaltknda
+	* aknda
+	* auknda
+	* auvowelsignknda
+	* banocrestknda
 	* baviramaknda
-	* ssasubscriptrightknda
-	* lanocrestknda
-	* movowelknda and 218 more.
+	* bevowelknda
+	* bhaknda
+	* bhanocrestknda and 218 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -175,25 +171,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -232,9 +228,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -296,11 +290,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* And 8 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannada-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -312,16 +302,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* kassanocrestknda
-	* dhaviramaknda
-	* nasubscriptaltknda
-	* jhasubscriptrightknda
-	* naviramaknda
-	* ddivowelknda
+	* aaknda
+	* aavowelsignaltknda
+	* aknda
+	* auknda
+	* banocrestknda
 	* baviramaknda
-	* ssasubscriptrightknda
-	* lanocrestknda
-	* nasubscriptknda and 193 more.
+	* bevowelknda
+	* bhaknda
+	* bhanocrestknda
+	* bhaviramaknda and 193 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -333,25 +323,25 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -390,9 +380,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -460,11 +448,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* And 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannada-ExtraBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -476,16 +460,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* kassanocrestknda
-	* dhaviramaknda
-	* nasubscriptaltknda
-	* jhasubscriptrightknda
-	* naviramaknda
-	* ddivowelknda
+	* aaknda
+	* aavowelsignaltknda
+	* aknda
+	* auknda
+	* banocrestknda
 	* baviramaknda
-	* ssasubscriptrightknda
-	* lanocrestknda
-	* nasubscriptknda and 202 more.
+	* bevowelknda
+	* bhaknda
+	* bhanocrestknda
+	* bhaviramaknda and 202 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -504,25 +488,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -561,9 +545,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -605,11 +587,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* Wgrave (U+1E80): B<<283.5,211.5>-<290.0,175.0>-<293.0,151.0>>/B<<293.0,151.0>-<297.0,183.0>-<305.0,226.5>> = 14.25003269780357 
 
 	* And Wgrave (U+1E80): B<<506.5,475.5>-<502.0,500.0>-<501.0,516.0>>/B<<501.0,516.0>-<499.0,500.0>-<494.5,475.5>> = 10.701350723899111 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannada-ExtraLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSansKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -638,25 +616,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -695,9 +673,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -729,11 +705,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<532.0,335.0>--<406.0,334.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannada-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSansKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -745,16 +717,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* januktaviramaknda
-	* rraviramaknda
-	* janyevowelknda
-	* rraknda
-	* nyaviramaknda
-	* janyaviramaknda
-	* iiknda
 	* faviramaknda
+	* iiknda
+	* januktaviramaknda
 	* janyanocrestknda
-	* ngaviramaknda and 4 more.
+	* janyaviramaknda
+	* janyevowelknda
+	* javiramaknda
+	* kassaviramaknda
+	* ngaviramaknda
+	* nyaviramaknda and 4 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -773,25 +745,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -830,9 +802,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -878,11 +848,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* gaknda (U+0C97): L<<56.0,0.0>--<55.0,129.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansKannada-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -894,16 +860,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* kassanocrestknda
-	* dhaviramaknda
-	* naviramaknda
-	* ddivowelknda
+	* aaknda
+	* auknda
 	* baviramaknda
-	* lanocrestknda
-	* januktaviramaknda
-	* laviramaknda
+	* bhaviramaknda
+	* caviramaknda
+	* chaknda
+	* chanocrestknda
+	* chaviramaknda
 	* chevowelknda
-	* jevowelknda and 126 more.
+	* chivowelknda and 126 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -922,25 +888,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -979,9 +945,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -997,11 +961,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* ttaknda (U+0C9F): L<<136.0,224.0>--<136.0,220.0>> -> L<<136.0,220.0>--<136.0,212.0>> 
 
 	* And ttaknda (U+0C9F): L<<603.0,295.0>--<600.0,295.0>> -> L<<600.0,295.0>--<518.0,295.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[12] NotoSansKannada-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -1629,16 +1589,16 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* ddivowelknda
-	* januktaviramaknda
-	* laviramaknda
-	* jevowelknda
-	* jhaviramaknda
-	* nyaknda
-	* rraviramaknda
+	* aaknda
+	* auknda
+	* caviramaknda
+	* chaviramaknda
+	* civowelknda
+	* ddaviramaknda
+	* ddevowelknda
 	* ddhaviramaknda
-	* kassivowelknda
-	* janyevowelknda and 75 more.
+	* ddhevowelknda
+	* ddhivowelknda and 75 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
@@ -1650,25 +1610,25 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -1707,9 +1667,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -1721,11 +1679,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<566.0,306.0>--<439.0,305.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannada-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSansKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -1737,16 +1691,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* kassanocrestknda
-	* dhaviramaknda
-	* naviramaknda
-	* ddivowelknda
+	* aaknda
+	* auknda
+	* banocrestknda
 	* baviramaknda
-	* ssasubscriptrightknda
-	* lanocrestknda
-	* nyasubscriptaltknda
-	* januktaviramaknda
-	* laviramaknda and 155 more.
+	* bevowelknda
+	* bhanocrestknda
+	* bhaviramaknda
+	* bhevowelknda
+	* caknda
+	* canocrestknda and 155 more.
 
 Use -F or --full-lists to disable shortening of long lists.
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -1765,25 +1719,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -1822,9 +1776,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -1888,11 +1840,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<607.0,275.0>--<477.0,274.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansKannada-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
@@ -1916,25 +1864,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -1973,9 +1921,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -1999,11 +1945,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>> 
 
 	* And exclamdown (U+00A1): L<<96.0,-186.0>--<98.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansKannadaUI-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2028,25 +1970,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2085,9 +2027,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2149,11 +2089,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* And 8 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansKannadaUI-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2171,25 +2107,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2228,9 +2164,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2298,11 +2232,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* And 5 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannadaUI-ExtraBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2327,25 +2257,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2384,9 +2314,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2401,9 +2329,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* at (U+0040): X=162.5,Y=688.0 (should be at cap-height 690?)
 
-	* braceleft.UIknda (U+007B): X=287.0,Y=692.0 (should be at cap-height 690?)
+	* braceleft.knda (U+007B): X=287.0,Y=692.0 (should be at cap-height 690?)
 
-	* braceright.knda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
+	* braceright.UIknda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
 
 	* ordfeminine (U+00AA): X=239.0,Y=688.0 (should be at cap-height 690?)
 
@@ -2456,11 +2384,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* Wgrave (U+1E80): B<<283.5,304.5>-<290.0,268.0>-<293.0,244.0>>/B<<293.0,244.0>-<297.0,276.0>-<305.0,319.5>> = 14.25003269780357 
 
 	* And Wgrave (U+1E80): B<<506.5,568.5>-<502.0,593.0>-<501.0,609.0>>/B<<501.0,609.0>-<499.0,593.0>-<494.5,568.5>> = 10.701350723899111 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannadaUI-ExtraLight.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] NotoSansKannadaUI-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2485,25 +2409,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2542,9 +2466,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2604,11 +2526,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<532.0,428.0>--<406.0,427.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannadaUI-Light.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2633,25 +2551,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2690,9 +2608,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2738,11 +2654,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* gaknda (U+0C97): L<<56.0,93.0>--<55.0,222.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-Medium.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansKannadaUI-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2767,25 +2679,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2824,9 +2736,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2870,11 +2780,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* ttaknda (U+0C9F): L<<136.0,317.0>--<136.0,313.0>> -> L<<136.0,313.0>--<136.0,305.0>> 
 
 	* And ttaknda (U+0C9F): L<<603.0,388.0>--<600.0,388.0>> -> L<<600.0,388.0>--<518.0,388.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[11] NotoSansKannadaUI-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansKannadaUI-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -2892,25 +2798,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -2949,9 +2855,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -2991,11 +2895,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<566.0,399.0>--<439.0,398.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannadaUI-SemiBold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -3020,25 +2920,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -3077,9 +2977,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -3089,8 +2987,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenleft.knda (U+0028): X=206.5,Y=-0.5 (should be at baseline 0?)
 
 	* zero.knda (U+0030): X=285.0,Y=691.0 (should be at cap-height 690?)
 
@@ -3108,9 +3004,11 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 	* J (U+004A): X=-4.0,Y=-1.0 (should be at baseline 0?)
 
-	* a (U+0061): X=291.0,Y=550.0 (should be at x-height 552?) 
+	* a (U+0061): X=291.0,Y=550.0 (should be at x-height 552?)
 
-	* And 61 more.
+	* s (U+0073): X=254.0,Y=550.0 (should be at x-height 552?) 
+
+	* And 60 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -3143,11 +3041,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<607.0,368.0>--<477.0,367.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannadaUI-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with IndexError: list index out of range
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] NotoSansKannadaUI-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
@@ -3172,25 +3066,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.knda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 156 more.
 
@@ -3229,9 +3123,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), dieresiscomb (U+0308), dotaccentcomb (U+0307), gravecomb (U+0300) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignUIknda (U+0CE3), lvocalicvowelsignUIknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -3283,10 +3175,18 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* exclamdown (U+00A1): L<<122.0,447.0>--<124.0,-93.0>> 
 
 	* And exclamdown (U+00A1): L<<96.0,-93.0>--<98.0,447.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[9] NotoSansKannada[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSansKannada[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
-* 💔 **ERROR** Failed with IndexError: list index out of range
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check a font's STAT table contains compulsory Axis Values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT">com.google.fonts/check/STAT</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check variable font instances (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_instances">com.google.fonts/check/fvar_instances</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
 
 
@@ -3295,10 +3195,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Validates that when an instance record is included for the default instance, its subfamilyNameID value is set to either 2 or 17, and its postScriptNameID value is set to 6. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/fvar.html#com.adobe.fonts/check/varfont/valid_default_instance_nameids">com.adobe.fonts/check/varfont/valid_default_instance_nameids</a>)</summary><div>
-
-
-* 🔥 **FAIL** 'Regular' instance has the same coordinates as the default instance; its subfamilyNameID should be either 2 or 17, instead of 292. [code: invalid-default-instance-subfamily-nameid:292]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -3308,25 +3204,25 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- khasubscriptaltUIknda
+	- aivowelsignUIknda
 
-	- tasubscriptlengthmarkUIknda
+	- asciicircum
 
-	- basubscriptrightUIknda
-
-	- nnasubscriptaltUIknda
+	- asciitilde
 
 	- asterisk
 
-	- kassivowelUIknda
+	- backslash
 
-	- phanuktasubscriptrightUIknda
+	- backslash.UIknda
 
-	- divide
+	- bar
 
-	- tayasubscriptUIknda
+	- bar.UIknda
 
-	- rasubscriptrightUIknda 
+	- basubscriptaltUIknda
+
+	- basubscriptrightUIknda 
 
 	- And 158 more.
 
@@ -3343,9 +3239,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), gravecomb (U+0300), llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308) and 8 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
+	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -3356,8 +3250,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 19 | 44 | 180 | 2145 | 116 | 1691 | 0 |
-| 0% | 1% | 4% | 51% | 3% | 40% | 0% |
+| 3 | 43 | 180 | 2086 | 116 | 1615 | 0 |
+| 0% | 1% | 4% | 52% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
