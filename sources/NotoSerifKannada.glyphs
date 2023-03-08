@@ -1,7 +1,7 @@
 {
-.appVersion = "3109";
+.appVersion = "3180";
 DisplayStrings = (
-"/dottedCircle"
+"/rrVocalicMatra_kannada"
 );
 classes = (
 {
@@ -28358,7 +28358,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 152;
 },
 {
 layerId = "389B3055-E02B-410E-AE74-C99A384F2C74";
@@ -28426,7 +28426,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 178;
 },
 {
 layerId = "56938CB9-64C5-480A-8326-19BB97D61A51";
@@ -28494,7 +28494,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 155;
 },
 {
 layerId = "A6FB1343-85A8-49E5-AB18-F683E718EB6E";
@@ -28562,7 +28562,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 167;
 }
 );
 leftKerningGroup = KND_rVocalicMatra_L;
@@ -28681,7 +28681,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 436;
 },
 {
 layerId = "389B3055-E02B-410E-AE74-C99A384F2C74";
@@ -28789,7 +28789,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 537;
 },
 {
 layerId = "56938CB9-64C5-480A-8326-19BB97D61A51";
@@ -28897,7 +28897,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 434;
 },
 {
 layerId = "A6FB1343-85A8-49E5-AB18-F683E718EB6E";
@@ -29005,7 +29005,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 501;
 }
 );
 leftKerningGroup = KND_rVocalicMatra_L;
