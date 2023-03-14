@@ -368,18 +368,6 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "ddhaviramaknda=0+1066|uni1CDA=0@-406,245+0|dhaknda=4+765|nuktaknda=4@-104,-98+0|uni1CD0=4@-105,245+0",
-            "input": "ಢ್‍᳚ಧ಼᳐",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "phivowelknda=0+787|kaknda=2+574|nuktaknda=2@-8,0+0|threeknda=4+688|uni0951=4@-66,245+0|caknda=6+797|uni1CD2=6@-124,245+0",
-            "input": "ಫಿಕ಼೩॑ಚ᳒",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "rrvocalicknda=0+1570|uni1CF4=0@-507,235+0|uni1CD0=0@-507,245+0",
             "input": "ೠ᳴᳐",
             "note": "Added by SIESTA",
@@ -416,18 +404,6 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "nineknda=0+688|nuktaknda=0@-65,0+0|eknda=2+787|uni1CD0=2@-115,245+0|fourknda=4+688|candrabinduknda=4@-66,235+0|aiknda=6+807|uni1CD0=6@-126,245+0",
-            "input": "೯಼ಎ᳐೪ಁಐ᳐",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "vevowelknda=0+794|nyaknda=2+966|evowelsignaltknda=2+348|nuktaknda=2@-601,0+0",
-            "input": "ವೆಞೆ಼",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "mivowelknda=0+1180|uni1CD0=0@-324,245+0|uni1CF4=0@-324,235+0",
             "input": "ಮಿ᳐᳴",
             "note": "Added by SIESTA",
@@ -436,12 +412,6 @@
         {
             "expectation": "vanocrestknda=0+794|aavowelsignknda=0+449|viramaknda=0+313|khaknda=3+849",
             "input": "ವಾ್ಖ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "sanocrestknda=0+709|aavowelsignknda=0+449|oknda=2+775|nuktaknda=2@-109,0+0",
-            "input": "ಸಾಒ಼",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -566,12 +536,6 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "baknda=0+800|uni1CD2=0@-127,245+0|maknda=2+1156|nuktaknda=2@-299,0+0|jaknda=4+775|uni1CF4=4@-102,235+0|uni1CF4=4@-102,235+0|uni1CD2=4@-102,245+0",
-            "input": "ಬ᳒ಮ಼ಜ᳴᳴᳒",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "thaknda=0+765|faknda=1+869|uni1CDA=1@-158,245+0",
             "input": "ಥೞ᳚",
             "note": "Added by SIESTA",
@@ -650,12 +614,6 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "laviramaknda=0+1091|uni1CD2=0@-434,245+0|uni1CD2=0@-434,245+0|uni1CDA=0@-434,245+0|ghaknda=5+996|uni1CF4=5@-308,235+0",
-            "input": "ಲ್᳒᳒᳚ಘ᳴",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "dhaviramaknda=0+1077|candrabinduknda=0@-417,235+0|uni1CD0=0@-417,245+0|lanocrestknda=5+784|auvowelsignknda=5+430|saknda=7+709|uni1CD2=7@-77,245+0",
             "input": "ಧ್‍ಁ᳐ಲೌಸ᳒",
             "note": "Added by SIESTA",
@@ -664,12 +622,6 @@
         {
             "expectation": "tthaviramaknda=0+964|aaknda=2+841|uni0951=2@-144,245+0|uni1CF4=2@-144,235+0",
             "input": "ಠ್ಆ॑᳴",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "ddhaknda=0+768|nuktaknda=0@-107,-98+0|tthivowelknda=2+651",
-            "input": "ಢ಼ಠಿ",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -728,12 +680,6 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "baknda=0+800|nuktaknda=0@-126,0+0|uni1CF4=0@-127,235+0|bhevowelknda=3+805|uni1CD2=3@-132,245+0",
-            "input": "ಬ಼᳴ಭೆ᳒",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "januktaknda=0+775|tthanocrestknda=2+651|auvowelsignknda=2+430|paknda=4+792|uni0951=4@-104,245+0|dasubscriptknda=4+63|uni1CD2=4+0",
             "input": "ಜ಼ಠೌಪ್ದ॑᳒",
             "note": "Added by SIESTA",
@@ -766,12 +712,6 @@
         {
             "expectation": "tevowelknda=0+622|ailengthmarkknda=0+183|llaknda=3+710|uni1CD2=3@-69,245+0|jhaknda=5+1379|uni1CF4=5@-509,235+0",
             "input": "ತೈಳ᳒ಝ᳴",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "daknda=0+765|uni1CD0=0@-105,245+0|maknda=2+1156|nuktaknda=2@-299,0+0|saviramaknda=4+1021",
-            "input": "ದ᳐ಮ಼ಸ್",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -868,12 +808,6 @@
         {
             "expectation": "nnivowelknda=0+864|nnanocrestknda=2+869|auvowelsignknda=2+430|viramaknda=2+313|phaknda=5+792",
             "input": "ಣಿಣೌ್ಫ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "ghaknda=0+996|uvowelsignlaknda=0+374|auvowelsignknda=0+420|uni0951=0@-1102,245+0|anusvaraknda=0+550",
-            "input": "ಘುೌಂ॑",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -1138,12 +1072,6 @@
         {
             "expectation": "uni1CD0=0+0|uni0951=0+0",
             "input": "᳐॑",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "ooknda=0+775|uni0952=0@-110,-351+0|dhaknda=2+765|nuktaknda=2@-104,-98+0|nineknda=4+688|uni1CDA=4@-66,245+0|paknda=6+792|uni1CDA=6@-104,245+0|uni1CF4=6@-104,235+0",
-            "input": "ಓ॒ಧ಼೯᳚ಪ᳚᳴",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -1454,12 +1382,6 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "phanuktaknda=0+792|uni1CF4=0+0|uni1CF4=0+0|divowelknda=4+765",
-            "input": "ಫ಼᳴᳴ದಿ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "laknda=0+759|casubscriptknda=0+136|dhivowelknda=3+765",
             "input": "ಲ್ಚಧಿ",
             "note": "Added by SIESTA",
@@ -1532,20 +1454,8 @@
             "only": "NotoSansKannada-Regular.ttf"
         },
         {
-            "expectation": "laviramaknda=0+1091|khanocrestknda=3+859|auvowelsignknda=3+352|candrabinduknda=3@-509,235+0|yasubscriptknda=3+260|haknda=8+801|uvowelsignknda=8+364",
-            "input": "ಲ್‍ಖ್ಯೌಁಹು",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
             "expectation": "rraknda=0+838|aavowelsignaltknda=0+712|ddevowelknda=2+768",
             "input": "ಱಾಡೆ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "ssaviramaknda=0+1114|visargaknda=0+305|uni1CD2=4+0|uni1CF2=4+513|uni1CF4=4+0",
-            "input": "ಷ್‍ಃᳲ᳒᳴",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -1624,12 +1534,6 @@
         {
             "expectation": "lvocalicknda=0+706|uni1CD0=0@-75,245+0|mevowelknda=2+1156",
             "input": "ಌ᳐ಮೆ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "zeroknda=0+688|uni1CD0=0@-66,245+0|uni1CDA=0@-66,245+0|uni1CD2=0@-66,245+0|januktaviramaknda=4+1088|uni1CDA=4+0",
-            "input": "೦᳐᳚᳒ಜ಼್᳚",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -1774,18 +1678,6 @@
         {
             "expectation": "eeknda=0+787|nuktaknda=0@-114,0+0|candrabinduknda=0@-115,235+0|ganocrestknda=3+648|auvowelsignknda=3+430",
             "input": "ಏ಼ಁಗೌ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "iknda=0+711|uni0951=0@-79,245+0|viramaknda=0+313|yaknda=3+1336|uni1CD2=3@-389,245+0|dhaknda=5+765|nuktaknda=5@-104,-98+0|uni0952=5@-105,-351+0",
-            "input": "ಇ್॑ಯ᳒ಧ಼॒",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "yaknda=0+1336|candrabinduknda=0@-389,235+0|bhaviramaknda=2+1118|nuktaknda=2@-444,-98+0",
-            "input": "ಯಁಭ಼್",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
@@ -2074,12 +1966,6 @@
         {
             "expectation": "jivowelknda=0+775|viramaknda=0+313|laknda=3+759",
             "input": "ಜಿ್ಲ",
-            "note": "Added by SIESTA",
-            "only": "NotoSansKannada-Regular.ttf"
-        },
-        {
-            "expectation": "naknda=0+711|nuktaknda=0@-77,0+0|uni1CD2=0@-78,245+0|sanocrestknda=3+709|auvowelsignknda=3+430|thaknda=5+765|nuktaknda=5@-104,-98+0|uni0951=5@-105,245+0",
-            "input": "ನ಼᳒ಸೌಥ಼॑",
             "note": "Added by SIESTA",
             "only": "NotoSansKannada-Regular.ttf"
         },
