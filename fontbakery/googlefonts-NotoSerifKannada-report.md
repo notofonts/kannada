@@ -94,7 +94,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -213,7 +213,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -319,7 +319,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -417,7 +417,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -505,7 +505,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -629,7 +629,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -710,7 +710,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -798,7 +798,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -872,7 +872,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 
@@ -954,7 +954,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rVocalicMatra_kannada (U+0CC3), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
+	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
 

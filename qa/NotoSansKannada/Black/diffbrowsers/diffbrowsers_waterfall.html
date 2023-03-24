@@ -10,9 +10,12 @@
         html{
 	  font-family: sans-serif;
 	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
 	.box-title{
 	  width: 100%;
-	  float: left;
 	  font-size: 8pt;
 	  font-weight: 700;
 	  border-top: 1px solid black;
@@ -26,7 +29,6 @@
 	  float: left;
 	}
 	.box-text{
-		float: left;
 	}
 	
 	#nav{
@@ -35,19 +37,21 @@
 	  z-index: 100;
 	}
 	#font-toggle{
-	  display: block;
-	  font-weight: 700;
-	  cursor: pointer;
-	  -webkit-user-select: none; /* Safari */        
-	  -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* IE10+/Edge */
-	  user-select: none; /* Standard */
-	  text-align: center;
-	  color: white;
-	  background-color: black;
-	  width: 50px;
-	  display: block;
-	  padding: 10px;
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
 	}
 	.tooltip {
 	position: relative;
@@ -136,590 +140,6 @@
 
 	  
 	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedExtraBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedThin.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedMedium.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Light.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedSemiBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedMedium.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedBlack.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensed.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Light.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedMedium.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedBlack.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedExtraBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedThin.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedBlack.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Medium.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedBlack.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedSemiBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedSemiBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedThin.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Condensed.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedBlack.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedMedium.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Black.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensed.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedThin.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedMedium.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Thin.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Medium.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedExtraBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Regular.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedSemiBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensed.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedBlack.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Thin.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-Bold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedExtraLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedExtraLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedExtraBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedExtraLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Condensed.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-CondensedExtraBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensed.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedThin.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Black.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedThin.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-SemiCondensedExtraLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Regular.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedSemiBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-Bold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedExtraBold.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-CondensedLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedMedium.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-ExtraCondensedSemiBold.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada-SemiCondensedExtraLight.ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannadaUI-ExtraCondensedExtraLight.ttf);
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(old-NotoSansKannada[wght].ttf);
-    font-family: "old Noto Sans Kannada";
-    font-weight: 200 700;
-    font-stretch: 62% 100%;
-    font-style: normal;
-}
-	  
-	    @font-face{
     src: url(old-NotoSansKannada[wdth,wght].ttf);
     font-family: "old Noto Sans Kannada";
     font-weight: 100 900;
@@ -730,578 +150,10 @@
 
 	  
 	    @font-face{
-    src: url(new-NotoSansKannada-Bold.ttf);
+    src: url(new-NotoSansKannada[wdth,wght].ttf);
     font-family: "new Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedExtraLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedMedium.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedMedium.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedBlack.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedSemiBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedExtraBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedSemiBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedExtraBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedExtraLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedExtraLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedSemiBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedThin.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Regular.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-Black.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedBlack.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedExtraBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-Condensed.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedThin.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Light.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedMedium.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedThin.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedBlack.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedExtraLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedSemiBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Black.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedBlack.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedThin.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Bold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Thin.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Medium.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedSemiBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedExtraBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedMedium.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-Light.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedMedium.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-CondensedExtraBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensed.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedExtraLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedExtraBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 800;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedExtraLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensed.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedThin.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-Condensed.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedLight.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 300;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensed.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-CondensedThin.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-Medium.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedMedium.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 500;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensed.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-Regular.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-ExtraCondensedBold.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 700;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-Thin.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 100;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraCondensedBlack.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannadaUI-SemiCondensedBlack.ttf);
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 900;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiCondensedSemiBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 600;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-ExtraLight.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 200;
-    
-    font-style: normal;
-}
-	  
-	    @font-face{
-    src: url(new-NotoSansKannada-SemiBold.ttf);
-    font-family: "new Noto Sans Kannada";
-    font-weight: 600;
-    
+    font-weight: 100 900;
+    font-stretch: 62% 100%;
     font-style: normal;
 }
 	  
@@ -1309,36 +161,8 @@
 	  
 
 	  
-	    .old-Noto-Sans-Kannada-Black{
-    font-family: "old Noto Sans Kannada";
-    font-weight: 900;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Sans-Kannada-Bold{
-    font-family: "old Noto Sans Kannada";
-    font-weight: 700;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Sans-Kannada-UI-Black{
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 900;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Sans-Kannada-UI-Bold{
-    font-family: "old Noto Sans Kannada UI";
-    font-weight: 700;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .old-Noto-Sans-Kannada-Black{
-    font-family: "old Noto Sans Kannada";
+	    .old-Black{
+    font-family: "old Noto Sans Kannada", "Adobe NotDef";
     font-weight: 900.0;
     font-stretch: 100.0%;
     font-style: normal;
@@ -1346,31 +170,10 @@
 	  
 
 	  
-	    .new-Noto-Sans-Kannada-Bold{
-    font-family: "new Noto Sans Kannada";
-    font-weight: 700;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .new-Noto-Sans-Kannada-Black{
-    font-family: "new Noto Sans Kannada";
-    font-weight: 900;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .new-Noto-Sans-Kannada-UI-Black{
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 900;
-    font-stretch: 100%;
-    font-style: normal;
-}
-	  
-	    .new-Noto-Sans-Kannada-UI-Bold{
-    font-family: "new Noto Sans Kannada UI";
-    font-weight: 700;
-    font-stretch: 100%;
+	    .new-Black{
+    font-family: "new Noto Sans Kannada", "Adobe NotDef";
+    font-weight: 900.0;
+    font-stretch: 100.0%;
     font-style: normal;
 }
 	  
@@ -1380,11 +183,12 @@
     </style>
 </head>
 <body>
-    
     <div id="nav">
-        <div id="font-toggle">old</div>
-     </div>
-    
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
     <div id="content">
 	<h2>
 <b>Waterfall</b>
@@ -1393,8 +197,8 @@
   
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 7pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 7pt">
+	<div class="box-title">old-Black 7pt</div>
+	<span class="old-Black" style="font-size: 7pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1402,8 +206,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 10pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 10pt">
+	<div class="box-title">old-Black 10pt</div>
+	<span class="old-Black" style="font-size: 10pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1411,8 +215,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 11pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 11pt">
+	<div class="box-title">old-Black 11pt</div>
+	<span class="old-Black" style="font-size: 11pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1420,8 +224,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 12pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 12pt">
+	<div class="box-title">old-Black 12pt</div>
+	<span class="old-Black" style="font-size: 12pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1429,8 +233,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 14pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 14pt">
+	<div class="box-title">old-Black 14pt</div>
+	<span class="old-Black" style="font-size: 14pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1438,8 +242,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 16pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 16pt">
+	<div class="box-title">old-Black 16pt</div>
+	<span class="old-Black" style="font-size: 16pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1447,8 +251,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 18pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 18pt">
+	<div class="box-title">old-Black 18pt</div>
+	<span class="old-Black" style="font-size: 18pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1456,8 +260,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 21pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 21pt">
+	<div class="box-title">old-Black 21pt</div>
+	<span class="old-Black" style="font-size: 21pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1465,8 +269,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 27pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 27pt">
+	<div class="box-title">old-Black 27pt</div>
+	<span class="old-Black" style="font-size: 27pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1474,376 +278,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 32pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 7pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 10pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 11pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 12pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 14pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 16pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 18pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 21pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 27pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Bold 32pt</div>
-	<span class="old-Noto-Sans-Kannada-Bold" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 7pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 10pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 11pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 12pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 14pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 16pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 18pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 21pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 27pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Black 32pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Black" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 7pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 10pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 11pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 12pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 14pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 16pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 18pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 21pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 27pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-UI-Bold 32pt</div>
-	<span class="old-Noto-Sans-Kannada-UI-Bold" style="font-size: 32pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-  
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 7pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 7pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 10pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 10pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 11pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 11pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 12pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 12pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 14pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 14pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 16pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 16pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 18pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 18pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 21pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 21pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 27pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 27pt">
-            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
-            quick wafting zephyrs vex bold jim.<br>
-            $14.95<br>
-          </span>
-       </div>
-    
-      <div class="box">
-	<div class="box-title">old-Noto-Sans-Kannada-Black 32pt</div>
-	<span class="old-Noto-Sans-Kannada-Black" style="font-size: 32pt">
+	<div class="box-title">old-Black 32pt</div>
+	<span class="old-Black" style="font-size: 32pt">
             QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
             quick wafting zephyrs vex bold jim.<br>
             $14.95<br>
@@ -1859,23 +295,27 @@
 	POSITION = "old"
 	fontToggle = document.getElementById("font-toggle")
 	function switchFonts() {
-	  items = document.getElementsByClassName("box");
-	  console.log("Click from "+POSITION)
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
 	  
-	  if (POSITION === "old") {
+	if (POSITION === "old") {
 	  POSITION = "new"
-	  for (item of items) {
-	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("old", "new")
-            item.lastElementChild.className = item.lastElementChild.className.replace("old", "new")
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
 	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
 	  }
 
 	  } else {
 	  POSITION = "old"
-	  for (item of items) {
-	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("new", "old")
-            item.lastElementChild.className = item.lastElementChild.className.replace("new", "old")
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
 	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
 	  }
 	}
 	}
