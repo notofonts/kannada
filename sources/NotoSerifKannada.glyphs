@@ -1,7 +1,7 @@
 {
 .appVersion = "3180";
 DisplayStrings = (
-"/pa_kannada/ra_kannada.below/ti_kannada"
+"/rVocalicMatra_kannada/ssi_kannada"
 );
 classes = (
 {
@@ -28570,7 +28570,7 @@ rightKerningGroup = KND_rVocalicMatra_R;
 unicode = 0CC3;
 script = kannada;
 category = Mark;
-subCategory = "Spacing Combining";
+subCategory = Nonspacing;
 },
 {
 glyphname = rrVocalicMatra_kannada;
