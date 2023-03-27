@@ -4134,7 +4134,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -4284,7 +4284,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -4447,7 +4447,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -4510,7 +4510,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* braceleft.UIknda (U+007B): X=287.0,Y=692.0 (should be at cap-height 690?)
 
-	* braceright.knda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
+	* braceright.UIknda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
 
 	* ordfeminine (U+00AA): X=239.0,Y=688.0 (should be at cap-height 690?)
 
@@ -4612,7 +4612,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -4767,7 +4767,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -4908,7 +4908,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -5040,7 +5040,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -5175,7 +5175,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
@@ -5334,7 +5334,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- bar
 
-	- bar.UIknda
+	- bar.knda
 
 	- basubscriptaltUIknda
 
