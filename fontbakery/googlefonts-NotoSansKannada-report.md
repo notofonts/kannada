@@ -1,8 +1,8 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.11
+Fontbakery version: 0.8.13
 
-<details><summary><b>[5] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
+<details><summary><b>[6] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
 
 
 * 🔥 **FAIL** Not all fonts passed in the command line are in the same directory. This may lead to bad results as the tool will interpret all font files as belonging to a single font family. The detected directories are: ['fonts/NotoSansKannada/googlefonts/ttf', 'fonts/NotoSansKannada/googlefonts/variable-ttf'] [code: single-directory]
@@ -135,6 +135,33 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
 
 
 * 🔥 **FAIL** Family 'Noto Sans Kannada' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
+</div></details><details><summary>🔥 <b>FAIL:</b> Verify that family names in the name table are consistent across all fonts in the family. Checks Typographic Family name (nameID 16) if present,  otherwise uses Font Family name (nameID 1) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/consistent_family_name">com.adobe.fonts/check/family/consistent_family_name</a>)</summary><div>
+
+
+* 🔥 **FAIL** 2 different Font Family names were found:
+
+* 'Noto Sans Kannada' was found in:
+  - NotoSansKannada-Black.ttf (nameID 16)
+  - NotoSansKannada-Bold.ttf (nameID 1)
+  - NotoSansKannada-ExtraBold.ttf (nameID 16)
+  - NotoSansKannada-ExtraLight.ttf (nameID 16)
+  - NotoSansKannada-Light.ttf (nameID 16)
+  - NotoSansKannada-Medium.ttf (nameID 16)
+  - NotoSansKannada-Regular.ttf (nameID 1)
+  - NotoSansKannada-SemiBold.ttf (nameID 16)
+  - NotoSansKannada-Thin.ttf (nameID 16)
+  - NotoSansKannada[wdth,wght].ttf (nameID 1)
+
+* 'Noto Sans Kannada UI' was found in:
+  - NotoSansKannadaUI-Black.ttf (nameID 16)
+  - NotoSansKannadaUI-Bold.ttf (nameID 1)
+  - NotoSansKannadaUI-ExtraBold.ttf (nameID 16)
+  - NotoSansKannadaUI-ExtraLight.ttf (nameID 16)
+  - NotoSansKannadaUI-Light.ttf (nameID 16)
+  - NotoSansKannadaUI-Medium.ttf (nameID 16)
+  - NotoSansKannadaUI-Regular.ttf (nameID 1)
+  - NotoSansKannadaUI-SemiBold.ttf (nameID 16)
+  - NotoSansKannadaUI-Thin.ttf (nameID 16) [code: inconsistent-family-name]
 </div></details><br></div></details><details><summary><b>[15] NotoSansKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
@@ -150,9 +177,9 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -238,7 +265,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -250,7 +277,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -276,7 +303,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* a (U+0061): X=282.0,Y=-1.5 (should be at baseline 0?) 
 
-	* 79 more.
+	* 81 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -322,9 +349,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -403,7 +430,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -415,7 +442,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -493,9 +520,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -581,7 +608,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -593,7 +620,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -645,9 +672,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -722,7 +749,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -734,7 +761,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -776,9 +803,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -864,7 +891,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -876,7 +903,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -932,9 +959,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -1020,7 +1047,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -1032,7 +1059,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -1058,9 +1085,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
@@ -3774,7 +3801,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -3786,7 +3813,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -3808,9 +3835,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -3896,7 +3923,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -3908,7 +3935,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -3982,9 +4009,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4054,7 +4081,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4066,7 +4093,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -4101,9 +4128,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4130,7 +4157,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -4173,7 +4200,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4185,7 +4212,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -4258,9 +4285,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4280,7 +4307,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -4323,7 +4350,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4335,7 +4362,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -4414,9 +4441,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4443,7 +4470,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -4486,7 +4513,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4498,7 +4525,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -4510,7 +4537,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* braceleft.UIknda (U+007B): X=287.0,Y=692.0 (should be at cap-height 690?)
 
-	* braceright.UIknda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
+	* braceright.knda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
 
 	* ordfeminine (U+00AA): X=239.0,Y=688.0 (should be at cap-height 690?)
 
@@ -4579,9 +4606,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4608,7 +4635,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -4651,7 +4678,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4663,7 +4690,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -4734,9 +4761,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4763,7 +4790,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -4806,7 +4833,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4818,7 +4845,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -4875,9 +4902,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -4904,7 +4931,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -4947,7 +4974,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -4959,11 +4986,13 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* parenright.knda (U+0029): X=200.5,Y=-1.5 (should be at baseline 0?)
 
 	* five.knda (U+0035): X=469.0,Y=689.0 (should be at cap-height 690?)
 
@@ -4981,11 +5010,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* c (U+0063): X=307.0,Y=552.0 (should be at x-height 551?)
 
-	* z (U+007A): X=313.0,Y=550.0 (should be at x-height 551?)
+	* z (U+007A): X=313.0,Y=550.0 (should be at x-height 551?) 
 
-	* z (U+007A): X=52.0,Y=550.0 (should be at x-height 551?) 
-
-	* 43 more.
+	* 44 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
@@ -5014,9 +5041,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -5036,7 +5063,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -5079,7 +5106,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -5091,7 +5118,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -5142,9 +5169,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5171,7 +5198,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -5214,7 +5241,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -5226,11 +5253,13 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+
+	* parenleft.knda (U+0028): X=206.5,Y=-0.5 (should be at baseline 0?)
 
 	* zero.knda (U+0030): X=285.0,Y=691.0 (should be at cap-height 690?)
 
@@ -5248,11 +5277,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* J (U+004A): X=-4.0,Y=-1.0 (should be at baseline 0?)
 
-	* a (U+0061): X=291.0,Y=550.0 (should be at x-height 552?)
+	* a (U+0061): X=291.0,Y=550.0 (should be at x-height 552?) 
 
-	* s (U+0073): X=254.0,Y=550.0 (should be at x-height 552?) 
-
-	* 60 more.
+	* 61 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -5301,9 +5328,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -5330,7 +5357,7 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- backslash
 
-	- backslash.knda
+	- backslash.UIknda
 
 	- bar
 
@@ -5373,7 +5400,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -5385,7 +5412,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
@@ -5432,7 +5459,11 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* exclamdown (U+00A1): L<<122.0,447.0>--<124.0,-93.0>> 
 
 	* exclamdown (U+00A1): L<<96.0,-93.0>--<98.0,447.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannada[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannada[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -5459,9 +5490,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -5499,11 +5530,17 @@ Use -F or --full-lists to disable shortening of long lists.
 
 
 * ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
+
+
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 0 start point differs in glyph 'anusvaraaboverightknda' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb10> 
+
+	- Contour 1 start point differs in glyph 'anusvaraaboverightknda' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb10> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded) and 124 more.
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
@@ -5515,15 +5552,15 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB and U+0CD5 [code: non-mark-chars]
+	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 3 | 82 | 199 | 2173 | 116 | 1737 | 0 |
-| 0% | 2% | 5% | 50% | 3% | 40% | 0% |
+| 4 | 83 | 200 | 2212 | 116 | 1753 | 0 |
+| 0% | 2% | 5% | 51% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

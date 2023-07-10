@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSerifKannada[wght].ttf);
+    font-family: "old font";
+    font-weight: 100 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSerifKannada[wght].ttf);
+    font-family: "new font";
+    font-weight: 100 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-800_0{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 800.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 800.0;
+}
+	  
+
+	  
+	    .new-wght-800_0{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 800.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 800.0;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"MVAR": {"tableTag": [null, "MVAR"], "table": {"Version": [null, 65536], "Reserved": [null, 0], "ValueRecordSize": [null, 8], "ValueRecordCount": [null, 2], "VarStore": {"Format": [null, 1], "VarRegionList": {"RegionAxisCount": [null, 1], "RegionCount": [null, 3], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [null, -1.0], "PeakCoord": [null, -1.0], "EndCoord": [null, 0.0]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [null, 0.0], "PeakCoord": [null, 0.58001708984375], "EndCoord": [null, 1.0]}}}, "2": {"VarRegionAxis": {"0": {"StartCoord": [null, 0.58001708984375], "PeakCoord": [null, 1.0], "EndCoord": [null, 1.0]}}}}}, "VarDataCount": [null, 1], "VarData": {"0": {"ItemCount": [null, 2], "NumShorts": [null, 0], "VarRegionCount": [null, 3], "VarRegionIndex": {"0": [null, 0], "1": [null, 1], "2": [null, 2]}, "Item": {"0": {"0": [null, -44], "1": [null, 14], "2": [null, 19]}, "1": {"0": [null, -26], "1": [null, 9], "2": [null, 12]}}}}}, "ValueRecord": {"0": {"ValueTag": [null, "stro"], "VarIdx": [null, 1]}, "1": {"ValueTag": [null, "xhgt"], "VarIdx": [null, 0]}}}}, "HVAR": {"table": {"AdvWidthMap": {"mapping": {"jihvamuliyaSign_vedic": [131238, 131239], "ha_kannada.base": [131269, 131270], "ttha_kannada": [131304, 131305], "two_kannada": [131305, 131306], "e_kannada": [131226, 131227], "k_ssa_kannada.base": [131253, 131254], "li_kannada": [131242, 131243], "la_kannada.base": [131247, 131248], "tth_kannada": [131263, 131264], "zero_kannada": [131309, 131310], "ne_kannada": [131241, 131242], ".notdef": [131268, 131269], "lVocalic_kannada": [131243, 131244], "pa_kannada": [131293, 131294], "pho_kannada": [131291, 131292], "phuu_kannada": [131300, 131301], "ra_kannada": [131308, 131309], "da_kannada.base": [131276, 131277], "k_sse_kannada": [131271, 131272], "pha_kannada.base": [131292, 131293], "phi_kannada": [131301, 131302], "po_kannada": [131283, 131284], "tthi_kannada": [131307, 131308], "phaa_kannada": [131302, 131303], "ha_kannada": [131269, 131270], "k_ssi_kannada": [131290, 131291], "ta_kannada": [131244, 131245], "anusvaraaboveright_kannada": [null, 131311], "jihvamuliya_kannada": [131238, 131239], "vuu_kannada": [131283, 131284], "ra_kannada.base": [131289, 131290], "na_kannada.base": [131275, 131276], "ti_kannada": [131260, 131261], "ssa_kannada": [131261, 131262], "jha_kannada.base": [131279, 131280], "ke_kannada": [131229, 131230], "ghi_kannada": [131224, 131225], "jhe_kannada": [131286, 131287], "khi_kannada": [131246, 131247], "iiMatra_kannada": [131259, 131260], "nya_kannada": [131262, 131263], "va_kannada.base": [131255, 131256], "vo_kannada": [131283, 131284], "phu_kannada": [131298, 131299], "kha_kannada": [131230, 131231], "pi_kannada": [131301, 131302], "vu_kannada": [131299, 131300], "na_kannada": [131240, 131241], "dda_kannada.base": [131281, 131282], "ma_kannada": [131227, 131228], "he_kannada": [131269, 131270], "khe_kannada": [131250, 131251], "pa_kannada.base": [131294, 131295], "bha_kannada.base": [131310, 131312], "she_kannada": [131237, 131238], "te_kannada": [131245, 131246], "r_kannada": [131257, 131258], "visarga_kannada": [131274, 131275], "uMatra_kannada": [131233, 131234], "puu_kannada": [131283, 131284], "tthe_kannada": [131306, 131307], "vi_kannada": [131248, 131249], "aaMatra_kannada": [131282, 131283], "mo_kannada": [131223, 131224], "llVocalic_kannada": [131243, 131244], "ii_kannada": [131287, 131288], "aiMatra_kannada": [131251, 131252], "the_kannada": [131266, 131267], "ka_kannada.base": [131253, 131254], "jhi_kannada": [131288, 131289], "da_kannada": [131276, 131277], "dha_kannada.base": [131276, 131277], "upadhmaniya_kannada": [131303, 131304], "tha_kannada.base": [131265, 131266], "shi_kannada": [131235, 131236], "ri_kannada": [131307, 131308], "nyi_kannada": [131252, 131253], "percent": [131228, 131229], "i_kannada": [131231, 131232], "va_kannada": [131254, 131255], "ni_kannada": [131297, 131298], "k_ssa_kannada": [131234, 131235], "phe_kannada": [131295, 131296], "ai_kannada": [131232, 131233], "ba_kannada.base": [131310, 131312], "ddha_kannada.base": [131273, 131274], "di_kannada": [131276, 131277], "tha_kannada": [131277, 131278], "ghu_kannada": [131225, 131226], "ssa_kannada.base": [131261, 131262], "jaa_kannada": [131264, 131265], "pha_kannada": [131284, 131285], "ka_kannada": [131234, 131235], "ve_kannada": [131256, 131257], "hi_kannada": [131239, 131240], "nakaarapollu_kannada": [null, 131223], "ttha_kannada.base": [131289, 131290], "one_kannada": [131285, 131286], "la_kannada": [131249, 131250], "sse_kannada": [131261, 131262], "dhi_kannada": [131270, 131271], "re_kannada": [131308, 131309], "jha_kannada": [131286, 131287], "three_kannada": [131258, 131259], "sha_kannada": [131236, 131237], "pe_kannada": [131296, 131297], "rrVocalicMatra_kannada": [131280, 131281], "six_kannada": [131272, 131273], "kha_kannada.base": [131230, 131231], "avagraha_kannada": [131267, 131268], "dha_kannada": [131276, 131277], "pu_kannada": [131299, 131300], "thi_kannada": [131278, 131279], "length_kannada": [131259, 131260]}}, "VarStore": {"VarData": {"2": {"Item": {"151": {"1": [16, 8], "2": [22, 9]}, "152": {"1": [21, 16], "2": [32, 22]}, "153": {"0": [-12, -13], "1": [9, 21], "2": [14, 32]}, "154": {"0": [-11, -12], "1": [-4, 9], "2": [-10, 14]}, "155": {"1": [3, -4], "2": [4, -10]}, "156": {"1": [11, 3], "2": [18, 4]}, "157": {"1": [13, 11], "2": [23, 18]}, "158": {"1": [16, 13], "2": [26, 23]}, "159": {"1": [18, 16], "2": [28, 26]}, "160": {"0": [-10, -11], "1": [5, 18], "2": [8, 28]}, "161": {"1": [13, 5], "2": [22, 8]}, "162": {"1": [14, 13]}, "163": {"1": [19, 14], "2": [30, 22]}, "164": {"1": [25, 19], "2": [41, 30]}, "165": {"1": [27, 25], "2": [43, 41]}, "166": {"1": [47, 27], "2": [78, 43]}, "167": {"0": [-9, -10], "1": [-6, 47], "2": [-9, 78]}, "168": {"1": [4, -6], "2": [6, -9]}, "169": {"1": [5, 4], "2": [8, 6]}, "170": {"1": [9, 5], "2": [16, 8]}, "171": {"1": [31, 9], "2": [50, 16]}, "172": {"0": [-8, -9], "1": [3, 31], "2": [3, 50]}, "173": {"1": [4, 3], "2": [6, 3]}, "174": {"1": [5, 4], "2": [10, 6]}, "175": {"1": [6, 5], "2": [9, 10]}, "176": {"1": [7, 6], "2": [11, 9]}, "177": {"1": [8, 7]}, "178": {"1": [13, 8], "2": [21, 11]}, "179": {"1": [46, 13], "2": [76, 21]}, "180": {"0": [-7, -8], "1": [38, 46], "2": [62, 76]}, "181": {"0": [-6, -7], "1": [6, 38], "2": [9, 62]}, "182": {"1": [9, 6], "2": [11, 9]}, "183": {"2": [12, 11]}, "184": {"1": [10, 9], "2": [13, 12]}, "185": {"1": [28, 10], "2": [41, 13]}, "186": {"1": [42, 28], "2": [69, 41]}, "187": {"0": [-5, -6], "1": [9, 42], "2": [16, 69]}, "188": {"0": [-4, -5], "1": [5, 9], "2": [6, 16]}, "189": {"1": [15, 5], "2": [25, 6]}, "190": {"0": [-3, -4], "1": [23, 15], "2": [38, 25]}, "191": {"1": [27, 23], "2": [40, 38]}, "192": {"1": [30, 27], "2": [48, 40]}, "193": {"0": [-2, -3], "1": [4, 30], "2": [7, 48]}, "194": {"1": [8, 4], "2": [12, 7]}, "195": {"1": [37, 8], "2": [61, 12]}, "196": {"0": [-1, -2], "1": [-12, 37], "2": [-19, 61]}, "197": {"1": [-3, -12], "2": [-4, -19]}, "198": {"1": [6, -3], "2": [9, -4]}, "199": {"1": [13, 6], "2": [23, 9]}, "200": {"1": [26, 13], "2": [42, 23]}, "201": {"0": [1, -1], "1": [-4, 26], "2": [-7, 42]}, "202": {"1": [3, -4], "2": [7, -7]}, "203": {"1": [4, 3], "2": [6, 7]}, "204": {"1": [6, 4], "2": [9, 6]}, "205": {"1": [7, 6], "2": [10, 9]}, "206": {"1": [8, 7], "2": [11, 10]}, "207": {"0": [2, 1], "1": [24, 8], "2": [38, 11]}, "208": {"1": [67, 24], "2": [103, 38]}, "209": {"0": [3, 2], "1": [-2, 67], "2": [-7, 103]}, "210": {"1": [27, -2], "2": [45, -7]}, "211": {"0": [4, 3], "1": [12, 27], "2": [20, 45]}, "212": {"2": [23, 20]}, "213": {"1": [14, 12], "2": [22, 23]}, "214": {"1": [18, 14], "2": [30, 22]}, "215": {"0": [5, 4], "1": [-3, 18], "2": [-5, 30]}, "216": {"1": [14, -3], "2": [23, -5]}, "217": {"0": [6, 5], "1": [-4, 14], "2": [-9, 23]}, "218": {"1": [5, -4], "2": [8, -9]}, "219": {"1": [8, 5], "2": [12, 8]}, "220": {"1": [14, 8], "2": [22, 12]}, "221": {"2": [23, 22]}, "222": {"2": [24, 23]}, "223": {"2": [25, 24]}, "224": {"1": [16, 14]}, "225": {"0": [7, 6], "1": [1, 16], "2": [2, 25]}, "226": {"1": [15, 1], "2": [24, 2]}, "227": {"1": [17, 15], "2": [26, 24]}, "228": {"0": [8, 7], "1": [10, 17], "2": [14, 26]}, "229": {"1": [18, 10], "2": [28, 14]}, "230": {"0": [9, 8], "1": [41, 18], "2": [67, 28]}, "231": {"1": [49, 41], "2": [79, 67]}, "232": {"0": [10, 9], "1": [10, 49], "2": [16, 79]}, "233": {"1": [12, 10], "2": [22, 16]}, "234": {"1": [20, 12], "2": [36, 22]}, "235": {"0": [12, 10], "1": [5, 20], "2": [7, 36]}, "236": {"1": [10, 5], "2": [17, 7]}, "237": {"1": [16, 10], "2": [26, 17]}, "238": {"0": [24, 12], "1": [-7, 16], "2": [-11, 26]}, "239": {"0": [null, 15], "1": [null, 9], "2": [null, 7]}, "240": {"0": [null, 24], "1": [null, -7], "2": [null, -11]}}, "ItemCount": [239, 241]}}}}}, "OS/2": {"xAvgCharWidth": [811, 809]}, "maxp": {"numGlyphs": [417, 419]}, "GPOS": {"table": {"LookupList": {"Lookup": {"51": {"SubTable": {"0": {"PairSet": {"error": ["There are 162 changes, check manually!", ""]}}, "1": {"Coverage": {"glyphs": {"33": ["ghaa_kannada", "nakaarapollu_kannada"], "34": ["ngaa_kannada", "ghaa_kannada"], "35": ["caa_kannada", "ngaa_kannada"], "36": ["jaa_kannada", "caa_kannada"], "37": ["nyaa_kannada", "jaa_kannada"], "38": ["ttaa_kannada", "nyaa_kannada"], "39": ["phaa_kannada", "ttaa_kannada"], "40": ["nnaa_kannada", "phaa_kannada"], "41": ["rraa_kannada", "nnaa_kannada"], "42": ["lllaa_kannada", "rraa_kannada"], "43": ["ki_kannada", "lllaa_kannada"], "44": ["gi_kannada", "ki_kannada"], "45": ["ghi_kannada", "gi_kannada"], "46": ["ngi_kannada", "ghi_kannada"], "47": ["ci_kannada", "ngi_kannada"], "48": ["ji_kannada", "ci_kannada"], "49": ["nyi_kannada", "ji_kannada"], "50": ["rri_kannada", "nyi_kannada"], "51": ["li_kannada", "rri_kannada"], "52": ["lli_kannada", "li_kannada"], "53": ["shi_kannada", "lli_kannada"], "54": ["ssi_kannada", "shi_kannada"], "55": ["si_kannada", "ssi_kannada"], "56": ["llli_kannada", "si_kannada"], "57": ["hi_kannada", "llli_kannada"], "58": ["pu_kannada", "hi_kannada"], "59": ["phu_kannada", "pu_kannada"], "60": ["vu_kannada", "phu_kannada"], "61": ["ghuu_kannada", "vu_kannada"], "62": ["juu_kannada", "ghuu_kannada"], "63": ["phuu_kannada", "juu_kannada"], "64": ["puu_kannada", "phuu_kannada"], "65": ["lluu_kannada", "puu_kannada"], "66": ["vuu_kannada", "lluu_kannada"], "67": ["ke_kannada", "vuu_kannada"], "68": ["ge_kannada", "ke_kannada"], "69": ["ghe_kannada", "ge_kannada"], "70": ["nge_kannada", "ghe_kannada"], "71": ["ce_kannada", "nge_kannada"], "72": ["nye_kannada", "ce_kannada"], "73": ["ne_kannada", "nye_kannada"], "74": ["phe_kannada", "ne_kannada"], "75": ["rre_kannada", "phe_kannada"], "76": ["le_kannada", "rre_kannada"], "77": ["lle_kannada", "le_kannada"], "78": ["she_kannada", "lle_kannada"], "79": ["sse_kannada", "she_kannada"], "80": ["se_kannada", "sse_kannada"], "81": ["he_kannada", "se_kannada"], "82": ["llle_kannada", "he_kannada"], "83": ["gho_kannada", "llle_kannada"], "84": ["ngo_kannada", "gho_kannada"], "85": ["jo_kannada", "ngo_kannada"], "86": ["jho_kannada", "jo_kannada"], "87": ["nyo_kannada", "jho_kannada"], "88": ["po_kannada", "nyo_kannada"], "89": ["pho_kannada", "po_kannada"], "90": ["mo_kannada", "pho_kannada"], "91": ["yo_kannada", "mo_kannada"], "92": ["rro_kannada", "yo_kannada"], "93": ["llo_kannada", "rro_kannada"], "94": ["vo_kannada", "llo_kannada"], "95": ["lllo_kannada", "vo_kannada"], "96": ["ghau_kannada", "lllo_kannada"], "97": ["ngau_kannada", "ghau_kannada"], "98": ["cau_kannada", "ngau_kannada"], "99": ["jau_kannada", "cau_kannada"], "100": ["nyau_kannada", "jau_kannada"], "101": ["ttau_kannada", "nyau_kannada"], "102": ["nnau_kannada", "ttau_kannada"], "103": ["phau_kannada", "nnau_kannada"], "104": ["rrau_kannada", "phau_kannada"], "105": ["lllau_kannada", "rrau_kannada"], "106": ["k_ssa_kannada", "lllau_kannada"], "107": ["k_sse_kannada", "k_ssa_kannada"], "108": ["k_ssi_kannada", "k_sse_kannada"], "109": ["j_nya_kannada", "k_ssi_kannada"], "110": ["j_nye_kannada", "j_nya_kannada"], "111": ["j_nyi_kannada", "j_nye_kannada"], "112": ["k_ssa_kannada.base", "j_nyi_kannada"], "113": ["j_nya_kannada.base", "k_ssa_kannada.base"], "114": [null, "j_nya_kannada.base"]}}, "Class1Record": {"2": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [1485, 1490]}}}}}, "6": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [545, 546]}}}}}, "7": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [1617, 1622]}}}}}, "8": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [10, 11]}}}}}, "9": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [918, 919]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [111, 119]}}}}}, "10": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [2016, 2025]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [10, 11]}}}}}, "11": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [1109, 1110]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [93, 96]}}}}}, "12": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [1427, 1428]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [82, 88]}}}}}, "13": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [749, 750]}}}}}, "14": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [1700, 1706]}}}}}, "15": {"Class2Record": {"8": {"Value1": {"XAdvDevice": {"EndSize": [709, 710]}}}, "9": {"Value1": {"XAdvDevice": {"EndSize": [559, 560]}}}, "10": {"Value1": {"XAdvDevice": {"EndSize": [1052, 1053]}}}, "11": {"Value1": {"XAdvDevice": {"EndSize": [862, 863]}}}, "13": {"Value1": {"XAdvDevice": {"EndSize": [1365, 1366]}}}, "17": {"Value1": {"XAdvDevice": {"EndSize": [568, 569]}}}, "18": {"Value1": {"XAdvDevice": {"EndSize": [1058, 1059]}}}, "19": {"Value1": {"XAdvDevice": {"EndSize": [571, 572]}}}, "22": {"Value1": {"XAdvDevice": {"EndSize": [1068, 1069]}}}, "23": {"Value1": {"XAdvDevice": {"EndSize": [1210, 1211]}}}, "28": {"Value1": {"XAdvDevice": {"EndSize": [1599, 1604]}}}, "34": {"Value1": {"XAdvDevice": {"EndSize": [1592, 1597]}}}, "36": {"Value1": {"XAdvDevice": {"EndSize": [1836, 1843]}}}, "37": {"Value1": {"XAdvDevice": {"EndSize": [566, 567]}}}, "38": {"Value1": {"XAdvDevice": {"EndSize": [1350, 1351]}}}, "39": {"Value1": {"XAdvDevice": {"EndSize": [1068, 1069]}}}, "42": {"Value1": {"XAdvDevice": {"EndSize": [1830, 1837]}}}, "43": {"Value1": {"XAdvDevice": {"EndSize": [33, 34]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [1499, 1504]}}}, "45": {"Value1": {"XAdvDevice": {"EndSize": [1052, 1053]}}}}}, "16": {"Class2Record": {"1": {"Value1": {"XAdvDevice": {"EndSize": [1206, 1207]}}}, "2": {"Value1": {"XAdvDevice": {"EndSize": [860, 861]}}}, "3": {"Value1": {"XAdvDevice": {"EndSize": [628, 629]}}}, "5": {"Value1": {"XAdvDevice": {"EndSize": [860, 861]}}}, "6": {"Value1": {"XAdvDevice": {"EndSize": [559, 560]}}}, "7": {"Value1": {"XAdvDevice": {"EndSize": [1787, 1794]}}}, "8": {"Value1": {"XAdvDevice": {"EndSize": [860, 861]}}}, "9": {"Value1": {"XAdvDevice": {"EndSize": [1050, 1051]}}}, "10": {"Value1": {"XAdvDevice": {"EndSize": [1339, 1340]}}}, "11": {"Value1": {"XAdvDevice": {"EndSize": [1033, 1034]}}}, "12": {"Value1": {"XAdvDevice": {"EndSize": [548, 549]}}}, "13": {"Value1": {"XAdvDevice": {"EndSize": [67, 68]}}}, "14": {"Value1": {"XAdvDevice": {"EndSize": [691, 692]}}}, "15": {"Value1": {"XAdvDevice": {"EndSize": [699, 700]}}}, "16": {"Value1": {"XAdvDevice": {"EndSize": [68, 69]}}}, "17": {"Value1": {"XAdvDevice": {"EndSize": [1050, 1051]}}}, "19": {"Value1": {"XAdvDevice": {"EndSize": [1250, 1251]}}}, "20": {"Value1": {"XAdvDevice": {"EndSize": [857, 858]}}}, "21": {"Value1": {"XAdvDevice": {"EndSize": [1039, 1040]}}}, "22": {"Value1": {"XAdvDevice": {"EndSize": [60, 65]}}}, "23": {"Value1": {"XAdvDevice": {"EndSize": [1206, 1207]}}}, "24": {"Value1": {"XAdvDevice": {"EndSize": [1206, 1207]}}}, "25": {"Value1": {"XAdvDevice": {"EndSize": [68, 69]}}}, "27": {"Value1": {"XAdvDevice": {"EndSize": [628, 629]}}}, "28": {"Value1": {"XAdvDevice": {"EndSize": [2371, 2384]}}}, "29": {"Value1": {"XAdvDevice": {"EndSize": [1038, 1039]}}}, "30": {"Value1": {"XAdvDevice": {"EndSize": [2036, 2045]}}}, "31": {"Value1": {"XAdvDevice": {"EndSize": [1810, 1817]}}}, "32": {"Value1": {"XAdvDevice": {"EndSize": [860, 861]}}}, "34": {"Value1": {"XAdvDevice": {"EndSize": [1456, 1458]}}}, "35": {"Value1": {"XAdvDevice": {"EndSize": [709, 710]}}}, "36": {"Value1": {"XAdvDevice": {"EndSize": [2147, 2159]}}}, "38": {"Value1": {"XAdvDevice": {"EndSize": [2212, 2225]}}}, "39": {"Value1": {"XAdvDevice": {"EndSize": [60, 65]}}}, "40": {"Value1": {"XAdvDevice": {"EndSize": [1787, 1794]}}}, "41": {"Value1": {"XAdvDevice": {"EndSize": [1406, 1407]}}}, "42": {"Value1": {"XAdvDevice": {"EndSize": [2469, 2486]}}}, "43": {"Value1": {"XAdvDevice": {"EndSize": [2261, 2274]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [1130, 1131]}}}, "45": {"Value1": {"XAdvDevice": {"EndSize": [1339, 1340]}}}}}, "18": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"StartSize": [6, null], "EndSize": [82, null], "DeltaFormat": [32768, null]}}}, "46": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1493], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -34]}}}}, "19": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [10, 88], "StartSize": [2, 6]}}}}}, "20": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [2276, 11], "StartSize": [7, 2]}}}}}, "21": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [6, 2289], "StartSize": [0, 7]}}}}}, "22": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [1427, 6], "StartSize": [7, 0]}, "XAdvance": [10, 0]}}}}, "23": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [82, 1428], "StartSize": [6, 7]}, "XAdvance": [0, 10]}}}}, "24": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [543, 88], "StartSize": [7, 6]}, "XAdvance": [30, 0]}}}}, "25": {"Class2Record": {"44": {"Value1": {"XAdvDevice": {"EndSize": [1199, 544]}, "XAdvance": [14, 30]}}}}, "26": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1410, null], "DeltaFormat": [32768, null]}, "XAdvance": [30, 0]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [13, 1200], "StartSize": [0, 7]}, "XAdvance": [34, 14]}}}}, "27": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [920, 1411]}, "XAdvance": [20, 30]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [66, 13], "StartSize": [6, 0]}, "XAdvance": [0, 34]}}}}, "28": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [23, 921], "StartSize": [0, 7]}, "XAdvance": [0, 20]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [37, 71], "StartSize": [4, 6]}, "XAdvance": [44, 0]}}}}, "29": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [17, 23]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [5, 37], "StartSize": [1, 4]}, "XAdvance": [0, 44]}}}}, "30": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 17], "DeltaFormat": [null, 32768]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [76, 5], "StartSize": [5, 1]}, "XAdvance": [-24, 0]}}}}, "31": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"StartSize": [0, null], "EndSize": [22, null], "DeltaFormat": [32768, null]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [2397, 78], "StartSize": [7, 5]}}}}}, "32": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [920, 22], "StartSize": [7, 0]}, "XAdvance": [20, 0]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [45, 2412], "StartSize": [4, 7]}, "XAdvance": [-20, -24]}}}}, "33": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [1109, 921]}, "XAdvance": [30, 20]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [2079, 45], "StartSize": [7, 4]}, "XAdvance": [-58, -20]}}}}, "34": {"Class2Record": {"1": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [108, null], "DeltaFormat": [32768, null]}, "XAdvance": [-20, 0]}}, "2": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [702, null], "DeltaFormat": [32768, null]}, "XAdvance": [-42, 0]}}, "3": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1125, null], "DeltaFormat": [32768, null]}, "XAdvance": [-76, 0]}}, "4": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [46, null], "DeltaFormat": [32768, null]}, "XAdvance": [-28, 0]}}, "5": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [259, null], "DeltaFormat": [32768, null]}, "XAdvance": [-34, 0]}}, "6": {"Value1": {"XAdvDevice": {"StartSize": [4, null], "EndSize": [9, null], "DeltaFormat": [32768, null]}, "XAdvance": [-34, 0]}}, "7": {"Value1": {"XAdvDevice": {"StartSize": [4, null], "EndSize": [12, null], "DeltaFormat": [32768, null]}, "XAdvance": [-44, 0]}}, "8": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [509, null], "DeltaFormat": [32768, null]}, "XAdvance": [-52, 0]}}, "9": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [443, null], "DeltaFormat": [32768, null]}, "XAdvance": [-58, 0]}}, "10": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [407, null], "DeltaFormat": [32768, null]}, "XAdvance": [-52, 0]}}, "11": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1125, null], "DeltaFormat": [32768, null]}, "XAdvance": [-76, 0]}}, "12": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [860, null], "DeltaFormat": [32768, null]}, "XAdvance": [-66, 0]}}, "13": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [452, null], "DeltaFormat": [32768, null]}, "XAdvance": [-34, 0]}}, "14": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [503, null], "DeltaFormat": [32768, null]}, "XAdvance": [-86, 0]}}, "15": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [508, null], "DeltaFormat": [32768, null]}, "XAdvance": [-32, 0]}}, "16": {"Value1": {"XAdvDevice": {"StartSize": [5, null], "EndSize": [17, null], "DeltaFormat": [32768, null]}, "XAdvance": [-4, 0]}}, "17": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [185, null], "DeltaFormat": [32768, null]}, "XAdvance": [-34, 0]}}, "18": {"Value1": {"XAdvDevice": {"StartSize": [6, null], "EndSize": [60, null], "DeltaFormat": [32768, null]}, "XAdvance": [-122, 0]}}, "19": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [416, null], "DeltaFormat": [32768, null]}, "XAdvance": [-42, 0]}}, "20": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [134, null], "DeltaFormat": [32768, null]}, "XAdvance": [-20, 0]}}, "21": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [696, null], "DeltaFormat": [32768, null]}, "XAdvance": [-22, 0]}}, "22": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1070, null], "DeltaFormat": [32768, null]}, "XAdvance": [-60, 0]}}, "23": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [559, null], "DeltaFormat": [32768, null]}, "XAdvance": [-96, 0]}}, "24": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [108, null], "DeltaFormat": [32768, null]}, "XAdvance": [-20, 0]}}, "25": {"Value1": {"XAdvDevice": {"StartSize": [5, null], "EndSize": [29, null], "DeltaFormat": [32768, null]}, "XAdvance": [-4, 0]}}, "26": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [203, null], "DeltaFormat": [32768, null]}, "XAdvance": [-44, 0]}}, "27": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1125, null], "DeltaFormat": [32768, null]}, "XAdvance": [-76, 0]}}, "28": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1810, null], "DeltaFormat": [32768, null]}, "XAdvance": [-98, 0]}}, "29": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [325, null], "DeltaFormat": [32768, null]}, "XAdvance": [-62, 0]}}, "30": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [415, null], "DeltaFormat": [32768, null]}, "XAdvance": [-42, 0]}}, "31": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [250, null], "DeltaFormat": [32768, null]}, "XAdvance": [-68, 0]}}, "32": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [702, null], "DeltaFormat": [32768, null]}, "XAdvance": [-42, 0]}}, "33": {"Value1": {"XAdvDevice": {"StartSize": [5, null], "EndSize": [29, null], "DeltaFormat": [32768, null]}, "XAdvance": [-4, 0]}}, "34": {"Value1": {"XAdvDevice": {"StartSize": [5, null], "EndSize": [34, null], "DeltaFormat": [32768, null]}, "XAdvance": [-28, 0]}}, "35": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [87, null], "DeltaFormat": [32768, null]}, "XAdvance": [-56, 0]}}, "36": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1058, null], "DeltaFormat": [32768, null]}, "XAdvance": [-80, 0]}}, "37": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1217, null], "DeltaFormat": [32768, null]}, "XAdvance": [-40, 0]}}, "38": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [874, null], "DeltaFormat": [32768, null]}, "XAdvance": [-42, 0]}}, "39": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1070, null], "DeltaFormat": [32768, null]}, "XAdvance": [-60, 0]}}, "40": {"Value1": {"XAdvDevice": {"StartSize": [4, null], "EndSize": [12, null], "DeltaFormat": [32768, null]}, "XAdvance": [-44, 0]}}, "41": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1110], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 30]}}, "42": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2340, null], "DeltaFormat": [32768, null]}, "XAdvance": [-86, 0]}}, "43": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2204, null], "DeltaFormat": [32768, null]}, "XAdvance": [-96, 0]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [133, 2090], "StartSize": [6, 7]}, "XAdvance": [-84, -58]}}, "45": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [407, null], "DeltaFormat": [32768, null]}, "XAdvance": [-52, 0]}}}}, "35": {"Class2Record": {"1": {"Value1": {"XAdvDevice": {"EndSize": [1224, 108]}, "XAdvance": [-16, -20]}}, "2": {"Value1": {"XAdvDevice": {"EndSize": [1582, 703]}, "XAdvance": [-36, -42]}}, "3": {"Value1": {"XAdvDevice": {"EndSize": [1206, 1126]}, "XAdvance": [-64, -76]}}, "4": {"Value1": {"XAdvDevice": {"EndSize": [16, 46], "StartSize": [4, 7]}, "XAdvance": [-24, -28]}}, "5": {"Value1": {"XAdvDevice": {"EndSize": [861, 259]}, "XAdvance": [-26, -34]}}, "6": {"Value1": {"XAdvDevice": {"EndSize": [860, 9], "StartSize": [7, 4]}, "XAdvance": [-22, -34]}}, "7": {"Value1": {"XAdvDevice": {"EndSize": [404, 12], "StartSize": [7, 4]}, "XAdvance": [-28, -44]}}, "8": {"Value1": {"XAdvDevice": {"EndSize": [51, 510], "StartSize": [5, 7]}, "XAdvance": [-46, -52]}}, "9": {"Value1": {"XAdvDevice": {"EndSize": [1337, 444]}, "XAdvance": [-56, -58]}}, "10": {"Value1": {"XAdvDevice": {"EndSize": [1439, 407]}, "XAdvance": [-54, -52]}}, "11": {"Value1": {"XAdvDevice": {"EndSize": [1572, 1126]}, "XAdvance": [-60, -76]}}, "12": {"Value1": {"XAdvDevice": {"EndSize": [626, 861]}, "XAdvance": [-56, -66]}}, "13": {"Value1": {"XAdvDevice": {"EndSize": [12, 453], "StartSize": [0, 7]}, "XAdvance": [-24, -34]}}, "14": {"Value1": {"XAdvDevice": {"EndSize": [1204, 504]}, "XAdvance": [-84, -86]}}, "15": {"Value1": {"XAdvDevice": {"EndSize": [13, 509], "StartSize": [0, 7]}, "XAdvance": [-30, -32]}}, "16": {"Value1": {"XAdvDevice": {"EndSize": [53, 17]}, "XAdvance": [-2, -4]}}, "17": {"Value1": {"XAdvDevice": {"EndSize": [1224, 185]}, "XAdvance": [-26, -34]}}, "18": {"Value1": {"XAdvDevice": {"EndSize": [1036, 65], "StartSize": [7, 6]}, "XAdvance": [-100, -122]}}, "19": {"Value1": {"XAdvDevice": {"EndSize": [1803, 416]}, "XAdvance": [-30, -42]}}, "20": {"Value1": {"XAdvDevice": {"EndSize": [1206, 134]}, "XAdvance": [-16, -20]}}, "21": {"Value1": {"XAdvDevice": {"EndSize": [1582, 697]}, "XAdvance": [-26, -22]}}, "22": {"Value1": {"XAdvDevice": {"EndSize": [1830, 1071]}, "XAdvance": [-54, -60]}}, "23": {"Value1": {"XAdvDevice": {"EndSize": [4, 560], "StartSize": [6, 7]}, "XAdvance": [-112, -96]}}, "24": {"Value1": {"XAdvDevice": {"EndSize": [1224, 108]}, "XAdvance": [-16, -20]}}, "25": {"Value1": {"XAdvDevice": {"EndSize": [53, 29]}, "XAdvance": [-2, -4]}}, "26": {"Value1": {"XAdvDevice": {"EndSize": [34, 203], "StartSize": [5, 7]}, "XAdvance": [-32, -44]}}, "27": {"Value1": {"XAdvDevice": {"EndSize": [1206, 1126]}, "XAdvance": [-64, -76]}}, "28": {"Value1": {"XAdvDevice": {"EndSize": [13, 1817], "StartSize": [6, 7]}, "XAdvance": [-68, -98]}}, "29": {"Value1": {"XAdvDevice": {"EndSize": [1227, 325]}, "XAdvance": [-50, -62]}}, "30": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 415], "DeltaFormat": [null, 32768]}, "XAdvance": [-30, -42]}}, "31": {"Value1": {"XAdvDevice": {"EndSize": [1050, 250]}, "XAdvance": [-60, -68]}}, "32": {"Value1": {"XAdvDevice": {"EndSize": [1582, 703]}, "XAdvance": [-36, -42]}}, "33": {"Value1": {"XAdvDevice": {"EndSize": [2152, 29], "StartSize": [7, 5]}, "XAdvance": [-20, -4]}}, "34": {"Value1": {"XAdvDevice": {"EndSize": [17, 34], "StartSize": [4, 5]}, "XAdvance": [-24, -28]}}, "35": {"Value1": {"XAdvDevice": {"EndSize": [568, 87]}, "XAdvance": [-48, -56]}}, "36": {"Value1": {"XAdvDevice": {"EndSize": [1803, 1059]}, "XAdvance": [-64, -80]}}, "37": {"Value1": {"XAdvDevice": {"EndSize": [2019, 1218]}, "XAdvance": [-34, -40]}}, "38": {"Value1": {"XAdvDevice": {"EndSize": [33, 875], "StartSize": [6, 7]}, "XAdvance": [-34, -42]}}, "39": {"Value1": {"XAdvDevice": {"EndSize": [1830, 1071]}, "XAdvance": [-54, -60]}}, "40": {"Value1": {"XAdvDevice": {"EndSize": [404, 12], "StartSize": [7, 4]}, "XAdvance": [-28, -44]}}, "41": {"Value1": {"XAdvDevice": {"StartSize": [6, null], "EndSize": [0, null], "DeltaFormat": [32768, null]}, "XAdvance": [24, 0]}}, "42": {"Value1": {"XAdvDevice": {"EndSize": [68, 2353], "StartSize": [6, 7]}, "XAdvance": [-74, -86]}}, "43": {"Value1": {"XAdvDevice": {"EndSize": [2201, 2217]}, "XAdvance": [-82, -96]}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [1466, 141], "StartSize": [7, 6]}, "XAdvance": [-74, -84]}}, "45": {"Value1": {"XAdvDevice": {"EndSize": [1439, 407]}, "XAdvance": [-54, -52]}}}}, "36": {"Class2Record": {"1": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1225], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -16]}}, "2": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1587], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -36]}}, "3": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1207], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -64]}}, "4": {"Value1": {"XAdvDevice": {"StartSize": [null, 4], "EndSize": [null, 16], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -24]}}, "5": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 862], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -26]}}, "6": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 861], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -22]}}, "7": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 404], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -28]}}, "8": {"Value1": {"XAdvDevice": {"StartSize": [null, 5], "EndSize": [null, 51], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -46]}}, "9": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1338], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -56]}}, "10": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1440], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -54]}}, "11": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1577], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -60]}}, "12": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 627], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -56]}}, "13": {"Value1": {"XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 12], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -24]}}, "14": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1205], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -84]}}, "15": {"Value1": {"XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 13], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -30]}}, "16": {"Value1": {"XAdvDevice": {"StartSize": [null, 5], "EndSize": [null, 53], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -2]}}, "17": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1225], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -26]}}, "18": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1037], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -100]}}, "19": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1810], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -30]}}, "20": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1207], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -16]}}, "21": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1587], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -26]}}, "22": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1837], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -54]}}, "23": {"Value1": {"XAdvDevice": {"StartSize": [null, 6], "EndSize": [null, 4], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -112]}}, "24": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1225], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -16]}}, "25": {"Value1": {"XAdvDevice": {"StartSize": [null, 5], "EndSize": [null, 53], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -2]}}, "26": {"Value1": {"XAdvDevice": {"StartSize": [null, 5], "EndSize": [null, 34], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -32]}}, "27": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1207], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -64]}}, "28": {"Value1": {"XAdvDevice": {"StartSize": [null, 6], "EndSize": [null, 13], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -68]}}, "29": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1228], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -50]}}, "30": {"Value1": {"XAdvance": [0, -30]}}, "31": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1051], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -60]}}, "32": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1587], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -36]}}, "33": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2164], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -20]}}, "34": {"Value1": {"XAdvDevice": {"StartSize": [null, 4], "EndSize": [null, 17], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -24]}}, "35": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 569], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -48]}}, "36": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1810], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -64]}}, "37": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2028], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -34]}}, "38": {"Value1": {"XAdvDevice": {"StartSize": [null, 6], "EndSize": [null, 34], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -34]}}, "39": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1837], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -54]}}, "40": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 404], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -28]}}, "41": {"Value1": {"XAdvDevice": {"StartSize": [null, 6], "EndSize": [null, 0], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 24]}}, "42": {"Value1": {"XAdvDevice": {"StartSize": [null, 6], "EndSize": [null, 73], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -74]}}, "43": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2214], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -82]}}, "44": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1470], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -74]}}, "45": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1440], "DeltaFormat": [null, 32768]}, "XAdvance": [0, -54]}}, "46": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1488, null], "DeltaFormat": [32768, null]}, "XAdvance": [-34, 0]}}}}, "37": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [738, 739]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [1239, 1240]}}}}}, "38": {"Class2Record": {"2": {"Value1": {"XAdvDevice": {"EndSize": [511, 512]}}}, "3": {"Value1": {"XAdvDevice": {"EndSize": [33, 34]}}}, "5": {"Value1": {"XAdvDevice": {"EndSize": [508, 509]}}}, "10": {"Value1": {"XAdvDevice": {"EndSize": [509, 510]}}}, "11": {"Value1": {"XAdvDevice": {"EndSize": [861, 862]}}}, "12": {"Value1": {"XAdvDevice": {"EndSize": [551, 552]}}}, "13": {"Value1": {"XAdvDevice": {"EndSize": [1056, 1057]}}}, "15": {"Value1": {"XAdvDevice": {"EndSize": [508, 509]}}}, "17": {"Value1": {"XAdvDevice": {"EndSize": [454, 455]}}}, "18": {"Value1": {"XAdvDevice": {"EndSize": [1856, 1863]}}}, "21": {"Value1": {"XAdvDevice": {"EndSize": [699, 700]}}}, "22": {"Value1": {"XAdvDevice": {"EndSize": [1068, 1069]}}}, "23": {"Value1": {"XAdvDevice": {"EndSize": [862, 863]}}}, "27": {"Value1": {"XAdvDevice": {"EndSize": [33, 34]}}}, "28": {"Value1": {"XAdvDevice": {"EndSize": [1830, 1837]}}}, "32": {"Value1": {"XAdvDevice": {"EndSize": [511, 512]}}}, "34": {"Value1": {"XAdvDevice": {"EndSize": [865, 866]}}}, "36": {"Value1": {"XAdvDevice": {"EndSize": [1614, 1619]}}}, "37": {"Value1": {"XAdvDevice": {"EndSize": [758, 759]}}}, "38": {"Value1": {"XAdvDevice": {"EndSize": [1355, 1356]}}}, "39": {"Value1": {"XAdvDevice": {"EndSize": [1068, 1069]}}}, "42": {"Value1": {"XAdvDevice": {"EndSize": [105, 112]}}}, "43": {"Value1": {"XAdvDevice": {"EndSize": [2204, 2217]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [1870, 1877]}}}, "45": {"Value1": {"XAdvDevice": {"EndSize": [509, 510]}}}}}, "39": {"Class2Record": {"1": {"Value1": {"XAdvDevice": {"EndSize": [1350, 1351]}}}, "2": {"Value1": {"XAdvDevice": {"EndSize": [1224, 1225]}}}, "3": {"Value1": {"XAdvDevice": {"EndSize": [1036, 1037]}}}, "5": {"Value1": {"XAdvDevice": {"EndSize": [1227, 1228]}}}, "6": {"Value1": {"XAdvDevice": {"EndSize": [1224, 1225]}}}, "8": {"Value1": {"XAdvDevice": {"EndSize": [1431, 1432]}}}, "9": {"Value1": {"XAdvDevice": {"EndSize": [862, 863]}}}, "10": {"Value1": {"XAdvDevice": {"EndSize": [1584, 1589]}}}, "11": {"Value1": {"XAdvDevice": {"EndSize": [1418, 1419]}}}, "12": {"Value1": {"XAdvDevice": {"EndSize": [1114, 1115]}}}, "15": {"Value1": {"XAdvDevice": {"EndSize": [52, 57]}}}, "17": {"Value1": {"XAdvDevice": {"EndSize": [1439, 1440]}}}, "19": {"Value1": {"XAdvDevice": {"EndSize": [1690, 1695]}}}, "20": {"Value1": {"XAdvDevice": {"EndSize": [1043, 1044]}}}, "21": {"Value1": {"XAdvDevice": {"EndSize": [1206, 1207]}}}, "22": {"Value1": {"XAdvDevice": {"EndSize": [2056, 2066]}}}, "23": {"Value1": {"XAdvDevice": {"EndSize": [1031, 1032]}}}, "24": {"Value1": {"XAdvDevice": {"EndSize": [1350, 1351]}}}, "26": {"Value1": {"XAdvDevice": {"EndSize": [1043, 1044]}}}, "27": {"Value1": {"XAdvDevice": {"EndSize": [1036, 1037]}}}, "28": {"Value1": {"XAdvDevice": {"EndSize": [1198, 1199]}}}, "29": {"Value1": {"XAdvDevice": {"EndSize": [1039, 1040]}}}, "30": {"Value1": {"XAdvDevice": {"EndSize": [18, 19]}}}, "31": {"Value1": {"XAdvDevice": {"EndSize": [1431, 1432]}}}, "32": {"Value1": {"XAdvDevice": {"EndSize": [1224, 1225]}}}, "34": {"Value1": {"XAdvDevice": {"EndSize": [1605, 1610]}}}, "35": {"Value1": {"XAdvDevice": {"EndSize": [635, 636]}}}, "36": {"Value1": {"XAdvDevice": {"EndSize": [52, 57]}}}, "37": {"Value1": {"XAdvDevice": {"EndSize": [58, 59]}}}, "38": {"Value1": {"XAdvDevice": {"EndSize": [2264, 2277]}}}, "39": {"Value1": {"XAdvDevice": {"EndSize": [2056, 2066]}}}, "41": {"Value1": {"XAdvDevice": {"EndSize": [2016, 2025]}}}, "42": {"Value1": {"XAdvDevice": {"EndSize": [68, 73]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [948, 949]}}}, "45": {"Value1": {"XAdvDevice": {"EndSize": [1584, 1589]}}}}}, "40": {"Class2Record": {"46": {"Value1": {"XAdvDevice": {"EndSize": [1822, 1829]}}}}}, "42": {"Class2Record": {"41": {"Value1": {"XAdvDevice": {"EndSize": [738, 739]}}}, "44": {"Value1": {"XAdvDevice": {"EndSize": [2499, 2516]}}}}}, "43": {"Class2Record": {"46": {"Value1": {"XAdvDevice": {"EndSize": [1679, 1684]}}}}}, "44": {"Class2Record": {"46": {"Value1": {"XAdvDevice": {"EndSize": [1697, 1703]}}}}}}, "ClassDef1": {"classDefs": {"ki_kannada": [30, 31], "lli_kannada": [33, 34], "gi_kannada": [26, 27], "au_kannada": [23, 24], "she_kannada": [21, 22], "e_kannada": [24, 25], "nine_kannada": [36, 18], "phe_kannada": [19, 20], "ai_kannada": [22, 23], "ngi_kannada": [35, 36], "oo_kannada": [18, 19], "se_kannada": [20, 21], "li_kannada": [32, 33], "pha_kannada": [19, 20], "ii_kannada": [29, 30], "hi_kannada": [27, 28], "nakaarapollu_kannada": [null, 18], "sa_kannada": [20, 21], "o_kannada": [18, 19], "nge_kannada": [34, 35], "sha_kannada": [21, 22], "le_kannada": [31, 32], "ee_kannada": [25, 26], "i_kannada": [28, 29]}}}}}, "52": {"SubTable": {"0": {"ExtSubTable": {"PairSetCount": [63, 165], "PairSet": {"error": ["There are 163 changes, check manually!", ""]}, "Coverage": {"glyphs": {"error": ["There are 163 changes, check manually!", ""]}}}}, "1": {"ExtSubTable": {"ClassDef2": {"classDefs": {"gi_kannada": [51, 52], "nya_kannada.base": [68, 69], "j_nya_kannada.below": [55, 56], "nga_kannada.below": [64, 65], "colon": [47, 48], "ca_kannada.below": [45, 46], "la_kannada.below": [59, 60], "reph_kannada": [71, 38], "nna_kannada": [38, 39], "jha_kannada.below": [56, 57], "ki_kannada": [58, 59], "nna_kannada.base": [66, 67], "lla_kannada.below": [61, 62], "gha_kannada.below": [50, 51], "gha_kannada.base": [49, 50], "rVocalicMatra_kannada": [39, 40], "ailength_kannada": [43, 44], "nya_kannada.below": [69, 70], "na_kannada.below": [63, 64], "aaMatra_kannada": [42, 43], "ii_kannada": [54, 55], "kha_kannada.below": [57, 58], "cha_kannada.below": [46, 47], "ga_kannada.below": [48, 49], "rVocalic_kannada": [40, 41], "ni_kannada": [65, 66], "nni_kannada": [38, 39], "backslash": [44, 45], "ma_kannada.below": [62, 63], "nna_kannada.below": [67, 68], "hi_kannada": [53, 54], "nakaarapollu_kannada": [null, 38], "uu_kannada": [41, 42], "u_kannada": [41, 42], "rrVocalicMatra_kannada": [39, 40], "rrVocalic_kannada": [40, 41], "ha_kannada.below": [52, 53], "ra_kannada.below": [70, 71], "length_kannada": [60, 61]}}, "Class1Record": {"error": ["There are 133 changes, check manually!", ""]}}}, "2": {"ExtSubTable": {"ClassDef2": {"classDefs": {"gi_kannada": [51, 52], "nya_kannada.base": [68, 69], "j_nya_kannada.below": [55, 56], "nga_kannada.below": [64, 65], "colon": [47, 48], "ca_kannada.below": [45, 46], "la_kannada.below": [59, 60], "reph_kannada": [71, 38], "nna_kannada": [38, 39], "jha_kannada.below": [56, 57], "ki_kannada": [58, 59], "nna_kannada.base": [66, 67], "lla_kannada.below": [61, 62], "gha_kannada.below": [50, 51], "gha_kannada.base": [49, 50], "rVocalicMatra_kannada": [39, 40], "ailength_kannada": [43, 44], "nya_kannada.below": [69, 70], "na_kannada.below": [63, 64], "aaMatra_kannada": [42, 43], "ii_kannada": [54, 55], "kha_kannada.below": [57, 58], "cha_kannada.below": [46, 47], "ga_kannada.below": [48, 49], "rVocalic_kannada": [40, 41], "ni_kannada": [65, 66], "nni_kannada": [38, 39], "backslash": [44, 45], "ma_kannada.below": [62, 63], "nna_kannada.below": [67, 68], "hi_kannada": [53, 54], "nakaarapollu_kannada": [null, 38], "uu_kannada": [41, 42], "u_kannada": [41, 42], "rrVocalicMatra_kannada": [39, 40], "rrVocalic_kannada": [40, 41], "ha_kannada.below": [52, 53], "ra_kannada.below": [70, 71], "length_kannada": [60, 61]}}, "Class1Record": {"0": {"Class2Record": {"24": {"Value1": {"XAdvDevice": {"EndSize": [1823, 1830]}}}, "30": {"Value1": {"XAdvDevice": {"EndSize": [94, 97]}}}, "33": {"Value1": {"XAdvDevice": {"EndSize": [1522, 1527]}}}, "39": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [67, null], "DeltaFormat": [32768, null]}, "XAdvance": [110, 0]}}, "40": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 67], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 110]}}, "43": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2247, null], "DeltaFormat": [32768, null]}, "XAdvance": [48, 0]}}, "44": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2260], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 48]}}, "45": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [718, null], "DeltaFormat": [32768, null]}, "XAdvance": [26, 0]}}, "46": {"Value1": {"XAdvDevice": {"EndSize": [1122, 719]}, "XAdvance": [56, 26]}}, "47": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1123], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 56]}}, "50": {"Value1": {"XAdvDevice": {"StartSize": [6, null], "EndSize": [28, null], "DeltaFormat": [32768, null]}, "XAdvance": [64, 0]}}, "51": {"Value1": {"XAdvDevice": {"StartSize": [null, 6], "EndSize": [null, 29], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 64]}}, "57": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2530, null], "DeltaFormat": [32768, null]}, "XAdvance": [76, 0]}}, "58": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2550], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 76]}}, "61": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1821, null], "DeltaFormat": [32768, null]}, "XAdvance": [48, 0]}}, "62": {"Value1": {"XAdvDevice": {"EndSize": [1592, 1828]}}}, "63": {"Value1": {"XAdvDevice": {"EndSize": [1818, 1597]}, "XAdvance": [44, 48]}}, "64": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1825], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 44]}}, "70": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2253, null], "DeltaFormat": [32768, null]}, "XAdvance": [48, 0]}}, "71": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2266], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 48]}}, "74": {"Value1": {"XAdvDevice": {"EndSize": [1214, 1215]}}}, "78": {"Value1": {"XAdvDevice": {"EndSize": [1034, 1035]}}}, "79": {"Value1": {"XAdvDevice": {"EndSize": [1782, 1789]}}}, "80": {"Value1": {"XAdvDevice": {"EndSize": [1247, 1248]}}}, "83": {"Value1": {"XAdvDevice": {"EndSize": [1584, 1589]}}}, "89": {"Value1": {"XAdvDevice": {"EndSize": [1238, 1239]}}}, "90": {"Value1": {"XAdvDevice": {"EndSize": [1045, 1046]}}}}}, "1": {"Class2Record": {"1": {"Value1": {"XAdvDevice": {"EndSize": [1852, 1859]}}}, "2": {"Value1": {"XAdvDevice": {"EndSize": [55, 60]}}}, "3": {"Value1": {"XAdvDevice": {"EndSize": [2094, 2105]}}}, "4": {"Value1": {"XAdvDevice": {"EndSize": [2190, 2203]}}}, "5": {"Value1": {"XAdvDevice": {"EndSize": [2096, 2107]}}}, "6": {"Value1": {"XAdvDevice": {"EndSize": [2096, 2107]}}}, "9": {"Value1": {"XAdvDevice": {"EndSize": [78, 80]}}}, "10": {"Value1": {"XAdvDevice": {"EndSize": [99, 106]}}}, "11": {"Value1": {"XAdvDevice": {"EndSize": [2177, 2189]}}}, "12": {"Value1": {"XAdvDevice": {"EndSize": [2401, 2416]}}}, "13": {"Value1": {"XAdvDevice": {"EndSize": [2164, 2176]}}}, "14": {"Value1": {"XAdvDevice": {"EndSize": [70, 75]}}}, "15": {"Value1": {"XAdvDevice": {"EndSize": [1502, 1507]}}}, "16": {"Value1": {"XAdvDevice": {"EndSize": [1473, 1478]}}}, "17": {"Value1": {"XAdvDevice": {"EndSize": [1514, 1519]}}}, "18": {"Value1": {"XAdvDevice": {"EndSize": [1858, 1865]}}}, "19": {"Value1": {"XAdvDevice": {"EndSize": [789, 790]}}}, "20": {"Value1": {"XAdvDevice": {"EndSize": [1998, 2007]}}}, "21": {"Value1": {"XAdvDevice": {"EndSize": [2283, 2296]}}}, "22": {"Value1": {"XAdvDevice": {"EndSize": [1841, 1848]}}}, "23": {"Value1": {"XAdvDevice": {"EndSize": [1508, 1513]}}}, "24": {"Value1": {"XAdvDevice": {"EndSize": [1390, 1391]}}}, "25": {"Value1": {"XAdvDevice": {"EndSize": [73, 75]}}}, "26": {"Value1": {"XAdvDevice": {"EndSize": [1516, 1521]}}}, "27": {"Value1": {"XAdvDevice": {"EndSize": [1852, 1859]}}}, "28": {"Value1": {"XAdvDevice": {"EndSize": [2561, 2581]}}}, "29": {"Value1": {"XAdvDevice": {"EndSize": [601, 602]}}}, "30": {"Value1": {"XAdvDevice": {"EndSize": [796, 797]}}}, "31": {"Value1": {"XAdvDevice": {"EndSize": [2668, 2688]}}}, "32": {"Value1": {"XAdvDevice": {"EndSize": [147, 150]}}}, "33": {"Value1": {"XAdvDevice": {"EndSize": [1018, 1019]}}}, "34": {"Value1": {"XAdvDevice": {"EndSize": [2313, 2326]}}}, "35": {"Value1": {"XAdvDevice": {"EndSize": [2094, 2105]}}}, "36": {"Value1": {"XAdvDevice": {"EndSize": [192, 200]}}}, "37": {"Value1": {"XAdvDevice": {"EndSize": [1490, 1495]}}}, "38": {"Value1": {"XAdvDevice": {"EndSize": [1151, 1937]}, "XAdvance": [74, 68]}}, "39": {"Value1": {"XAdvDevice": {"EndSize": [1544, 1152]}, "XAdvance": [414, 74]}}, "40": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1549], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 414]}}, "43": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2696, null], "DeltaFormat": [32768, null]}, "XAdvance": [442, 0]}}, "44": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2716], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 442]}}, "45": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [2228, null], "DeltaFormat": [32768, null]}, "XAdvance": [490, 0]}}, "46": {"Value1": {"XAdvDevice": {"EndSize": [1539, 2241]}, "XAdvance": [512, 490]}}, "47": {"Value1": {"XAdvDevice": {"EndSize": [1005, 1544]}, "XAdvance": [68, 512]}}, "48": {"Value1": {"XAdvDevice": {"EndSize": [505, 1006]}, "XAdvance": [394, 68]}}, "49": {"Value1": {"XAdvDevice": {"EndSize": [55, 506], "StartSize": [6, 7]}, "XAdvance": [68, 394]}}, "50": {"Value1": {"XAdvDevice": {"EndSize": [2587, 60], "StartSize": [7, 6]}, "XAdvance": [516, 68]}}, "51": {"Value1": {"XAdvDevice": {"EndSize": [1719, 2607]}, "XAdvance": [98, 516]}}, "52": {"Value1": {"XAdvDevice": {"EndSize": [119, 1725], "StartSize": [6, 7]}, "XAdvance": [456, 98]}}, "53": {"Value1": {"XAdvDevice": {"EndSize": [1283, 127], "StartSize": [7, 6]}, "XAdvance": [58, 456]}}, "54": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 1284], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 58]}}, "55": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1934, null], "DeltaFormat": [32768, null]}, "XAdvance": [412, 0]}}, "56": {"Value1": {"XAdvDevice": {"EndSize": [799, 1941]}, "XAdvance": [672, 412]}}, "57": {"Value1": {"XAdvDevice": {"EndSize": [2354, 800]}, "XAdvance": [550, 672]}}, "58": {"Value1": {"XAdvDevice": {"EndSize": [2602, 2367]}, "XAdvance": [0, 550]}}, "59": {"Value1": {"XAdvDevice": {"EndSize": [1542, 2622]}, "XAdvance": [444, 0]}}, "60": {"Value1": {"XAdvDevice": {"EndSize": [1524, 1547]}, "XAdvance": [30, 444]}}, "61": {"Value1": {"XAdvDevice": {"EndSize": [2657, 1529]}, "XAdvance": [450, 30]}}, "62": {"Value1": {"XAdvDevice": {"EndSize": [1597, 2677]}, "XAdvance": [362, 450]}}, "63": {"Value1": {"XAdvDevice": {"EndSize": [1702, 1602]}, "XAdvance": [450, 362]}}, "64": {"Value1": {"XAdvDevice": {"EndSize": [2286, 1708]}, "XAdvance": [456, 450]}}, "65": {"Value1": {"XAdvDevice": {"EndSize": [1881, 2299]}, "XAdvance": [78, 456]}}, "66": {"Value1": {"XAdvDevice": {"EndSize": [1508, 1888]}, "XAdvance": [84, 78]}}, "67": {"Value1": {"XAdvDevice": {"EndSize": [2409, 1513]}, "XAdvance": [450, 84]}}, "68": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 2424], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 450]}}, "69": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [776, null], "DeltaFormat": [32768, null]}, "XAdvance": [600, 0]}}, "70": {"Value1": {"XAdvDevice": {"StartSize": [null, 7], "EndSize": [null, 777], "DeltaFormat": [null, 32768]}, "XAdvance": [0, 600]}}, "71": {"Value1": {"XAdvDevice": {"StartSize": [7, null], "EndSize": [1930, null], "DeltaFormat": [32768, null]}, "XAdvance": [68, 0]}}, "72": {"Value1": {"XAdvDevice": {"EndSize": [1676, 1681]}}}, "73": {"Value1": {"XAdvDevice": {"EndSize": [1447, 1448]}}}, "74": {"Value1": {"XAdvDevice": {"EndSize": [1933, 1940]}}}, "75": {"Value1": {"XAdvDevice": {"EndSize": [1726, 1732]}}}, "76": {"Value1": {"XAdvDevice": {"EndSize": [2288, 2301]}}}, "79": {"Value1": {"XAdvDevice": {"EndSize": [1286, 1287]}}}, "81": {"Value1": {"XAdvDevice": {"EndSize": [1523, 1528]}}}, "82": {"Value1": {"XAdvDevice": {"EndSize": [99, 106]}}}, "83": {"Value1": {"XAdvDevice": {"EndSize": [2568, 2588]}}}, "84": {"Value1": {"XAdvDevice": {"EndSize": [2341, 2354]}}}, "87": {"Value1": {"XAdvDevice": {"EndSize": [2164, 2176]}}}, "89": {"Value1": {"XAdvDevice": {"EndSize": [2263, 2276]}}}, "90": {"Value1": {"XAdvDevice": {"EndSize": [1932, 1939]}}}}}}}}}}, "53": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"error": ["There are 251 changes, check manually!", ""]}}, "MarkArray": {"MarkRecord": {"0": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "1": {"MarkAnchor": {"YDeviceTable": {"EndSize": [2489, 2506]}, "XDeviceTable": {"EndSize": [2490, 2507]}}}, "2": {"MarkAnchor": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [2541, 2561]}}}, "3": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "4": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}, "5": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "6": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "7": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "8": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "10": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}, "12": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}, "13": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}}}}}}, "54": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"error": ["There are 217 changes, check manually!", ""]}}}}}, "55": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"0": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1568, 1573]}}, "1": {"XDeviceTable": {"EndSize": [1987, 1996]}}, "2": {"YDeviceTable": {"EndSize": [2489, 2506]}, "XDeviceTable": {"EndSize": [1527, 1532]}}}}, "1": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1346, 1347]}}, "1": {"XDeviceTable": {"EndSize": [1472, 1477]}}, "2": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [849, 850]}}}}, "2": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1462, 1464]}}, "1": {"XDeviceTable": {"EndSize": [1472, 1477]}}, "2": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [1070, 1071]}}}}, "3": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1401, 1402]}}, "1": {"XDeviceTable": {"EndSize": [1472, 1477]}}, "2": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [496, 497]}}}}, "4": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1921, 1928]}}, "1": {"YDeviceTable": {"EndSize": [118, 121]}, "XDeviceTable": {"EndSize": [2188, 2200]}}, "2": {"YDeviceTable": {"EndSize": [2489, 2506]}, "XDeviceTable": {"EndSize": [622, 623]}}}}, "5": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1041, 1042]}}, "2": {"YDeviceTable": {"EndSize": [2489, 2506]}, "XDeviceTable": {"EndSize": [872, 873]}}}}, "6": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1105, 1106]}}, "1": {"XDeviceTable": {"EndSize": [2697, 2717]}}, "2": {"YDeviceTable": {"EndSize": [2488, 2505]}}}}, "7": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1340, 1341]}}, "1": {"XDeviceTable": {"EndSize": [1341, 1342]}}, "2": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [851, 852]}}}}, "8": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1340, 1341]}}, "1": {"XDeviceTable": {"EndSize": [1341, 1342]}}, "2": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [834, 835]}}}}, "9": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [1771, 1778]}}, "2": {"YDeviceTable": {"EndSize": [552, 553]}, "XDeviceTable": {"EndSize": [1551, 1556]}}}}, "10": {"BaseAnchor": {"0": {"XDeviceTable": {"EndSize": [2123, 2134]}}, "1": {"YDeviceTable": {"EndSize": [102, 105]}, "XDeviceTable": {"EndSize": [2189, 2201]}}, "2": {"YDeviceTable": {"EndSize": [2459, 2476]}, "XDeviceTable": {"EndSize": [1961, 1968]}}}}}}, "MarkArray": {"MarkRecord": {"0": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "2": {"MarkAnchor": {"YDeviceTable": {"EndSize": [2489, 2506]}, "XDeviceTable": {"EndSize": [2490, 2507]}}}, "5": {"MarkAnchor": {"YDeviceTable": {"EndSize": [2491, 2508]}, "XDeviceTable": {"EndSize": [2541, 2561]}}}, "6": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "7": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}, "8": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "9": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "10": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "11": {"MarkAnchor": {"YDeviceTable": {"EndSize": [450, 451]}}}, "13": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}, "15": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}, "16": {"MarkAnchor": {"YDeviceTable": {"EndSize": [1020, 1021]}}}}}}}}}}}}, "hmtx": {"metrics": {"anusvaraaboveright_kannada": {"0": [null, 289], "1": [null, 24]}, "nakaarapollu_kannada": {"0": [null, 583], "1": [null, 45]}}}, "post": {"extraNames": {"error": ["There are 276 changes, check manually!", ""]}}, "hhea": {"numberOfHMetrics": [415, 417]}, "GDEF": {"table": {"VarStore": {"VarData": {"2": {"Item": {"9": {"0": [6, 5]}, "10": {"0": [10, 6]}, "11": {"0": [14, 10]}, "12": {"0": [18, 14]}, "13": {"0": [20, 18]}, "14": {"0": [24, 20]}, "15": {"0": [30, 24]}, "16": {"0": [34, 30]}, "17": {"0": [40, 34]}, "18": {"0": [48, 40]}, "19": {"0": [64, 48]}, "20": {"0": [84, 64]}, "21": {"0": [null, 84]}}, "ItemCount": [21, 22]}, "4": {"Item": {"58": {"0": [4, 3], "1": [-10, -5]}, "59": {"1": [-4, -10]}, "60": {"1": [4, -4]}, "61": {"1": [8, 4]}, "62": {"0": [6, 4], "1": [-2, 8]}, "63": {"1": [14, -2]}, "64": {"0": [8, 6], "1": [8, 14]}, "65": {"0": [10, 8], "1": [-12, 8]}, "66": {"1": [-10, -12]}, "67": {"1": [-4, -10]}, "68": {"1": [2, -4]}, "69": {"1": [6, 2]}, "70": {"1": [10, 6]}, "71": {"1": [28, 10]}, "72": {"1": [30, 28]}, "73": {"0": [14, 10], "1": [-10, 30]}, "74": {"1": [10, -10]}, "75": {"0": [16, 14], "1": [-10, 10]}, "76": {"1": [-4, -10]}, "77": {"1": [6, -4]}, "78": {"1": [10, 6]}, "79": {"0": [20, 16], "1": [-10, 10]}, "80": {"0": [24, 20], "1": [10, -10]}, "81": {"0": [38, 24], "1": [-2, 10]}, "82": {"0": [48, 38], "1": [-10, -2]}, "83": {"0": [84, 48], "1": [74, -10]}, "84": {"0": [null, 84], "1": [null, 74]}}, "ItemCount": [84, 85]}, "5": {"Item": {"67": {"1": [-2, -5]}, "68": {"1": [2, -2]}, "69": {"0": [-10, -12], "1": [-24, 2]}, "70": {"1": [-10, -24]}, "71": {"1": [-6, -18]}, "72": {"1": [2, -10]}, "73": {"1": [10, -6]}, "74": {"1": [14, 2]}, "75": {"1": [20, 10]}, "76": {"1": [24, 14]}, "77": {"1": [40, 20]}, "78": {"0": [-9, -10], "1": [3, 24]}, "79": {"0": [-8, -10], "1": [-8, 40]}, "80": {"0": [-8, -9], "1": [-6, 3]}, "81": {"1": [-4, -8]}, "82": {"1": [6, -6]}, "83": {"0": [-7, -8], "1": [1, -4]}, "84": {"0": [-6, -8], "1": [-20, 6]}, "85": {"0": [-6, -7], "1": [-10, 1]}, "86": {"0": [-6, -7], "1": [4, 8]}, "87": {"1": [8, -20]}, "88": {"1": [10, -10]}, "89": {"0": [-4, -6], "1": [-24, 4]}, "90": {"0": [-4, -6], "1": [-14, 8]}, "91": {"0": [-4, -6], "1": [-10, 10]}, "92": {"1": [-8, -24]}, "93": {"1": [-4, -14]}, "94": {"1": [4, -10]}, "95": {"1": [6, -8]}, "96": {"1": [10, -4]}, "97": {"1": [16, 4]}, "98": {"1": [24, 6]}, "99": {"0": [-2, -4], "1": [-22, 10]}, "100": {"0": [-2, -4], "1": [8, 16]}, "101": {"0": [-2, -4], "1": [36, 24]}, "102": {"0": [1, -2], "1": [-1, -22]}, "103": {"0": [2, -2], "1": [-24, 8]}, "104": {"0": [3, -2], "1": [1, 36]}, "105": {"0": [4, 1], "1": [-20, -1]}, "106": {"0": [4, 2], "1": [-10, -24]}, "107": {"0": [4, 3], "1": [-6, 1]}, "108": {"1": [-4, -20]}, "109": {"1": [4, -10]}, "110": {"1": [8, -6]}, "111": {"0": [6, 4]}, "112": {"0": [6, 4], "1": [6, 4]}, "113": {"0": [6, 4], "1": [10, 8]}, "114": {"1": [74, -4]}, "115": {"0": [8, 6], "1": [-14, 6]}, "116": {"0": [8, 6], "1": [-10, 10]}, "117": {"0": [8, 6], "1": [-2, 74]}, "118": {"0": [10, 8], "1": [-10, -14]}, "119": {"0": [10, 8], "1": [-4, -10]}, "120": {"0": [10, 8], "1": [4, -2]}, "121": {"1": [6, -10]}, "122": {"1": [14, -4]}, "123": {"1": [16, 4]}, "124": {"1": [20, 6]}, "125": {"0": [12, 10], "1": [-10, 14]}, "126": {"0": [14, 10], "1": [-10, 16]}, "127": {"0": [14, 10], "1": [-4, 20]}, "128": {"0": [14, 12], "1": [-2, -10]}, "129": {"1": [6, -10]}, "130": {"1": [14, -4]}, "131": {"1": [20, -2]}, "132": {"0": [16, 14]}, "133": {"0": [18, 14], "1": [-6, 14]}, "134": {"0": [18, 14], "1": [4, 20]}, "135": {"0": [18, 16], "1": [10, 6]}, "136": {"0": [20, 18], "1": [10, -6]}, "137": {"0": [20, 18], "1": [34, 4]}, "138": {"0": [22, 18], "1": [2, 10]}, "139": {"0": [24, 20]}, "140": {"0": [24, 20], "1": [12, 34]}, "141": {"0": [24, 22], "1": [14, 2]}, "142": {"0": [30, 24], "1": [-7, 10]}, "143": {"0": [30, 24], "1": [20, 12]}, "144": {"0": [30, 24], "1": [48, 14]}, "145": {"0": [32, 30], "1": [2, -7]}, "146": {"0": [42, 30], "1": [2, 20]}, "147": {"0": [42, 30], "1": [14, 48]}, "148": {"0": [null, 32], "1": [null, 2]}, "149": {"0": [null, 42], "1": [null, 2]}, "150": {"0": [null, 42], "1": [null, 14]}}, "ItemCount": [148, 151]}, "6": {"Item": {"error": ["There are 206 changes, check manually!", ""]}, "ItemCount": [212, 220]}, "7": {"Item": {"error": ["There are 2287 changes, check manually!", ""]}, "ItemCount": [2702, 2722]}}}, "GlyphClassDef": {"classDefs": {"anusvaraaboveright_kannada": [null, 3]}}, "MarkGlyphSetsDef": {"Coverage": {"4": {"glyphs": {"7": ["uni1CF2", "anusvaraaboveright_kannada"], "8": [null, "uni1CF2"]}}}}}}, "cmap": {"0x0CDD": [null, "nakaarapollu_kannada"], "0x0CF3": [null, "anusvaraaboveright_kannada"]}, "head": {"checkSumAdjustment": [2961337561, 2699667252], "modified": [3762754557, 3771826699]}, "glyf": {"glyphOrder": {"error": ["There are 324 changes, check manually!", ""]}, "glyphs": {"error": ["There are 410 changes, check manually!", ""]}}, "gvar": {"variations": {"data": {"error": ["There are 412 changes, check manually!", ""]}}, "offsetToGlyphVariationData": [1698, 1706], "offsetToSharedTuples": [1692, 1700], "glyphCount": [417, 419]}};</script><div id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-wght-800_0" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೝ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NAKAARA POLLU<br>
+            unicode: U+0CDD
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೳ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT<br>
+            unicode: U+0CF3
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-800_0" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-800_0" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>

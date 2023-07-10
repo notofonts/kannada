@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansKannada[wdth,wght].ttf);
+    font-family: "old font";
+    font-weight: 100 900;
+    font-stretch: 62% 100%;
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansKannada[wdth,wght].ttf);
+    font-family: "new font";
+    font-weight: 100 900;
+    font-stretch: 62% 100%;
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-900_0_wdth-100_0{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 900.0;
+    font-stretch: 100.0%;
+    font-style: normal;
+    font-variation-settings: "wght" 900.0, "wdth" 100.0;
+}
+	  
+
+	  
+	    .new-wght-900_0_wdth-100_0{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 900.0;
+    font-stretch: 100.0%;
+    font-style: normal;
+    font-variation-settings: "wght" 900.0, "wdth" 100.0;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"gvar": {"offsetToSharedTuples": [2644, 2652], "offsetToGlyphVariationData": [2668, 2676], "glyphCount": [655, 657], "variations": {"data": {"error": ["There are 649 changes, check manually!", ""]}}}, "post": {"extraNames": {"error": ["There are 557 changes, check manually!", ""]}}, "cmap": {"0x0CDD": [null, "nakaarapolluknda"], "0x0CF3": [null, "anusvaraaboverightknda"]}, "head": {"modified": [3762753256, 3771824603], "checkSumAdjustment": [3924906360, 1950585512]}, "hhea": {"numberOfHMetrics": [655, 657]}, "HVAR": {"table": {"AdvWidthMap": {"mapping": {"error": ["There are 211 changes, check manually!", ""]}}, "VarStore": {"VarData": {"6": {"ItemCount": [258, 260], "Item": {"147": {"1": [48, 34], "3": [-83, -124], "4": [-9, 4]}, "148": {"0": [-32, -33], "1": [12, 48], "2": [29, 71], "3": [-41, -83], "4": [-8, -9], "5": [-1, -13]}, "149": {"1": [25, 12], "2": [38, 29], "3": [-81, -41], "4": [-6, -8], "5": [-10, -1]}, "150": {"1": [28, 25], "2": [46, 38], "3": [-14, -81], "4": [-8, -6], "5": [-15, -10]}, "151": {"1": [51, 28], "2": [63, 46], "3": [-69, -14], "4": [-3, -8], "5": [-13, -15]}, "152": {"0": [-31, -32], "1": [-6, 51], "2": [9, 63], "3": [-21, -69], "4": [-5, -3], "5": [8, -13]}, "153": {"1": [4, -6], "3": [-70, -21], "4": [22, -5], "5": [3, 8]}, "154": {"1": [17, 4], "2": [31, 9], "3": [-4, -70], "4": [4, 22], "5": [-11, 3]}, "155": {"1": [24, 17], "2": [48, 31], "3": [-85, -4], "4": [10, 4], "5": [-7, -11]}, "156": {"1": [37, 24], "2": [63, 48], "3": [-79, -85], "4": [-7, 10], "5": [-22, -7]}, "157": {"1": [61, 37], "2": [104, 63], "3": [-78, -79], "4": [9, -7], "5": [-11, -22]}, "158": {"0": [-30, -31], "1": [13, 61], "2": [27, 104], "3": [10, -78], "4": [-9, 9], "5": [-13, -11]}, "159": {"2": [33, 27], "3": [-93, 10], "4": [2, -9], "5": [5, -13]}, "160": {"1": [14, 13], "2": [29, 33], "3": [-80, -93], "4": [16, 2], "5": [12, 5]}, "161": {"1": [15, 14], "2": [31, 29], "3": [-15, -80], "5": [1, 12]}, "162": {"1": [17, 15], "3": [-5, -15], "4": [2, 16], "5": [-10, 1]}, "163": {"1": [22, 17], "2": [38, 31], "3": [-12, -5], "4": [4, 2], "5": [1, -10]}, "164": {"2": [59, 38], "3": [-78, -12], "4": [-29, 4], "5": [-29, 1]}, "165": {"0": [-29, -30], "1": [-2, 22], "2": [1, 59], "3": [-80, -78], "4": [2, -29], "5": [7, -29]}, "166": {"1": [11, -2], "2": [37, 1], "3": [-72, -80], "4": [-6, 2], "5": [11, 7]}, "167": {"1": [13, 11], "2": [40, 37], "3": [-85, -72], "4": [-24, -6], "5": [1, 11]}, "168": {"1": [16, 13], "2": [42, 40], "3": [-92, -85], "4": [-13, -24], "5": [-8, 1]}, "169": {"1": [19, 16], "2": [33, 42], "3": [-2, -92], "4": [-2, -13], "5": [-15, -8]}, "170": {"1": [30, 19], "2": [48, 33], "3": [-60, -2], "4": [-11, -2], "5": [-23, -15]}, "171": {"0": [-28, -29], "1": [5, 30], "2": [29, 48], "3": [-96, -60], "4": [1, -11], "5": [16, -23]}, "172": {"1": [15, 5], "3": [-79, -96], "4": [-3, 1], "5": [1, 16]}, "173": {"2": [32, 29], "3": [-4, -79], "4": [3, -3], "5": [-11, 1]}, "174": {"1": [16, 15], "2": [43, 32], "3": [-89, -4], "4": [-16, 3], "5": [-7, -11]}, "175": {"1": [17, 16], "2": [46, 43], "3": [-78, -89], "4": [-6, -16]}, "176": {"4": [23, -6]}, "177": {"1": [18, 17], "2": [29, 46], "3": [3, -78], "4": [-7, 23], "5": [-18, -7]}, "178": {"1": [20, 18], "2": [34, 29], "3": [-2, 3], "4": [-2, -7], "5": [-13, -18]}, "179": {"1": [24, 20], "2": [46, 34], "3": [-92, -2], "4": [-6, -2], "5": [-11, -13]}, "180": {"1": [26, 24], "2": [42, 46], "3": [-28, -92], "4": [-7, -6], "5": [-19, -11]}, "181": {"2": [50, 42], "3": [-85, -28], "4": [-1, -7], "5": [-5, -19]}, "182": {"0": [-27, -28], "1": [-9, 26], "2": [16, 50], "4": [-3, -1], "5": [11, -5]}, "183": {"1": [6, -9], "2": [22, 16], "3": [-46, -85], "4": [-5, -3], "5": [3, 11]}, "184": {"1": [20, 6], "2": [43, 22], "3": [-17, -46], "4": [9, -5], "5": [-2, 3]}, "185": {"1": [21, 20], "2": [34, 43], "3": [3, -17], "4": [-8, 9], "5": [-23, -2]}, "186": {"1": [22, 21], "2": [61, 34], "3": [-87, 3], "4": [-24, -8], "5": [-19, -23]}, "187": {"1": [25, 22], "2": [29, 61], "3": [-3, -87], "4": [-6, -24], "5": [-8, -19]}, "188": {"1": [26, 25], "2": [41, 29], "3": [-91, -3], "4": [-3, -6], "5": [-6, -8]}, "189": {"1": [41, 26], "2": [65, 41], "3": [-53, -91], "4": [9, -3], "5": [-1, -6]}, "190": {"1": [51, 41], "2": [77, 65], "3": [-78, -53], "4": [-3, 9], "5": [-38, -1]}, "191": {"0": [-26, -27], "1": [-2, 51], "2": [8, 77], "3": [-124, -78], "4": [-11, -3], "5": [16, -38]}, "192": {"1": [14, -2], "2": [24, 8], "3": [-62, -124], "4": [-7, -11], "5": [4, 16]}, "193": {"2": [32, 24], "3": [-38, -62], "4": [-19, -7], "5": [-12, 4]}, "194": {"1": [15, 14], "2": [36, 32], "3": [-77, -38], "4": [6, -19], "5": [-3, -12]}, "195": {"1": [27, 15], "2": [4, 36], "3": [-42, -77], "4": [8, 6], "5": [31, -3]}, "196": {"0": [-25, -26], "1": [19, 27], "2": [33, 4], "3": [-78, -42], "4": [-4, 8], "5": [-2, 31]}, "197": {"1": [23, 19], "2": [43, 33], "4": [-1, -4], "5": [-3, -2]}, "198": {"0": [-24, -25], "1": [-20, 23], "2": [-15, 43], "3": [-18, -78], "4": [12, -1], "5": [1, -3]}, "199": {"0": [-24, -25], "1": [-2, 46], "2": [10, 68], "3": [-13, -54], "4": [-10, 17], "5": [3, 8]}, "200": {"1": [15, -20], "2": [31, -15], "3": [-75, -18], "4": [-10, 12], "5": [-2, 1]}, "201": {"1": [21, -2], "2": [35, 10], "3": [1, -13], "4": [-1, -10], "5": [-15, 3]}, "202": {"0": [-23, -24], "1": [41, 15], "2": [72, 31], "3": [-17, -75], "4": [-1, -10], "5": [-12, -2]}, "203": {"0": [-22, -24], "1": [64, 21], "2": [96, 35], "3": [-58, 1], "4": [1, -1], "5": [-19, -15]}, "204": {"0": [-21, -23], "1": [-2, 41], "2": [10, 72], "3": [-13, -17], "4": [-11, -1], "5": [3, -12]}, "205": {"0": [-21, -22], "1": [2, 64], "2": [46, 96], "3": [-19, -58], "5": [16, -19]}, "206": {"1": [11, -2], "2": [34, 10], "3": [-80, -13], "4": [-15, -11], "5": [-2, 3]}, "207": {"1": [16, 2], "2": [33, 46], "4": [5, 1], "5": [5, 16]}, "208": {"1": [28, 11], "2": [97, 34], "3": [-87, -80], "4": [-19, -15], "5": [-24, -2]}, "209": {"1": [88, 16], "2": [78, 33], "3": [-25, -19], "4": [-1, 5], "5": [-30, 5]}, "210": {"0": [-20, -21], "1": [15, 28], "2": [29, 97], "3": [-40, -87], "4": [2, -19], "5": [5, -24]}, "211": {"0": [-20, -21], "1": [37, 88], "2": [63, 78], "3": [-46, -25], "4": [13, -1], "5": [-23, -30]}, "212": {"0": [-19, -20], "1": [3, 15], "2": [23, 29], "3": [-81, -40], "4": [-22, 2], "5": [28, 5]}, "213": {"0": [-19, -20], "1": [12, 37], "2": [26, 63], "3": [-37, -46], "4": [1, 13], "5": [13, -23]}, "214": {"0": [-18, -19], "1": [4, 3], "2": [13, 23], "3": [-38, -81], "4": [-1, -22], "5": [18, 28]}, "215": {"0": [-18, -19], "1": [25, 12], "2": [45, 26], "3": [-48, -37], "4": [-10, 1], "5": [-15, 13]}, "216": {"1": [40, 4], "2": [55, 13], "3": [-34, -38], "4": [-12, -1], "5": [-11, 18]}, "217": {"1": [41, 25], "2": [60, 45], "3": [-39, -48], "4": [-18, -10], "5": [-9, -15]}, "218": {"0": [-17, -18], "1": [8, 40], "2": [31, 55], "3": [-86, -34], "4": [-27, -12], "5": [24, -11]}, "219": {"0": [-17, -18], "1": [42, 41], "2": [73, 60], "3": [-9, -39], "4": [-21, -18], "5": [2, -9]}, "220": {"0": [-16, -17], "1": [4, 8], "2": [11, 31], "3": [-20, -86], "4": [9, -27], "5": [3, 24]}, "221": {"0": [-16, -17], "1": [22, 42], "2": [34, 73], "3": [-74, -9], "4": [-2, -21], "5": [-4, 2]}, "222": {"1": [41, 4], "2": [45, 11], "3": [11, -20], "4": [-7, 9], "5": [-14, 3]}, "223": {"0": [-15, -16], "1": [55, 22], "2": [76, 34], "3": [-54, -74], "4": [-16, -2], "5": [-31, -4]}, "224": {"0": [-14, -16], "1": [15, 41], "2": [16, 45], "3": [-73, 11], "4": [3, -7], "5": [3, -14]}, "225": {"0": [-14, -15], "1": [52, 55], "2": [81, 76], "3": [-45, -54], "4": [-10, -16], "5": [-25, -31]}, "226": {"0": [-13, -14], "1": [1, 15], "2": [26, 16], "3": [-13, -73], "4": [-3, 3], "5": [-10, 3]}, "227": {"0": [-13, -14], "1": [4, 52], "2": [10, 81], "3": [-19, -45], "4": [8, -10], "5": [4, -25]}, "228": {"1": [6, 1], "2": [-10, 26], "5": [4, -10]}, "229": {"1": [27, 4], "2": [57, 10], "3": [-31, -19], "4": [-15, 8], "5": [-17, 4]}, "230": {"0": [-12, -13], "1": [-15, 6], "2": [-11, -10], "3": [-12, -13], "4": [4, -3], "5": [-9, 4]}, "231": {"0": [-11, -13], "1": [22, 27], "2": [33, 57], "3": [-25, -31], "4": [-17, -15], "5": [15, -17]}, "232": {"0": [-11, -12], "1": [44, -15], "2": [47, -11], "3": [53, -12], "4": [-46, 4], "5": [-27, -9]}, "233": {"0": [-10, -11], "1": [-5, 22], "2": [-31, 33], "3": [-19, -25], "4": [4, -17], "5": [20, 15]}, "234": {"0": [-9, -11], "1": [79, 44], "2": [80, 47], "3": [-37, 53], "4": [11, -46], "5": [-5, -27]}, "235": {"0": [-8, -10], "1": [36, -5], "2": [46, -31], "3": [-67, -19], "4": [-12, 4], "5": [12, 20]}, "236": {"0": [-7, -9], "1": [-5, 79], "2": [-3, 80], "3": [-64, -37], "4": [-4, 11], "5": [17, -5]}, "237": {"0": [-6, -8], "1": [-4, 36], "2": [-29, 46], "3": [-19, -67], "4": [2, -12], "5": [15, 12]}, "238": {"0": [-6, -7], "1": [-1, -5], "2": [-26, -3], "3": [-19, -64], "4": [2, -4], "5": [12, 17]}, "239": {"1": [13, -4], "2": [28, -29], "3": [-79, -19], "4": [-31, 2], "5": [10, 15]}, "240": {"0": [-5, -6], "1": [-26, -1], "2": [-49, -26], "3": [-22, -19], "4": [-6, 2], "5": [7, 12]}, "241": {"0": [-5, -6], "1": [-19, 13], "2": [-15, 28], "3": [-15, -79], "4": [-5, -31], "5": [6, 10]}, "242": {"1": [98, -26], "2": [101, -49], "3": [-53, -22], "4": [5, -6], "5": [-29, 7]}, "243": {"0": [-4, -5], "1": [-28, -19], "2": [-48, -15], "3": [-19, -15], "4": [-2, -5], "5": [8, 6]}, "244": {"0": [-2, -5], "1": [13, 98], "2": [26, 101], "3": [-14, -53], "4": [-2, 5], "5": [4, -29]}, "245": {"0": [1, -4], "1": [8, -28], "2": [12, -48], "3": [9, -19], "4": [-1, -2], "5": [-8, 8]}, "246": {"0": [1, -2], "2": [17, 26], "3": [9, -14], "4": [-1, -2], "5": [-13, 4]}, "247": {"1": [47, 8], "2": [75, 12], "3": [-24, 9], "4": [-17, -1], "5": [-21, -8]}, "248": {"1": [52, 13], "2": [75, 17], "3": [-34, 9], "4": [-5, -1], "5": [-14, -13]}, "249": {"0": [3, 1], "1": [-26, 47], "2": [-36, 75], "3": [-21, -24], "4": [-6, -17], "5": [2, -21]}, "250": {"0": [3, 1], "1": [1, 52], "2": [12, 75], "3": [-20, -34], "4": [-23, -5], "5": [1, -14]}, "251": {"0": [4, 3], "1": [-32, -26], "2": [-40, -36], "5": [7, 2]}, "252": {"0": [6, 3], "1": [-33, 1], "2": [-42, 12], "3": [-21, -20], "4": [-6, -23], "5": [7, 1]}, "253": {"0": [6, 4], "1": [-16, -32], "2": [-22, -40], "3": [-8, -21], "5": [8, 7]}, "254": {"0": [7, 6], "1": [-7, -33], "2": [-9, -42], "3": [-7, -21], "4": [-12, -6], "5": [-2, 7]}, "255": {"0": [8, 6], "1": [2, -16], "2": [13, -22], "3": [-18, -8], "4": [-25, -6], "5": [-1, 8]}, "256": {"0": [10, 7], "1": [-5, -7], "2": [-10, -9], "3": [10, -7], "4": [-2, -12], "5": [3, -2]}, "257": {"0": [18, 8], "1": [30, 2], "2": [34, 13], "3": [-13, -18], "4": [-14, -25], "5": [-3, -1]}, "258": {"0": [null, 10], "1": [null, -5], "2": [null, -10], "3": [null, 10], "4": [null, -2], "5": [null, 3]}, "259": {"0": [null, 18], "1": [null, 30], "2": [null, 34], "3": [null, -13], "4": [null, -14], "5": [null, -3]}}}, "10": {"ItemCount": [57, 58], "Item": {"21": {"0": [-130, -150], "4": [9, 29], "5": [-14, 6]}, "22": {"0": [-145, -130], "1": [-51, -52], "2": [36, 59], "3": [55, 105], "4": [3, 9], "5": [21, -14]}, "23": {"0": [-130, -145], "2": [43, 36], "3": [60, 55], "4": [1, 3], "5": [10, 21]}, "24": {"0": [-182, -130], "2": [57, 43], "3": [101, 60], "4": [8, 1], "5": [9, 10]}, "25": {"0": [-185, -182], "2": [71, 57], "3": [121, 101], "4": [10, 8], "5": [-6, 9]}, "26": {"5": [3, -6]}, "27": {"0": [-172, -185], "1": [-50, -51], "2": [47, 71], "3": [88, 121], "4": [-18, 10], "5": [14, 3]}, "28": {"0": [-147, -172], "2": [62, 47], "3": [123, 88], "4": [7, -18], "5": [-12, 14]}, "29": {"0": [-196, -147], "1": [-49, -50], "2": [49, 62], "3": [96, 123], "4": [-1, 7], "5": [42, -12]}, "30": {"0": [-147, -196], "2": [57, 49], "3": [95, 96], "4": [-4, -1], "5": [-2, 42]}, "31": {"0": [-170, -147], "3": [99, 95], "4": [6, -4], "5": [8, -2]}, "32": {"0": [-132, -170], "1": [-48, -49], "2": [20, 57], "3": [14, 99], "4": [28, 6], "5": [39, 8]}, "33": {"0": [-130, -132], "2": [63, 20], "3": [109, 14], "4": [4, 28], "5": [-18, 39]}, "34": {"4": [5, 4]}, "35": {"5": [-13, -18]}, "36": {"0": [-139, -130], "1": [-47, -48], "2": [25, 63], "3": [40, 109], "4": [24, 5], "5": [11, -13]}, "37": {"0": [-195, -139], "2": [60, 25], "3": [113, 40], "4": [4, 24], "5": [4, 11]}, "38": {"0": [-326, -195], "1": [-46, -47], "2": [37, 60], "3": [111, 113], "4": [-14, 4], "5": [11, 4]}, "39": {"0": [-317, -326], "4": [-18, -14], "5": [14, 11]}, "40": {"0": [-149, -317], "2": [53, 37], "3": [94, 111], "4": [-1, -18], "5": [2, 14]}, "41": {"0": [-170, -149], "2": [59, 53], "3": [99, 94], "4": [3, -1]}, "42": {"3": [101, 99], "4": [4, 3], "5": [8, 2]}, "43": {"0": [-194, -170], "3": [112, 101], "4": [3, 4], "5": [4, 8]}, "44": {"0": [-170, -194], "1": [-44, -46], "3": [101, 112], "4": [2, 3], "5": [8, 4]}, "45": {"0": [-186, -170], "2": [69, 59], "3": [124, 101], "4": [5, 2], "5": [7, 8]}, "46": {"0": [-323, -186], "1": [-43, -44], "2": [37, 69], "3": [111, 124], "4": [-18, 5], "5": [18, 7]}, "47": {"0": [-131, -323], "2": [69, 37], "3": [100, 111], "4": [-4, -18], "5": [-17, 18]}, "48": {"0": [-186, -131], "1": [-42, -43], "2": [55, 69], "3": [98, 100], "4": [4, -4], "5": [1, -17]}, "49": {"5": [5, 1]}, "50": {"0": [-134, -186], "1": [-41, -42], "2": [38, 55], "3": [62, 98], "4": [-11, 4], "5": [-7, 5]}, "51": {"0": [-156, -134], "1": [-39, -41], "2": [41, 38], "3": [73, 62], "4": [-3, -11], "5": [-2, -7]}, "52": {"2": [49, 41], "3": [89, 73], "5": [1, -2]}, "53": {"0": [-133, -156], "1": [-37, -39], "2": [64, 49], "3": [119, 89], "4": [-7, -3], "5": [10, 1]}, "54": {"0": [-144, -133], "1": [-35, -37], "2": [-5, 64], "3": [16, 119], "4": [-3, -7], "5": [24, 10]}, "55": {"0": [-132, -144], "2": [59, -5], "3": [118, 16], "4": [-10, -3], "5": [9, 24]}, "56": {"0": [-148, -132], "1": [-21, -35], "2": [31, 59], "3": [57, 118], "4": [5, -10], "5": [8, 9]}, "57": {"0": [null, -148], "1": [null, -21], "2": [null, 31], "3": [null, 57], "4": [null, 5], "5": [null, 8]}}}}}}}, "hmtx": {"metrics": {"nakaarapolluknda": {"0": [null, 599], "1": [null, 48]}, "anusvaraaboverightknda": {"0": [null, 312], "1": [null, 27]}}}, "GDEF": {"table": {"GlyphClassDef": {"classDefs": {"anusvaraaboverightknda": [null, 3]}}, "MarkGlyphSetsDef": {"Coverage": {"3": {"glyphs": {"8": ["kasubscriptknda", "anusvaraaboverightknda"], "9": ["khasubscriptknda", "kasubscriptknda"], "10": ["gasubscriptknda", "khasubscriptknda"], "11": ["ghasubscriptknda", "gasubscriptknda"], "12": ["ngasubscriptknda", "ghasubscriptknda"], "13": ["casubscriptknda", "ngasubscriptknda"], "14": ["chasubscriptknda", "casubscriptknda"], "15": ["jasubscriptknda", "chasubscriptknda"], "16": ["jhasubscriptknda", "jasubscriptknda"], "17": ["nyasubscriptknda", "jhasubscriptknda"], "18": ["ttasubscriptknda", "nyasubscriptknda"], "19": ["tthasubscriptknda", "ttasubscriptknda"], "20": ["ddasubscriptknda", "tthasubscriptknda"], "21": ["ddhasubscriptknda", "ddasubscriptknda"], "22": ["nnasubscriptknda", "ddhasubscriptknda"], "23": ["tasubscriptknda", "nnasubscriptknda"], "24": ["thasubscriptknda", "tasubscriptknda"], "25": ["dasubscriptknda", "thasubscriptknda"], "26": ["dhasubscriptknda", "dasubscriptknda"], "27": ["nasubscriptknda", "dhasubscriptknda"], "28": ["pasubscriptknda", "nasubscriptknda"], "29": ["phasubscriptknda", "pasubscriptknda"], "30": ["basubscriptknda", "phasubscriptknda"], "31": ["bhasubscriptknda", "basubscriptknda"], "32": ["masubscriptknda", "bhasubscriptknda"], "33": ["yasubscriptknda", "masubscriptknda"], "34": ["rasubscriptknda", "yasubscriptknda"], "35": ["rrasubscriptknda", "rasubscriptknda"], "36": ["lasubscriptknda", "rrasubscriptknda"], "37": ["llasubscriptknda", "lasubscriptknda"], "38": ["vasubscriptknda", "llasubscriptknda"], "39": ["shasubscriptknda", "vasubscriptknda"], "40": ["ssasubscriptknda", "shasubscriptknda"], "41": ["sasubscriptknda", "ssasubscriptknda"], "42": ["hasubscriptknda", "sasubscriptknda"], "43": ["fasubscriptknda", "hasubscriptknda"], "44": ["januktasubscriptknda", "fasubscriptknda"], "45": ["phanuktasubscriptknda", "januktasubscriptknda"], "46": ["nnasubscriptUIknda", "phanuktasubscriptknda"], "47": ["nasubscriptUIknda", "nnasubscriptUIknda"], "48": ["basubscriptUIknda", "nasubscriptUIknda"], "49": ["bhasubscriptUIknda", "basubscriptUIknda"], "50": ["ssasubscriptUIknda", "bhasubscriptUIknda"], "51": ["sasubscriptUIknda", "ssasubscriptUIknda"], "52": ["baviramaknda", "sasubscriptUIknda"], "53": ["aavowelsignaltknda", "baviramaknda"], "54": ["evowelsignaltknda", "aavowelsignaltknda"], "55": ["uvowelsignaltknda", "evowelsignaltknda"], "56": ["uuvowelsignaltknda", "uvowelsignaltknda"], "57": ["uvowelsignalt2knda", "uuvowelsignaltknda"], "58": ["uuvowelsignalt2knda", "uvowelsignalt2knda"], "59": ["uvowelsignlaknda", "uuvowelsignalt2knda"], "60": ["uuvowelsignlaknda", "uvowelsignlaknda"], "61": ["karasubscriptknda", "uuvowelsignlaknda"], "62": ["garasubscriptknda", "karasubscriptknda"], "63": ["ttarasubscriptknda", "garasubscriptknda"], "64": ["ddarasubscriptknda", "ttarasubscriptknda"], "65": ["tarasubscriptknda", "ddarasubscriptknda"], "66": ["darasubscriptknda", "tarasubscriptknda"], "67": ["parasubscriptknda", "darasubscriptknda"], "68": ["bharasubscriptknda", "parasubscriptknda"], "69": ["tayasubscriptknda", "bharasubscriptknda"], "70": ["mayasubscriptknda", "tayasubscriptknda"], "71": ["kasubscriptaltknda", "mayasubscriptknda"], "72": ["khasubscriptaltknda", "kasubscriptaltknda"], "73": ["gasubscriptaltknda", "khasubscriptaltknda"], "74": ["ghasubscriptaltknda", "gasubscriptaltknda"], "75": ["ngasubscriptaltknda", "ghasubscriptaltknda"], "76": ["casubscriptaltknda", "ngasubscriptaltknda"], "77": ["chasubscriptaltknda", "casubscriptaltknda"], "78": ["jasubscriptaltknda", "chasubscriptaltknda"], "79": ["jhasubscriptaltknda", "jasubscriptaltknda"], "80": ["nyasubscriptaltknda", "jhasubscriptaltknda"], "81": ["ttasubscriptaltknda", "nyasubscriptaltknda"], "82": ["tthasubscriptaltknda", "ttasubscriptaltknda"], "83": ["ddasubscriptaltknda", "tthasubscriptaltknda"], "84": ["ddhasubscriptaltknda", "ddasubscriptaltknda"], "85": ["nnasubscriptaltknda", "ddhasubscriptaltknda"], "86": ["tasubscriptaltknda", "nnasubscriptaltknda"], "87": ["thasubscriptaltknda", "tasubscriptaltknda"], "88": ["dasubscriptaltknda", "thasubscriptaltknda"], "89": ["dhasubscriptaltknda", "dasubscriptaltknda"], "90": ["nasubscriptaltknda", "dhasubscriptaltknda"], "91": ["pasubscriptaltknda", "nasubscriptaltknda"], "92": ["phasubscriptaltknda", "pasubscriptaltknda"], "93": ["basubscriptaltknda", "phasubscriptaltknda"], "94": ["bhasubscriptaltknda", "basubscriptaltknda"], "95": ["masubscriptaltknda", "bhasubscriptaltknda"], "96": ["yasubscriptaltknda", "masubscriptaltknda"], "97": ["rasubscriptaltknda", "yasubscriptaltknda"], "98": ["rrasubscriptaltknda", "rasubscriptaltknda"], "99": ["lasubscriptaltknda", "rrasubscriptaltknda"], "100": ["llasubscriptaltknda", "lasubscriptaltknda"], "101": ["vasubscriptaltknda", "llasubscriptaltknda"], "102": ["shasubscriptaltknda", "vasubscriptaltknda"], "103": ["ssasubscriptaltknda", "shasubscriptaltknda"], "104": ["sasubscriptaltknda", "ssasubscriptaltknda"], "105": ["hasubscriptaltknda", "sasubscriptaltknda"], "106": ["fasubscriptaltknda", "hasubscriptaltknda"], "107": ["januktasubscriptaltknda", "fasubscriptaltknda"], "108": ["phanuktasubscriptaltknda", "januktasubscriptaltknda"], "109": ["nnasubscriptaltUIknda", "phanuktasubscriptaltknda"], "110": ["nasubscriptaltUIknda", "nnasubscriptaltUIknda"], "111": ["basubscriptaltUIknda", "nasubscriptaltUIknda"], "112": ["bhasubscriptaltUIknda", "basubscriptaltUIknda"], "113": ["ssasubscriptaltUIknda", "bhasubscriptaltUIknda"], "114": ["karasubscriptaltknda", "ssasubscriptaltUIknda"], "115": ["garasubscriptaltknda", "karasubscriptaltknda"], "116": ["ttarasubscriptaltknda", "garasubscriptaltknda"], "117": ["ddarasubscriptaltknda", "ttarasubscriptaltknda"], "118": ["tarasubscriptaltknda", "ddarasubscriptaltknda"], "119": ["darasubscriptaltknda", "tarasubscriptaltknda"], "120": ["parasubscriptaltknda", "darasubscriptaltknda"], "121": ["bharasubscriptaltknda", "parasubscriptaltknda"], "122": ["tayasubscriptaltknda", "bharasubscriptaltknda"], "123": ["mayasubscriptaltknda", "tayasubscriptaltknda"], "124": ["nnasubscriptrightknda", "mayasubscriptaltknda"], "125": ["nasubscriptrightknda", "nnasubscriptrightknda"], "126": ["basubscriptrightknda", "nasubscriptrightknda"], "127": ["bhasubscriptrightknda", "basubscriptrightknda"], "128": ["ssasubscriptrightknda", "bhasubscriptrightknda"], "129": ["nnasubscriptrightUIknda", "ssasubscriptrightknda"], "130": ["nasubscriptrightUIknda", "nnasubscriptrightUIknda"], "131": ["basubscriptrightUIknda", "nasubscriptrightUIknda"], "132": ["bhasubscriptrightUIknda", "basubscriptrightUIknda"], "133": ["ssasubscriptrightUIknda", "bhasubscriptrightUIknda"], "134": [null, "ssasubscriptrightUIknda"]}}}}, "VarStore": {"VarData": {"0": {"ItemCount": [3, 15], "VarRegionIndex": {"0": [0, 3], "1": [1, null]}, "VarRegionCount": [2, 1], "Item": {"0": {"0": [-15, -20], "1": [0, null]}, "1": {"0": [0, -15], "1": [-2, null]}, "2": {"0": [6, -10], "1": [0, null]}, "3": {"0": [null, -5]}, "4": {"0": [null, 2]}, "5": {"0": [null, 5]}, "6": {"0": [null, 6]}, "7": {"0": [null, 10]}, "8": {"0": [null, 15]}, "9": {"0": [null, 20]}, "10": {"0": [null, 30]}, "11": {"0": [null, 35]}, "12": {"0": [null, 40]}, "13": {"0": [null, 50]}, "14": {"0": [null, 55]}}}, "1": {"ItemCount": [16, 4], "VarRegionIndex": {"1": [4, 1]}, "Item": {"0": {"1": [-3, 0]}, "1": {"0": [-14, 0], "1": [-2, -20]}, "2": {"0": [-7, 0], "1": [-11, -2]}, "3": {"0": [-6, 6], "1": [-12, 0]}, "4": {"0": [-6, null], "1": [-1, null]}, "5": {"0": [-5, null], "1": [-2, null]}, "6": {"0": [-4, null], "1": [1, null]}, "7": {"0": [3, null], "1": [1, null]}, "8": {"0": [5, null], "1": [1, null]}, "9": {"0": [5, null], "1": [3, null]}, "10": {"0": [6, null], "1": [2, null]}, "11": {"0": [7, null], "1": [2, null]}, "12": {"0": [7, null], "1": [15, null]}, "13": {"0": [11, null], "1": [10, null]}, "14": {"0": [12, null], "1": [16, null]}, "15": {"0": [15, null], "1": [10, null]}}}, "2": {"ItemCount": [2, 16], "VarRegionIndex": {"1": [1, 4], "2": [2, null]}, "VarRegionCount": [3, 2], "Item": {"0": {"0": [-4, -15], "1": [10, -3], "2": [12, null]}, "1": {"0": [2, -14], "1": [-6, -2], "2": [-6, null]}, "2": {"0": [null, -7], "1": [null, -11]}, "3": {"0": [null, -6], "1": [null, -12]}, "4": {"0": [null, -6], "1": [null, -1]}, "5": {"0": [null, -5], "1": [null, -2]}, "6": {"0": [null, -4], "1": [null, 1]}, "7": {"0": [null, 3], "1": [null, 1]}, "8": {"0": [null, 5], "1": [null, 1]}, "9": {"0": [null, 5], "1": [null, 3]}, "10": {"0": [null, 6], "1": [null, 2]}, "11": {"0": [null, 7], "1": [null, 2]}, "12": {"0": [null, 7], "1": [null, 15]}, "13": {"0": [null, 11], "1": [null, 10]}, "14": {"0": [null, 12], "1": [null, 16]}, "15": {"0": [null, 15], "1": [null, 10]}}}, "3": {"VarRegionIndex": {"0": [1, 4], "1": [2, 5], "2": [5, null]}, "VarRegionCount": [3, 2], "Item": {"0": {"0": [15, 1], "1": [20, 1], "2": [-10, null]}, "1": {"0": [44, 10], "1": [45, 0], "2": [-1, null]}}}, "4": {"VarRegionIndex": {"3": [5, null]}, "VarRegionCount": [4, 3], "Item": {"0": {"0": [-1, -4], "1": [-9, 10], "2": [-17, 12], "3": [14, null]}, "1": {"0": [10, 2], "2": [1, -6], "3": [-3, null]}}}, "5": {"ItemCount": [7, 2], "VarRegionIndex": {"0": [0, 1], "1": [1, 2], "2": [2, 5], "3": [3, null], "4": [4, null]}, "VarRegionCount": [5, 3], "Item": {"0": {"0": [-21, 15], "2": [36, -10], "3": [-23, null], "4": [-16, null]}, "1": {"0": [-21, 44], "1": [28, 45], "2": [57, -1], "3": [-122, null], "4": [-12, null]}, "2": {"0": [-17, null], "1": [14, null], "2": [28, null], "3": [-12, null], "4": [-20, null]}, "3": {"0": [-12, null], "1": [45, null], "2": [77, null], "3": [-91, null], "4": [-14, null]}, "4": {"0": [-10, null], "1": [20, null], "2": [36, null], "3": [-79, null], "4": [-11, null]}, "5": {"0": [-9, null], "1": [5, null], "2": [9, null], "3": [-17, null], "4": [-3, null]}, "6": {"0": [-4, null], "1": [10, null], "2": [16, null], "3": [-1, null], "4": [5, null]}}}, "6": {"ItemCount": [4, 2], "VarRegionIndex": {"3": [3, 4], "4": [5, null]}, "VarRegionCount": [5, 4], "Item": {"0": {"0": [-6, -2], "1": [4, 5], "2": [7, 5], "3": [-8, -2], "4": [11, null]}, "1": {"0": [-3, 20], "1": [19, -10], "2": [-9, -10], "3": [12, -10], "4": [-1, null]}, "2": {"0": [2, null], "1": [-5, null], "2": [7, null], "3": [-11, null], "4": [-4, null]}, "3": {"0": [5, null], "1": [-10, null], "2": [-10, null], "3": [-34, null], "4": [-1, null]}}}, "7": {"ItemCount": [5, 2], "VarRegionIndex": {"3": [4, 5], "4": [5, null]}, "VarRegionCount": [5, 4], "Item": {"0": {"0": [-2, -1], "1": [-14, -9], "2": [-14, -17], "3": [1, 14], "4": [11, null]}, "1": {"0": [-1, 10], "1": [7, -6], "2": [13, 1], "3": [5, -3], "4": [7, null]}, "2": {"0": [-1, null], "1": [8, null], "2": [8, null], "3": [-3, null], "4": [-3, null]}, "3": {"0": [2, null], "1": [-1, null], "2": [-1, null], "3": [-1, null], "4": [-4, null]}, "4": {"0": [7, null], "1": [29, null], "2": [20, null], "3": [18, null], "4": [8, null]}}}, "8": {"ItemCount": [7, 2], "VarRegionIndex": {"2": [3, 4], "3": [4, 5], "4": [5, null]}, "VarRegionCount": [5, 4], "Item": {"0": {"0": [-19, -2], "1": [45, 4], "2": [-114, 6], "3": [-26, -8], "4": [-1, null]}, "1": {"0": [-10, -1], "1": [-10, -2], "2": [-4, -6], "3": [3, -11], "4": [5, null]}, "2": {"0": [-10, null], "1": [43, null], "2": [9, null], "3": [-15, null], "4": [-18, null]}, "3": {"0": [-3, null], "1": [-1, null], "2": [-6, null], "3": [-1, null], "4": [-8, null]}, "4": {"0": [-2, null], "1": [9, null], "2": [-19, null], "3": [5, null], "4": [6, null]}, "5": {"0": [-2, null], "1": [9, null], "2": [-5, null], "3": [2, null], "4": [-9, null]}, "6": {"0": [1, null], "1": [10, null], "2": [24, null], "3": [7, null], "4": [-10, null]}}}, "9": {"ItemCount": [8, 2], "VarRegionIndex": {"1": [2, 3], "2": [3, 4], "3": [4, 5], "4": [5, null]}, "VarRegionCount": [5, 4], "Item": {"0": {"0": [-11, 0], "1": [0, 15], "2": [-1, -15], "3": [1, -15], "4": [0, null]}, "1": {"0": [-2, 9], "2": [-4, 11], "3": [-1, 11], "4": [-11, null]}, "2": {"0": [-2, null], "1": [4, null], "2": [0, null], "3": [6, null], "4": [-8, null]}, "3": {"0": [-1, null], "1": [-2, null], "2": [0, null], "3": [-6, null], "4": [-11, null]}, "4": {"0": [0, null], "1": [0, null], "2": [0, null], "3": [1, null], "4": [1, null]}, "5": {"0": [0, null], "1": [0, null], "2": [0, null], "3": [10, null], "4": [0, null]}, "6": {"0": [0, null], "1": [6, null], "2": [-85, null], "3": [0, null], "4": [5, null]}, "7": {"0": [9, null], "1": [0, null], "2": [0, null], "3": [11, null], "4": [11, null]}}}, "10": {"VarRegionIndex": {"0": [1, 0], "1": [2, 1], "2": [3, 2], "3": [4, 3], "4": [5, 4]}, "Item": {"0": {"0": [-19, -21], "1": [-20, 20], "2": [-1, 36], "3": [7, -23], "4": [14, -16]}, "1": {"0": [-10, -21], "1": [-10, 28], "2": [-10, 57], "3": [7, -122], "4": [10, -12]}, "2": {"0": [8, -17], "1": [22, 14], "2": [-89, 28], "3": [6, -12], "4": [13, -20]}, "3": {"0": [13, -12], "1": [25, 45], "2": [-60, 77], "3": [-18, -91], "4": [-10, -14]}, "4": {"0": [20, -10], "1": [23, 20], "2": [-8, 36], "3": [3, -79], "4": [-2, -11]}, "5": {"0": [27, -9], "1": [34, 5], "2": [-86, 9], "3": [-14, -17], "4": [-14, -3]}, "6": {"0": [43, -4], "1": [49, 10], "2": [-45, 16], "3": [-2, -1], "4": [-2, 5]}}}, "11": {"ItemCount": [2, 4], "VarRegionIndex": {"0": [3, 0], "1": [0, 1], "2": [1, 2], "3": [2, 3], "4": [4, 5]}, "NumShorts": [1, 0], "Item": {"0": {"0": [-175, -6], "1": [-23, 4], "2": [61, 7], "3": [109, -8], "4": [-19, 11]}, "1": {"0": [-143, -3], "1": [-22, 19], "2": [39, -9], "3": [66, 12], "4": [-11, -1]}, "2": {"0": [null, 2], "1": [null, -5], "2": [null, 7], "3": [null, -11], "4": [null, -4]}, "3": {"0": [null, 5], "1": [null, -10], "2": [null, -10], "3": [null, -34], "4": [null, -1]}}}, "12": {"ItemCount": [245, 5], "VarRegionIndex": {"3": [3, 4], "4": [4, 5], "5": [5, null]}, "VarRegionCount": [6, 5], "Item": {"error": ["There are 245 changes, check manually!", ""]}}, "13": {"ItemCount": [2, 7], "VarRegionIndex": {"1": [1, 2], "2": [2, 3], "3": [3, 4], "4": [4, 5], "5": [5, null]}, "VarRegionCount": [6, 5], "Item": {"0": {"0": [-1, -19], "1": [-5, 45], "2": [0, -114], "3": [-9, -26], "4": [4, -1], "5": [10, null]}, "1": {"0": [0, -10], "1": [-8, -10], "2": [4, -4], "3": [4, 3], "4": [0, 5], "5": [-4, null]}, "2": {"0": [null, -10], "1": [null, 43], "2": [null, 9], "3": [null, -15], "4": [null, -18]}, "3": {"0": [null, -3], "1": [null, -1], "2": [null, -6], "3": [null, -1], "4": [null, -8]}, "4": {"0": [null, -2], "1": [null, 9], "2": [null, -19], "3": [null, 5], "4": [null, 6]}, "5": {"0": [null, -2], "1": [null, 9], "2": [null, -5], "3": [null, 2], "4": [null, -9]}, "6": {"0": [null, 1], "1": [null, 10], "2": [null, 24], "3": [null, 7], "4": [null, -10]}}}, "14": {"VarRegionIndex": {"1": [1, 2], "2": [2, 3], "3": [3, 4], "4": [4, 5], "5": [5, null]}, "VarRegionCount": [6, 5], "Item": {"0": {"1": [5, 0], "2": [5, -4], "3": [0, -1], "4": [-2, -11], "5": [0, null]}, "1": {"1": [0, 7], "2": [7, 1], "3": [1, -5], "5": [-5, null]}}}, "15": {"ItemCount": [17, 2], "VarRegionIndex": {"0": [3, 0], "1": [0, 2], "2": [1, 3], "3": [2, 4], "4": [4, 5], "5": [5, null]}, "VarRegionCount": [6, 5], "NumShorts": [1, 0], "Item": {"0": {"0": [-143, -11], "1": [-47, 0], "2": [35, -1], "3": [69, 1], "4": [11, 0], "5": [6, null]}, "1": {"0": [-175, 0], "1": [-46, 6], "2": [61, -85], "3": [109, 0], "4": [4, 5], "5": [1, null]}, "2": {"0": [-131, null], "1": [-40, null], "2": [13, null], "3": [29, null], "4": [4, null], "5": [7, null]}, "3": {"0": [-131, null], "1": [-40, null], "2": [13, null], "3": [32, null], "4": [4, null], "5": [3, null]}, "4": {"0": [-136, null], "1": [-30, null], "2": [17, null], "3": [21, null], "4": [-24, null], "5": [20, null]}, "5": {"0": [-141, null], "1": [-29, null], "2": [35, null], "3": [72, null], "4": [-8, null], "5": [8, null]}, "6": {"0": [-141, null], "1": [-28, null], "2": [37, null], "3": [74, null], "4": [-9, null], "5": [6, null]}, "7": {"0": [-187, null], "1": [-28, null], "2": [42, null], "3": [54, null], "4": [-17, null], "5": [3, null]}, "8": {"0": [-129, null], "1": [-24, null], "2": [19, null], "3": [58, null], "4": [-3, null], "5": [14, null]}, "9": {"0": [-175, null], "1": [-23, null], "2": [61, null], "3": [109, null], "4": [-19, null], "5": [1, null]}, "10": {"0": [-151, null], "1": [-18, null], "2": [43, null], "3": [37, null], "4": [-11, null], "5": [9, null]}, "11": {"0": [-146, null], "1": [-18, null], "2": [43, null], "3": [37, null], "4": [-16, null], "5": [4, null]}, "12": {"0": [-143, null], "1": [-17, null], "2": [55, null], "3": [93, null], "4": [-16, null], "5": [12, null]}, "13": {"0": [-159, null], "1": [-13, null], "2": [23, null], "3": [63, null], "4": [-8, null], "5": [14, null]}, "14": {"0": [-155, null], "1": [-13, null], "2": [23, null], "3": [63, null], "4": [-13, null], "5": [10, null]}, "15": {"0": [-154, null], "1": [-13, null], "2": [23, null], "3": [75, null], "4": [-9, null], "5": [9, null]}, "16": {"0": [-135, null], "1": [-13, null], "2": [34, null], "3": [79, null], "4": [-14, null], "5": [4, null]}}}, "16": {"ItemCount": [2, 7], "VarRegionIndex": {"0": [2, 1], "1": [3, 2], "2": [0, 3], "3": [1, 4], "4": [4, 5], "5": [5, null]}, "VarRegionCount": [6, 5], "NumShorts": [2, 0], "Item": {"0": {"0": [145, -19], "1": [-161, -20], "2": [-29, -1], "3": [76, 7], "4": [-22, 14], "5": [-7, null]}, "1": {"0": [130, -10], "1": [-188, -10], "2": [-24, -10], "3": [72, 7], "4": [-20, 10], "5": [18, null]}, "2": {"0": [null, 8], "1": [null, 22], "2": [null, -89], "3": [null, 6], "4": [null, 13]}, "3": {"0": [null, 13], "1": [null, 25], "2": [null, -60], "3": [null, -18], "4": [null, -10]}, "4": {"0": [null, 20], "1": [null, 23], "2": [null, -8], "3": [null, 3], "4": [null, -2]}, "5": {"0": [null, 27], "1": [null, 34], "2": [null, -86], "3": [null, -14], "4": [null, -14]}, "6": {"0": [null, 43], "1": [null, 49], "2": [null, -45], "3": [null, -2], "4": [null, -2]}}}, "17": {"ItemCount": [null, 2], "NumShorts": [null, 1], "VarRegionCount": [null, 5], "VarRegionIndex": {"0": [null, 3], "1": [null, 0], "2": [null, 1], "3": [null, 2], "4": [null, 4]}, "Item": {"0": {"0": [null, -175], "1": [null, -23], "2": [null, 61], "3": [null, 109], "4": [null, -19]}, "1": {"0": [null, -143], "1": [null, -22], "2": [null, 39], "3": [null, 66], "4": [null, -11]}}}, "18": {"ItemCount": [null, 246], "NumShorts": [null, 0], "VarRegionCount": [null, 6], "VarRegionIndex": {"0": [null, 0], "1": [null, 1], "2": [null, 2], "3": [null, 3], "4": [null, 4], "5": [null, 5]}, "Item": {"error": ["There are 246 changes, check manually!", ""]}}, "19": {"ItemCount": [null, 2], "NumShorts": [null, 0], "VarRegionCount": [null, 6], "VarRegionIndex": {"0": [null, 0], "1": [null, 1], "2": [null, 2], "3": [null, 3], "4": [null, 4], "5": [null, 5]}, "Item": {"0": {"0": [null, -1], "1": [null, -5], "2": [null, 0], "3": [null, -9], "4": [null, 4], "5": [null, 10]}, "1": {"0": [null, 0], "1": [null, -8], "2": [null, 4], "3": [null, 4], "4": [null, 0], "5": [null, -4]}}}, "20": {"ItemCount": [null, 17], "NumShorts": [null, 1], "VarRegionCount": [null, 6], "VarRegionIndex": {"0": [null, 3], "1": [null, 0], "2": [null, 1], "3": [null, 2], "4": [null, 4], "5": [null, 5]}, "Item": {"0": {"0": [null, -143], "1": [null, -47], "2": [null, 35], "3": [null, 69], "4": [null, 11], "5": [null, 6]}, "1": {"0": [null, -175], "1": [null, -46], "2": [null, 61], "3": [null, 109], "4": [null, 4], "5": [null, 1]}, "2": {"0": [null, -131], "1": [null, -40], "2": [null, 13], "3": [null, 29], "4": [null, 4], "5": [null, 7]}, "3": {"0": [null, -131], "1": [null, -40], "2": [null, 13], "3": [null, 32], "4": [null, 4], "5": [null, 3]}, "4": {"0": [null, -136], "1": [null, -30], "2": [null, 17], "3": [null, 21], "4": [null, -24], "5": [null, 20]}, "5": {"0": [null, -141], "1": [null, -29], "2": [null, 35], "3": [null, 72], "4": [null, -8], "5": [null, 8]}, "6": {"0": [null, -141], "1": [null, -28], "2": [null, 37], "3": [null, 74], "4": [null, -9], "5": [null, 6]}, "7": {"0": [null, -187], "1": [null, -28], "2": [null, 42], "3": [null, 54], "4": [null, -17], "5": [null, 3]}, "8": {"0": [null, -129], "1": [null, -24], "2": [null, 19], "3": [null, 58], "4": [null, -3], "5": [null, 14]}, "9": {"0": [null, -175], "1": [null, -23], "2": [null, 61], "3": [null, 109], "4": [null, -19], "5": [null, 1]}, "10": {"0": [null, -151], "1": [null, -18], "2": [null, 43], "3": [null, 37], "4": [null, -11], "5": [null, 9]}, "11": {"0": [null, -146], "1": [null, -18], "2": [null, 43], "3": [null, 37], "4": [null, -16], "5": [null, 4]}, "12": {"0": [null, -143], "1": [null, -17], "2": [null, 55], "3": [null, 93], "4": [null, -16], "5": [null, 12]}, "13": {"0": [null, -159], "1": [null, -13], "2": [null, 23], "3": [null, 63], "4": [null, -8], "5": [null, 14]}, "14": {"0": [null, -155], "1": [null, -13], "2": [null, 23], "3": [null, 63], "4": [null, -13], "5": [null, 10]}, "15": {"0": [null, -154], "1": [null, -13], "2": [null, 23], "3": [null, 75], "4": [null, -9], "5": [null, 9]}, "16": {"0": [null, -135], "1": [null, -13], "2": [null, 34], "3": [null, 79], "4": [null, -14], "5": [null, 4]}}}, "21": {"ItemCount": [null, 2], "NumShorts": [null, 2], "VarRegionCount": [null, 6], "VarRegionIndex": {"0": [null, 2], "1": [null, 3], "2": [null, 0], "3": [null, 1], "4": [null, 4], "5": [null, 5]}, "Item": {"0": {"0": [null, 145], "1": [null, -161], "2": [null, -29], "3": [null, 76], "4": [null, -22], "5": [null, -7]}, "1": {"0": [null, 130], "1": [null, -188], "2": [null, -24], "3": [null, 72], "4": [null, -20], "5": [null, 18]}}}}, "VarDataCount": [17, 22]}}}, "GPOS": {"table": {"LookupList": {"Lookup": {"4": {"SubTable": {"0": {"PairSet": {"0": {"PairValueRecord": {"0": {"Value1": {"XAdvDevice": {"StartSize": [8, 13]}}}, "1": {"Value1": {"XAdvDevice": {"StartSize": [8, 13]}}}}}, "1": {"PairValueRecord": {"0": {"Value1": {"XAdvDevice": {"StartSize": [8, 13]}}}, "1": {"Value1": {"XAdvDevice": {"StartSize": [8, 13]}}}}}, "2": {"PairValueRecord": {"0": {"Value1": {"XAdvDevice": {"StartSize": [9, 14], "EndSize": [1, 0]}}}, "1": {"Value1": {"XAdvDevice": {"StartSize": [9, 14], "EndSize": [1, 0]}}}}}, "3": {"PairValueRecord": {"0": {"Value1": {"XAdvDevice": {"StartSize": [12, 18]}}}}}, "4": {"PairValueRecord": {"0": {"SecondGlyph": ["rvocalicvowelsignknda", "aknda"], "Value1": {"XAdvance": [132, 0], "XAdvDevice": {"StartSize": [6, 0], "EndSize": [3, 1]}}}, "1": {"SecondGlyph": [null, "aaknda"], "Value1": {"XAdvance": [null, 0], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 1], "DeltaFormat": [null, 32768]}}}, "2": {"SecondGlyph": [null, "uknda"], "Value1": {"XAdvance": [null, -20]}}, "3": {"SecondGlyph": [null, "uuknda"], "Value1": {"XAdvance": [null, -20]}}, "4": {"SecondGlyph": [null, "eknda"], "Value1": {"XAdvance": [null, -80], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "5": {"SecondGlyph": [null, "eeknda"], "Value1": {"XAdvance": [null, -30], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "6": {"SecondGlyph": [null, "khaknda"], "Value1": {"XAdvance": [null, -50], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 9], "DeltaFormat": [null, 32768]}}}, "7": {"SecondGlyph": [null, "chaknda"], "Value1": {"XAdvance": [null, -40], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "8": {"SecondGlyph": [null, "ttaknda"], "Value1": {"XAdvance": [null, 0], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 0], "DeltaFormat": [null, 32768]}}}, "9": {"SecondGlyph": [null, "nnaknda"], "Value1": {"XAdvance": [null, 0], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 2], "DeltaFormat": [null, 32768]}}}, "10": {"SecondGlyph": [null, "yaknda"], "Value1": {"XAdvance": [null, -30]}}, "11": {"SecondGlyph": [null, "rraknda"], "Value1": {"XAdvance": [null, -30]}}, "12": {"SecondGlyph": [null, "laknda"], "Value1": {"XAdvance": [null, -20]}}, "13": {"SecondGlyph": [null, "kivowelknda"], "Value1": {"XAdvance": [null, -30], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 10], "DeltaFormat": [null, 32768]}}}, "14": {"SecondGlyph": [null, "khivowelknda"], "Value1": {"XAdvance": [null, -30], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "15": {"SecondGlyph": [null, "ghivowelknda"], "Value1": {"XAdvance": [null, -70], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 10], "DeltaFormat": [null, 32768]}}}, "16": {"SecondGlyph": [null, "chivowelknda"], "Value1": {"XAdvance": [null, -30]}}, "17": {"SecondGlyph": [null, "jhivowelknda"], "Value1": {"XAdvance": [null, -10], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "18": {"SecondGlyph": [null, "ttivowelknda"], "Value1": {"XAdvance": [null, -20], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 9], "DeltaFormat": [null, 32768]}}}, "19": {"SecondGlyph": [null, "ddivowelknda"], "Value1": {"XAdvance": [null, -20], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "20": {"SecondGlyph": [null, "ddhivowelknda"], "Value1": {"XAdvance": [null, -20], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "21": {"SecondGlyph": [null, "tivowelknda"], "Value1": {"XAdvance": [null, -30], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 10], "DeltaFormat": [null, 32768]}}}, "22": {"SecondGlyph": [null, "thivowelknda"], "Value1": {"XAdvance": [null, -10], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "23": {"SecondGlyph": [null, "divowelknda"], "Value1": {"XAdvance": [null, -10], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "24": {"SecondGlyph": [null, "dhivowelknda"], "Value1": {"XAdvance": [null, -10], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "25": {"SecondGlyph": [null, "nivowelknda"], "Value1": {"XAdvance": [null, -60], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 9], "DeltaFormat": [null, 32768]}}}, "26": {"SecondGlyph": [null, "pivowelknda"], "Value1": {"XAdvance": [null, -70], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 9], "DeltaFormat": [null, 32768]}}}, "27": {"SecondGlyph": [null, "phivowelknda"], "Value1": {"XAdvance": [null, -70], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 9], "DeltaFormat": [null, 32768]}}}, "28": {"SecondGlyph": [null, "mivowelknda"], "Value1": {"XAdvance": [null, -70], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "29": {"SecondGlyph": [null, "yivowelknda"], "Value1": {"XAdvance": [null, -20], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 2], "DeltaFormat": [null, 32768]}}}, "30": {"SecondGlyph": [null, "livowelknda"], "Value1": {"XAdvance": [null, -15], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 3], "DeltaFormat": [null, 32768]}}}, "31": {"SecondGlyph": [null, "vivowelknda"], "Value1": {"XAdvance": [null, -70], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 7], "DeltaFormat": [null, 32768]}}}, "32": {"SecondGlyph": [null, "ssivowelknda"], "Value1": {"XAdvance": [null, -70], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 9], "DeltaFormat": [null, 32768]}}}, "33": {"SecondGlyph": [null, "sivowelknda"], "Value1": {"XAdvance": [null, -50], "XAdvDevice": {"StartSize": [null, 0], "EndSize": [null, 12], "DeltaFormat": [null, 32768]}}}}, "PairValueCount": [1, 34]}, "5": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [161, 132], "XAdvDevice": {"StartSize": [12, 11], "EndSize": [168, 3]}}}}}, "6": {"PairValueRecord": {"0": {"SecondGlyph": ["ailengthmarkknda", "rvocalicvowelsignknda"], "Value1": {"XAdvance": [5, 161], "XAdvDevice": {"StartSize": [8, 18], "EndSize": [5, 169]}}}}}, "7": {"PairValueRecord": {"0": {"Value1": {"XAdvDevice": {"StartSize": [8, 13]}}}}}, "8": {"PairValueRecord": {"0": {"Value1": {"XAdvDevice": {"StartSize": [12, 13], "EndSize": [213, 5]}}}}}, "9": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [132, 5], "XAdvDevice": {"StartSize": [12, 18], "EndSize": [198, 214]}}}}}, "10": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [161, 132], "XAdvDevice": {"StartSize": [12, 18], "EndSize": [59, 199]}}}}}, "11": {"PairValueCount": [null, 1], "PairValueRecord": {"0": {"SecondGlyph": [null, "ailengthmarkknda"], "Value1": {"XAdvance": [null, 161], "XAdvDevice": {"StartSize": [null, 18], "EndSize": [null, 59], "DeltaFormat": [null, 32768]}}}}}}, "Coverage": {"glyphs": {"4": ["januktaknda", "nakaarapolluknda"], "5": ["phanuktaknda", "januktaknda"], "6": ["thevowelknda", "phanuktaknda"], "7": ["dhevowelknda", "thevowelknda"], "8": ["phevowelknda", "dhevowelknda"], "9": ["jevowelnuktaknda", "phevowelknda"], "10": ["phevowelnuktaknda", "jevowelnuktaknda"], "11": [null, "phevowelnuktaknda"]}}, "PairSetCount": [11, 12]}}}, "5": {"SubTable": {"0": {"PairSet": {"error": ["There are 240 changes, check manually!", ""]}, "Coverage": {"glyphs": {"error": ["There are 240 changes, check manually!", ""]}}, "PairSetCount": [193, 240]}}}, "7": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"error": ["There are 219 changes, check manually!", ""]}}, "MarkArray": {"MarkRecord": {"1": {"MarkAnchor": {"XDeviceTable": {"StartSize": [9, 3], "EndSize": [4, 0]}}}, "2": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}, "4": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}, "5": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}, "6": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}}}}}}, "8": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"0": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [144, 145]}}}}, "1": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [144, 145]}}}}, "2": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [144, 145]}}}}, "3": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18]}}}}, "4": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [144, 145]}}}}, "5": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [171, 172]}}}}, "6": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [171, 172]}}}}, "7": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [171, 172]}}}}, "8": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [5, 10]}}}}, "9": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [171, 172]}}}}, "10": {"BaseAnchor": {"0": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [242, 243]}}}}}}, "MarkArray": {"MarkRecord": {"1": {"MarkAnchor": {"XDeviceTable": {"StartSize": [9, 3], "EndSize": [4, 0]}}}, "2": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}, "4": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}, "5": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}, "6": {"MarkAnchor": {"YDeviceTable": {"StartSize": [12, 18], "EndSize": [236, 237]}}}}}}}}, "9": {"SubTable": {"0": {"EntryExitRecord": {"0": {"ExitAnchor": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [137, 138]}}}, "1": {"ExitAnchor": {"XDeviceTable": {"StartSize": [12, 18], "EndSize": [137, 138]}}}, "2": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "3": {"ExitAnchor": {"YDeviceTable": {"StartSize": [2, 4]}, "XDeviceTable": {"StartSize": [15, 20]}}}, "4": {"ExitAnchor": {"YDeviceTable": {"StartSize": [2, 4]}, "XDeviceTable": {"StartSize": [15, 20]}}}, "5": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "6": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "7": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "8": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "9": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "10": {"ExitAnchor": {"XDeviceTable": {"StartSize": [15, 20]}}}, "11": {"ExitAnchor": {"XDeviceTable": {"StartSize": [11, 17]}}}}}}}, "10": {"SubTable": {"0": {"EntryExitRecord": {"error": ["There are 136 changes, check manually!", ""]}}}}}}}}, "maxp": {"numGlyphs": [655, 657]}, "glyf": {"glyphOrder": {"error": ["There are 557 changes, check manually!", ""]}, "glyphs": {"error": ["There are 650 changes, check manually!", ""]}}, "MVAR": {"tableTag": [null, "MVAR"], "table": {"Version": [null, 65536], "Reserved": [null, 0], "ValueRecordSize": [null, 8], "ValueRecordCount": [null, 2], "VarStore": {"Format": [null, 1], "VarRegionList": {"RegionAxisCount": [null, 2], "RegionCount": [null, 6], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [null, -1.0], "PeakCoord": [null, -1.0], "EndCoord": [null, 0.0]}, "1": {"StartCoord": [null, 0.0], "PeakCoord": [null, 0.0], "EndCoord": [null, 0.0]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [null, 0.0], "PeakCoord": [null, 0.6099853515625], "EndCoord": [null, 1.0]}, "1": {"StartCoord": [null, 0.0], "PeakCoord": [null, 0.0], "EndCoord": [null, 0.0]}}}, "2": {"VarRegionAxis": {"0": {"StartCoord": [null, 0.6099853515625], "PeakCoord": [null, 1.0], "EndCoord": [null, 1.0]}, "1": {"StartCoord": [null, 0.0], "PeakCoord": [null, 0.0], "EndCoord": [null, 0.0]}}}, "3": {"VarRegionAxis": {"0": {"StartCoord": [null, 0.0], "PeakCoord": [null, 0.0], "EndCoord": [null, 0.0]}, "1": {"StartCoord": [null, -1.0], "PeakCoord": [null, -1.0], "EndCoord": [null, 0.0]}}}, "4": {"VarRegionAxis": {"0": {"StartCoord": [null, -1.0], "PeakCoord": [null, -1.0], "EndCoord": [null, 0.0]}, "1": {"StartCoord": [null, -1.0], "PeakCoord": [null, -1.0], "EndCoord": [null, 0.0]}}}, "5": {"VarRegionAxis": {"0": {"StartCoord": [null, 0.0], "PeakCoord": [null, 1.0], "EndCoord": [null, 1.0]}, "1": {"StartCoord": [null, -1.0], "PeakCoord": [null, -1.0], "EndCoord": [null, 0.0]}}}}}, "VarDataCount": [null, 1], "VarData": {"0": {"ItemCount": [null, 2], "NumShorts": [null, 0], "VarRegionCount": [null, 3], "VarRegionIndex": {"0": [null, 0], "1": [null, 1], "2": [null, 2]}, "Item": {"0": {"0": [null, -11], "1": [null, 1], "2": [null, 23]}, "1": {"0": [null, -7], "1": [null, 0], "2": [null, 13]}}}}}, "ValueRecord": {"0": {"ValueTag": [null, "stro"], "VarIdx": [null, 1]}, "1": {"ValueTag": [null, "xhgt"], "VarIdx": [null, 0]}}}}};</script><div id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-wght-900_0_wdth-100_0" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೝ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NAKAARA POLLU<br>
+            unicode: U+0CDD
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೳ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT<br>
+            unicode: U+0CF3
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-900_0_wdth-100_0" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-900_0_wdth-100_0" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
