@@ -1,12 +1,8 @@
-## Fontbakery report
+## FontBakery report
 
-Fontbakery version: 0.8.13
+fontbakery version: 0.9.2
 
-<details><summary><b>[6] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
-
-
-* 🔥 **FAIL** Not all fonts passed in the command line are in the same directory. This may lead to bad results as the tool will interpret all font files as belonging to a single font family. The detected directories are: ['fonts/NotoSansKannada/googlefonts/ttf', 'fonts/NotoSansKannada/googlefonts/variable-ttf'] [code: single-directory]
-</div></details><details><summary>🔥 <b>FAIL:</b> Each font in a family must have the same set of vertical metrics values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/vertical_metrics">com.google.fonts/check/family/vertical_metrics</a>)</summary><div>
+<details><summary><b>[2] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Each font in a family must have the same set of vertical metrics values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/vertical_metrics">com.google.fonts/check/family/vertical_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** sTypoAscender is not the same across the family:
@@ -123,19 +119,7 @@ Noto Sans Kannada UI Medium: -293
 Noto Sans Kannada UI: -293
 Noto Sans Kannada UI SemiBold: -293
 Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
-</div></details><details><summary>🔥 <b>FAIL:</b> Fonts have consistent PANOSE proportion? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_proportion">com.google.fonts/check/family/panose_proportion</a>)</summary><div>
-
-
-* 🔥 **FAIL** PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><details><summary>🔥 <b>FAIL:</b> Fonts have consistent PANOSE family type? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_familytype">com.google.fonts/check/family/panose_familytype</a>)</summary><div>
-
-
-* 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check that OS/2.fsSelection bold & italic settings are unique for each NameID1 (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.adobe.fonts/check/family/bold_italic_unique_for_nameid1">com.adobe.fonts/check/family/bold_italic_unique_for_nameid1</a>)</summary><div>
-
-
-* 🔥 **FAIL** Family 'Noto Sans Kannada' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
-</div></details><details><summary>🔥 <b>FAIL:</b> Verify that family names in the name table are consistent across all fonts in the family. Checks Typographic Family name (nameID 16) if present,  otherwise uses Font Family name (nameID 1) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/consistent_family_name">com.adobe.fonts/check/family/consistent_family_name</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Verify that family names in the name table are consistent across all fonts in the family. Checks Typographic Family name (nameID 16) if present, otherwise uses Font Family name (nameID 1) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/family/consistent_family_name">com.adobe.fonts/check/family/consistent_family_name</a>)</summary><div>
 
 
 * 🔥 **FAIL** 2 different Font Family names were found:
@@ -150,7 +134,6 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
   - NotoSansKannada-Regular.ttf (nameID 1)
   - NotoSansKannada-SemiBold.ttf (nameID 16)
   - NotoSansKannada-Thin.ttf (nameID 16)
-  - NotoSansKannada[wdth,wght].ttf (nameID 1)
 
 * 'Noto Sans Kannada UI' was found in:
   - NotoSansKannadaUI-Black.ttf (nameID 16)
@@ -162,7 +145,7 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
   - NotoSansKannadaUI-Regular.ttf (nameID 1)
   - NotoSansKannadaUI-SemiBold.ttf (nameID 16)
   - NotoSansKannadaUI-Thin.ttf (nameID 16) [code: inconsistent-family-name]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -174,12 +157,49 @@ Noto Sans Kannada UI Thin: -293 [code: descent-mismatch]
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -193,16 +213,231 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* baviramaknda
 	* bevowelknda
 	* bhaknda
-	* bhanocrestknda and 218 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* bhanocrestknda
+	* bhaviramaknda
+	* bhevowelknda
+	* bhivowelknda
+	* bivowelknda
+	* caknda
+	* canocrestknda
+	* casubscriptaltknda
+	* casubscriptknda
+	* casubscriptrightknda
+	* caviramaknda
+	* cevowelknda
+	* chaknda
+	* chanocrestknda
+	* chaviramaknda
+	* chevowelknda
+	* chivowelknda
+	* civowelknda
+	* daviramaknda
+	* ddaknda
+	* ddanocrestknda
+	* ddaviramaknda
+	* ddevowelknda
+	* ddhaknda
+	* ddhanocrestknda
+	* ddhaviramaknda
+	* ddhevowelknda
+	* ddhivowelknda
+	* ddivowelknda
+	* devowelknda
+	* dhaviramaknda
+	* dhevowelknda
+	* dhivowelknda
+	* divowelknda
+	* eevowelsignknda
+	* eightknda
+	* evowelsignaltknda
+	* faknda
+	* fasubscriptaltknda
+	* fasubscriptknda
+	* fasubscriptrightknda
+	* faviramaknda
+	* fiveknda
+	* fourknda
+	* gaviramaknda
+	* ghaknda
+	* ghanocrestknda
+	* ghasubscriptaltknda
+	* ghasubscriptknda
+	* ghasubscriptrightknda
+	* ghaviramaknda
+	* ghevowelknda
+	* ghivowelknda
+	* haknda
+	* hanocrestknda
+	* hasubscriptaltknda
+	* hasubscriptknda
+	* hasubscriptrightknda
+	* haviramaknda
+	* hevowelknda
+	* hivowelknda
+	* iiknda
+	* iivowelsignknda
+	* iknda
+	* jaknda
+	* janocrestknda
+	* januktaknda
+	* januktanocrestknda
+	* januktaviramaknda
+	* janyaknda
+	* janyanocrestknda
+	* janyaviramaknda
+	* janyevowelknda
+	* janyivowelknda
+	* javiramaknda
+	* jevowelknda
+	* jevowelnuktaknda
+	* jhaknda
+	* jhanocrestknda
+	* jhasubscriptaltknda
+	* jhasubscriptknda
+	* jhasubscriptrightknda
+	* jhaviramaknda
+	* jhevowelknda
+	* jhivowelknda
+	* jhovowelknda
+	* jivowelknda
+	* jivowelnuktaknda
+	* kassaknda
+	* kassanocrestknda
+	* kassaviramaknda
+	* kassevowelknda
+	* kassivowelknda
+	* kaviramaknda
+	* kevowelknda
+	* khaknda
+	* khanocrestknda
+	* khasubscriptaltknda
+	* khasubscriptknda
+	* khasubscriptrightknda
+	* khaviramaknda
+	* khevowelknda
+	* khivowelknda
+	* kivowelknda
+	* laknda
+	* lanocrestknda
+	* laviramaknda
+	* lengthmarkknda
+	* levowelknda
+	* livowelknda
+	* llaknda
+	* llanocrestknda
+	* llaviramaknda
+	* llevowelknda
+	* llivowelknda
+	* llvocalicknda
+	* llvocalicvowelsignaltknda
+	* llvocalicvowelsignknda
+	* maknda
+	* manocrestknda
+	* masubscriptaltknda
+	* masubscriptknda
+	* masubscriptlengthmarkaltknda
+	* masubscriptlengthmarkknda
+	* masubscriptrightknda
+	* masubscriptrvocalicaltknda
+	* masubscriptrvocalicknda
+	* maviramaknda
+	* mayasubscriptaltknda
+	* mayasubscriptknda
+	* mevowelknda
+	* mivowelknda
+	* movowelknda
+	* nasubscriptaltknda
+	* nasubscriptknda
+	* nasubscriptrightknda
+	* naviramaknda
+	* ngaknda
+	* ngaviramaknda
+	* nineknda
+	* nnanocrestknda
+	* nnaviramaknda
+	* nnevowelknda
+	* nnivowelknda
+	* nyaknda
+	* nyasubscriptaltknda
+	* nyasubscriptknda
+	* nyasubscriptrightknda
+	* nyaviramaknda
+	* ooknda
+	* oovowelsignknda
+	* paviramaknda
+	* phanuktaviramaknda
+	* phaviramaknda
+	* phivowelknda
+	* phivowelnuktaknda
+	* pivowelknda
+	* raviramaknda
+	* rraknda
+	* rrasubscriptaltknda
+	* rrasubscriptknda
+	* rrasubscriptrightknda
+	* rraviramaknda
+	* rrvocalicknda
+	* rvocalicknda
+	* saviramaknda
+	* shaknda
+	* shanocrestknda
+	* shasubscriptaltknda
+	* shasubscriptknda
+	* shasubscriptrightknda
+	* shaviramaknda
+	* shevowelknda
+	* shivowelknda
+	* sixknda
+	* ssaknda
+	* ssanocrestknda
+	* ssasubscriptaltknda
+	* ssasubscriptknda
+	* ssasubscriptrightknda
+	* ssaviramaknda
+	* ssevowelknda
+	* ssivowelknda
+	* taknda
+	* tanocrestknda
+	* tasubscriptlengthmarkknda
+	* tasubscriptrvocalicknda
+	* taviramaknda
+	* tayasubscriptknda
+	* tevowelknda
+	* thaviramaknda
+	* thevowelknda
+	* thivowelknda
+	* threeknda
+	* tivowelknda
+	* ttaknda
+	* ttanocrestknda
+	* ttarasubscriptaltknda
+	* ttarasubscriptknda
+	* ttasubscriptaltknda
+	* ttasubscriptknda
+	* ttasubscriptrightknda
+	* ttaviramaknda
+	* ttevowelknda
+	* tthaviramaknda
+	* ttivowelknda
+	* uknda
+	* uni20B9.knda
+	* uuknda
+	* vaviramaknda
+	* vevowelknda
+	* viramaknda
+	* vivowelknda
+	* yaknda
+	* yanocrestknda
+	* yaviramaknda
+	* yevowelknda
+	* yivowelknda and yovowelknda
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada Black' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -214,27 +449,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -253,7 +714,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -265,9 +726,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -301,11 +760,159 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* G (U+0047): X=545.5,Y=2.0 (should be at baseline 0?)
 
-	* a (U+0061): X=282.0,Y=-1.5 (should be at baseline 0?) 
+	* a (U+0061): X=282.0,Y=-1.5 (should be at baseline 0?)
 
-	* 81 more.
+	* g (U+0067): X=577.0,Y=-1.0 (should be at baseline 0?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* g (U+0067): X=386.0,Y=1.0 (should be at baseline 0?)
+
+	* i (U+0069): X=265.0,Y=691.0 (should be at cap-height 690?)
+
+	* i (U+0069): X=62.0,Y=691.0 (should be at cap-height 690?)
+
+	* j (U+006A): X=61.0,Y=691.0 (should be at cap-height 690?)
+
+	* j (U+006A): X=264.0,Y=691.0 (should be at cap-height 690?)
+
+	* j (U+006A): X=61.0,Y=691.0 (should be at cap-height 690?)
+
+	* t (U+0074): X=363.0,Y=-1.0 (should be at baseline 0?)
+
+	* Ccedilla (U+00C7): X=490.5,Y=-0.5 (should be at baseline 0?)
+
+	* agrave (U+00E0): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* aacute (U+00E1): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* acircumflex (U+00E2): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* atilde (U+00E3): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* adieresis (U+00E4): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* aring (U+00E5): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* ae (U+00E6): X=311.0,Y=-1.5 (should be at baseline 0?)
+
+	* amacron (U+0101): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* abreve (U+0103): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* aogonek (U+0105): X=282.0,Y=-1.5 (should be at baseline 0?)
+
+	* Cacute (U+0106): X=490.5,Y=-0.5 (should be at baseline 0?)
+
+	* Cdotaccent (U+010A): X=490.5,Y=-0.5 (should be at baseline 0?)
+
+	* cdotaccent (U+010B): X=395.0,Y=691.0 (should be at cap-height 690?)
+
+	* cdotaccent (U+010B): X=192.0,Y=691.0 (should be at cap-height 690?)
+
+	* Ccaron (U+010C): X=490.5,Y=-0.5 (should be at baseline 0?)
+
+	* dcroat (U+0111): X=272.0,Y=688.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=385.0,Y=688.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=577.0,Y=688.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=653.0,Y=688.0 (should be at cap-height 690?)
+
+	* edotaccent (U+0117): X=411.0,Y=691.0 (should be at cap-height 690?)
+
+	* edotaccent (U+0117): X=208.0,Y=691.0 (should be at cap-height 690?)
+
+	* Gbreve (U+011E): X=545.5,Y=2.0 (should be at baseline 0?)
+
+	* gbreve (U+011F): X=577.0,Y=-1.0 (should be at baseline 0?)
+
+	* gbreve (U+011F): X=386.0,Y=1.0 (should be at baseline 0?)
+
+	* Gdotaccent (U+0120): X=545.5,Y=2.0 (should be at baseline 0?)
+
+	* gdotaccent (U+0121): X=577.0,Y=-1.0 (should be at baseline 0?)
+
+	* gdotaccent (U+0121): X=386.0,Y=1.0 (should be at baseline 0?)
+
+	* gdotaccent (U+0121): X=416.0,Y=691.0 (should be at cap-height 690?)
+
+	* gdotaccent (U+0121): X=213.0,Y=691.0 (should be at cap-height 690?)
+
+	* Gcommaaccent (U+0122): X=545.5,Y=2.0 (should be at baseline 0?)
+
+	* gcommaaccent (U+0123): X=577.0,Y=-1.0 (should be at baseline 0?)
+
+	* gcommaaccent (U+0123): X=386.0,Y=1.0 (should be at baseline 0?)
+
+	* gcommaaccent (U+0123): X=257.5,Y=688.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=267.0,Y=688.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=381.0,Y=688.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=0.0,Y=688.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=76.0,Y=688.0 (should be at cap-height 690?)
+
+	* iogonek (U+012F): X=265.0,Y=691.0 (should be at cap-height 690?)
+
+	* iogonek (U+012F): X=62.0,Y=691.0 (should be at cap-height 690?)
+
+	* tcaron (U+0165): X=363.0,Y=-1.0 (should be at baseline 0?)
+
+	* zdotaccent (U+017C): X=356.0,Y=691.0 (should be at cap-height 690?)
+
+	* zdotaccent (U+017C): X=153.0,Y=691.0 (should be at cap-height 690?)
+
+	* tcommaaccent (U+021B): X=363.0,Y=-1.0 (should be at baseline 0?)
+
+	* dotaccent (U+02D9): X=243.0,Y=691.0 (should be at cap-height 690?)
+
+	* dotaccent (U+02D9): X=40.0,Y=691.0 (should be at cap-height 690?)
+
+	* dotaccentcomb (U+0307): X=102.0,Y=691.0 (should be at cap-height 690?)
+
+	* dotaccentcomb (U+0307): X=-101.0,Y=691.0 (should be at cap-height 690?)
+
+	* candrabinduknda (U+0C81): X=-279.0,Y=808.0 (should be at ascender 809?)
+
+	* uuknda (U+0C8A): X=940.0,Y=2.0 (should be at baseline 0?)
+
+	* khaknda (U+0C96): X=354.5,Y=2.0 (should be at baseline 0?)
+
+	* caknda (U+0C9A): X=359.0,Y=-0.5 (should be at baseline 0?)
+
+	* naknda (U+0CA8): X=461.5,Y=1.5 (should be at baseline 0?)
+
+	* maknda (U+0CAE): X=775.0,Y=-0.5 (should be at baseline 0?)
+
+	* ssaknda (U+0CB7): X=898.0,Y=2.0 (should be at baseline 0?)
+
+	* saknda (U+0CB8): X=462.0,Y=2.0 (should be at baseline 0?)
+
+	* evowelsignknda (U+0CC6): X=-284.0,Y=688.0 (should be at cap-height 690?)
+
+	* eevowelsignknda (U+0CC7): X=-284.0,Y=688.0 (should be at cap-height 690?)
+
+	* aivowelsignknda (U+0CC8): X=-284.0,Y=688.0 (should be at cap-height 690?)
+
+	* aivowelsignknda (U+0CC8): X=168.5,Y=-2.0 (should be at baseline 0?)
+
+	* ovowelsignknda (U+0CCA): X=-284.0,Y=688.0 (should be at cap-height 690?)
+
+	* oovowelsignknda (U+0CCB): X=-284.0,Y=688.0 (should be at cap-height 690?)
+
+	* ailengthmarkknda (U+0CD6): X=168.5,Y=-2.0 (should be at baseline 0?)
+
+	* rrvocalicknda (U+0CE0): X=960.5,Y=2.0 (should be at baseline 0?)
+
+	* anusvaraaboverightknda (U+0CF3): X=68.5,Y=689.5 (should be at cap-height 690?)
+
+	* anusvaraaboverightknda (U+0CF3): X=319.5,Y=689.5 (should be at cap-height 690?)
+
+	* uni1CF4 (U+1CF4): X=-278.0,Y=691.0 (should be at cap-height 690?)
+
+	* Germandbls (U+1E9E): X=401.0,Y=-1.0 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -329,12 +936,34 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wcircumflex (U+0174): B<<527.0,442.0>-<523.0,468.0>-<521.0,486.0>>/B<<521.0,486.0>-<519.0,468.0>-<514.5,442.0>> = 12.680383491819825
 
-	* Wcircumflex (U+0174): B<<714.0,235.0>-<721.0,196.0>-<724.0,167.0>>/B<<724.0,167.0>-<727.0,192.0>-<734.0,229.0>> = 12.748914526401432 
+	* Wcircumflex (U+0174): B<<714.0,235.0>-<721.0,196.0>-<724.0,167.0>>/B<<724.0,167.0>-<727.0,192.0>-<734.0,229.0>> = 12.748914526401432
 
-	* 8 more.
+	* Wdieresis (U+1E84): B<<308.0,211.5>-<313.0,185.0>-<315.0,167.0>>/B<<315.0,167.0>-<319.0,197.0>-<325.5,236.0>> = 13.934835114501363
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+	* Wdieresis (U+1E84): B<<527.0,442.0>-<523.0,468.0>-<521.0,486.0>>/B<<521.0,486.0>-<519.0,468.0>-<514.5,442.0>> = 12.680383491819825
+
+	* Wdieresis (U+1E84): B<<714.0,235.0>-<721.0,196.0>-<724.0,167.0>>/B<<724.0,167.0>-<727.0,192.0>-<734.0,229.0>> = 12.748914526401432
+
+	* Wgrave (U+1E80): B<<308.0,211.5>-<313.0,185.0>-<315.0,167.0>>/B<<315.0,167.0>-<319.0,197.0>-<325.5,236.0>> = 13.934835114501363
+
+	* Wgrave (U+1E80): B<<527.0,442.0>-<523.0,468.0>-<521.0,486.0>>/B<<521.0,486.0>-<519.0,468.0>-<514.5,442.0>> = 12.680383491819825
+
+	* Wgrave (U+1E80): B<<714.0,235.0>-<721.0,196.0>-<724.0,167.0>>/B<<724.0,167.0>-<727.0,192.0>-<734.0,229.0>> = 12.748914526401432
+
+	* aaknda (U+0C86): L<<469.0,219.0>--<469.0,358.0>>/B<<469.0,358.0>-<454.0,296.0>-<403.5,269.5>> = 13.60054251665873
+
+	* llaknda (U+0CB3): B<<384.5,331.5>-<344.0,294.0>-<274.0,291.0>>/B<<274.0,291.0>-<300.0,286.0>-<334.5,283.5>> = 13.339558729185805 [code: found-jaggy-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -346,12 +975,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -365,9 +1031,199 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* bevowelknda
 	* bhaknda
 	* bhanocrestknda
-	* bhaviramaknda and 193 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* bhaviramaknda
+	* bhevowelknda
+	* bhivowelknda
+	* bivowelknda
+	* caknda
+	* canocrestknda
+	* casubscriptaltknda
+	* casubscriptknda
+	* casubscriptrightknda
+	* caviramaknda
+	* cevowelknda
+	* chaknda
+	* chanocrestknda
+	* chaviramaknda
+	* chevowelknda
+	* chivowelknda
+	* civowelknda
+	* daviramaknda
+	* ddaknda
+	* ddanocrestknda
+	* ddaviramaknda
+	* ddevowelknda
+	* ddhaknda
+	* ddhanocrestknda
+	* ddhaviramaknda
+	* ddhevowelknda
+	* ddhivowelknda
+	* ddivowelknda
+	* dhaviramaknda
+	* eevowelsignknda
+	* evowelsignaltknda
+	* faknda
+	* fasubscriptaltknda
+	* fasubscriptknda
+	* fasubscriptrightknda
+	* faviramaknda
+	* fiveknda
+	* fourknda
+	* gaviramaknda
+	* ghaknda
+	* ghanocrestknda
+	* ghaviramaknda
+	* ghevowelknda
+	* ghivowelknda
+	* hasubscriptaltknda
+	* hasubscriptknda
+	* hasubscriptrightknda
+	* haviramaknda
+	* hivowelknda
+	* iiknda
+	* iivowelsignknda
+	* iknda
+	* jaknda
+	* janocrestknda
+	* januktaknda
+	* januktanocrestknda
+	* januktaviramaknda
+	* janyaknda
+	* janyanocrestknda
+	* janyaviramaknda
+	* janyevowelknda
+	* janyivowelknda
+	* javiramaknda
+	* jevowelknda
+	* jevowelnuktaknda
+	* jhaknda
+	* jhanocrestknda
+	* jhasubscriptaltknda
+	* jhasubscriptknda
+	* jhasubscriptrightknda
+	* jhaviramaknda
+	* jhevowelknda
+	* jhivowelknda
+	* jhovowelknda
+	* jivowelknda
+	* jivowelnuktaknda
+	* kassaknda
+	* kassanocrestknda
+	* kassaviramaknda
+	* kassevowelknda
+	* kassivowelknda
+	* kaviramaknda
+	* khaknda
+	* khanocrestknda
+	* khaviramaknda
+	* khevowelknda
+	* khivowelknda
+	* kivowelknda
+	* laknda
+	* lanocrestknda
+	* laviramaknda
+	* lengthmarkknda
+	* levowelknda
+	* livowelknda
+	* llaknda
+	* llanocrestknda
+	* llaviramaknda
+	* llevowelknda
+	* llivowelknda
+	* llvocalicknda
+	* llvocalicvowelsignaltknda
+	* llvocalicvowelsignknda
+	* maknda
+	* manocrestknda
+	* masubscriptaltknda
+	* masubscriptknda
+	* masubscriptlengthmarkaltknda
+	* masubscriptlengthmarkknda
+	* masubscriptrightknda
+	* masubscriptrvocalicaltknda
+	* masubscriptrvocalicknda
+	* maviramaknda
+	* mayasubscriptaltknda
+	* mayasubscriptknda
+	* mevowelknda
+	* mivowelknda
+	* nasubscriptaltknda
+	* nasubscriptknda
+	* nasubscriptrightknda
+	* naviramaknda
+	* ngaknda
+	* ngaviramaknda
+	* nineknda
+	* nnanocrestknda
+	* nnaviramaknda
+	* nnevowelknda
+	* nnivowelknda
+	* nyaknda
+	* nyasubscriptaltknda
+	* nyasubscriptknda
+	* nyasubscriptrightknda
+	* nyaviramaknda
+	* oovowelsignknda
+	* paviramaknda
+	* phanuktaviramaknda
+	* phaviramaknda
+	* raviramaknda
+	* rraknda
+	* rrasubscriptaltknda
+	* rrasubscriptknda
+	* rrasubscriptrightknda
+	* rraviramaknda
+	* rrvocalicknda
+	* rvocalicknda
+	* saviramaknda
+	* shaknda
+	* shanocrestknda
+	* shasubscriptaltknda
+	* shasubscriptknda
+	* shasubscriptrightknda
+	* shaviramaknda
+	* shevowelknda
+	* shivowelknda
+	* sixknda
+	* ssaknda
+	* ssanocrestknda
+	* ssasubscriptaltknda
+	* ssasubscriptknda
+	* ssasubscriptrightknda
+	* ssaviramaknda
+	* ssevowelknda
+	* ssivowelknda
+	* taknda
+	* tanocrestknda
+	* tasubscriptlengthmarkknda
+	* tasubscriptrvocalicknda
+	* taviramaknda
+	* tayasubscriptknda
+	* tevowelknda
+	* thaviramaknda
+	* threeknda
+	* tivowelknda
+	* ttaknda
+	* ttanocrestknda
+	* ttarasubscriptaltknda
+	* ttarasubscriptknda
+	* ttasubscriptaltknda
+	* ttasubscriptknda
+	* ttasubscriptrightknda
+	* ttaviramaknda
+	* ttevowelknda
+	* tthaviramaknda
+	* ttivowelknda
+	* uknda
+	* uni20B9.knda
+	* uuknda
+	* vaviramaknda
+	* viramaknda
+	* yaknda
+	* yanocrestknda
+	* yaviramaknda
+	* yevowelknda
+	* yivowelknda and yovowelknda
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -379,27 +1235,253 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -418,7 +1500,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -430,9 +1512,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -466,11 +1546,121 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* Aring (U+00C5): X=344.0,Y=811.0 (should be at ascender 809?)
 
-	* Ccedilla (U+00C7): X=482.0,Y=-1.0 (should be at baseline 0?) 
+	* Ccedilla (U+00C7): X=482.0,Y=-1.0 (should be at baseline 0?)
 
-	* 57 more.
+	* Ntilde (U+00D1): X=566.0,Y=811.0 (should be at ascender 809?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* Otilde (U+00D5): X=557.0,Y=811.0 (should be at ascender 809?)
+
+	* Oslash (U+00D8): X=567.0,Y=691.0 (should be at cap-height 690?)
+
+	* acircumflex (U+00E2): X=301.0,Y=692.0 (should be at cap-height 690?)
+
+	* ae (U+00E6): X=758.0,Y=-0.5 (should be at baseline 0?)
+
+	* ae (U+00E6): X=311.0,Y=0.5 (should be at baseline 0?)
+
+	* ccedilla (U+00E7): X=394.5,Y=-0.5 (should be at baseline 0?)
+
+	* egrave (U+00E8): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* eacute (U+00E9): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* ecircumflex (U+00EA): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* ecircumflex (U+00EA): X=295.0,Y=692.0 (should be at cap-height 690?)
+
+	* edieresis (U+00EB): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* icircumflex (U+00EE): X=152.0,Y=692.0 (should be at cap-height 690?)
+
+	* eth (U+00F0): X=509.0,Y=689.0 (should be at cap-height 690?)
+
+	* ocircumflex (U+00F4): X=309.0,Y=692.0 (should be at cap-height 690?)
+
+	* ucircumflex (U+00FB): X=328.0,Y=692.0 (should be at cap-height 690?)
+
+	* Cacute (U+0106): X=482.0,Y=-1.0 (should be at baseline 0?)
+
+	* cacute (U+0107): X=394.5,Y=-0.5 (should be at baseline 0?)
+
+	* Cdotaccent (U+010A): X=482.0,Y=-1.0 (should be at baseline 0?)
+
+	* cdotaccent (U+010B): X=394.5,Y=-0.5 (should be at baseline 0?)
+
+	* Ccaron (U+010C): X=482.0,Y=-1.0 (should be at baseline 0?)
+
+	* ccaron (U+010D): X=394.5,Y=-0.5 (should be at baseline 0?)
+
+	* emacron (U+0113): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* edotaccent (U+0117): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* ecaron (U+011B): X=432.5,Y=-0.5 (should be at baseline 0?)
+
+	* Gbreve (U+011E): X=527.5,Y=1.0 (should be at baseline 0?)
+
+	* gbreve (U+011F): X=555.0,Y=-1.0 (should be at baseline 0?)
+
+	* Gdotaccent (U+0120): X=527.5,Y=1.0 (should be at baseline 0?)
+
+	* gdotaccent (U+0121): X=555.0,Y=-1.0 (should be at baseline 0?)
+
+	* Gcommaaccent (U+0122): X=527.5,Y=1.0 (should be at baseline 0?)
+
+	* gcommaaccent (U+0123): X=555.0,Y=-1.0 (should be at baseline 0?)
+
+	* Eng (U+014A): X=591.0,Y=2.0 (should be at baseline 0?)
+
+	* Ohungarumlaut (U+0150): X=495.5,Y=807.5 (should be at ascender 809?)
+
+	* Ohungarumlaut (U+0150): X=301.5,Y=807.5 (should be at ascender 809?)
+
+	* oe (U+0153): X=816.5,Y=-0.5 (should be at baseline 0?)
+
+	* Uhungarumlaut (U+0170): X=475.5,Y=807.5 (should be at ascender 809?)
+
+	* Uhungarumlaut (U+0170): X=281.5,Y=807.5 (should be at ascender 809?)
+
+	* wcircumflex (U+0175): X=427.0,Y=692.0 (should be at cap-height 690?)
+
+	* ycircumflex (U+0177): X=284.0,Y=692.0 (should be at cap-height 690?)
+
+	* circumflex (U+02C6): X=251.0,Y=692.0 (should be at cap-height 690?)
+
+	* circumflexcomb (U+0302): X=0.0,Y=692.0 (should be at cap-height 690?)
+
+	* iknda (U+0C87): X=487.5,Y=-0.5 (should be at baseline 0?)
+
+	* uknda (U+0C89): X=940.0,Y=1.0 (should be at baseline 0?)
+
+	* nyaknda (U+0C9E): X=487.5,Y=-0.5 (should be at baseline 0?)
+
+	* nnaknda (U+0CA3): X=319.5,Y=2.0 (should be at baseline 0?)
+
+	* maknda (U+0CAE): X=713.0,Y=1.5 (should be at baseline 0?)
+
+	* ivowelsignknda (U+0CBF): X=17.0,Y=692.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=17.0,Y=692.0 (should be at cap-height 690?)
+
+	* evowelsignknda (U+0CC6): X=-185.5,Y=688.5 (should be at cap-height 690?)
+
+	* eevowelsignknda (U+0CC7): X=-185.5,Y=688.5 (should be at cap-height 690?)
+
+	* aivowelsignknda (U+0CC8): X=-185.5,Y=688.5 (should be at cap-height 690?)
+
+	* ovowelsignknda (U+0CCA): X=-185.5,Y=688.5 (should be at cap-height 690?)
+
+	* oovowelsignknda (U+0CCB): X=-185.5,Y=688.5 (should be at cap-height 690?)
+
+	* Germandbls (U+1E9E): X=371.5,Y=-1.0 (should be at baseline 0?)
+
+	* euro (U+20AC): X=252.0,Y=688.5 (should be at cap-height 690?)
+
+	* uni20B9.knda (U+20B9): X=54.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni20B9.knda (U+20B9): X=524.0,Y=691.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -500,12 +1690,28 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wcircumflex (U+0174): B<<683.0,196.0>-<689.0,161.0>-<692.0,137.0>>/B<<692.0,137.0>-<695.0,162.0>-<701.0,196.5>> = 13.967789761532726
 
-	* Wdieresis (U+1E84): B<<266.0,196.0>-<272.0,161.0>-<275.0,137.0>>/B<<275.0,137.0>-<278.0,162.0>-<284.0,196.5>> = 13.967789761532726 
+	* Wdieresis (U+1E84): B<<266.0,196.0>-<272.0,161.0>-<275.0,137.0>>/B<<275.0,137.0>-<278.0,162.0>-<284.0,196.5>> = 13.967789761532726
 
-	* 5 more.
+	* Wdieresis (U+1E84): B<<489.0,505.5>-<485.0,529.0>-<483.0,542.0>>/B<<483.0,542.0>-<482.0,529.0>-<477.5,505.5>> = 13.144867617550734
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+	* Wdieresis (U+1E84): B<<683.0,196.0>-<689.0,161.0>-<692.0,137.0>>/B<<692.0,137.0>-<695.0,162.0>-<701.0,196.5>> = 13.967789761532726
+
+	* Wgrave (U+1E80): B<<266.0,196.0>-<272.0,161.0>-<275.0,137.0>>/B<<275.0,137.0>-<278.0,162.0>-<284.0,196.5>> = 13.967789761532726
+
+	* Wgrave (U+1E80): B<<489.0,505.5>-<485.0,529.0>-<483.0,542.0>>/B<<483.0,542.0>-<482.0,529.0>-<477.5,505.5>> = 13.144867617550734
+
+	* Wgrave (U+1E80): B<<683.0,196.0>-<689.0,161.0>-<692.0,137.0>>/B<<692.0,137.0>-<695.0,162.0>-<701.0,196.5>> = 13.967789761532726 [code: found-jaggy-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -517,12 +1723,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -536,16 +1779,215 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* bevowelknda
 	* bhaknda
 	* bhanocrestknda
-	* bhaviramaknda and 202 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* bhaviramaknda
+	* bhevowelknda
+	* bhivowelknda
+	* bivowelknda
+	* caknda
+	* canocrestknda
+	* casubscriptaltknda
+	* casubscriptknda
+	* casubscriptrightknda
+	* caviramaknda
+	* cevowelknda
+	* chaknda
+	* chanocrestknda
+	* chaviramaknda
+	* chevowelknda
+	* chivowelknda
+	* civowelknda
+	* daviramaknda
+	* ddaknda
+	* ddanocrestknda
+	* ddaviramaknda
+	* ddevowelknda
+	* ddhaknda
+	* ddhanocrestknda
+	* ddhaviramaknda
+	* ddhevowelknda
+	* ddhivowelknda
+	* ddivowelknda
+	* dhaviramaknda
+	* eevowelsignknda
+	* evowelsignaltknda
+	* faknda
+	* fasubscriptaltknda
+	* fasubscriptknda
+	* fasubscriptrightknda
+	* faviramaknda
+	* fiveknda
+	* fourknda
+	* gaviramaknda
+	* ghaknda
+	* ghanocrestknda
+	* ghaviramaknda
+	* ghevowelknda
+	* ghivowelknda
+	* hasubscriptaltknda
+	* hasubscriptknda
+	* hasubscriptrightknda
+	* haviramaknda
+	* hevowelknda
+	* hivowelknda
+	* iiknda
+	* iivowelsignknda
+	* iknda
+	* jaknda
+	* janocrestknda
+	* januktaknda
+	* januktanocrestknda
+	* januktaviramaknda
+	* janyaknda
+	* janyanocrestknda
+	* janyaviramaknda
+	* janyevowelknda
+	* janyivowelknda
+	* javiramaknda
+	* jevowelknda
+	* jevowelnuktaknda
+	* jhaknda
+	* jhanocrestknda
+	* jhasubscriptaltknda
+	* jhasubscriptknda
+	* jhasubscriptrightknda
+	* jhaviramaknda
+	* jhevowelknda
+	* jhivowelknda
+	* jhovowelknda
+	* jivowelknda
+	* jivowelnuktaknda
+	* kassaknda
+	* kassanocrestknda
+	* kassaviramaknda
+	* kassevowelknda
+	* kassivowelknda
+	* kaviramaknda
+	* kevowelknda
+	* khaknda
+	* khanocrestknda
+	* khasubscriptaltknda
+	* khasubscriptknda
+	* khasubscriptrightknda
+	* khaviramaknda
+	* khevowelknda
+	* khivowelknda
+	* kivowelknda
+	* laknda
+	* lanocrestknda
+	* laviramaknda
+	* lengthmarkknda
+	* levowelknda
+	* livowelknda
+	* llaknda
+	* llanocrestknda
+	* llaviramaknda
+	* llevowelknda
+	* llivowelknda
+	* llvocalicknda
+	* llvocalicvowelsignaltknda
+	* llvocalicvowelsignknda
+	* maknda
+	* manocrestknda
+	* masubscriptaltknda
+	* masubscriptknda
+	* masubscriptlengthmarkaltknda
+	* masubscriptlengthmarkknda
+	* masubscriptrightknda
+	* masubscriptrvocalicaltknda
+	* masubscriptrvocalicknda
+	* maviramaknda
+	* mayasubscriptaltknda
+	* mayasubscriptknda
+	* mevowelknda
+	* mivowelknda
+	* nasubscriptaltknda
+	* nasubscriptknda
+	* nasubscriptrightknda
+	* naviramaknda
+	* ngaknda
+	* ngaviramaknda
+	* nineknda
+	* nnanocrestknda
+	* nnaviramaknda
+	* nnevowelknda
+	* nnivowelknda
+	* nyaknda
+	* nyasubscriptaltknda
+	* nyasubscriptknda
+	* nyasubscriptrightknda
+	* nyaviramaknda
+	* ooknda
+	* oovowelsignknda
+	* paviramaknda
+	* phanuktaviramaknda
+	* phaviramaknda
+	* phivowelknda
+	* phivowelnuktaknda
+	* pivowelknda
+	* raviramaknda
+	* rraknda
+	* rrasubscriptaltknda
+	* rrasubscriptknda
+	* rrasubscriptrightknda
+	* rraviramaknda
+	* rrvocalicknda
+	* rvocalicknda
+	* saviramaknda
+	* shaknda
+	* shanocrestknda
+	* shasubscriptaltknda
+	* shasubscriptknda
+	* shasubscriptrightknda
+	* shaviramaknda
+	* shevowelknda
+	* shivowelknda
+	* sixknda
+	* ssaknda
+	* ssanocrestknda
+	* ssasubscriptaltknda
+	* ssasubscriptknda
+	* ssasubscriptrightknda
+	* ssaviramaknda
+	* ssevowelknda
+	* ssivowelknda
+	* taknda
+	* tanocrestknda
+	* tasubscriptlengthmarkknda
+	* tasubscriptrvocalicknda
+	* taviramaknda
+	* tayasubscriptknda
+	* tevowelknda
+	* thaviramaknda
+	* threeknda
+	* tivowelknda
+	* ttaknda
+	* ttanocrestknda
+	* ttarasubscriptaltknda
+	* ttarasubscriptknda
+	* ttasubscriptaltknda
+	* ttasubscriptknda
+	* ttasubscriptrightknda
+	* ttaviramaknda
+	* ttevowelknda
+	* tthaviramaknda
+	* ttivowelknda
+	* uknda
+	* uni20B9.knda
+	* uuknda
+	* vaviramaknda
+	* viramaknda
+	* yaknda
+	* yanocrestknda
+	* yaviramaknda
+	* yevowelknda
+	* yivowelknda and yovowelknda
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada ExtraBold' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -557,27 +1999,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -596,7 +2264,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -608,9 +2276,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -628,7 +2294,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* caknda (U+0C9A): L<<654.0,422.0>--<653.0,422.0>> -> L<<653.0,422.0>--<520.0,422.0>>
 
-	* rraknda (U+0CB1): L<<731.0,243.0>--<731.0,243.0>> -> L<<731.0,243.0>--<731.0,243.0>> 
+	* rraknda (U+0CB1): L<<731.0,243.0>--<731.0,243.0>> -> L<<731.0,243.0>--<731.0,243.0>>
 
 	* ttaknda (U+0C9F): L<<684.0,271.0>--<681.0,271.0>> -> L<<681.0,271.0>--<584.0,271.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -654,10 +2320,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* Wdieresis (U+1E84): B<<506.5,475.5>-<502.0,500.0>-<501.0,516.0>>/B<<501.0,516.0>-<499.0,500.0>-<494.5,475.5>> = 10.701350723899111
 
-	* Wgrave (U+1E80): B<<283.5,211.5>-<290.0,175.0>-<293.0,151.0>>/B<<293.0,151.0>-<297.0,183.0>-<305.0,226.5>> = 14.25003269780357 
+	* Wgrave (U+1E80): B<<283.5,211.5>-<290.0,175.0>-<293.0,151.0>>/B<<293.0,151.0>-<297.0,183.0>-<305.0,226.5>> = 14.25003269780357
 
 	* Wgrave (U+1E80): B<<506.5,475.5>-<502.0,500.0>-<501.0,516.0>>/B<<501.0,516.0>-<499.0,500.0>-<494.5,475.5>> = 10.701350723899111 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[16] NotoSansKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[17] NotoSansKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -669,12 +2345,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -686,7 +2399,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada ExtraLight' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -698,27 +2411,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -737,7 +2676,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -749,9 +2688,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -773,7 +2710,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* lengthmarkknda (U+0CD5): L<<78.0,332.0>--<78.0,326.0>> -> L<<78.0,326.0>--<78.0,315.0>>
 
-	* oovowelsignknda (U+0CCB): L<<771.0,332.0>--<771.0,326.0>> -> L<<771.0,326.0>--<771.0,315.0>> 
+	* oovowelsignknda (U+0CCB): L<<771.0,332.0>--<771.0,326.0>> -> L<<771.0,326.0>--<771.0,315.0>>
 
 	* ttaknda (U+0C9F): L<<533.0,339.0>--<527.0,339.0>> -> L<<527.0,339.0>--<456.0,339.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -788,7 +2725,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<532.0,335.0>--<406.0,334.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[16] NotoSansKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[17] NotoSansKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -800,12 +2747,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -819,16 +2803,17 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* javiramaknda
 	* kassaviramaknda
 	* ngaviramaknda
-	* nyaviramaknda and 4 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* nyaviramaknda
+	* rraknda
+	* rraviramaknda
+	* shaviramaknda and ttaviramaknda
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada Light' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -840,27 +2825,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -879,7 +3090,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -891,9 +3102,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -927,11 +3136,111 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* d (U+0064): X=455.0,Y=545.0 (should be at x-height 546?)
 
-	* e (U+0065): X=395.0,Y=-2.0 (should be at baseline 0?) 
+	* e (U+0065): X=395.0,Y=-2.0 (should be at baseline 0?)
 
-	* 52 more.
+	* s (U+0073): X=118.0,Y=-0.5 (should be at baseline 0?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* y (U+0079): X=209.0,Y=2.0 (should be at baseline 0?)
+
+	* sterling (U+00A3): X=501.0,Y=688.0 (should be at cap-height 690?)
+
+	* Ccedilla (U+00C7): X=491.0,Y=-2.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=91.0,Y=-1.0 (should be at baseline 0?)
+
+	* germandbls (U+00DF): X=288.0,Y=-1.5 (should be at baseline 0?)
+
+	* atilde (U+00E3): X=275.5,Y=692.0 (should be at cap-height 690?)
+
+	* ae (U+00E6): X=702.0,Y=-2.0 (should be at baseline 0?)
+
+	* egrave (U+00E8): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* eacute (U+00E9): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* ecircumflex (U+00EA): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* edieresis (U+00EB): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* eth (U+00F0): X=332.0,Y=689.0 (should be at cap-height 690?)
+
+	* ntilde (U+00F1): X=305.5,Y=692.0 (should be at cap-height 690?)
+
+	* otilde (U+00F5): X=302.5,Y=692.0 (should be at cap-height 690?)
+
+	* oslash (U+00F8): X=59.0,Y=-2.0 (should be at baseline 0?)
+
+	* yacute (U+00FD): X=209.0,Y=2.0 (should be at baseline 0?)
+
+	* ydieresis (U+00FF): X=209.0,Y=2.0 (should be at baseline 0?)
+
+	* Cacute (U+0106): X=491.0,Y=-2.0 (should be at baseline 0?)
+
+	* Cdotaccent (U+010A): X=491.0,Y=-2.0 (should be at baseline 0?)
+
+	* Ccaron (U+010C): X=491.0,Y=-2.0 (should be at baseline 0?)
+
+	* emacron (U+0113): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* edotaccent (U+0117): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* eogonek (U+0119): X=392.0,Y=-2.0 (should be at baseline 0?)
+
+	* ecaron (U+011B): X=395.0,Y=-2.0 (should be at baseline 0?)
+
+	* oe (U+0153): X=800.5,Y=-2.0 (should be at baseline 0?)
+
+	* Sacute (U+015A): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* sacute (U+015B): X=118.0,Y=-0.5 (should be at baseline 0?)
+
+	* Scedilla (U+015E): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* scedilla (U+015F): X=118.0,Y=-0.5 (should be at baseline 0?)
+
+	* Scaron (U+0160): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* scaron (U+0161): X=118.0,Y=-0.5 (should be at baseline 0?)
+
+	* ycircumflex (U+0177): X=209.0,Y=2.0 (should be at baseline 0?)
+
+	* Scommaaccent (U+0218): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* scommaaccent (U+0219): X=118.0,Y=-0.5 (should be at baseline 0?)
+
+	* tilde (U+02DC): X=219.5,Y=692.0 (should be at cap-height 690?)
+
+	* tildecomb (U+0303): X=-299.5,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-253.0,Y=807.0 (should be at ascender 809?)
+
+	* uni0951 (U+0951): X=-302.0,Y=807.0 (should be at ascender 809?)
+
+	* iiknda (U+0C88): X=791.0,Y=2.0 (should be at baseline 0?)
+
+	* lvocalicknda (U+0C8C): X=602.5,Y=0.5 (should be at baseline 0?)
+
+	* aivowelsignknda (U+0CC8): X=71.5,Y=1.5 (should be at baseline 0?)
+
+	* ailengthmarkknda (U+0CD6): X=71.5,Y=1.5 (should be at baseline 0?)
+
+	* llvocalicknda (U+0CE1): X=602.5,Y=0.5 (should be at baseline 0?)
+
+	* fourknda (U+0CEA): X=303.5,Y=689.5 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-312.0,Y=807.0 (should be at ascender 809?)
+
+	* uni1CDA (U+1CDA): X=-359.0,Y=807.0 (should be at ascender 809?)
+
+	* uni1CDA (U+1CDA): X=-197.0,Y=807.0 (should be at ascender 809?)
+
+	* uni1CDA (U+1CDA): X=-244.0,Y=807.0 (should be at ascender 809?)
+
+	* Germandbls (U+1E9E): X=313.0,Y=0.5 (should be at baseline 0?)
+
+	* ygrave (U+1EF3): X=209.0,Y=2.0 (should be at baseline 0?)
+
+	* euro (U+20AC): X=470.5,Y=-1.5 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -944,7 +3253,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* gaknda (U+0C97): L<<56.0,0.0>--<55.0,129.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -956,12 +3275,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -975,16 +3331,139 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* chanocrestknda
 	* chaviramaknda
 	* chevowelknda
-	* chivowelknda and 126 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* chivowelknda
+	* civowelknda
+	* daviramaknda
+	* ddaknda
+	* ddanocrestknda
+	* ddaviramaknda
+	* ddevowelknda
+	* ddhaknda
+	* ddhanocrestknda
+	* ddhaviramaknda
+	* ddhevowelknda
+	* ddhivowelknda
+	* ddivowelknda
+	* dhaviramaknda
+	* faknda
+	* faviramaknda
+	* fiveknda
+	* gaviramaknda
+	* ghanocrestknda
+	* ghaviramaknda
+	* ghivowelknda
+	* haviramaknda
+	* hivowelknda
+	* iiknda
+	* iivowelsignknda
+	* iknda
+	* jaknda
+	* janocrestknda
+	* januktaknda
+	* januktanocrestknda
+	* januktaviramaknda
+	* janyaknda
+	* janyanocrestknda
+	* janyaviramaknda
+	* janyevowelknda
+	* janyivowelknda
+	* javiramaknda
+	* jevowelknda
+	* jevowelnuktaknda
+	* jhaknda
+	* jhanocrestknda
+	* jhaviramaknda
+	* jhevowelknda
+	* jhivowelknda
+	* jhovowelknda
+	* jivowelknda
+	* jivowelnuktaknda
+	* kassaknda
+	* kassanocrestknda
+	* kassaviramaknda
+	* kassevowelknda
+	* kassivowelknda
+	* kaviramaknda
+	* khaknda
+	* khanocrestknda
+	* khaviramaknda
+	* khevowelknda
+	* khivowelknda
+	* lanocrestknda
+	* laviramaknda
+	* levowelknda
+	* llaviramaknda
+	* llivowelknda
+	* maknda
+	* manocrestknda
+	* masubscriptlengthmarkaltknda
+	* masubscriptlengthmarkknda
+	* masubscriptrvocalicaltknda
+	* masubscriptrvocalicknda
+	* maviramaknda
+	* mevowelknda
+	* mivowelknda
+	* naviramaknda
+	* ngaknda
+	* ngaviramaknda
+	* nineknda
+	* nnaviramaknda
+	* nnivowelknda
+	* nyaknda
+	* nyaviramaknda
+	* paviramaknda
+	* phanuktaviramaknda
+	* phaviramaknda
+	* raviramaknda
+	* rraknda
+	* rrasubscriptaltknda
+	* rrasubscriptknda
+	* rrasubscriptrightknda
+	* rraviramaknda
+	* rrvocalicknda
+	* rvocalicknda
+	* saviramaknda
+	* shaknda
+	* shanocrestknda
+	* shaviramaknda
+	* shevowelknda
+	* shivowelknda
+	* sixknda
+	* ssaknda
+	* ssanocrestknda
+	* ssaviramaknda
+	* ssevowelknda
+	* ssivowelknda
+	* taknda
+	* tanocrestknda
+	* tasubscriptlengthmarkknda
+	* taviramaknda
+	* tayasubscriptknda
+	* tevowelknda
+	* thaviramaknda
+	* threeknda
+	* tivowelknda
+	* ttaknda
+	* ttanocrestknda
+	* ttaviramaknda
+	* ttevowelknda
+	* tthaviramaknda
+	* ttivowelknda
+	* uni20B9.knda
+	* vaviramaknda
+	* viramaknda
+	* yaknda
+	* yanocrestknda
+	* yaviramaknda
+	* yevowelknda
+	* yivowelknda and yovowelknda
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada Medium' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -996,27 +3475,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1035,7 +3740,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -1047,9 +3752,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -1067,10 +3770,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* caknda (U+0C9A): L<<593.0,460.0>--<589.0,460.0>> -> L<<589.0,460.0>--<457.0,460.0>>
 
-	* ttaknda (U+0C9F): L<<136.0,224.0>--<136.0,220.0>> -> L<<136.0,220.0>--<136.0,212.0>> 
+	* ttaknda (U+0C9F): L<<136.0,224.0>--<136.0,220.0>> -> L<<136.0,220.0>--<136.0,212.0>>
 
 	* ttaknda (U+0C9F): L<<603.0,295.0>--<600.0,295.0>> -> L<<600.0,295.0>--<518.0,295.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -1082,12 +3795,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
-
-
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
-
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
@@ -3723,6 +6430,49 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17
 
 
 </div> [code: shaping-regression]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -3736,9 +6486,81 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17
 	* ddevowelknda
 	* ddhaviramaknda
 	* ddhevowelknda
-	* ddhivowelknda and 75 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* ddhivowelknda
+	* ddivowelknda
+	* faviramaknda
+	* fiveknda
+	* ghaviramaknda
+	* haviramaknda
+	* hivowelknda
+	* iiknda
+	* janocrestknda
+	* januktanocrestknda
+	* januktaviramaknda
+	* janyaknda
+	* janyanocrestknda
+	* janyaviramaknda
+	* janyevowelknda
+	* janyivowelknda
+	* javiramaknda
+	* jevowelknda
+	* jevowelnuktaknda
+	* jhaknda
+	* jhanocrestknda
+	* jhaviramaknda
+	* jhevowelknda
+	* jhivowelknda
+	* jhovowelknda
+	* kassaviramaknda
+	* kassevowelknda
+	* kassivowelknda
+	* khaviramaknda
+	* khevowelknda
+	* khivowelknda
+	* laviramaknda
+	* llaviramaknda
+	* masubscriptlengthmarkaltknda
+	* masubscriptlengthmarkknda
+	* masubscriptrvocalicknda
+	* maviramaknda
+	* ngaviramaknda
+	* nnaviramaknda
+	* nnivowelknda
+	* nyaknda
+	* nyaviramaknda
+	* phanuktaviramaknda
+	* rraknda
+	* rrasubscriptaltknda
+	* rrasubscriptknda
+	* rrasubscriptrightknda
+	* rraviramaknda
+	* rrvocalicknda
+	* rvocalicknda
+	* shaknda
+	* shanocrestknda
+	* shaviramaknda
+	* shevowelknda
+	* shivowelknda
+	* ssaviramaknda
+	* ssevowelknda
+	* ssivowelknda
+	* taknda
+	* tanocrestknda
+	* taviramaknda
+	* tayasubscriptknda
+	* tevowelknda
+	* tivowelknda
+	* ttaknda
+	* ttanocrestknda
+	* ttaviramaknda
+	* ttevowelknda
+	* ttivowelknda
+	* vaviramaknda
+	* yaknda
+	* yanocrestknda
+	* yaviramaknda
+	* yevowelknda
+	* yivowelknda and yovowelknda
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -3750,27 +6572,253 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -3789,7 +6837,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -3801,9 +6849,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -3820,7 +6866,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<566.0,306.0>--<439.0,305.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[16] NotoSansKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[17] NotoSansKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -3832,12 +6888,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -3851,16 +6944,168 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* bhaviramaknda
 	* bhevowelknda
 	* caknda
-	* canocrestknda and 155 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* canocrestknda
+	* caviramaknda
+	* cevowelknda
+	* chaknda
+	* chanocrestknda
+	* chaviramaknda
+	* chevowelknda
+	* chivowelknda
+	* civowelknda
+	* daviramaknda
+	* ddaknda
+	* ddanocrestknda
+	* ddaviramaknda
+	* ddevowelknda
+	* ddhaknda
+	* ddhanocrestknda
+	* ddhaviramaknda
+	* ddhevowelknda
+	* ddhivowelknda
+	* ddivowelknda
+	* dhaviramaknda
+	* eevowelsignknda
+	* faknda
+	* faviramaknda
+	* fiveknda
+	* gaviramaknda
+	* ghaknda
+	* ghanocrestknda
+	* ghaviramaknda
+	* ghevowelknda
+	* ghivowelknda
+	* hasubscriptaltknda
+	* hasubscriptknda
+	* hasubscriptrightknda
+	* haviramaknda
+	* hivowelknda
+	* iiknda
+	* iivowelsignknda
+	* iknda
+	* jaknda
+	* janocrestknda
+	* januktaknda
+	* januktanocrestknda
+	* januktaviramaknda
+	* janyaknda
+	* janyanocrestknda
+	* janyaviramaknda
+	* janyevowelknda
+	* janyivowelknda
+	* javiramaknda
+	* jevowelknda
+	* jevowelnuktaknda
+	* jhaknda
+	* jhanocrestknda
+	* jhaviramaknda
+	* jhevowelknda
+	* jhivowelknda
+	* jhovowelknda
+	* jivowelknda
+	* jivowelnuktaknda
+	* kassaknda
+	* kassanocrestknda
+	* kassaviramaknda
+	* kassevowelknda
+	* kassivowelknda
+	* kaviramaknda
+	* khaknda
+	* khanocrestknda
+	* khaviramaknda
+	* khevowelknda
+	* khivowelknda
+	* kivowelknda
+	* lanocrestknda
+	* laviramaknda
+	* levowelknda
+	* livowelknda
+	* llaviramaknda
+	* llevowelknda
+	* llivowelknda
+	* maknda
+	* manocrestknda
+	* masubscriptlengthmarkaltknda
+	* masubscriptlengthmarkknda
+	* masubscriptrvocalicaltknda
+	* masubscriptrvocalicknda
+	* maviramaknda
+	* mevowelknda
+	* mivowelknda
+	* naviramaknda
+	* ngaknda
+	* ngaviramaknda
+	* nineknda
+	* nnaviramaknda
+	* nnivowelknda
+	* nyaknda
+	* nyasubscriptaltknda
+	* nyasubscriptknda
+	* nyasubscriptrightknda
+	* nyaviramaknda
+	* oovowelsignknda
+	* paviramaknda
+	* phanuktaviramaknda
+	* phaviramaknda
+	* raviramaknda
+	* rraknda
+	* rrasubscriptaltknda
+	* rrasubscriptknda
+	* rrasubscriptrightknda
+	* rraviramaknda
+	* rrvocalicknda
+	* rvocalicknda
+	* saviramaknda
+	* shaknda
+	* shanocrestknda
+	* shaviramaknda
+	* shevowelknda
+	* shivowelknda
+	* sixknda
+	* ssaknda
+	* ssanocrestknda
+	* ssasubscriptaltknda
+	* ssasubscriptknda
+	* ssasubscriptrightknda
+	* ssaviramaknda
+	* ssevowelknda
+	* ssivowelknda
+	* taknda
+	* tanocrestknda
+	* tasubscriptlengthmarkknda
+	* tasubscriptrvocalicknda
+	* taviramaknda
+	* tayasubscriptknda
+	* tevowelknda
+	* thaviramaknda
+	* threeknda
+	* tivowelknda
+	* ttaknda
+	* ttanocrestknda
+	* ttarasubscriptaltknda
+	* ttarasubscriptknda
+	* ttasubscriptaltknda
+	* ttasubscriptknda
+	* ttasubscriptrightknda
+	* ttaviramaknda
+	* ttevowelknda
+	* tthaviramaknda
+	* ttivowelknda
+	* uni20B9.knda
+	* vaviramaknda
+	* viramaknda
+	* yaknda
+	* yanocrestknda
+	* yaviramaknda
+	* yevowelknda
+	* yivowelknda and yovowelknda
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada SemiBold' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -3872,27 +7117,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -3911,7 +7382,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -3923,9 +7394,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -3959,11 +7428,115 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* c (U+0063): X=388.5,Y=-1.0 (should be at baseline 0?)
 
-	* e (U+0065): X=423.0,Y=-1.0 (should be at baseline 0?) 
+	* e (U+0065): X=423.0,Y=-1.0 (should be at baseline 0?)
 
-	* 54 more.
+	* r (U+0072): X=393.5,Y=551.0 (should be at x-height 552?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* s (U+0073): X=126.5,Y=-2.0 (should be at baseline 0?)
+
+	* y (U+0079): X=217.0,Y=2.0 (should be at baseline 0?)
+
+	* section (U+00A7): X=129.0,Y=1.5 (should be at baseline 0?)
+
+	* ordfeminine (U+00AA): X=294.0,Y=689.5 (should be at cap-height 690?)
+
+	* Ccedilla (U+00C7): X=485.5,Y=-2.0 (should be at baseline 0?)
+
+	* ae (U+00E6): X=740.0,Y=-1.0 (should be at baseline 0?)
+
+	* ae (U+00E6): X=308.5,Y=2.0 (should be at baseline 0?)
+
+	* ccedilla (U+00E7): X=388.5,Y=-1.0 (should be at baseline 0?)
+
+	* egrave (U+00E8): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* eacute (U+00E9): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* ecircumflex (U+00EA): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* edieresis (U+00EB): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* eth (U+00F0): X=177.0,Y=689.0 (should be at cap-height 690?)
+
+	* yacute (U+00FD): X=217.0,Y=2.0 (should be at baseline 0?)
+
+	* ydieresis (U+00FF): X=217.0,Y=2.0 (should be at baseline 0?)
+
+	* Cacute (U+0106): X=485.5,Y=-2.0 (should be at baseline 0?)
+
+	* cacute (U+0107): X=388.5,Y=-1.0 (should be at baseline 0?)
+
+	* Cdotaccent (U+010A): X=485.5,Y=-2.0 (should be at baseline 0?)
+
+	* cdotaccent (U+010B): X=388.5,Y=-1.0 (should be at baseline 0?)
+
+	* Ccaron (U+010C): X=485.5,Y=-2.0 (should be at baseline 0?)
+
+	* ccaron (U+010D): X=388.5,Y=-1.0 (should be at baseline 0?)
+
+	* emacron (U+0113): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* edotaccent (U+0117): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* ecaron (U+011B): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+	* Gbreve (U+011E): X=531.0,Y=0.5 (should be at baseline 0?)
+
+	* Gdotaccent (U+0120): X=531.0,Y=0.5 (should be at baseline 0?)
+
+	* Gcommaaccent (U+0122): X=531.0,Y=0.5 (should be at baseline 0?)
+
+	* Eng (U+014A): X=586.0,Y=1.0 (should be at baseline 0?)
+
+	* Eng (U+014A): X=700.0,Y=2.0 (should be at baseline 0?)
+
+	* oe (U+0153): X=807.0,Y=-1.0 (should be at baseline 0?)
+
+	* sacute (U+015B): X=126.5,Y=-2.0 (should be at baseline 0?)
+
+	* scedilla (U+015F): X=126.5,Y=-2.0 (should be at baseline 0?)
+
+	* scaron (U+0161): X=126.5,Y=-2.0 (should be at baseline 0?)
+
+	* Uring (U+016E): X=287.0,Y=807.0 (should be at ascender 809?)
+
+	* Uring (U+016E): X=456.5,Y=807.0 (should be at ascender 809?)
+
+	* ycircumflex (U+0177): X=217.0,Y=2.0 (should be at baseline 0?)
+
+	* scommaaccent (U+0219): X=126.5,Y=-2.0 (should be at baseline 0?)
+
+	* candrabinduknda (U+0C81): X=-207.5,Y=692.0 (should be at cap-height 690?)
+
+	* iknda (U+0C87): X=471.5,Y=1.5 (should be at baseline 0?)
+
+	* iiknda (U+0C88): X=821.0,Y=-2.0 (should be at baseline 0?)
+
+	* uknda (U+0C89): X=913.5,Y=2.0 (should be at baseline 0?)
+
+	* uuknda (U+0C8A): X=883.0,Y=2.0 (should be at baseline 0?)
+
+	* gaknda (U+0C97): X=616.5,Y=688.0 (should be at cap-height 690?)
+
+	* nyaknda (U+0C9E): X=471.5,Y=1.5 (should be at baseline 0?)
+
+	* aivowelsignknda (U+0CC8): X=56.0,Y=2.0 (should be at baseline 0?)
+
+	* ailengthmarkknda (U+0CD6): X=56.0,Y=2.0 (should be at baseline 0?)
+
+	* uni1CF4 (U+1CF4): X=-336.5,Y=689.5 (should be at cap-height 690?)
+
+	* uni1CF4 (U+1CF4): X=-218.5,Y=692.0 (should be at cap-height 690?)
+
+	* Germandbls (U+1E9E): X=354.5,Y=-1.5 (should be at baseline 0?)
+
+	* ygrave (U+1EF3): X=217.0,Y=2.0 (should be at baseline 0?)
+
+	* euro (U+20AC): X=471.5,Y=-2.0 (should be at baseline 0?)
+
+	* uni20B9.knda (U+20B9): X=63.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni20B9.knda (U+20B9): X=512.0,Y=691.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -3985,7 +7558,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wdieresis (U+1E84): B<<678.0,182.0>-<684.0,150.0>-<687.0,126.0>>/B<<687.0,126.0>-<690.0,151.0>-<695.5,183.0>> = 13.967789761532726
 
-	* Wgrave (U+1E80): B<<257.0,182.5>-<263.0,150.0>-<266.0,126.0>>/B<<266.0,126.0>-<269.0,151.0>-<275.0,184.0>> = 13.967789761532726 
+	* Wgrave (U+1E80): B<<257.0,182.5>-<263.0,150.0>-<266.0,126.0>>/B<<266.0,126.0>-<269.0,151.0>-<275.0,184.0>> = 13.967789761532726
 
 	* Wgrave (U+1E80): B<<678.0,182.0>-<684.0,150.0>-<687.0,126.0>>/B<<687.0,126.0>-<690.0,151.0>-<695.5,183.0>> = 13.967789761532726 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -3994,7 +7567,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<607.0,275.0>--<477.0,274.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4006,19 +7589,56 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada Thin' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4030,27 +7650,253 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignUIknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
 	- backslash.UIknda
-
-	- bar
 
 	- bar.UIknda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 158 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.UIknda
+
+	- braceright.UIknda
+
+	- bracketleft.UIknda
+
+	- bracketright.UIknda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.UIknda
+
+	- parenright.UIknda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- rvocalicvowelsignUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.UIknda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4069,7 +7915,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4081,9 +7927,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4109,10 +7953,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* exclam.knda (U+0021): L<<137.0,696.0>--<135.0,162.0>>
 
-	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>> 
+	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>>
 
 	* exclamdown (U+00A1): L<<96.0,-186.0>--<98.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannadaUI-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4120,24 +7974,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI Black' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4149,27 +8040,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4188,7 +8301,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4200,9 +8313,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4236,11 +8347,73 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* g (U+0067): X=271.0,Y=2.0 (should be at baseline 0?)
 
-	* n (U+006E): X=236.0,Y=573.0 (should be at x-height 574?) 
+	* n (U+006E): X=236.0,Y=573.0 (should be at x-height 574?)
 
-	* 33 more.
+	* n (U+006E): X=243.0,Y=573.0 (should be at x-height 574?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* p (U+0070): X=248.0,Y=576.0 (should be at x-height 574?)
+
+	* p (U+0070): X=257.0,Y=576.0 (should be at x-height 574?)
+
+	* Agrave (U+00C0): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Aacute (U+00C1): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Acircumflex (U+00C2): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Atilde (U+00C3): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Adieresis (U+00C4): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Aring (U+00C5): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* divide.knda (U+00F7): X=231.5,Y=691.0 (should be at cap-height 690?)
+
+	* divide.knda (U+00F7): X=338.5,Y=691.0 (should be at cap-height 690?)
+
+	* oslash (U+00F8): X=483.0,Y=691.0 (should be at cap-height 690?)
+
+	* Amacron (U+0100): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Abreve (U+0102): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* Aogonek (U+0104): X=363.0,Y=692.0 (should be at cap-height 690?)
+
+	* eogonek (U+0119): X=447.0,Y=2.0 (should be at baseline 0?)
+
+	* eogonek (U+0119): X=447.0,Y=2.0 (should be at baseline 0?)
+
+	* gbreve (U+011F): X=271.0,Y=2.0 (should be at baseline 0?)
+
+	* gdotaccent (U+0121): X=271.0,Y=2.0 (should be at baseline 0?)
+
+	* gcommaaccent (U+0123): X=271.0,Y=2.0 (should be at baseline 0?)
+
+	* Zacute (U+0179): X=578.0,Y=688.0 (should be at cap-height 690?)
+
+	* Zdotaccent (U+017B): X=578.0,Y=688.0 (should be at cap-height 690?)
+
+	* Zcaron (U+017D): X=578.0,Y=688.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-219.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-337.0,Y=692.0 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=226.0,Y=688.0 (should be at cap-height 690?)
+
+	* ttaknda (U+0C9F): X=884.5,Y=688.5 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-303.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-403.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-150.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-253.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CF4 (U+1CF4): X=-278.0,Y=689.0 (should be at cap-height 690?)
+
+	* uni1CF4 (U+1CF4): X=-278.0,Y=689.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -4264,12 +8437,34 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wcircumflex (U+0174): B<<527.0,535.0>-<523.0,561.0>-<521.0,579.0>>/B<<521.0,579.0>-<519.0,561.0>-<514.5,535.0>> = 12.680383491819825
 
-	* Wcircumflex (U+0174): B<<714.0,328.0>-<721.0,289.0>-<724.0,260.0>>/B<<724.0,260.0>-<727.0,285.0>-<734.0,322.0>> = 12.748914526401432 
+	* Wcircumflex (U+0174): B<<714.0,328.0>-<721.0,289.0>-<724.0,260.0>>/B<<724.0,260.0>-<727.0,285.0>-<734.0,322.0>> = 12.748914526401432
 
-	* 8 more.
+	* Wdieresis (U+1E84): B<<308.0,304.5>-<313.0,278.0>-<315.0,260.0>>/B<<315.0,260.0>-<319.0,290.0>-<325.5,329.0>> = 13.934835114501363
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannadaUI-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+	* Wdieresis (U+1E84): B<<527.0,535.0>-<523.0,561.0>-<521.0,579.0>>/B<<521.0,579.0>-<519.0,561.0>-<514.5,535.0>> = 12.680383491819825
+
+	* Wdieresis (U+1E84): B<<714.0,328.0>-<721.0,289.0>-<724.0,260.0>>/B<<724.0,260.0>-<727.0,285.0>-<734.0,322.0>> = 12.748914526401432
+
+	* Wgrave (U+1E80): B<<308.0,304.5>-<313.0,278.0>-<315.0,260.0>>/B<<315.0,260.0>-<319.0,290.0>-<325.5,329.0>> = 13.934835114501363
+
+	* Wgrave (U+1E80): B<<527.0,535.0>-<523.0,561.0>-<521.0,579.0>>/B<<521.0,579.0>-<519.0,561.0>-<514.5,535.0>> = 12.680383491819825
+
+	* Wgrave (U+1E80): B<<714.0,328.0>-<721.0,289.0>-<724.0,260.0>>/B<<724.0,260.0>-<727.0,285.0>-<734.0,322.0>> = 12.748914526401432
+
+	* aaknda (U+0C86): L<<469.0,312.0>--<469.0,451.0>>/B<<469.0,451.0>-<454.0,389.0>-<403.5,362.5>> = 13.60054251665873
+
+	* llaknda (U+0CB3): B<<384.5,424.5>-<344.0,387.0>-<274.0,384.0>>/B<<274.0,384.0>-<300.0,379.0>-<334.5,376.5>> = 13.339558729185805 [code: found-jaggy-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4277,17 +8472,54 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4299,27 +8531,249 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4338,7 +8792,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4350,9 +8804,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4386,11 +8838,111 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* S (U+0053): X=291.0,Y=691.0 (should be at cap-height 690?)
 
-	* y (U+0079): X=167.5,Y=1.5 (should be at baseline 0?) 
+	* y (U+0079): X=167.5,Y=1.5 (should be at baseline 0?)
 
-	* 52 more.
+	* Ccedilla (U+00C7): X=393.0,Y=691.0 (should be at cap-height 690?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* Ccedilla (U+00C7): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Ograve (U+00D2): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* Oacute (U+00D3): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* Ocircumflex (U+00D4): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* Otilde (U+00D5): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* Odieresis (U+00D6): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* Oslash (U+00D8): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* yacute (U+00FD): X=167.5,Y=1.5 (should be at baseline 0?)
+
+	* ydieresis (U+00FF): X=167.5,Y=1.5 (should be at baseline 0?)
+
+	* Cacute (U+0106): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Cacute (U+0106): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Cdotaccent (U+010A): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Cdotaccent (U+010A): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Ccaron (U+010C): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Ccaron (U+010C): X=393.0,Y=691.0 (should be at cap-height 690?)
+
+	* Gbreve (U+011E): X=430.0,Y=691.0 (should be at cap-height 690?)
+
+	* Gdotaccent (U+0120): X=430.0,Y=691.0 (should be at cap-height 690?)
+
+	* Gcommaaccent (U+0122): X=430.0,Y=691.0 (should be at cap-height 690?)
+
+	* Eng (U+014A): X=481.0,Y=2.0 (should be at baseline 0?)
+
+	* Omacron (U+014C): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* Ohungarumlaut (U+0150): X=399.0,Y=692.0 (should be at cap-height 690?)
+
+	* OE (U+0152): X=379.0,Y=692.0 (should be at cap-height 690?)
+
+	* OE (U+0152): X=379.0,Y=692.0 (should be at cap-height 690?)
+
+	* Sacute (U+015A): X=291.0,Y=691.0 (should be at cap-height 690?)
+
+	* Scedilla (U+015E): X=291.0,Y=691.0 (should be at cap-height 690?)
+
+	* Scaron (U+0160): X=291.0,Y=691.0 (should be at cap-height 690?)
+
+	* Uring (U+016E): X=288.5,Y=1067.0 (should be at ascender 1069?)
+
+	* Uring (U+016E): X=464.0,Y=1067.0 (should be at ascender 1069?)
+
+	* ycircumflex (U+0177): X=167.5,Y=1.5 (should be at baseline 0?)
+
+	* Scommaaccent (U+0218): X=291.0,Y=691.0 (should be at cap-height 690?)
+
+	* commaturnedabovecomb (U+0312): X=-58.5,Y=689.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-228.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-328.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0C84 (U+0C84): X=811.0,Y=688.5 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=552.0,Y=689.0 (should be at cap-height 690?)
+
+	* ttaknda (U+0C9F): X=115.5,Y=691.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=-30.0,Y=689.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=-30.0,Y=689.0 (should be at cap-height 690?)
+
+	* evowelsignknda (U+0CC6): X=-269.5,Y=691.0 (should be at cap-height 690?)
+
+	* eevowelsignknda (U+0CC7): X=-269.5,Y=691.0 (should be at cap-height 690?)
+
+	* aivowelsignUIknda (U+0CC8): X=-269.5,Y=691.0 (should be at cap-height 690?)
+
+	* ovowelsignknda (U+0CCA): X=-269.5,Y=691.0 (should be at cap-height 690?)
+
+	* oovowelsignknda (U+0CCB): X=-269.5,Y=691.0 (should be at cap-height 690?)
+
+	* viramaknda (U+0CCD): X=277.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-304.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-395.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-161.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-252.0,Y=692.0 (should be at cap-height 690?)
+
+	* ygrave (U+1EF3): X=167.5,Y=1.5 (should be at baseline 0?)
+
+	* euro (U+20AC): X=392.0,Y=691.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=638.0,Y=690.5 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4420,12 +8972,28 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wcircumflex (U+0174): B<<683.0,289.0>-<689.0,254.0>-<692.0,230.0>>/B<<692.0,230.0>-<695.0,255.0>-<701.0,289.5>> = 13.967789761532726
 
-	* Wdieresis (U+1E84): B<<266.0,289.0>-<272.0,254.0>-<275.0,230.0>>/B<<275.0,230.0>-<278.0,255.0>-<284.0,289.5>> = 13.967789761532726 
+	* Wdieresis (U+1E84): B<<266.0,289.0>-<272.0,254.0>-<275.0,230.0>>/B<<275.0,230.0>-<278.0,255.0>-<284.0,289.5>> = 13.967789761532726
 
-	* 5 more.
+	* Wdieresis (U+1E84): B<<489.0,598.5>-<485.0,622.0>-<483.0,635.0>>/B<<483.0,635.0>-<482.0,622.0>-<477.5,598.5>> = 13.144867617550734
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+	* Wdieresis (U+1E84): B<<683.0,289.0>-<689.0,254.0>-<692.0,230.0>>/B<<692.0,230.0>-<695.0,255.0>-<701.0,289.5>> = 13.967789761532726
+
+	* Wgrave (U+1E80): B<<266.0,289.0>-<272.0,254.0>-<275.0,230.0>>/B<<275.0,230.0>-<278.0,255.0>-<284.0,289.5>> = 13.967789761532726
+
+	* Wgrave (U+1E80): B<<489.0,598.5>-<485.0,622.0>-<483.0,635.0>>/B<<483.0,635.0>-<482.0,622.0>-<477.5,598.5>> = 13.144867617550734
+
+	* Wgrave (U+1E80): B<<683.0,289.0>-<689.0,254.0>-<692.0,230.0>>/B<<692.0,230.0>-<695.0,255.0>-<701.0,289.5>> = 13.967789761532726 [code: found-jaggy-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannadaUI-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4433,24 +9001,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI ExtraBold' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4462,27 +9067,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4501,7 +9328,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4513,9 +9340,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4537,7 +9362,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* braceleft.UIknda (U+007B): X=287.0,Y=692.0 (should be at cap-height 690?)
 
-	* braceright.knda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
+	* braceright.UIknda (U+007D): X=118.0,Y=692.0 (should be at cap-height 690?)
 
 	* ordfeminine (U+00AA): X=239.0,Y=688.0 (should be at cap-height 690?)
 
@@ -4549,11 +9374,51 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* lacute (U+013A): X=194.0,Y=1070.0 (should be at ascender 1069?)
 
-	* lacute (U+013A): X=381.0,Y=1070.0 (should be at ascender 1069?) 
+	* lacute (U+013A): X=381.0,Y=1070.0 (should be at ascender 1069?)
 
-	* 22 more.
+	* Scedilla (U+015E): X=250.0,Y=2.0 (should be at baseline 0?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* scedilla (U+015F): X=222.0,Y=2.0 (should be at baseline 0?)
+
+	* Uring (U+016E): X=286.5,Y=1069.5 (should be at ascender 1069?)
+
+	* Uring (U+016E): X=467.5,Y=1069.5 (should be at ascender 1069?)
+
+	* Uogonek (U+0172): X=501.0,Y=-1.0 (should be at baseline 0?)
+
+	* Uogonek (U+0172): X=501.0,Y=-1.0 (should be at baseline 0?)
+
+	* cedillacomb (U+0327): X=-28.0,Y=2.0 (should be at baseline 0?)
+
+	* uni0951 (U+0951): X=-224.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-332.0,Y=692.0 (should be at cap-height 690?)
+
+	* eknda (U+0C8E): X=271.0,Y=688.0 (should be at cap-height 690?)
+
+	* eeknda (U+0C8F): X=247.0,Y=688.0 (should be at cap-height 690?)
+
+	* eeknda (U+0C8F): X=387.0,Y=688.0 (should be at cap-height 690?)
+
+	* ooknda (U+0C93): X=79.5,Y=689.0 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=237.5,Y=689.5 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=572.0,Y=691.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=218.0,Y=692.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=223.0,Y=692.0 (should be at cap-height 690?)
+
+	* viramaknda (U+0CCD): X=187.5,Y=690.5 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-304.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-399.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-156.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-252.0,Y=692.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4561,7 +9426,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* caknda (U+0C9A): L<<654.0,515.0>--<653.0,515.0>> -> L<<653.0,515.0>--<520.0,515.0>>
 
-	* rraknda (U+0CB1): L<<731.0,336.0>--<731.0,336.0>> -> L<<731.0,336.0>--<731.0,336.0>> 
+	* rraknda (U+0CB1): L<<731.0,336.0>--<731.0,336.0>> -> L<<731.0,336.0>--<731.0,336.0>>
 
 	* ttaknda (U+0C9F): L<<684.0,364.0>--<681.0,364.0>> -> L<<681.0,364.0>--<584.0,364.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -4587,10 +9452,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wdieresis (U+1E84): B<<506.5,568.5>-<502.0,593.0>-<501.0,609.0>>/B<<501.0,609.0>-<499.0,593.0>-<494.5,568.5>> = 10.701350723899111
 
-	* Wgrave (U+1E80): B<<283.5,304.5>-<290.0,268.0>-<293.0,244.0>>/B<<293.0,244.0>-<297.0,276.0>-<305.0,319.5>> = 14.25003269780357 
+	* Wgrave (U+1E80): B<<283.5,304.5>-<290.0,268.0>-<293.0,244.0>>/B<<293.0,244.0>-<297.0,276.0>-<305.0,319.5>> = 14.25003269780357
 
 	* Wgrave (U+1E80): B<<506.5,568.5>-<502.0,593.0>-<501.0,609.0>>/B<<501.0,609.0>-<499.0,593.0>-<494.5,568.5>> = 10.701350723899111 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[16] NotoSansKannadaUI-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[17] NotoSansKannadaUI-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4598,24 +9473,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI ExtraLight' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4627,27 +9539,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4666,7 +9800,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4678,9 +9812,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4714,11 +9846,33 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* Dcroat (U+0110): X=519.0,Y=691.0 (should be at cap-height 690?)
 
-	* uni0C84 (U+0C84): X=754.5,Y=-2.0 (should be at baseline 0?) 
+	* uni0C84 (U+0C84): X=754.5,Y=-2.0 (should be at baseline 0?)
 
-	* 13 more.
+	* ooknda (U+0C93): X=90.5,Y=691.5 (should be at cap-height 690?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* auknda (U+0C94): X=272.5,Y=691.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=35.0,Y=688.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=35.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=27.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=27.0,Y=688.0 (should be at cap-height 690?)
+
+	* rvocalicvowelsignUIknda (U+0CC3): X=-132.0,Y=-0.5 (should be at baseline 0?)
+
+	* rrvocalicvowelsignUIknda (U+0CC4): X=-132.0,Y=-0.5 (should be at baseline 0?)
+
+	* aivowelsignUIknda (U+0CC8): X=-118.5,Y=-0.5 (should be at baseline 0?)
+
+	* ailengthmarkUIknda (U+0CD6): X=-118.5,Y=-0.5 (should be at baseline 0?)
+
+	* oneknda (U+0CE7): X=559.0,Y=689.5 (should be at cap-height 690?)
+
+	* fourknda (U+0CEA): X=73.0,Y=688.5 (should be at cap-height 690?)
+
+	* sixknda (U+0CEC): X=233.0,Y=692.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4730,7 +9884,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* lengthmarkknda (U+0CD5): L<<78.0,425.0>--<78.0,419.0>> -> L<<78.0,419.0>--<78.0,408.0>>
 
-	* oovowelsignknda (U+0CCB): L<<771.0,425.0>--<771.0,419.0>> -> L<<771.0,419.0>--<771.0,408.0>> 
+	* oovowelsignknda (U+0CCB): L<<771.0,425.0>--<771.0,419.0>> -> L<<771.0,419.0>--<771.0,408.0>>
 
 	* ttaknda (U+0C9F): L<<533.0,432.0>--<527.0,432.0>> -> L<<527.0,432.0>--<456.0,432.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -4745,7 +9899,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<532.0,428.0>--<406.0,427.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannadaUI-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4753,24 +9917,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI Light' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4782,27 +9983,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4821,7 +10244,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4833,9 +10256,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4869,11 +10290,41 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* yacute (U+00FD): X=230.0,Y=-1.0 (should be at baseline 0?)
 
-	* ydieresis (U+00FF): X=230.0,Y=-1.0 (should be at baseline 0?) 
+	* ydieresis (U+00FF): X=230.0,Y=-1.0 (should be at baseline 0?)
 
-	* 17 more.
+	* ycircumflex (U+0177): X=230.0,Y=-1.0 (should be at baseline 0?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* commaturnedabovecomb (U+0312): X=-41.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0C84 (U+0C84): X=268.0,Y=1.5 (should be at baseline 0?)
+
+	* auknda (U+0C94): X=272.5,Y=692.0 (should be at cap-height 690?)
+
+	* ttaknda (U+0C9F): X=242.0,Y=689.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=41.0,Y=688.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=41.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=36.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=36.0,Y=688.0 (should be at cap-height 690?)
+
+	* lvocalicvowelsignUIknda (U+0CE2): X=-169.0,Y=-0.5 (should be at baseline 0?)
+
+	* llvocalicvowelsignUIknda (U+0CE3): X=-169.0,Y=-0.5 (should be at baseline 0?)
+
+	* oneknda (U+0CE7): X=561.0,Y=690.5 (should be at cap-height 690?)
+
+	* fourknda (U+0CEA): X=69.0,Y=689.0 (should be at cap-height 690?)
+
+	* uni1CD0 (U+1CD0): X=-180.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CD0 (U+1CD0): X=-374.0,Y=691.0 (should be at cap-height 690?)
+
+	* ygrave (U+1EF3): X=230.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni20B9.knda (U+20B9): X=320.5,Y=691.5 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -4886,7 +10337,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* gaknda (U+0C97): L<<56.0,93.0>--<55.0,222.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSansKannadaUI-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -4894,24 +10355,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI Medium' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -4923,27 +10421,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -4962,7 +10682,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -4974,9 +10694,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -4991,8 +10709,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenright.knda (U+0029): X=200.5,Y=-1.5 (should be at baseline 0?)
 
 	* five.knda (U+0035): X=469.0,Y=689.0 (should be at cap-height 690?)
 
@@ -5010,11 +10726,95 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* c (U+0063): X=307.0,Y=552.0 (should be at x-height 551?)
 
-	* z (U+007A): X=313.0,Y=550.0 (should be at x-height 551?) 
+	* z (U+007A): X=313.0,Y=550.0 (should be at x-height 551?)
 
-	* 44 more.
+	* z (U+007A): X=52.0,Y=550.0 (should be at x-height 551?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* eth (U+00F0): X=325.0,Y=691.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=431.0,Y=692.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=236.0,Y=692.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=613.0,Y=692.0 (should be at cap-height 690?)
+
+	* dcroat (U+0111): X=537.0,Y=692.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=384.0,Y=691.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=189.0,Y=691.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=83.0,Y=691.0 (should be at cap-height 690?)
+
+	* hbar (U+0127): X=7.0,Y=691.0 (should be at cap-height 690?)
+
+	* lacute (U+013A): X=303.0,Y=1070.0 (should be at ascender 1069?)
+
+	* Eng (U+014A): X=399.0,Y=-2.0 (should be at baseline 0?)
+
+	* Racute (U+0154): X=412.0,Y=688.0 (should be at cap-height 690?)
+
+	* Rcommaaccent (U+0156): X=412.0,Y=688.0 (should be at cap-height 690?)
+
+	* Rcaron (U+0158): X=412.0,Y=688.0 (should be at cap-height 690?)
+
+	* commaturnedabovecomb (U+0312): X=-46.0,Y=689.5 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-238.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-318.0,Y=692.0 (should be at cap-height 690?)
+
+	* ooknda (U+0C93): X=80.5,Y=691.5 (should be at cap-height 690?)
+
+	* ooknda (U+0C93): X=178.5,Y=691.0 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=515.0,Y=692.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=63.0,Y=689.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=63.0,Y=689.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=63.0,Y=689.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=63.0,Y=689.0 (should be at cap-height 690?)
+
+	* rrvocalicvowelsignUIknda (U+0CC4): X=302.0,Y=2.0 (should be at baseline 0?)
+
+	* evowelsignknda (U+0CC6): X=-302.0,Y=689.0 (should be at cap-height 690?)
+
+	* eevowelsignknda (U+0CC7): X=-302.0,Y=689.0 (should be at cap-height 690?)
+
+	* aivowelsignUIknda (U+0CC8): X=-302.0,Y=689.0 (should be at cap-height 690?)
+
+	* ovowelsignknda (U+0CCA): X=-302.0,Y=689.0 (should be at cap-height 690?)
+
+	* oovowelsignknda (U+0CCB): X=-302.0,Y=689.0 (should be at cap-height 690?)
+
+	* lvocalicvowelsignUIknda (U+0CE2): X=-8.0,Y=2.0 (should be at baseline 0?)
+
+	* lvocalicvowelsignUIknda (U+0CE2): X=-220.0,Y=1.0 (should be at baseline 0?)
+
+	* llvocalicvowelsignUIknda (U+0CE3): X=-10.0,Y=2.0 (should be at baseline 0?)
+
+	* llvocalicvowelsignUIknda (U+0CE3): X=-220.0,Y=1.0 (should be at baseline 0?)
+
+	* zeroknda (U+0CE6): X=121.5,Y=688.0 (should be at cap-height 690?)
+
+	* fourknda (U+0CEA): X=59.0,Y=688.0 (should be at cap-height 690?)
+
+	* fiveknda (U+0CEB): X=138.0,Y=692.0 (should be at cap-height 690?)
+
+	* fiveknda (U+0CEB): X=559.0,Y=691.5 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-308.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-382.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-174.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-248.0,Y=691.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=638.0,Y=690.5 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -5022,10 +10822,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* caknda (U+0C9A): L<<593.0,553.0>--<589.0,553.0>> -> L<<589.0,553.0>--<457.0,553.0>>
 
-	* ttaknda (U+0C9F): L<<136.0,317.0>--<136.0,313.0>> -> L<<136.0,313.0>--<136.0,305.0>> 
+	* ttaknda (U+0C9F): L<<136.0,317.0>--<136.0,313.0>> -> L<<136.0,313.0>--<136.0,305.0>>
 
 	* ttaknda (U+0C9F): L<<603.0,388.0>--<600.0,388.0>> -> L<<600.0,388.0>--<518.0,388.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[13] NotoSansKannadaUI-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[14] NotoSansKannadaUI-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -5033,17 +10843,54 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -5055,27 +10902,249 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5094,7 +11163,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5106,9 +11175,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -5142,18 +11209,78 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* Hbar (U+0126): X=0.0,Y=688.0 (should be at cap-height 690?)
 
-	* Hbar (U+0126): X=97.0,Y=688.0 (should be at cap-height 690?) 
+	* Hbar (U+0126): X=97.0,Y=688.0 (should be at cap-height 690?)
 
-	* 27 more.
+	* Hbar (U+0126): X=187.0,Y=688.0 (should be at cap-height 690?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* Hbar (U+0126): X=553.0,Y=688.0 (should be at cap-height 690?)
+
+	* Hbar (U+0126): X=643.0,Y=688.0 (should be at cap-height 690?)
+
+	* Hbar (U+0126): X=740.0,Y=688.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-242.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-314.0,Y=692.0 (should be at cap-height 690?)
+
+	* candrabinduknda (U+0C81): X=-278.0,Y=691.0 (should be at cap-height 690?)
+
+	* candrabinduknda (U+0C81): X=-278.0,Y=691.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=50.0,Y=688.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=50.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=50.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=50.0,Y=688.0 (should be at cap-height 690?)
+
+	* rrvocalicvowelsignUIknda (U+0CC4): X=299.0,Y=-2.0 (should be at baseline 0?)
+
+	* aivowelsignUIknda (U+0CC8): X=73.0,Y=0.5 (should be at baseline 0?)
+
+	* auvowelsignknda (U+0CCC): X=385.5,Y=691.5 (should be at cap-height 690?)
+
+	* ailengthmarkUIknda (U+0CD6): X=73.0,Y=0.5 (should be at baseline 0?)
+
+	* oneknda (U+0CE7): X=563.5,Y=692.0 (should be at cap-height 690?)
+
+	* twoknda (U+0CE8): X=303.5,Y=688.5 (should be at cap-height 690?)
+
+	* fourknda (U+0CEA): X=62.0,Y=689.0 (should be at cap-height 690?)
+
+	* sixknda (U+0CEC): X=296.0,Y=692.0 (should be at cap-height 690?)
+
+	* nineknda (U+0CEF): X=287.5,Y=691.5 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-309.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-377.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-179.0,Y=691.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-247.0,Y=691.0 (should be at cap-height 690?)
+
+	* Germandbls (U+1E9E): X=119.0,Y=688.5 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=638.0,Y=690.5 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<566.0,399.0>--<439.0,398.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannadaUI-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -5161,24 +11288,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI SemiBold' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -5190,27 +11354,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5229,7 +11615,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5241,9 +11627,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -5258,8 +11642,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-
-	* parenleft.knda (U+0028): X=206.5,Y=-0.5 (should be at baseline 0?)
 
 	* zero.knda (U+0030): X=285.0,Y=691.0 (should be at cap-height 690?)
 
@@ -5277,11 +11659,125 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* J (U+004A): X=-4.0,Y=-1.0 (should be at baseline 0?)
 
-	* a (U+0061): X=291.0,Y=550.0 (should be at x-height 552?) 
+	* a (U+0061): X=291.0,Y=550.0 (should be at x-height 552?)
 
-	* 61 more.
+	* s (U+0073): X=254.0,Y=550.0 (should be at x-height 552?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* z (U+007A): X=440.0,Y=550.0 (should be at x-height 552?)
+
+	* sterling (U+00A3): X=280.0,Y=691.0 (should be at cap-height 690?)
+
+	* lacute (U+013A): X=331.0,Y=1067.0 (should be at ascender 1069?)
+
+	* OE (U+0152): X=490.0,Y=691.0 (should be at cap-height 690?)
+
+	* commaturnedabovecomb (U+0312): X=-52.0,Y=689.5 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-233.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni0951 (U+0951): X=-323.0,Y=692.0 (should be at cap-height 690?)
+
+	* iiknda (U+0C88): X=671.0,Y=688.0 (should be at cap-height 690?)
+
+	* rvocalicknda (U+0C8B): X=838.0,Y=689.0 (should be at cap-height 690?)
+
+	* ooknda (U+0C93): X=81.0,Y=688.0 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=254.5,Y=688.0 (should be at cap-height 690?)
+
+	* auknda (U+0C94): X=532.0,Y=691.0 (should be at cap-height 690?)
+
+	* kaknda (U+0C95): X=583.0,Y=689.0 (should be at cap-height 690?)
+
+	* gaknda (U+0C97): X=634.0,Y=688.0 (should be at cap-height 690?)
+
+	* ghaknda (U+0C98): X=808.0,Y=689.0 (should be at cap-height 690?)
+
+	* caknda (U+0C9A): X=826.0,Y=689.0 (should be at cap-height 690?)
+
+	* chaknda (U+0C9B): X=852.0,Y=689.0 (should be at cap-height 690?)
+
+	* jhaknda (U+0C9D): X=639.0,Y=688.0 (should be at cap-height 690?)
+
+	* ttaknda (U+0C9F): X=110.0,Y=689.0 (should be at cap-height 690?)
+
+	* tthaknda (U+0CA0): X=644.0,Y=688.0 (should be at cap-height 690?)
+
+	* ddaknda (U+0CA1): X=775.0,Y=689.0 (should be at cap-height 690?)
+
+	* ddhaknda (U+0CA2): X=775.0,Y=689.0 (should be at cap-height 690?)
+
+	* taknda (U+0CA4): X=626.0,Y=689.0 (should be at cap-height 690?)
+
+	* thaknda (U+0CA5): X=761.0,Y=689.0 (should be at cap-height 690?)
+
+	* daknda (U+0CA6): X=761.0,Y=689.0 (should be at cap-height 690?)
+
+	* dhaknda (U+0CA7): X=761.0,Y=689.0 (should be at cap-height 690?)
+
+	* naknda (U+0CA8): X=709.0,Y=689.0 (should be at cap-height 690?)
+
+	* paknda (U+0CAA): X=799.0,Y=689.0 (should be at cap-height 690?)
+
+	* phaknda (U+0CAB): X=799.0,Y=689.0 (should be at cap-height 690?)
+
+	* bhaknda (U+0CAD): X=820.0,Y=689.0 (should be at cap-height 690?)
+
+	* maknda (U+0CAE): X=799.0,Y=689.0 (should be at cap-height 690?)
+
+	* yaknda (U+0CAF): X=961.0,Y=689.0 (should be at cap-height 690?)
+
+	* raknda (U+0CB0): X=639.0,Y=688.0 (should be at cap-height 690?)
+
+	* llaknda (U+0CB3): X=719.0,Y=688.0 (should be at cap-height 690?)
+
+	* vaknda (U+0CB5): X=799.0,Y=689.0 (should be at cap-height 690?)
+
+	* shaknda (U+0CB6): X=636.0,Y=689.0 (should be at cap-height 690?)
+
+	* ssaknda (U+0CB7): X=814.0,Y=689.0 (should be at cap-height 690?)
+
+	* saknda (U+0CB8): X=710.0,Y=689.0 (should be at cap-height 690?)
+
+	* haknda (U+0CB9): X=807.0,Y=689.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=77.0,Y=691.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=77.0,Y=691.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=77.0,Y=691.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=77.0,Y=691.0 (should be at cap-height 690?)
+
+	* viramaknda (U+0CCD): X=159.5,Y=691.5 (should be at cap-height 690?)
+
+	* rrvocalicknda (U+0CE0): X=838.0,Y=689.0 (should be at cap-height 690?)
+
+	* lvocalicvowelsignUIknda (U+0CE2): X=-11.0,Y=-1.0 (should be at baseline 0?)
+
+	* lvocalicvowelsignUIknda (U+0CE2): X=-221.0,Y=-1.0 (should be at baseline 0?)
+
+	* llvocalicvowelsignUIknda (U+0CE3): X=-12.0,Y=-1.0 (should be at baseline 0?)
+
+	* llvocalicvowelsignUIknda (U+0CE3): X=-221.0,Y=-1.0 (should be at baseline 0?)
+
+	* zeroknda (U+0CE6): X=119.0,Y=688.5 (should be at cap-height 690?)
+
+	* zeroknda (U+0CE6): X=568.5,Y=689.0 (should be at cap-height 690?)
+
+	* fourknda (U+0CEA): X=276.0,Y=688.5 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-306.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-388.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-168.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni1CDA (U+1CDA): X=-250.0,Y=692.0 (should be at cap-height 690?)
+
+	* uni20B9.knda (U+20B9): X=175.5,Y=688.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=638.0,Y=690.5 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -5303,7 +11799,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* Wdieresis (U+1E84): B<<678.0,275.0>-<684.0,243.0>-<687.0,219.0>>/B<<687.0,219.0>-<690.0,244.0>-<695.5,276.0>> = 13.967789761532726
 
-	* Wgrave (U+1E80): B<<257.0,275.5>-<263.0,243.0>-<266.0,219.0>>/B<<266.0,219.0>-<269.0,244.0>-<275.0,277.0>> = 13.967789761532726 
+	* Wgrave (U+1E80): B<<257.0,275.5>-<263.0,243.0>-<266.0,219.0>>/B<<266.0,219.0>-<269.0,244.0>-<275.0,277.0>> = 13.967789761532726
 
 	* Wgrave (U+1E80): B<<678.0,275.0>-<684.0,243.0>-<687.0,219.0>>/B<<687.0,219.0>-<690.0,244.0>-<695.5,276.0>> = 13.967789761532726 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -5312,7 +11808,17 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* caknda (U+0C9A): L<<607.0,368.0>--<477.0,367.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannadaUI-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[16] NotoSansKannadaUI-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -5320,24 +11826,61 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 1069 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead. [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 533, but got 293 instead [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
 * 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, malayalam, coptic, tifinagh, math, old-permic, syriac, canadian-aboriginal
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, devanagari, telugu, tirhuta, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: devanagari, telugu
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, tirhuta, nandinagari, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: cham, sundanese, kayah-li, coptic, sora-sompeng, kharoshthi, kaithi, lisu, syloti-nagri, yi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: khudawadi, gurmukhi, gujarati, takri, modi, kaithi, nandinagari, tirhuta, mahajani, devanagari, khojki
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Sans Kannada UI Thin' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -5349,27 +11892,249 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- aivowelsignknda
 
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
+	- backslash.knda
 
 	- bar.knda
 
 	- basubscriptaltUIknda
 
-	- basubscriptrightUIknda 
+	- basubscriptrightUIknda
 
-	- 156 more.
+	- bharasubscriptaltUIknda
 
-Use -F or --full-lists to disable shortening of long lists.
+	- bhasubscriptaltUIknda
+
+	- bhasubscriptrightUIknda
+
+	- braceleft.knda
+
+	- braceright.knda
+
+	- bracketleft.knda
+
+	- bracketright.knda
+
+	- casubscriptaltUIknda
+
+	- casubscriptrightUIknda
+
+	- chasubscriptaltUIknda
+
+	- chasubscriptrightUIknda
+
+	- darasubscriptaltUIknda
+
+	- dasubscriptaltUIknda
+
+	- dasubscriptrightUIknda
+
+	- ddarasubscriptaltUIknda
+
+	- ddasubscriptaltUIknda
+
+	- ddasubscriptrightUIknda
+
+	- ddhasubscriptaltUIknda
+
+	- ddhasubscriptrightUIknda
+
+	- dhasubscriptaltUIknda
+
+	- dhasubscriptrightUIknda
+
+	- fasubscriptaltUIknda
+
+	- fasubscriptrightUIknda
+
+	- garasubscriptaltUIknda
+
+	- gasubscriptaltUIknda
+
+	- gasubscriptrightUIknda
+
+	- ghasubscriptaltUIknda
+
+	- ghasubscriptrightUIknda
+
+	- hasubscriptaltUIknda
+
+	- hasubscriptrightUIknda
+
+	- januktasubscriptaltUIknda
+
+	- januktasubscriptrightUIknda
+
+	- janyaUIknda
+
+	- janyanocrestUIknda
+
+	- janyaviramaUIknda
+
+	- janyevowelUIknda
+
+	- janyivowelUIknda
+
+	- jasubscriptaltUIknda
+
+	- jasubscriptrightUIknda
+
+	- jhasubscriptaltUIknda
+
+	- jhasubscriptrightUIknda
+
+	- karasubscriptaltUIknda
+
+	- kassaUIknda
+
+	- kassanocrestUIknda
+
+	- kassaviramaUIknda
+
+	- kassevowelUIknda
+
+	- kassivowelUIknda
+
+	- kasubscriptaltUIknda
+
+	- kasubscriptrightUIknda
+
+	- khasubscriptaltUIknda
+
+	- khasubscriptrightUIknda
+
+	- lasubscriptaltUIknda
+
+	- lasubscriptrightUIknda
+
+	- llasubscriptaltUIknda
+
+	- llasubscriptrightUIknda
+
+	- llvocalicvowelsignaltUIknda
+
+	- lvocalicvowelsignaltUIknda
+
+	- masubscriptaltUIknda
+
+	- masubscriptlengthmarkUIknda
+
+	- masubscriptlengthmarkaltUIknda
+
+	- masubscriptrightUIknda
+
+	- masubscriptrvocalicUIknda
+
+	- masubscriptrvocalicaltUIknda
+
+	- mayasubscriptUIknda
+
+	- mayasubscriptaltUIknda
+
+	- nasubscriptaltUIknda
+
+	- nasubscriptrightUIknda
+
+	- ngasubscriptaltUIknda
+
+	- ngasubscriptrightUIknda
+
+	- nnasubscriptaltUIknda
+
+	- nnasubscriptrightUIknda
+
+	- nyasubscriptaltUIknda
+
+	- nyasubscriptrightUIknda
+
+	- parasubscriptaltUIknda
+
+	- parenleft.knda
+
+	- parenright.knda
+
+	- pasubscriptaltUIknda
+
+	- pasubscriptrightUIknda
+
+	- phanuktasubscriptaltUIknda
+
+	- phanuktasubscriptrightUIknda
+
+	- phasubscriptaltUIknda
+
+	- phasubscriptrightUIknda
+
+	- question
+
+	- rasubscriptlengthmarkUIknda
+
+	- rasubscriptlengthmarkaltUIknda
+
+	- rasubscriptrightUIknda
+
+	- rrasubscriptaltUIknda
+
+	- rrasubscriptrightUIknda
+
+	- rrvocalicvowelsignaltUIknda
+
+	- sasubscriptaltUIknda
+
+	- sasubscriptrightUIknda
+
+	- shasubscriptaltUIknda
+
+	- shasubscriptrightUIknda
+
+	- slash.knda
+
+	- ssasubscriptaltUIknda
+
+	- ssasubscriptrightUIknda
+
+	- tarasubscriptUIknda
+
+	- tarasubscriptaltUIknda
+
+	- tasubscriptUIknda
+
+	- tasubscriptaltUIknda
+
+	- tasubscriptlengthmarkUIknda
+
+	- tasubscriptlengthmarkaltUIknda
+
+	- tasubscriptrightUIknda
+
+	- tasubscriptrvocalicUIknda
+
+	- tasubscriptrvocalicaltUIknda
+
+	- tayasubscriptUIknda
+
+	- tayasubscriptaltUIknda
+
+	- thasubscriptaltUIknda
+
+	- thasubscriptrightUIknda
+
+	- ttarasubscriptaltUIknda
+
+	- ttasubscriptaltUIknda
+
+	- ttasubscriptrightUIknda
+
+	- tthasubscriptaltUIknda
+
+	- tthasubscriptrightUIknda
+
+	- vasubscriptaltUIknda
+
+	- vasubscriptrightUIknda
+
+	- yasubscriptUIknda
+
+	- yasubscriptrightUIknda
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -5388,7 +12153,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12 
+	- Glyph name: uni25CC	Contours detected: 8	Expected: 16 or 12
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -5400,9 +12165,7 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
+	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded), baviramaknda (unencoded), bharasubscriptaltknda (unencoded), bharasubscriptknda (unencoded), bhasubscriptUIknda (unencoded), bhasubscriptaltUIknda (unencoded), bhasubscriptaltknda (unencoded), bhasubscriptknda (unencoded), bhasubscriptrightUIknda (unencoded), bhasubscriptrightknda (unencoded), casubscriptaltknda (unencoded), casubscriptknda (unencoded), chasubscriptaltknda (unencoded), chasubscriptknda (unencoded), darasubscriptaltknda (unencoded), darasubscriptknda (unencoded), dasubscriptaltknda (unencoded), dasubscriptknda (unencoded), ddarasubscriptaltknda (unencoded), ddarasubscriptknda (unencoded), ddasubscriptaltknda (unencoded), ddasubscriptknda (unencoded), ddhasubscriptaltknda (unencoded), ddhasubscriptknda (unencoded), dhasubscriptaltknda (unencoded), dhasubscriptknda (unencoded), evowelsignaltknda (unencoded), fasubscriptaltknda (unencoded), fasubscriptknda (unencoded), garasubscriptaltknda (unencoded), garasubscriptknda (unencoded), gasubscriptaltknda (unencoded), gasubscriptknda (unencoded), ghasubscriptaltknda (unencoded), ghasubscriptknda (unencoded), hasubscriptaltknda (unencoded), hasubscriptknda (unencoded), iivowelsignknda (U+0CC0), ivowelsignknda (U+0CBF), januktasubscriptaltknda (unencoded), januktasubscriptknda (unencoded), jasubscriptaltknda (unencoded), jasubscriptknda (unencoded), jhasubscriptaltknda (unencoded), jhasubscriptknda (unencoded), karasubscriptaltknda (unencoded), karasubscriptknda (unencoded), kasubscriptaltknda (unencoded), kasubscriptknda (unencoded), khasubscriptaltknda (unencoded), khasubscriptknda (unencoded), lasubscriptaltknda (unencoded), lasubscriptknda (unencoded), lengthmarkknda (U+0CD5), llasubscriptaltknda (unencoded), llasubscriptknda (unencoded), masubscriptaltknda (unencoded), masubscriptknda (unencoded), mayasubscriptaltknda (unencoded), mayasubscriptknda (unencoded), nasubscriptUIknda (unencoded), nasubscriptaltUIknda (unencoded), nasubscriptaltknda (unencoded), nasubscriptknda (unencoded), nasubscriptrightUIknda (unencoded), nasubscriptrightknda (unencoded), ngasubscriptaltknda (unencoded), ngasubscriptknda (unencoded), nnasubscriptUIknda (unencoded), nnasubscriptaltUIknda (unencoded), nnasubscriptaltknda (unencoded), nnasubscriptknda (unencoded), nnasubscriptrightUIknda (unencoded), nnasubscriptrightknda (unencoded), nyasubscriptaltknda (unencoded), nyasubscriptknda (unencoded), parasubscriptaltknda (unencoded), parasubscriptknda (unencoded), pasubscriptaltknda (unencoded), pasubscriptknda (unencoded), phanuktasubscriptaltknda (unencoded), phanuktasubscriptknda (unencoded), phasubscriptaltknda (unencoded), phasubscriptknda (unencoded), rasubscriptaltknda (unencoded), rasubscriptknda (unencoded), rrasubscriptaltknda (unencoded), rrasubscriptknda (unencoded), sasubscriptUIknda (unencoded), sasubscriptaltknda (unencoded), sasubscriptknda (unencoded), shasubscriptaltknda (unencoded), shasubscriptknda (unencoded), ssasubscriptUIknda (unencoded), ssasubscriptaltUIknda (unencoded), ssasubscriptaltknda (unencoded), ssasubscriptknda (unencoded), ssasubscriptrightUIknda (unencoded), ssasubscriptrightknda (unencoded), tarasubscriptaltknda (unencoded), tarasubscriptknda (unencoded), tasubscriptaltknda (unencoded), tasubscriptknda (unencoded), tayasubscriptaltknda (unencoded), tayasubscriptknda (unencoded), thasubscriptaltknda (unencoded), thasubscriptknda (unencoded), ttarasubscriptaltknda (unencoded), ttarasubscriptknda (unencoded), ttasubscriptaltknda (unencoded), ttasubscriptknda (unencoded), tthasubscriptaltknda (unencoded), tthasubscriptknda (unencoded), uuvowelsignalt2knda (unencoded), uuvowelsignaltknda (unencoded), uuvowelsignknda (U+0CC2), uuvowelsignlaknda (unencoded), uvowelsignalt2knda (unencoded), uvowelsignaltknda (unencoded), uvowelsignknda (U+0CC1), uvowelsignlaknda (unencoded), vasubscriptaltknda (unencoded), vasubscriptknda (unencoded), visargaknda (U+0C83), yasubscriptaltknda (unencoded) and yasubscriptknda (unencoded) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -5436,11 +12199,23 @@ Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-
 
 	* registered (U+00AE): X=174.5,Y=690.5 (should be at cap-height 690?)
 
-	* eth (U+00F0): X=175.0,Y=691.0 (should be at cap-height 690?) 
+	* eth (U+00F0): X=175.0,Y=691.0 (should be at cap-height 690?)
 
-	* 8 more.
+	* khaknda (U+0C96): X=441.0,Y=688.0 (should be at cap-height 690?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* ivowelsignknda (U+0CBF): X=31.0,Y=688.0 (should be at cap-height 690?)
+
+	* ivowelsignknda (U+0CBF): X=31.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=21.0,Y=688.0 (should be at cap-height 690?)
+
+	* iivowelsignknda (U+0CC0): X=21.0,Y=688.0 (should be at cap-height 690?)
+
+	* oneknda (U+0CE7): X=558.5,Y=689.5 (should be at cap-height 690?)
+
+	* fourknda (U+0CEA): X=76.0,Y=688.5 (should be at cap-height 690?)
+
+	* nineknda (U+0CEF): X=171.0,Y=689.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -5456,111 +12231,27 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* exclam.knda (U+0021): L<<137.0,789.0>--<135.0,255.0>>
 
-	* exclamdown (U+00A1): L<<122.0,447.0>--<124.0,-93.0>> 
+	* exclamdown (U+00A1): L<<122.0,447.0>--<124.0,-93.0>>
 
 	* exclamdown (U+00A1): L<<96.0,-93.0>--<98.0,447.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[15] NotoSansKannada[wdth,wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>💔 <b>ERROR:</b> Check a font's STAT table contains compulsory Axis Values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT">com.google.fonts/check/STAT</a>)</summary><div>
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>💔 <b>ERROR:</b> Check variable font instances (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_instances">com.google.fonts/check/fvar_instances</a>)</summary><div>
-
-
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
-
-
-* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 809 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
-
-
-* 🔥 **FAIL** Glyph 0x00A0 is called "uni00A0.knda": Change to "uni00A0" [code: non-compliant-00a0]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
-
-
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
-
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- aivowelsignUIknda
-
-	- asciicircum
-
-	- asciitilde
-
-	- asterisk
-
-	- backslash
-
-	- backslash.UIknda
-
-	- bar
-
-	- bar.UIknda
-
-	- basubscriptaltUIknda
-
-	- basubscriptrightUIknda 
-
-	- 158 more.
-
-Use -F or --full-lists to disable shortening of long lists.
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
-</div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
-
-
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 0 start point differs in glyph 'anusvaraaboverightknda' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb10> 
-
-	- Contour 1 start point differs in glyph 'anusvaraaboverightknda' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f401f65fb10> [code: interpolation-issues]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aavowelsignaltknda (unencoded), aavowelsignknda (U+0CBE), anusvaraaboverightknda (U+0CF3), auvowelsignknda (U+0CCC), basubscriptUIknda (unencoded), basubscriptaltUIknda (unencoded), basubscriptaltknda (unencoded), basubscriptknda (unencoded), basubscriptrightUIknda (unencoded), basubscriptrightknda (unencoded) and 125 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 llvocalicvowelsignknda (U+0CE3), lvocalicvowelsignknda (U+0CE2) and viramaknda (U+0CCD) [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C83, U+0CBE, U+0CC0, U+0CC1, U+0CC2, U+0CC8, U+0CCA, U+0CCB, U+0CD5 and U+0CF3 [code: non-mark-chars]
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 4 | 83 | 200 | 2212 | 116 | 1753 | 0 |
-| 0% | 2% | 5% | 51% | 3% | 40% | 0% |
+| 0 | 57 | 229 | 2134 | 109 | 1664 | 0 |
+| 0% | 1% | 5% | 51% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

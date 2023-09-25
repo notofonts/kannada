@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansKannada-SemiCondensedBold.ttf);
+    font-family: "old font";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansKannadaUI-SemiCondensedBold.ttf);
+    font-family: "new font";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-400{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	    .new-wght-400{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"OS/2": {"usWinDescent": [540, 293], "usWinAscent": [809, 1069], "sTypoAscender": [809, 1069], "sTypoDescender": [-540, -293]}, "GPOS": {"table": {"LookupList": {"Lookup": {"4": {"SubTable": {"0": {"PairSetCount": [11, 12], "Coverage": {"glyphs": {"4": ["januktaknda", "nakaarapolluknda"], "5": ["phanuktaknda", "januktaknda"], "6": ["thevowelknda", "phanuktaknda"], "7": ["dhevowelknda", "thevowelknda"], "8": ["phevowelknda", "dhevowelknda"], "9": ["jevowelnuktaknda", "phevowelknda"], "10": ["phevowelnuktaknda", "jevowelnuktaknda"], "11": [null, "phevowelnuktaknda"]}}, "PairSet": {"4": {"PairValueCount": [1, 34], "PairValueRecord": {"0": {"Value1": {"XAdvance": [109, -5]}, "SecondGlyph": ["rvocalicvowelsignknda", "aknda"]}, "1": {"SecondGlyph": [null, "aaknda"], "Value1": {"XAdvance": [null, -5]}}, "2": {"SecondGlyph": [null, "uknda"], "Value1": {"XAdvance": [null, -20]}}, "3": {"SecondGlyph": [null, "uuknda"], "Value1": {"XAdvance": [null, -20]}}, "4": {"SecondGlyph": [null, "eknda"], "Value1": {"XAdvance": [null, -76]}}, "5": {"SecondGlyph": [null, "eeknda"], "Value1": {"XAdvance": [null, -26]}}, "6": {"SecondGlyph": [null, "khaknda"], "Value1": {"XAdvance": [null, -43]}}, "7": {"SecondGlyph": [null, "chaknda"], "Value1": {"XAdvance": [null, -36]}}, "8": {"SecondGlyph": [null, "ttaknda"], "Value1": {"XAdvance": [null, -7]}}, "9": {"SecondGlyph": [null, "nnaknda"], "Value1": {"XAdvance": [null, -4]}}, "10": {"SecondGlyph": [null, "yaknda"], "Value1": {"XAdvance": [null, -30]}}, "11": {"SecondGlyph": [null, "rraknda"], "Value1": {"XAdvance": [null, -30]}}, "12": {"SecondGlyph": [null, "laknda"], "Value1": {"XAdvance": [null, -20]}}, "13": {"SecondGlyph": [null, "kivowelknda"], "Value1": {"XAdvance": [null, -19]}}, "14": {"SecondGlyph": [null, "khivowelknda"], "Value1": {"XAdvance": [null, -26]}}, "15": {"SecondGlyph": [null, "ghivowelknda"], "Value1": {"XAdvance": [null, -59]}}, "16": {"SecondGlyph": [null, "chivowelknda"], "Value1": {"XAdvance": [null, -30]}}, "17": {"SecondGlyph": [null, "jhivowelknda"], "Value1": {"XAdvance": [null, -6]}}, "18": {"SecondGlyph": [null, "ttivowelknda"], "Value1": {"XAdvance": [null, -13]}}, "19": {"SecondGlyph": [null, "ddivowelknda"], "Value1": {"XAdvance": [null, -16]}}, "20": {"SecondGlyph": [null, "ddhivowelknda"], "Value1": {"XAdvance": [null, -16]}}, "21": {"SecondGlyph": [null, "tivowelknda"], "Value1": {"XAdvance": [null, -19]}}, "22": {"SecondGlyph": [null, "thivowelknda"], "Value1": {"XAdvance": [null, -6]}}, "23": {"SecondGlyph": [null, "divowelknda"], "Value1": {"XAdvance": [null, -6]}}, "24": {"SecondGlyph": [null, "dhivowelknda"], "Value1": {"XAdvance": [null, -6]}}, "25": {"SecondGlyph": [null, "nivowelknda"], "Value1": {"XAdvance": [null, -53]}}, "26": {"SecondGlyph": [null, "pivowelknda"], "Value1": {"XAdvance": [null, -63]}}, "27": {"SecondGlyph": [null, "phivowelknda"], "Value1": {"XAdvance": [null, -63]}}, "28": {"SecondGlyph": [null, "mivowelknda"], "Value1": {"XAdvance": [null, -66]}}, "29": {"SecondGlyph": [null, "yivowelknda"], "Value1": {"XAdvance": [null, -24]}}, "30": {"SecondGlyph": [null, "livowelknda"], "Value1": {"XAdvance": [null, -17]}}, "31": {"SecondGlyph": [null, "vivowelknda"], "Value1": {"XAdvance": [null, -66]}}, "32": {"SecondGlyph": [null, "ssivowelknda"], "Value1": {"XAdvance": [null, -63]}}, "33": {"SecondGlyph": [null, "sivowelknda"], "Value1": {"XAdvance": [null, -35]}}}}, "5": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [192, 109]}}}}, "6": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [1, 192]}, "SecondGlyph": ["ailengthmarkknda", "rvocalicvowelsignknda"]}}}, "8": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [11, 1]}}}}, "9": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [108, 11]}}}}, "10": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [193, 108]}}}}, "11": {"PairValueCount": [null, 1], "PairValueRecord": {"0": {"SecondGlyph": [null, "ailengthmarkknda"], "Value1": {"XAdvance": [null, 193]}}}}}}}}, "5": {"SubTable": {"0": {"PairSetCount": [166, 215], "Coverage": {"glyphs": {"error": ["There are 215 changes, check manually!", ""]}}, "PairSet": {"error": ["There are 186 changes, check manually!", ""]}}}}, "7": {"SubTable": {"0": {"MarkArray": {"MarkRecord": {"0": {"MarkAnchor": {"YCoordinate": [-259, -166]}}, "1": {"MarkAnchor": {"YCoordinate": [-24, 69]}}, "2": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "3": {"MarkAnchor": {"YCoordinate": [327, 420]}}, "4": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "5": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "6": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "7": {"MarkAnchor": {"YCoordinate": [-259, -166]}}, "8": {"MarkAnchor": {"YCoordinate": [-259, -166]}}, "9": {"MarkAnchor": {"YCoordinate": [327, 420]}}, "10": {"MarkAnchor": {"YCoordinate": [-259, -166]}}}}, "BaseArray": {"BaseRecord": {"error": ["There are 219 changes, check manually!", ""]}}}}}, "8": {"SubTable": {"0": {"MarkArray": {"MarkRecord": {"0": {"MarkAnchor": {"YCoordinate": [-259, -166]}}, "1": {"MarkAnchor": {"YCoordinate": [-24, 69]}}, "2": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "3": {"MarkAnchor": {"YCoordinate": [327, 420]}}, "4": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "5": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "6": {"MarkAnchor": {"YCoordinate": [-258, -165]}}, "7": {"MarkAnchor": {"YCoordinate": [-259, -166]}}, "8": {"MarkAnchor": {"YCoordinate": [-259, -166]}}, "9": {"MarkAnchor": {"YCoordinate": [327, 420]}}, "10": {"MarkAnchor": {"YCoordinate": [-259, -166]}}}}, "BaseArray": {"BaseRecord": {"0": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "1": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "2": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "3": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69], "XCoordinate": [291, 288]}}}, "4": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "5": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "6": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "7": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "8": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "9": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}, "10": {"BaseAnchor": {"0": {"YCoordinate": [-24, 69]}}}}}}}}, "9": {"SubTable": {"0": {"EntryExitCount": [12, 10], "EntryExitRecord": {"0": {"ExitAnchor": {"YCoordinate": [-195, -102], "XCoordinate": [156, 613]}}, "1": {"ExitAnchor": {"YCoordinate": [-195, -57], "XCoordinate": [156, 618]}}, "2": {"ExitAnchor": {"YCoordinate": [-195, -57], "XCoordinate": [613, 618]}}, "3": {"ExitAnchor": {"YCoordinate": [-150, -102], "XCoordinate": [618, 611]}}, "4": {"ExitAnchor": {"YCoordinate": [-150, -102], "XCoordinate": [618, 613]}}, "5": {"ExitAnchor": {"YCoordinate": [-195, -102], "XCoordinate": [611, 709]}}, "6": {"ExitAnchor": {"YCoordinate": [-195, -102], "XCoordinate": [613, 709]}}, "7": {"ExitAnchor": {"YCoordinate": [-195, -102]}}, "8": {"ExitAnchor": {"YCoordinate": [-195, -102]}}, "9": {"ExitAnchor": {"YCoordinate": [-195, -102]}}, "10": {"ExitAnchor": {"Format": [1, null], "XCoordinate": [709, null], "YCoordinate": [-195, null]}}, "11": {"ExitAnchor": {"Format": [1, null], "XCoordinate": [709, null], "YCoordinate": [-195, null]}}}, "Coverage": {"glyphs": {"0": ["lvocalicvowelsignknda", "kassaknda"], "1": ["llvocalicvowelsignknda", "kassanocrestknda"], "2": ["kassaknda", "kassaviramaknda"], "3": ["kassanocrestknda", "kassivowelknda"], "4": ["kassaviramaknda", "kassevowelknda"], "5": ["kassivowelknda", "janyaknda"], "6": ["kassevowelknda", "janyanocrestknda"], "7": ["janyaknda", "janyaviramaknda"], "8": ["janyanocrestknda", "janyivowelknda"], "9": ["janyaviramaknda", "janyevowelknda"], "10": ["janyivowelknda", null], "11": ["janyevowelknda", null]}}}}}, "10": {"SubTable": {"0": {"EntryExitCount": [145, 147], "EntryExitRecord": {"error": ["There are 147 changes, check manually!", ""]}, "Coverage": {"glyphs": {"error": ["There are 147 changes, check manually!", ""]}}}}}}}}}, "head": {"fontRevision": [2.003997802734375, 2.0050048828125], "yMax": [809, 902], "yMin": [-532, -439], "modified": [3762753378, 3778491735], "checkSumAdjustment": [2770370550, 3048352130]}, "hmtx": {"metrics": {"kassivowelUIknda": {"1": [33, 31]}, "anusvaraaboverightknda": {"0": [null, 340], "1": [null, 39]}, "nakaarapolluknda": {"0": [null, 585], "1": [null, 29]}, "kassivowelknda": {"1": [33, 31]}, "kivowelknda": {"0": [582, 579], "1": [33, 31]}}}, "name": {"3/3/1/1033": ["2.004;GOOG;NotoSansKannada-SemiCondensedBold", "2.005;GOOG;NotoSansKannadaUI-SemiCondensedBold"], "6/3/1/1033": ["NotoSansKannada-SemiCondensedBold", "NotoSansKannadaUI-SemiCondensedBold"], "16/3/1/1033": ["Noto Sans Kannada", "Noto Sans Kannada UI"], "5/3/1/1033": ["Version 2.004", "Version 2.005"], "4/3/1/1033": ["Noto Sans Kannada SemiCondensed Bold", "Noto Sans Kannada UI SemiCondensed Bold"], "1/3/1/1033": ["Noto Sans Kannada SemiCondensed", "Noto Sans Kannada UI SemiCondensed"]}, "GDEF": {"table": {"GlyphClassDef": {"classDefs": {"anusvaraaboverightknda": [null, 3]}}, "MarkGlyphSetsDef": {"Coverage": {"3": {"glyphs": {"8": ["kasubscriptknda", "anusvaraaboverightknda"], "9": ["khasubscriptknda", "kasubscriptknda"], "10": ["gasubscriptknda", "khasubscriptknda"], "11": ["ghasubscriptknda", "gasubscriptknda"], "12": ["ngasubscriptknda", "ghasubscriptknda"], "13": ["casubscriptknda", "ngasubscriptknda"], "14": ["chasubscriptknda", "casubscriptknda"], "15": ["jasubscriptknda", "chasubscriptknda"], "16": ["jhasubscriptknda", "jasubscriptknda"], "17": ["nyasubscriptknda", "jhasubscriptknda"], "18": ["ttasubscriptknda", "nyasubscriptknda"], "19": ["tthasubscriptknda", "ttasubscriptknda"], "20": ["ddasubscriptknda", "tthasubscriptknda"], "21": ["ddhasubscriptknda", "ddasubscriptknda"], "22": ["nnasubscriptknda", "ddhasubscriptknda"], "23": ["tasubscriptknda", "nnasubscriptknda"], "24": ["thasubscriptknda", "tasubscriptknda"], "25": ["dasubscriptknda", "thasubscriptknda"], "26": ["dhasubscriptknda", "dasubscriptknda"], "27": ["nasubscriptknda", "dhasubscriptknda"], "28": ["pasubscriptknda", "nasubscriptknda"], "29": ["phasubscriptknda", "pasubscriptknda"], "30": ["basubscriptknda", "phasubscriptknda"], "31": ["bhasubscriptknda", "basubscriptknda"], "32": ["masubscriptknda", "bhasubscriptknda"], "33": ["yasubscriptknda", "masubscriptknda"], "34": ["rasubscriptknda", "yasubscriptknda"], "35": ["rrasubscriptknda", "rasubscriptknda"], "36": ["lasubscriptknda", "rrasubscriptknda"], "37": ["llasubscriptknda", "lasubscriptknda"], "38": ["vasubscriptknda", "llasubscriptknda"], "39": ["shasubscriptknda", "vasubscriptknda"], "40": ["ssasubscriptknda", "shasubscriptknda"], "41": ["sasubscriptknda", "ssasubscriptknda"], "42": ["hasubscriptknda", "sasubscriptknda"], "43": ["fasubscriptknda", "hasubscriptknda"], "44": ["januktasubscriptknda", "fasubscriptknda"], "45": ["phanuktasubscriptknda", "januktasubscriptknda"], "46": ["nnasubscriptUIknda", "phanuktasubscriptknda"], "47": ["nasubscriptUIknda", "nnasubscriptUIknda"], "48": ["basubscriptUIknda", "nasubscriptUIknda"], "49": ["bhasubscriptUIknda", "basubscriptUIknda"], "50": ["ssasubscriptUIknda", "bhasubscriptUIknda"], "51": ["sasubscriptUIknda", "ssasubscriptUIknda"], "52": ["baviramaknda", "sasubscriptUIknda"], "53": ["aavowelsignaltknda", "baviramaknda"], "54": ["evowelsignaltknda", "aavowelsignaltknda"], "55": ["uvowelsignaltknda", "evowelsignaltknda"], "56": ["uuvowelsignaltknda", "uvowelsignaltknda"], "57": ["uvowelsignalt2knda", "uuvowelsignaltknda"], "58": ["uuvowelsignalt2knda", "uvowelsignalt2knda"], "59": ["uvowelsignlaknda", "uuvowelsignalt2knda"], "60": ["uuvowelsignlaknda", "uvowelsignlaknda"], "61": ["karasubscriptknda", "uuvowelsignlaknda"], "62": ["garasubscriptknda", "karasubscriptknda"], "63": ["ttarasubscriptknda", "garasubscriptknda"], "64": ["ddarasubscriptknda", "ttarasubscriptknda"], "65": ["tarasubscriptknda", "ddarasubscriptknda"], "66": ["darasubscriptknda", "tarasubscriptknda"], "67": ["parasubscriptknda", "darasubscriptknda"], "68": ["bharasubscriptknda", "parasubscriptknda"], "69": ["tayasubscriptknda", "bharasubscriptknda"], "70": ["mayasubscriptknda", "tayasubscriptknda"], "71": ["kasubscriptaltknda", "mayasubscriptknda"], "72": ["khasubscriptaltknda", "kasubscriptaltknda"], "73": ["gasubscriptaltknda", "khasubscriptaltknda"], "74": ["ghasubscriptaltknda", "gasubscriptaltknda"], "75": ["ngasubscriptaltknda", "ghasubscriptaltknda"], "76": ["casubscriptaltknda", "ngasubscriptaltknda"], "77": ["chasubscriptaltknda", "casubscriptaltknda"], "78": ["jasubscriptaltknda", "chasubscriptaltknda"], "79": ["jhasubscriptaltknda", "jasubscriptaltknda"], "80": ["nyasubscriptaltknda", "jhasubscriptaltknda"], "81": ["ttasubscriptaltknda", "nyasubscriptaltknda"], "82": ["tthasubscriptaltknda", "ttasubscriptaltknda"], "83": ["ddasubscriptaltknda", "tthasubscriptaltknda"], "84": ["ddhasubscriptaltknda", "ddasubscriptaltknda"], "85": ["nnasubscriptaltknda", "ddhasubscriptaltknda"], "86": ["tasubscriptaltknda", "nnasubscriptaltknda"], "87": ["thasubscriptaltknda", "tasubscriptaltknda"], "88": ["dasubscriptaltknda", "thasubscriptaltknda"], "89": ["dhasubscriptaltknda", "dasubscriptaltknda"], "90": ["nasubscriptaltknda", "dhasubscriptaltknda"], "91": ["pasubscriptaltknda", "nasubscriptaltknda"], "92": ["phasubscriptaltknda", "pasubscriptaltknda"], "93": ["basubscriptaltknda", "phasubscriptaltknda"], "94": ["bhasubscriptaltknda", "basubscriptaltknda"], "95": ["masubscriptaltknda", "bhasubscriptaltknda"], "96": ["yasubscriptaltknda", "masubscriptaltknda"], "97": ["rasubscriptaltknda", "yasubscriptaltknda"], "98": ["rrasubscriptaltknda", "rasubscriptaltknda"], "99": ["lasubscriptaltknda", "rrasubscriptaltknda"], "100": ["llasubscriptaltknda", "lasubscriptaltknda"], "101": ["vasubscriptaltknda", "llasubscriptaltknda"], "102": ["shasubscriptaltknda", "vasubscriptaltknda"], "103": ["ssasubscriptaltknda", "shasubscriptaltknda"], "104": ["sasubscriptaltknda", "ssasubscriptaltknda"], "105": ["hasubscriptaltknda", "sasubscriptaltknda"], "106": ["fasubscriptaltknda", "hasubscriptaltknda"], "107": ["januktasubscriptaltknda", "fasubscriptaltknda"], "108": ["phanuktasubscriptaltknda", "januktasubscriptaltknda"], "109": ["nnasubscriptaltUIknda", "phanuktasubscriptaltknda"], "110": ["nasubscriptaltUIknda", "nnasubscriptaltUIknda"], "111": ["basubscriptaltUIknda", "nasubscriptaltUIknda"], "112": ["bhasubscriptaltUIknda", "basubscriptaltUIknda"], "113": ["ssasubscriptaltUIknda", "bhasubscriptaltUIknda"], "114": ["karasubscriptaltknda", "ssasubscriptaltUIknda"], "115": ["garasubscriptaltknda", "karasubscriptaltknda"], "116": ["ttarasubscriptaltknda", "garasubscriptaltknda"], "117": ["ddarasubscriptaltknda", "ttarasubscriptaltknda"], "118": ["tarasubscriptaltknda", "ddarasubscriptaltknda"], "119": ["darasubscriptaltknda", "tarasubscriptaltknda"], "120": ["parasubscriptaltknda", "darasubscriptaltknda"], "121": ["bharasubscriptaltknda", "parasubscriptaltknda"], "122": ["tayasubscriptaltknda", "bharasubscriptaltknda"], "123": ["mayasubscriptaltknda", "tayasubscriptaltknda"], "124": ["nnasubscriptrightknda", "mayasubscriptaltknda"], "125": ["nasubscriptrightknda", "nnasubscriptrightknda"], "126": ["basubscriptrightknda", "nasubscriptrightknda"], "127": ["bhasubscriptrightknda", "basubscriptrightknda"], "128": ["ssasubscriptrightknda", "bhasubscriptrightknda"], "129": ["nnasubscriptrightUIknda", "ssasubscriptrightknda"], "130": ["nasubscriptrightUIknda", "nnasubscriptrightUIknda"], "131": ["basubscriptrightUIknda", "nasubscriptrightUIknda"], "132": ["bhasubscriptrightUIknda", "basubscriptrightUIknda"], "133": ["ssasubscriptrightUIknda", "bhasubscriptrightUIknda"], "134": [null, "ssasubscriptrightUIknda"]}}}}}}, "glyf": {"glyphOrder": {"error": ["There are 557 changes, check manually!", ""]}}, "maxp": {"numGlyphs": [655, 657]}, "post": {"extraNames": {"error": ["There are 557 changes, check manually!", ""]}}, "cmap": {"0x0028": ["parenleft.knda", "parenleft.UIknda"], "0x002F": ["slash.knda", "slash.UIknda"], "0x0CF3": [null, "anusvaraaboverightknda"], "0x005B": ["bracketleft.knda", "bracketleft.UIknda"], "0x007D": ["braceright.knda", "braceright.UIknda"], "0x0CC8": ["aivowelsignknda", "aivowelsignUIknda"], "0x007B": ["braceleft.knda", "braceleft.UIknda"], "0x005D": ["bracketright.knda", "bracketright.UIknda"], "0x0CD6": ["ailengthmarkknda", "ailengthmarkUIknda"], "0x0CE3": ["llvocalicvowelsignknda", "llvocalicvowelsignUIknda"], "0x005C": ["backslash.knda", "backslash.UIknda"], "0x007C": ["bar.knda", "bar.UIknda"], "0x0CDD": [null, "nakaarapolluknda"], "0x0CC3": ["rvocalicvowelsignknda", "rvocalicvowelsignUIknda"], "0x0CE2": ["lvocalicvowelsignknda", "lvocalicvowelsignUIknda"], "0x0029": ["parenright.knda", "parenright.UIknda"], "0x0CC4": ["rrvocalicvowelsignknda", "rrvocalicvowelsignUIknda"]}, "hhea": {"numberOfHMetrics": [655, 657], "descent": [-540, -293], "ascent": [809, 1069]}};</script><div id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೝ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NAKAARA POLLU<br>
+            unicode: U+0CDD
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೳ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT<br>
+            unicode: U+0CF3
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೲ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN UPADHMANIYA<br>
+            unicode: U+0CF2<br>
+            changed pixels: 9.99%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ><br>
+        <span class="tooltiptext">
+            name: GREATER-THAN SIGN<br>
+            unicode: U+003E<br>
+            changed pixels: 9.95%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ×<br>
+        <span class="tooltiptext">
+            name: MULTIPLICATION SIGN<br>
+            unicode: U+00D7<br>
+            changed pixels: 9.88%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ।<br>
+        <span class="tooltiptext">
+            name: DEVANAGARI DANDA<br>
+            unicode: U+0964<br>
+            changed pixels: 9.85%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ꠴<br>
+        <span class="tooltiptext">
+            name: NORTH INDIC FRACTION ONE EIGHTH<br>
+            unicode: U+A834<br>
+            changed pixels: 9.85%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಾ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN AA<br>
+            unicode: U+0CBE<br>
+            changed pixels: 9.84%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೄ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN VOCALIC RR<br>
+            unicode: U+0CC4<br>
+            changed pixels: 9.59%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೢ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN VOCALIC L<br>
+            unicode: U+0CE2<br>
+            changed pixels: 9.15%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        '<br>
+        <span class="tooltiptext">
+            name: APOSTROPHE<br>
+            unicode: U+0027<br>
+            changed pixels: 9.14%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೃ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN VOCALIC R<br>
+            unicode: U+0CC3<br>
+            changed pixels: 8.94%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೀ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN II<br>
+            unicode: U+0CC0<br>
+            changed pixels: 8.91%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೂ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN UU<br>
+            unicode: U+0CC2<br>
+            changed pixels: 8.86%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಼<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN NUKTA<br>
+            unicode: U+0CBC<br>
+            changed pixels: 8.73%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        *<br>
+        <span class="tooltiptext">
+            name: ASTERISK<br>
+            unicode: U+002A<br>
+            changed pixels: 8.71%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        1<br>
+        <span class="tooltiptext">
+            name: DIGIT ONE<br>
+            unicode: U+0031<br>
+            changed pixels: 8.66%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ್<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN VIRAMA<br>
+            unicode: U+0CCD<br>
+            changed pixels: 8.33%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೣ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN VOCALIC LL<br>
+            unicode: U+0CE3<br>
+            changed pixels: 8.28%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ÷<br>
+        <span class="tooltiptext">
+            name: DIVISION SIGN<br>
+            unicode: U+00F7<br>
+            changed pixels: 8.27%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ꠰<br>
+        <span class="tooltiptext">
+            name: NORTH INDIC FRACTION ONE QUARTER<br>
+            unicode: U+A830<br>
+            changed pixels: 8.24%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        |<br>
+        <span class="tooltiptext">
+            name: VERTICAL LINE<br>
+            unicode: U+007C<br>
+            changed pixels: 8.24%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        —<br>
+        <span class="tooltiptext">
+            name: EM DASH<br>
+            unicode: U+2014<br>
+            changed pixels: 8.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        -<br>
+        <span class="tooltiptext">
+            name: HYPHEN-MINUS<br>
+            unicode: U+002D<br>
+            changed pixels: 8.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        =<br>
+        <span class="tooltiptext">
+            name: EQUALS SIGN<br>
+            unicode: U+003D<br>
+            changed pixels: 8.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        –<br>
+        <span class="tooltiptext">
+            name: EN DASH<br>
+            unicode: U+2013<br>
+            changed pixels: 8.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ‐<br>
+        <span class="tooltiptext">
+            name: HYPHEN<br>
+            unicode: U+2010<br>
+            changed pixels: 8.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ॑<br>
+        <span class="tooltiptext">
+            name: DEVANAGARI STRESS SIGN UDATTA<br>
+            unicode: U+0951<br>
+            changed pixels: 8.19%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಀ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN SPACING CANDRABINDU<br>
+            unicode: U+0C80<br>
+            changed pixels: 8.08%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಂ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN ANUSVARA<br>
+            unicode: U+0C82<br>
+            changed pixels: 8.04%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ^<br>
+        <span class="tooltiptext">
+            name: CIRCUMFLEX ACCENT<br>
+            unicode: U+005E<br>
+            changed pixels: 7.89%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ॥<br>
+        <span class="tooltiptext">
+            name: DEVANAGARI DOUBLE DANDA<br>
+            unicode: U+0965<br>
+            changed pixels: 7.74%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಿ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN I<br>
+            unicode: U+0CBF<br>
+            changed pixels: 7.72%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        "<br>
+        <span class="tooltiptext">
+            name: QUOTATION MARK<br>
+            unicode: U+0022<br>
+            changed pixels: 7.66%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ು<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN U<br>
+            unicode: U+0CC1<br>
+            changed pixels: 7.55%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೕ<br>
+        <span class="tooltiptext">
+            name: KANNADA LENGTH MARK<br>
+            unicode: U+0CD5<br>
+            changed pixels: 7.49%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ”<br>
+        <span class="tooltiptext">
+            name: RIGHT DOUBLE QUOTATION MARK<br>
+            unicode: U+201D<br>
+            changed pixels: 7.49%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        “<br>
+        <span class="tooltiptext">
+            name: LEFT DOUBLE QUOTATION MARK<br>
+            unicode: U+201C<br>
+            changed pixels: 7.45%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಃ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN VISARGA<br>
+            unicode: U+0C83<br>
+            changed pixels: 7.43%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ꠱<br>
+        <span class="tooltiptext">
+            name: NORTH INDIC FRACTION ONE HALF<br>
+            unicode: U+A831<br>
+            changed pixels: 7.38%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ’<br>
+        <span class="tooltiptext">
+            name: RIGHT SINGLE QUOTATION MARK<br>
+            unicode: U+2019<br>
+            changed pixels: 7.37%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ‘<br>
+        <span class="tooltiptext">
+            name: LEFT SINGLE QUOTATION MARK<br>
+            unicode: U+2018<br>
+            changed pixels: 7.33%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᳚<br>
+        <span class="tooltiptext">
+            name: VEDIC TONE DOUBLE SVARITA<br>
+            unicode: U+1CDA<br>
+            changed pixels: 7.31%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ꠲<br>
+        <span class="tooltiptext">
+            name: NORTH INDIC FRACTION THREE QUARTERS<br>
+            unicode: U+A832<br>
+            changed pixels: 7.11%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ,<br>
+        <span class="tooltiptext">
+            name: COMMA<br>
+            unicode: U+002C<br>
+            changed pixels: 7.11%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᳐<br>
+        <span class="tooltiptext">
+            name: VEDIC TONE KARSHANA<br>
+            unicode: U+1CD0<br>
+            changed pixels: 6.94%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ~<br>
+        <span class="tooltiptext">
+            name: TILDE<br>
+            unicode: U+007E<br>
+            changed pixels: 6.81%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᳴<br>
+        <span class="tooltiptext">
+            name: VEDIC TONE CANDRA ABOVE<br>
+            unicode: U+1CF4<br>
+            changed pixels: 6.74%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        +<br>
+        <span class="tooltiptext">
+            name: PLUS SIGN<br>
+            unicode: U+002B<br>
+            changed pixels: 6.64%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        −<br>
+        <span class="tooltiptext">
+            name: MINUS SIGN<br>
+            unicode: U+2212<br>
+            changed pixels: 6.56%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ꠳<br>
+        <span class="tooltiptext">
+            name: NORTH INDIC FRACTION ONE SIXTEENTH<br>
+            unicode: U+A833<br>
+            changed pixels: 6.56%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        .<br>
+        <span class="tooltiptext">
+            name: FULL STOP<br>
+            unicode: U+002E<br>
+            changed pixels: 6.55%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಁ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN CANDRABINDU<br>
+            unicode: U+0C81<br>
+            changed pixels: 6.04%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        …<br>
+        <span class="tooltiptext">
+            name: HORIZONTAL ELLIPSIS<br>
+            unicode: U+2026<br>
+            changed pixels: 5.63%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ॒<br>
+        <span class="tooltiptext">
+            name: DEVANAGARI STRESS SIGN ANUDATTA<br>
+            unicode: U+0952<br>
+            changed pixels: 4.92%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ◌<br>
+        <span class="tooltiptext">
+            name: DOTTED CIRCLE<br>
+            unicode: U+25CC<br>
+            changed pixels: 4.69%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        _<br>
+        <span class="tooltiptext">
+            name: LOW LINE<br>
+            unicode: U+005F<br>
+            changed pixels: 4.67%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᳒<br>
+        <span class="tooltiptext">
+            name: VEDIC TONE PRENKHA<br>
+            unicode: U+1CD2<br>
+            changed pixels: 4.59%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಔ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER AU<br>
+            unicode: U+0C94<br>
+            changed pixels: 17.87%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        3<br>
+        <span class="tooltiptext">
+            name: DIGIT THREE<br>
+            unicode: U+0033<br>
+            changed pixels: 17.34%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಄<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN SIDDHAM<br>
+            unicode: U+0C84<br>
+            changed pixels: 17.29%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೈ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN AI<br>
+            unicode: U+0CC8<br>
+            changed pixels: 16.02%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        5<br>
+        <span class="tooltiptext">
+            name: DIGIT FIVE<br>
+            unicode: U+0035<br>
+            changed pixels: 16.02%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಸ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER SA<br>
+            unicode: U+0CB8<br>
+            changed pixels: 15.43%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ನ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NA<br>
+            unicode: U+0CA8<br>
+            changed pixels: 15.41%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        2<br>
+        <span class="tooltiptext">
+            name: DIGIT TWO<br>
+            unicode: U+0032<br>
+            changed pixels: 15.27%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಫ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER PHA<br>
+            unicode: U+0CAB<br>
+            changed pixels: 15.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        8<br>
+        <span class="tooltiptext">
+            name: DIGIT EIGHT<br>
+            unicode: U+0038<br>
+            changed pixels: 14.98%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        (<br>
+        <span class="tooltiptext">
+            name: LEFT PARENTHESIS<br>
+            unicode: U+0028<br>
+            changed pixels: 14.97%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೭<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT SEVEN<br>
+            unicode: U+0CED<br>
+            changed pixels: 14.84%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ವ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VA<br>
+            unicode: U+0CB5<br>
+            changed pixels: 14.79%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಭ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER BHA<br>
+            unicode: U+0CAD<br>
+            changed pixels: 14.71%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಷ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER SSA<br>
+            unicode: U+0CB7<br>
+            changed pixels: 14.62%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        9<br>
+        <span class="tooltiptext">
+            name: DIGIT NINE<br>
+            unicode: U+0039<br>
+            changed pixels: 14.50%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಛ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER CHA<br>
+            unicode: U+0C9B<br>
+            changed pixels: 14.49%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಧ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DHA<br>
+            unicode: U+0CA7<br>
+            changed pixels: 14.48%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಪ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER PA<br>
+            unicode: U+0CAA<br>
+            changed pixels: 14.34%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಢ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DDHA<br>
+            unicode: U+0CA2<br>
+            changed pixels: 14.30%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        )<br>
+        <span class="tooltiptext">
+            name: RIGHT PARENTHESIS<br>
+            unicode: U+0029<br>
+            changed pixels: 14.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಘ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER GHA<br>
+            unicode: U+0C98<br>
+            changed pixels: 14.03%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೫<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT FIVE<br>
+            unicode: U+0CEB<br>
+            changed pixels: 14.02%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಮ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER MA<br>
+            unicode: U+0CAE<br>
+            changed pixels: 13.98%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        !<br>
+        <span class="tooltiptext">
+            name: EXCLAMATION MARK<br>
+            unicode: U+0021<br>
+            changed pixels: 13.98%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಙ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NGA<br>
+            unicode: U+0C99<br>
+            changed pixels: 13.96%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಥ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER THA<br>
+            unicode: U+0CA5<br>
+            changed pixels: 13.84%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಹ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER HA<br>
+            unicode: U+0CB9<br>
+            changed pixels: 13.75%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೨<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT TWO<br>
+            unicode: U+0CE8<br>
+            changed pixels: 13.69%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        6<br>
+        <span class="tooltiptext">
+            name: DIGIT SIX<br>
+            unicode: U+0036<br>
+            changed pixels: 13.69%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಐ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER AI<br>
+            unicode: U+0C90<br>
+            changed pixels: 13.67%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ತ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER TA<br>
+            unicode: U+0CA4<br>
+            changed pixels: 13.56%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ದ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DA<br>
+            unicode: U+0CA6<br>
+            changed pixels: 13.55%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೬<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT SIX<br>
+            unicode: U+0CEC<br>
+            changed pixels: 13.53%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೦<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT ZERO<br>
+            unicode: U+0CE6<br>
+            changed pixels: 13.46%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೮<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT EIGHT<br>
+            unicode: U+0CEE<br>
+            changed pixels: 13.44%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಶ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER SHA<br>
+            unicode: U+0CB6<br>
+            changed pixels: 13.43%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ರ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER RA<br>
+            unicode: U+0CB0<br>
+            changed pixels: 13.41%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಡ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DDA<br>
+            unicode: U+0CA1<br>
+            changed pixels: 13.37%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೱ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN JIHVAMULIYA<br>
+            unicode: U+0CF1<br>
+            changed pixels: 13.36%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಚ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER CA<br>
+            unicode: U+0C9A<br>
+            changed pixels: 13.29%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೞ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER FA<br>
+            unicode: U+0CDE<br>
+            changed pixels: 13.27%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೆ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN E<br>
+            unicode: U+0CC6<br>
+            changed pixels: 13.17%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಜ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER JA<br>
+            unicode: U+0C9C<br>
+            changed pixels: 13.07%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೡ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VOCALIC LL<br>
+            unicode: U+0CE1<br>
+            changed pixels: 13.05%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಕ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER KA<br>
+            unicode: U+0C95<br>
+            changed pixels: 12.98%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಏ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER EE<br>
+            unicode: U+0C8F<br>
+            changed pixels: 12.96%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಽ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN AVAGRAHA<br>
+            unicode: U+0CBD<br>
+            changed pixels: 12.94%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೪<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT FOUR<br>
+            unicode: U+0CEA<br>
+            changed pixels: 12.93%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಝ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER JHA<br>
+            unicode: U+0C9D<br>
+            changed pixels: 12.85%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಋ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VOCALIC R<br>
+            unicode: U+0C8B<br>
+            changed pixels: 12.83%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        %<br>
+        <span class="tooltiptext">
+            name: PERCENT SIGN<br>
+            unicode: U+0025<br>
+            changed pixels: 12.75%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಯ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER YA<br>
+            unicode: U+0CAF<br>
+            changed pixels: 12.71%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಠ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER TTHA<br>
+            unicode: U+0CA0<br>
+            changed pixels: 12.69%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ;<br>
+        <span class="tooltiptext">
+            name: SEMICOLON<br>
+            unicode: U+003B<br>
+            changed pixels: 12.67%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಱ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER RRA<br>
+            unicode: U+0CB1<br>
+            changed pixels: 12.56%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಣ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NNA<br>
+            unicode: U+0CA3<br>
+            changed pixels: 12.53%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೠ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VOCALIC RR<br>
+            unicode: U+0CE0<br>
+            changed pixels: 12.49%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೩<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT THREE<br>
+            unicode: U+0CE9<br>
+            changed pixels: 12.48%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಈ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER II<br>
+            unicode: U+0C88<br>
+            changed pixels: 12.42%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ₹<br>
+        <span class="tooltiptext">
+            name: INDIAN RUPEE SIGN<br>
+            unicode: U+20B9<br>
+            changed pixels: 12.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಎ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER E<br>
+            unicode: U+0C8E<br>
+            changed pixels: 12.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೧<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT ONE<br>
+            unicode: U+0CE7<br>
+            changed pixels: 12.20%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        }<br>
+        <span class="tooltiptext">
+            name: RIGHT CURLY BRACKET<br>
+            unicode: U+007D<br>
+            changed pixels: 12.17%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೊ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN O<br>
+            unicode: U+0CCA<br>
+            changed pixels: 12.16%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        \<br>
+        <span class="tooltiptext">
+            name: REVERSE SOLIDUS<br>
+            unicode: U+005C<br>
+            changed pixels: 12.08%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        :<br>
+        <span class="tooltiptext">
+            name: COLON<br>
+            unicode: U+003A<br>
+            changed pixels: 12.07%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        0<br>
+        <span class="tooltiptext">
+            name: DIGIT ZERO<br>
+            unicode: U+0030<br>
+            changed pixels: 12.04%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ?<br>
+        <span class="tooltiptext">
+            name: QUESTION MARK<br>
+            unicode: U+003F<br>
+            changed pixels: 12.04%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಬ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER BA<br>
+            unicode: U+0CAC<br>
+            changed pixels: 12.03%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಇ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER I<br>
+            unicode: U+0C87<br>
+            changed pixels: 12.01%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಟ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER TTA<br>
+            unicode: U+0C9F<br>
+            changed pixels: 11.94%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಳ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER LLA<br>
+            unicode: U+0CB3<br>
+            changed pixels: 11.90%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೇ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN EE<br>
+            unicode: U+0CC7<br>
+            changed pixels: 11.89%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಌ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VOCALIC L<br>
+            unicode: U+0C8C<br>
+            changed pixels: 11.81%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಅ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER A<br>
+            unicode: U+0C85<br>
+            changed pixels: 11.81%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಆ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER AA<br>
+            unicode: U+0C86<br>
+            changed pixels: 11.81%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಊ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER UU<br>
+            unicode: U+0C8A<br>
+            changed pixels: 11.80%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಗ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER GA<br>
+            unicode: U+0C97<br>
+            changed pixels: 11.75%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಓ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER OO<br>
+            unicode: U+0C93<br>
+            changed pixels: 11.72%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಉ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER U<br>
+            unicode: U+0C89<br>
+            changed pixels: 11.72%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        {<br>
+        <span class="tooltiptext">
+            name: LEFT CURLY BRACKET<br>
+            unicode: U+007B<br>
+            changed pixels: 11.65%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಖ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER KHA<br>
+            unicode: U+0C96<br>
+            changed pixels: 11.64%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೌ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN AU<br>
+            unicode: U+0CCC<br>
+            changed pixels: 11.62%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಞ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NYA<br>
+            unicode: U+0C9E<br>
+            changed pixels: 11.53%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೋ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN OO<br>
+            unicode: U+0CCB<br>
+            changed pixels: 11.52%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᳲ<br>
+        <span class="tooltiptext">
+            name: VEDIC SIGN ARDHAVISARGA<br>
+            unicode: U+1CF2<br>
+            changed pixels: 11.48%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ꠵<br>
+        <span class="tooltiptext">
+            name: NORTH INDIC FRACTION THREE SIXTEENTHS<br>
+            unicode: U+A835<br>
+            changed pixels: 11.48%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಲ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER LA<br>
+            unicode: U+0CB2<br>
+            changed pixels: 11.34%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ᳵ<br>
+        <span class="tooltiptext">
+            name: VEDIC SIGN JIHVAMULIYA<br>
+            unicode: U+1CF5<br>
+            changed pixels: 11.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        /<br>
+        <span class="tooltiptext">
+            name: SOLIDUS<br>
+            unicode: U+002F<br>
+            changed pixels: 11.17%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        #<br>
+        <span class="tooltiptext">
+            name: NUMBER SIGN<br>
+            unicode: U+0023<br>
+            changed pixels: 11.14%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೯<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT NINE<br>
+            unicode: U+0CEF<br>
+            changed pixels: 11.13%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        7<br>
+        <span class="tooltiptext">
+            name: DIGIT SEVEN<br>
+            unicode: U+0037<br>
+            changed pixels: 10.93%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಒ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER O<br>
+            unicode: U+0C92<br>
+            changed pixels: 10.92%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        [<br>
+        <span class="tooltiptext">
+            name: LEFT SQUARE BRACKET<br>
+            unicode: U+005B<br>
+            changed pixels: 10.55%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ]<br>
+        <span class="tooltiptext">
+            name: RIGHT SQUARE BRACKET<br>
+            unicode: U+005D<br>
+            changed pixels: 10.55%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        4<br>
+        <span class="tooltiptext">
+            name: DIGIT FOUR<br>
+            unicode: U+0034<br>
+            changed pixels: 10.12%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೖ<br>
+        <span class="tooltiptext">
+            name: KANNADA AI LENGTH MARK<br>
+            unicode: U+0CD6<br>
+            changed pixels: 10.08%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        <<br>
+        <span class="tooltiptext">
+            name: LESS-THAN SIGN<br>
+            unicode: U+003C<br>
+            changed pixels: 10.07%
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+              <div class="cell-word" style="font-feature-settings:  'dnom' 1 " lang="None">
+    <div class="tooltip">
+        0123456789<br>
+        <span class="tooltiptext">
+        <div class="tooltipleft">
+            Before:<br>
+            gid=587, pos=(0, 0, 535, 0)<br>gid=588, pos=(0, 0, 535, 0)<br>gid=589, pos=(0, 0, 535, 0)<br>gid=590, pos=(0, 0, 535, 0)<br>gid=591, pos=(0, 0, 535, 0)<br>gid=592, pos=(0, 0, 535, 0)<br>gid=593, pos=(0, 0, 535, 0)<br>gid=594, pos=(0, 0, 535, 0)<br>gid=595, pos=(0, 0, 535, 0)<br>gid=596, pos=(0, 0, 535, 0)<br>
+            feats=('dnom',)
+        </div>
+        <div class="tooltipright">
+            After:<br>
+            gid=589, pos=(0, 0, 535, 0)<br>gid=590, pos=(0, 0, 535, 0)<br>gid=591, pos=(0, 0, 535, 0)<br>gid=592, pos=(0, 0, 535, 0)<br>gid=593, pos=(0, 0, 535, 0)<br>gid=594, pos=(0, 0, 535, 0)<br>gid=595, pos=(0, 0, 535, 0)<br>gid=596, pos=(0, 0, 535, 0)<br>gid=597, pos=(0, 0, 535, 0)<br>gid=598, pos=(0, 0, 535, 0)<br>
+            feats=('dnom',)
+        </div>
+        <div>
+            changed pixels: 12.48%
+        </div>
+        </span>
+    </div>
+</div>
+          
+              <div class="cell-word" style="font-feature-settings:  'zero' 1 " lang="None">
+    <div class="tooltip">
+        0<br>
+        <span class="tooltiptext">
+        <div class="tooltipleft">
+            Before:<br>
+            gid=587, pos=(0, 0, 535, 0)<br>
+            feats=('zero',)
+        </div>
+        <div class="tooltipright">
+            After:<br>
+            gid=589, pos=(0, 0, 535, 0)<br>
+            feats=('zero',)
+        </div>
+        <div>
+            changed pixels: 12.04%
+        </div>
+        </span>
+    </div>
+</div>
+          
+              <div class="cell-word" style="font-feature-settings:  'frac' 1 " lang="None">
+    <div class="tooltip">
+        1/234<br>
+        <span class="tooltiptext">
+        <div class="tooltipleft">
+            Before:<br>
+            gid=588, pos=(0, 0, 535, 0)<br>gid=585, pos=(0, 0, 532, 0)<br>gid=589, pos=(0, 0, 535, 0)<br>gid=590, pos=(0, 0, 535, 0)<br>gid=591, pos=(0, 0, 535, 0)<br>
+            feats=('frac',)
+        </div>
+        <div class="tooltipright">
+            After:<br>
+            gid=590, pos=(0, 0, 535, 0)<br>gid=588, pos=(0, 0, 526, 0)<br>gid=591, pos=(0, 0, 535, 0)<br>gid=592, pos=(0, 0, 535, 0)<br>gid=593, pos=(0, 0, 535, 0)<br>
+            feats=('frac',)
+        </div>
+        <div>
+            changed pixels: 10.74%
+        </div>
+        </span>
+    </div>
+</div>
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-400" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$("#difftable .node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>

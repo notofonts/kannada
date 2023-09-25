@@ -141,9 +141,33 @@
 
 	  
 	    @font-face{
-    src: url(old-NotoSerifKannada[wght].ttf);
+    src: url(old-NotoSerifKannada-Black.ttf);
     font-family: "old Noto Serif Kannada";
-    font-weight: 100 900;
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSerifKannada-Bold.ttf);
+    font-family: "old Noto Serif Kannada";
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSerifKannada-ExtraBold.ttf);
+    font-family: "old Noto Serif Kannada";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(old-NotoSerifKannada-ExtraLight.ttf);
+    font-family: "old Noto Serif Kannada";
+    font-weight: 200;
     
     font-style: normal;
 }
@@ -151,9 +175,33 @@
 
 	  
 	    @font-face{
-    src: url(new-NotoSerifKannada[wght].ttf);
+    src: url(new-NotoSerifKannada-Bold.ttf);
     font-family: "new Noto Serif Kannada";
-    font-weight: 100 900;
+    font-weight: 700;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSerifKannada-ExtraLight.ttf);
+    font-family: "new Noto Serif Kannada";
+    font-weight: 200;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSerifKannada-ExtraBold.ttf);
+    font-family: "new Noto Serif Kannada";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+	    @font-face{
+    src: url(new-NotoSerifKannada-Black.ttf);
+    font-family: "new Noto Serif Kannada";
+    font-weight: 900;
     
     font-style: normal;
 }
@@ -164,73 +212,81 @@
 	  
 	    .old-Black{
     font-family: "old Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 900.0;
+    font-weight: 900;
     
     font-style: normal;
-    font-variation-settings: "wght" 900.0;
+    font-variation-settings: "wght" 900;
 }
 	  
 	    .old-Bold{
     font-family: "old Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 700.0;
+    font-weight: 700;
     
     font-style: normal;
-    font-variation-settings: "wght" 700.0;
+    font-variation-settings: "wght" 700;
 }
 	  
 	    .old-ExtraBold{
     font-family: "old Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 800.0;
+    font-weight: 800;
     
     font-style: normal;
-    font-variation-settings: "wght" 800.0;
+    font-variation-settings: "wght" 800;
 }
 	  
 	    .old-ExtraLight{
     font-family: "old Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 200.0;
+    font-weight: 200;
     
     font-style: normal;
-    font-variation-settings: "wght" 200.0;
+    font-variation-settings: "wght" 200;
 }
 	  
 
 	  
 	    .new-Black{
     font-family: "new Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 900.0;
+    font-weight: 900;
     
     font-style: normal;
-    font-variation-settings: "wght" 900.0;
+    font-variation-settings: "wght" 900;
 }
 	  
 	    .new-Bold{
     font-family: "new Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 700.0;
+    font-weight: 700;
     
     font-style: normal;
-    font-variation-settings: "wght" 700.0;
+    font-variation-settings: "wght" 700;
 }
 	  
 	    .new-ExtraBold{
     font-family: "new Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 800.0;
+    font-weight: 800;
     
     font-style: normal;
-    font-variation-settings: "wght" 800.0;
+    font-variation-settings: "wght" 800;
 }
 	  
 	    .new-ExtraLight{
     font-family: "new Noto Serif Kannada", "Adobe NotDef";
-    font-weight: 200.0;
+    font-weight: 200;
     
     font-style: normal;
-    font-variation-settings: "wght" 200.0;
+    font-variation-settings: "wght" 200;
 }
 	  
 
 	  
 	
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
     </style>
 </head>
 <body>
@@ -238,6 +294,9 @@
 		
 			<div class="nav-item" id="font-toggle">old</div>
 		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
 		
 	</div>
     <div id="content">
@@ -248,22 +307,22 @@
   
     <div class="box">
       <div class="box-title">old-Black 20pt</div>
-	<div class="box-text old-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] [ |</div>
+	<div contenteditable=true spellcheck="false" class="box-text old-Black" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] | [ ॥</div>
     </div>
   
     <div class="box">
       <div class="box-title">old-Bold 20pt</div>
-	<div class="box-text old-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] [ |</div>
+	<div contenteditable=true spellcheck="false" class="box-text old-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] | [ ॥</div>
     </div>
   
     <div class="box">
       <div class="box-title">old-ExtraBold 20pt</div>
-	<div class="box-text old-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] [ |</div>
+	<div contenteditable=true spellcheck="false" class="box-text old-ExtraBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] | [ ॥</div>
     </div>
   
     <div class="box">
       <div class="box-title">old-ExtraLight 20pt</div>
-	<div class="box-text old-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] [ |</div>
+	<div contenteditable=true spellcheck="false" class="box-text old-ExtraLight" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . । (1948), " — – ' ; 360 ‐ : ಕುಟುಂಬದ ಸಮಸ್ತ ಸದಸ್ಯರ ಸಹಜ ಗೌರವವನ್ನೂ ಸಮಾನವೂ ಅನನ್ಯಹಾರ್ಯವೂ ಆದ ಹಕ್ಕುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದು ಪ್ರಪಂಚದಲ್ಲಿ ಧರ್ಮಶಾಂತತೆಗಳ ತೋರಿಸಲ್ಪಟ್ವ ಉಪೇಕ್ಷೆ ಅಂತಃಕರಣವನ್ನು ದಾರುಣಗೊಳಿಸಿದಂತಹ ಕ್ರೂರಕೃತ್ಯಗಳಾಗಿ ವಾಕ್‌ಸ್ವಾತಂತ್ರ್ಯ ಅನುಭವಿಸುವವೋ ಅಂಥಾ ಸಂರಕ್ಷಿಸಲ್ಪಡಬೇಕಾದರೆ ಒತ್ತಾಯಪಡಿಸಲ್ಪಡದಿದ್ದರೆ, ದೃಢೀಕರಿಸುವುದರಿಂದಲೂ, ಅನುಷ್ಠಾನದಲ್ಲಿ ಪ್ರತಿಜ್ಞೆ ಮಾಡಿರುವುದರಿಂದಲೂ.ಈ ಅತಿಮುಖ್ಯವಾಗಿರುವುದರಿಂದಲೂ.“ಈ ಪ್ರಕಟನೆ”ಯನ್ನು ಎಲ್ಲಾ ಘನತೆ ಇತರ ಫಲದಾಯಕವಾದ ನಿರ್ಣೈಸುವುದರಲ್ಲಿ ಇಚ್ಛಾನುಸಾರವಾಗಿ ಹಕ್ಕುಳ್ಳದ್ದಾಗಿದೆ.ಏಕಾಗಿಯಾಗಿಯೂ ಔದ್ಯೋಗಿಕ / ‘‘ = ~ 50 ? ?] | [ ॥</div>
     </div>
   
 
@@ -302,6 +361,81 @@
 		fontToggle.addEventListener("click", switchFonts);
 	}
 
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
     
 	// break text so that no reflow happens
 async function breakText() {

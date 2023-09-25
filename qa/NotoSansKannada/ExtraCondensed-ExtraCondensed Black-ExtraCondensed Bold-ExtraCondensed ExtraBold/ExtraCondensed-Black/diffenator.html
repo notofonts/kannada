@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansKannada-ExtraCondensedBlack.ttf);
+    font-family: "old font";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansKannada-ExtraCondensedBlack.ttf);
+    font-family: "new font";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-400{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	    .new-wght-400{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"glyf": {"glyphOrder": {"error": ["There are 557 changes, check manually!", ""]}}, "GDEF": {"table": {"GlyphClassDef": {"classDefs": {"anusvaraaboverightknda": [null, 3]}}, "MarkGlyphSetsDef": {"Coverage": {"3": {"glyphs": {"8": ["kasubscriptknda", "anusvaraaboverightknda"], "9": ["khasubscriptknda", "kasubscriptknda"], "10": ["gasubscriptknda", "khasubscriptknda"], "11": ["ghasubscriptknda", "gasubscriptknda"], "12": ["ngasubscriptknda", "ghasubscriptknda"], "13": ["casubscriptknda", "ngasubscriptknda"], "14": ["chasubscriptknda", "casubscriptknda"], "15": ["jasubscriptknda", "chasubscriptknda"], "16": ["jhasubscriptknda", "jasubscriptknda"], "17": ["nyasubscriptknda", "jhasubscriptknda"], "18": ["ttasubscriptknda", "nyasubscriptknda"], "19": ["tthasubscriptknda", "ttasubscriptknda"], "20": ["ddasubscriptknda", "tthasubscriptknda"], "21": ["ddhasubscriptknda", "ddasubscriptknda"], "22": ["nnasubscriptknda", "ddhasubscriptknda"], "23": ["tasubscriptknda", "nnasubscriptknda"], "24": ["thasubscriptknda", "tasubscriptknda"], "25": ["dasubscriptknda", "thasubscriptknda"], "26": ["dhasubscriptknda", "dasubscriptknda"], "27": ["nasubscriptknda", "dhasubscriptknda"], "28": ["pasubscriptknda", "nasubscriptknda"], "29": ["phasubscriptknda", "pasubscriptknda"], "30": ["basubscriptknda", "phasubscriptknda"], "31": ["bhasubscriptknda", "basubscriptknda"], "32": ["masubscriptknda", "bhasubscriptknda"], "33": ["yasubscriptknda", "masubscriptknda"], "34": ["rasubscriptknda", "yasubscriptknda"], "35": ["rrasubscriptknda", "rasubscriptknda"], "36": ["lasubscriptknda", "rrasubscriptknda"], "37": ["llasubscriptknda", "lasubscriptknda"], "38": ["vasubscriptknda", "llasubscriptknda"], "39": ["shasubscriptknda", "vasubscriptknda"], "40": ["ssasubscriptknda", "shasubscriptknda"], "41": ["sasubscriptknda", "ssasubscriptknda"], "42": ["hasubscriptknda", "sasubscriptknda"], "43": ["fasubscriptknda", "hasubscriptknda"], "44": ["januktasubscriptknda", "fasubscriptknda"], "45": ["phanuktasubscriptknda", "januktasubscriptknda"], "46": ["nnasubscriptUIknda", "phanuktasubscriptknda"], "47": ["nasubscriptUIknda", "nnasubscriptUIknda"], "48": ["basubscriptUIknda", "nasubscriptUIknda"], "49": ["bhasubscriptUIknda", "basubscriptUIknda"], "50": ["ssasubscriptUIknda", "bhasubscriptUIknda"], "51": ["sasubscriptUIknda", "ssasubscriptUIknda"], "52": ["baviramaknda", "sasubscriptUIknda"], "53": ["aavowelsignaltknda", "baviramaknda"], "54": ["evowelsignaltknda", "aavowelsignaltknda"], "55": ["uvowelsignaltknda", "evowelsignaltknda"], "56": ["uuvowelsignaltknda", "uvowelsignaltknda"], "57": ["uvowelsignalt2knda", "uuvowelsignaltknda"], "58": ["uuvowelsignalt2knda", "uvowelsignalt2knda"], "59": ["uvowelsignlaknda", "uuvowelsignalt2knda"], "60": ["uuvowelsignlaknda", "uvowelsignlaknda"], "61": ["karasubscriptknda", "uuvowelsignlaknda"], "62": ["garasubscriptknda", "karasubscriptknda"], "63": ["ttarasubscriptknda", "garasubscriptknda"], "64": ["ddarasubscriptknda", "ttarasubscriptknda"], "65": ["tarasubscriptknda", "ddarasubscriptknda"], "66": ["darasubscriptknda", "tarasubscriptknda"], "67": ["parasubscriptknda", "darasubscriptknda"], "68": ["bharasubscriptknda", "parasubscriptknda"], "69": ["tayasubscriptknda", "bharasubscriptknda"], "70": ["mayasubscriptknda", "tayasubscriptknda"], "71": ["kasubscriptaltknda", "mayasubscriptknda"], "72": ["khasubscriptaltknda", "kasubscriptaltknda"], "73": ["gasubscriptaltknda", "khasubscriptaltknda"], "74": ["ghasubscriptaltknda", "gasubscriptaltknda"], "75": ["ngasubscriptaltknda", "ghasubscriptaltknda"], "76": ["casubscriptaltknda", "ngasubscriptaltknda"], "77": ["chasubscriptaltknda", "casubscriptaltknda"], "78": ["jasubscriptaltknda", "chasubscriptaltknda"], "79": ["jhasubscriptaltknda", "jasubscriptaltknda"], "80": ["nyasubscriptaltknda", "jhasubscriptaltknda"], "81": ["ttasubscriptaltknda", "nyasubscriptaltknda"], "82": ["tthasubscriptaltknda", "ttasubscriptaltknda"], "83": ["ddasubscriptaltknda", "tthasubscriptaltknda"], "84": ["ddhasubscriptaltknda", "ddasubscriptaltknda"], "85": ["nnasubscriptaltknda", "ddhasubscriptaltknda"], "86": ["tasubscriptaltknda", "nnasubscriptaltknda"], "87": ["thasubscriptaltknda", "tasubscriptaltknda"], "88": ["dasubscriptaltknda", "thasubscriptaltknda"], "89": ["dhasubscriptaltknda", "dasubscriptaltknda"], "90": ["nasubscriptaltknda", "dhasubscriptaltknda"], "91": ["pasubscriptaltknda", "nasubscriptaltknda"], "92": ["phasubscriptaltknda", "pasubscriptaltknda"], "93": ["basubscriptaltknda", "phasubscriptaltknda"], "94": ["bhasubscriptaltknda", "basubscriptaltknda"], "95": ["masubscriptaltknda", "bhasubscriptaltknda"], "96": ["yasubscriptaltknda", "masubscriptaltknda"], "97": ["rasubscriptaltknda", "yasubscriptaltknda"], "98": ["rrasubscriptaltknda", "rasubscriptaltknda"], "99": ["lasubscriptaltknda", "rrasubscriptaltknda"], "100": ["llasubscriptaltknda", "lasubscriptaltknda"], "101": ["vasubscriptaltknda", "llasubscriptaltknda"], "102": ["shasubscriptaltknda", "vasubscriptaltknda"], "103": ["ssasubscriptaltknda", "shasubscriptaltknda"], "104": ["sasubscriptaltknda", "ssasubscriptaltknda"], "105": ["hasubscriptaltknda", "sasubscriptaltknda"], "106": ["fasubscriptaltknda", "hasubscriptaltknda"], "107": ["januktasubscriptaltknda", "fasubscriptaltknda"], "108": ["phanuktasubscriptaltknda", "januktasubscriptaltknda"], "109": ["nnasubscriptaltUIknda", "phanuktasubscriptaltknda"], "110": ["nasubscriptaltUIknda", "nnasubscriptaltUIknda"], "111": ["basubscriptaltUIknda", "nasubscriptaltUIknda"], "112": ["bhasubscriptaltUIknda", "basubscriptaltUIknda"], "113": ["ssasubscriptaltUIknda", "bhasubscriptaltUIknda"], "114": ["karasubscriptaltknda", "ssasubscriptaltUIknda"], "115": ["garasubscriptaltknda", "karasubscriptaltknda"], "116": ["ttarasubscriptaltknda", "garasubscriptaltknda"], "117": ["ddarasubscriptaltknda", "ttarasubscriptaltknda"], "118": ["tarasubscriptaltknda", "ddarasubscriptaltknda"], "119": ["darasubscriptaltknda", "tarasubscriptaltknda"], "120": ["parasubscriptaltknda", "darasubscriptaltknda"], "121": ["bharasubscriptaltknda", "parasubscriptaltknda"], "122": ["tayasubscriptaltknda", "bharasubscriptaltknda"], "123": ["mayasubscriptaltknda", "tayasubscriptaltknda"], "124": ["nnasubscriptrightknda", "mayasubscriptaltknda"], "125": ["nasubscriptrightknda", "nnasubscriptrightknda"], "126": ["basubscriptrightknda", "nasubscriptrightknda"], "127": ["bhasubscriptrightknda", "basubscriptrightknda"], "128": ["ssasubscriptrightknda", "bhasubscriptrightknda"], "129": ["nnasubscriptrightUIknda", "ssasubscriptrightknda"], "130": ["nasubscriptrightUIknda", "nnasubscriptrightUIknda"], "131": ["basubscriptrightUIknda", "nasubscriptrightUIknda"], "132": ["bhasubscriptrightUIknda", "basubscriptrightUIknda"], "133": ["ssasubscriptrightUIknda", "bhasubscriptrightUIknda"], "134": [null, "ssasubscriptrightUIknda"]}}}}}}, "GPOS": {"table": {"LookupList": {"Lookup": {"4": {"SubTable": {"0": {"PairSet": {"1": {"PairValueCount": [1, 27], "PairValueRecord": {"0": {"SecondGlyph": ["rvocalicvowelsignknda", "aknda"], "Value1": {"XAdvance": [87, -15]}}, "1": {"SecondGlyph": [null, "aaknda"], "Value1": {"XAdvance": [null, -15]}}, "2": {"SecondGlyph": [null, "uknda"], "Value1": {"XAdvance": [null, -20]}}, "3": {"SecondGlyph": [null, "uuknda"], "Value1": {"XAdvance": [null, -20]}}, "4": {"SecondGlyph": [null, "eknda"], "Value1": {"XAdvance": [null, -70]}}, "5": {"SecondGlyph": [null, "eeknda"], "Value1": {"XAdvance": [null, -20]}}, "6": {"SecondGlyph": [null, "khaknda"], "Value1": {"XAdvance": [null, -30]}}, "7": {"SecondGlyph": [null, "chaknda"], "Value1": {"XAdvance": [null, -30]}}, "8": {"SecondGlyph": [null, "ttaknda"], "Value1": {"XAdvance": [null, -20]}}, "9": {"SecondGlyph": [null, "nnaknda"], "Value1": {"XAdvance": [null, -10]}}, "10": {"SecondGlyph": [null, "yaknda"], "Value1": {"XAdvance": [null, -30]}}, "11": {"SecondGlyph": [null, "rraknda"], "Value1": {"XAdvance": [null, -30]}}, "12": {"SecondGlyph": [null, "laknda"], "Value1": {"XAdvance": [null, -20]}}, "13": {"SecondGlyph": [null, "khivowelknda"], "Value1": {"XAdvance": [null, -20]}}, "14": {"SecondGlyph": [null, "ghivowelknda"], "Value1": {"XAdvance": [null, -40]}}, "15": {"SecondGlyph": [null, "chivowelknda"], "Value1": {"XAdvance": [null, -30]}}, "16": {"SecondGlyph": [null, "ddivowelknda"], "Value1": {"XAdvance": [null, -10]}}, "17": {"SecondGlyph": [null, "ddhivowelknda"], "Value1": {"XAdvance": [null, -10]}}, "18": {"SecondGlyph": [null, "nivowelknda"], "Value1": {"XAdvance": [null, -40]}}, "19": {"SecondGlyph": [null, "pivowelknda"], "Value1": {"XAdvance": [null, -50]}}, "20": {"SecondGlyph": [null, "phivowelknda"], "Value1": {"XAdvance": [null, -50]}}, "21": {"SecondGlyph": [null, "mivowelknda"], "Value1": {"XAdvance": [null, -60]}}, "22": {"SecondGlyph": [null, "yivowelknda"], "Value1": {"XAdvance": [null, -30]}}, "23": {"SecondGlyph": [null, "livowelknda"], "Value1": {"XAdvance": [null, -20]}}, "24": {"SecondGlyph": [null, "vivowelknda"], "Value1": {"XAdvance": [null, -60]}}, "25": {"SecondGlyph": [null, "ssivowelknda"], "Value1": {"XAdvance": [null, -50]}}, "26": {"SecondGlyph": [null, "sivowelknda"], "Value1": {"XAdvance": [null, -10]}}}}, "2": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [165, 87]}}}}, "3": {"PairValueRecord": {"0": {"SecondGlyph": ["ailengthmarkknda", "rvocalicvowelsignknda"], "Value1": {"XAdvance": [91, 165]}}}}, "4": {"PairValueRecord": {"0": {"Value1": {"XAdvance": [170, 91]}}}}, "5": {"PairValueCount": [null, 1], "PairValueRecord": {"0": {"SecondGlyph": [null, "ailengthmarkknda"], "Value1": {"XAdvance": [null, 170]}}}}}, "PairSetCount": [5, 6], "Coverage": {"glyphs": {"1": ["januktaknda", "nakaarapolluknda"], "2": ["phanuktaknda", "januktaknda"], "3": ["jevowelnuktaknda", "phanuktaknda"], "4": ["phevowelnuktaknda", "jevowelnuktaknda"], "5": [null, "phevowelnuktaknda"]}}}}}, "5": {"SubTable": {"0": {"PairSet": {"error": ["There are 182 changes, check manually!", ""]}, "PairSetCount": [162, 211], "Coverage": {"glyphs": {"error": ["There are 211 changes, check manually!", ""]}}}}}}}}}, "hmtx": {"metrics": {"nakaarapolluknda": {"0": [null, 533], "1": [null, 22]}, "anusvaraaboverightknda": {"0": [null, 334], "1": [null, 22]}}}, "maxp": {"numGlyphs": [655, 657]}, "head": {"modified": [3762753433, 3778491532], "checkSumAdjustment": [3993862422, 2488262250], "fontRevision": [2.003997802734375, 2.0050048828125]}, "post": {"extraNames": {"error": ["There are 557 changes, check manually!", ""]}}, "hhea": {"numberOfHMetrics": [655, 657]}, "cmap": {"0x0CF3": [null, "anusvaraaboverightknda"], "0x0CDD": [null, "nakaarapolluknda"]}, "name": {"5/3/1/1033": ["Version 2.004", "Version 2.005"], "3/3/1/1033": ["2.004;GOOG;NotoSansKannada-ExtraCondensedBlack", "2.005;GOOG;NotoSansKannada-ExtraCondensedBlack"]}};</script><div id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೝ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NAKAARA POLLU<br>
+            unicode: U+0CDD
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ೳ<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT<br>
+            unicode: U+0CF3
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-400" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$("#difftable .node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>

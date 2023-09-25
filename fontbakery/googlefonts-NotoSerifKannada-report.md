@@ -1,24 +1,8 @@
-## Fontbakery report
+## FontBakery report
 
-Fontbakery version: 0.8.13
+fontbakery version: 0.9.2
 
-<details><summary><b>[4] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
-
-
-* 🔥 **FAIL** Not all fonts passed in the command line are in the same directory. This may lead to bad results as the tool will interpret all font files as belonging to a single font family. The detected directories are: ['fonts/NotoSerifKannada/googlefonts/ttf', 'fonts/NotoSerifKannada/googlefonts/variable-ttf'] [code: single-directory]
-</div></details><details><summary>🔥 <b>FAIL:</b> Fonts have consistent PANOSE proportion? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_proportion">com.google.fonts/check/family/panose_proportion</a>)</summary><div>
-
-
-* 🔥 **FAIL** PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><details><summary>🔥 <b>FAIL:</b> Fonts have consistent PANOSE family type? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/family/panose_familytype">com.google.fonts/check/family/panose_familytype</a>)</summary><div>
-
-
-* 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check that OS/2.fsSelection bold & italic settings are unique for each NameID1 (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.adobe.fonts/check/family/bold_italic_unique_for_nameid1">com.adobe.fonts/check/family/bold_italic_unique_for_nameid1</a>)</summary><div>
-
-
-* 🔥 **FAIL** Family 'Noto Serif Kannada' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+<details><summary><b>[15] NotoSerifKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -26,12 +10,49 @@ Fontbakery version: 0.8.13
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -45,16 +66,146 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* bhe_kannada
 	* c_kannada
 	* cau_kannada
-	* ch_kannada and 133 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* ch_kannada
+	* cha_kannada
+	* cha_kannada.base
+	* che_kannada
+	* ci_kannada
+	* d_kannada
+	* dd_kannada
+	* ddh_kannada
+	* ddhi_kannada
+	* ddi_kannada
+	* dh_kannada
+	* five_kannada
+	* four_kannada
+	* g_kannada
+	* gh_kannada
+	* gha_kannada.base
+	* ghaa_kannada
+	* ghau_kannada
+	* h_kannada
+	* ha_kannada
+	* ha_kannada.base
+	* halant_kannada
+	* halant_kannada.calt
+	* he_kannada
+	* hi_kannada
+	* i_kannada
+	* ii_kannada
+	* j_kannada
+	* j_ny_kannada
+	* j_nya_kannada.base
+	* j_nye_kannada
+	* j_nyi_kannada
+	* ja_kannada.base
+	* jaa_kannada
+	* jau_kannada
+	* je_kannada
+	* jh_kannada
+	* jha_kannada
+	* jha_kannada.base
+	* jhe_kannada
+	* jhi_kannada
+	* jho_kannada
+	* jihvamuliyaSign_vedic
+	* jihvamuliya_kannada
+	* jo_kannada
+	* k_kannada
+	* k_ss_kannada
+	* k_ssi_kannada
+	* kh_kannada
+	* kha_kannada
+	* kha_kannada.base
+	* khe_kannada
+	* khi_kannada
+	* ki_kannada
+	* l_kannada
+	* la_kannada.base
+	* le_kannada
+	* ll_kannada
+	* lla_kannada
+	* lla_kannada.base
+	* lle_kannada
+	* lli_kannada
+	* lll_kannada
+	* lllaa_kannada
+	* lllau_kannada
+	* llle_kannada
+	* llli_kannada
+	* lllo_kannada
+	* llo_kannada
+	* llu_kannada
+	* lluu_kannada
+	* m_kannada
+	* ma_kannada
+	* ma_kannada.base
+	* me_kannada
+	* mo_kannada
+	* n_kannada
+	* na_kannada.below
+	* ng_kannada
+	* ngaa_kannada
+	* ngau_kannada
+	* nge_kannada
+	* ngo_kannada
+	* nn_kannada
+	* ny_kannada
+	* nya_kannada
+	* nya_kannada.base
+	* nyaa_kannada
+	* nyau_kannada
+	* nye_kannada
+	* nyi_kannada
+	* nyo_kannada
+	* p_kannada
+	* ph_kannada
+	* phaa_kannada
+	* phau_kannada
+	* rVocalic_kannada
+	* r_kannada
+	* rrVocalic_kannada
+	* rr_kannada
+	* rraa_kannada
+	* rrau_kannada
+	* rre_kannada
+	* rro_kannada
+	* s_kannada
+	* sh_kannada
+	* sh_ri_kannada
+	* sha_kannada
+	* sha_kannada.base
+	* she_kannada
+	* ss_kannada
+	* ssa_kannada
+	* ssa_kannada.base
+	* sse_kannada
+	* ssi_kannada
+	* t_ailength_kannada.below
+	* t_kannada
+	* th_kannada
+	* three_kannada
+	* tt_kannada
+	* ttau_kannada
+	* tth_kannada
+	* v_kannada
+	* va_kannada
+	* va_kannada.base
+	* ve_kannada
+	* vo_kannada
+	* vu_kannada
+	* vuu_kannada
+	* y_kannada
+	* ya_kannada
+	* ya_kannada.base
+	* ye_kannada and yo_kannada
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada Black' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -82,7 +233,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -109,7 +260,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* dda_kannada (U+0CA1): L<<513.0,416.0>--<513.0,416.0>> -> L<<513.0,416.0>--<513.0,416.0>>
 
-	* ddha_kannada (U+0CA2): L<<513.0,416.0>--<513.0,416.0>> -> L<<513.0,416.0>--<513.0,416.0>> 
+	* ddha_kannada (U+0CA2): L<<513.0,416.0>--<513.0,416.0>> -> L<<513.0,416.0>--<513.0,416.0>>
 
 	* ii_kannada (U+0C88): L<<717.0,238.0>--<711.0,238.0>> -> L<<711.0,238.0>--<614.0,238.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -135,7 +286,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* ycircumflex (U+0177): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511
 
-	* ydieresis (U+00FF): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 
+	* ydieresis (U+00FF): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511
 
 	* ygrave (U+1EF3): B<<336.0,187.0>-<342.0,160.0>-<343.0,142.0>>/B<<343.0,142.0>-<346.0,164.0>-<349.5,180.0>> = 10.944996138289511 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -144,7 +295,17 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* sterling (U+00A3): L<<454.0,335.0>--<295.0,336.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -152,12 +313,49 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -171,9 +369,102 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* d_kannada
 	* dd_kannada
 	* ddh_kannada
-	* ddhi_kannada and 96 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* ddhi_kannada
+	* ddi_kannada
+	* dh_kannada
+	* four_kannada
+	* g_kannada
+	* gh_kannada
+	* gha_kannada.base
+	* ghaa_kannada
+	* ghau_kannada
+	* h_kannada
+	* ha_kannada
+	* ha_kannada.base
+	* halant_kannada
+	* halant_kannada.calt
+	* he_kannada
+	* hi_kannada
+	* ii_kannada
+	* j_kannada
+	* j_ny_kannada
+	* j_nya_kannada.base
+	* j_nye_kannada
+	* jau_kannada
+	* jh_kannada
+	* jha_kannada
+	* jha_kannada.base
+	* jhe_kannada
+	* jhi_kannada
+	* jho_kannada
+	* k_kannada
+	* k_ss_kannada
+	* k_ssi_kannada
+	* kh_kannada
+	* kha_kannada
+	* kha_kannada.base
+	* khe_kannada
+	* khi_kannada
+	* ki_kannada
+	* l_kannada
+	* la_kannada.base
+	* le_kannada
+	* ll_kannada
+	* lll_kannada
+	* lllaa_kannada
+	* lllau_kannada
+	* lllo_kannada
+	* llo_kannada
+	* llu_kannada
+	* lluu_kannada
+	* m_kannada
+	* ma_kannada.base
+	* me_kannada
+	* mo_kannada
+	* n_kannada
+	* ng_kannada
+	* ngau_kannada
+	* nn_kannada
+	* ny_kannada
+	* nya_kannada
+	* nya_kannada.base
+	* nyaa_kannada
+	* nyau_kannada
+	* nye_kannada
+	* nyi_kannada
+	* nyo_kannada
+	* p_kannada
+	* ph_kannada
+	* phaa_kannada
+	* phau_kannada
+	* rVocalic_kannada
+	* r_kannada
+	* rrVocalic_kannada
+	* rr_kannada
+	* rrau_kannada
+	* rro_kannada
+	* s_kannada
+	* sh_kannada
+	* sh_ri_kannada
+	* sha_kannada
+	* sha_kannada.base
+	* she_kannada
+	* ss_kannada
+	* ssa_kannada
+	* ssa_kannada.base
+	* sse_kannada
+	* ssi_kannada
+	* t_kannada
+	* th_kannada
+	* three_kannada
+	* tt_kannada
+	* ttau_kannada
+	* tth_kannada
+	* v_kannada
+	* y_kannada
+	* ya_kannada
+	* ya_kannada.base
+	* ye_kannada and yo_kannada
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -201,7 +492,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -230,7 +521,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* ycircumflex (U+0177): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127
 
-	* ydieresis (U+00FF): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 
+	* ydieresis (U+00FF): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127
 
 	* ygrave (U+1EF3): B<<321.0,162.0>-<327.0,138.0>-<329.0,118.0>>/B<<329.0,118.0>-<331.0,139.0>-<339.5,165.0>> = 11.150925168505127 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -240,10 +531,20 @@ The following glyphs do not have the recommended number of contours:
 
 	* h (U+0068): L<<101.0,122.0>--<100.0,646.0>>
 
-	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>> 
+	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>>
 
 	* sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSerifKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -251,12 +552,49 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -270,16 +608,121 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* d_kannada
 	* dd_kannada
 	* ddh_kannada
-	* ddhi_kannada and 108 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* ddhi_kannada
+	* ddi_kannada
+	* dh_kannada
+	* five_kannada
+	* four_kannada
+	* g_kannada
+	* gh_kannada
+	* gha_kannada.base
+	* ghaa_kannada
+	* ghau_kannada
+	* h_kannada
+	* ha_kannada
+	* ha_kannada.base
+	* halant_kannada
+	* halant_kannada.calt
+	* he_kannada
+	* hi_kannada
+	* ii_kannada
+	* j_kannada
+	* j_ny_kannada
+	* j_nya_kannada.base
+	* j_nye_kannada
+	* jau_kannada
+	* jh_kannada
+	* jha_kannada
+	* jha_kannada.base
+	* jhe_kannada
+	* jhi_kannada
+	* jho_kannada
+	* jihvamuliyaSign_vedic
+	* jihvamuliya_kannada
+	* k_kannada
+	* k_ss_kannada
+	* k_ssi_kannada
+	* kh_kannada
+	* kha_kannada
+	* kha_kannada.base
+	* khe_kannada
+	* khi_kannada
+	* ki_kannada
+	* l_kannada
+	* la_kannada.base
+	* le_kannada
+	* ll_kannada
+	* lla_kannada
+	* lla_kannada.base
+	* lle_kannada
+	* lll_kannada
+	* lllaa_kannada
+	* lllau_kannada
+	* llle_kannada
+	* lllo_kannada
+	* llo_kannada
+	* llu_kannada
+	* lluu_kannada
+	* m_kannada
+	* ma_kannada.base
+	* me_kannada
+	* mo_kannada
+	* n_kannada
+	* ng_kannada
+	* ngaa_kannada
+	* ngau_kannada
+	* ngo_kannada
+	* nn_kannada
+	* ny_kannada
+	* nya_kannada
+	* nya_kannada.base
+	* nyaa_kannada
+	* nyau_kannada
+	* nye_kannada
+	* nyi_kannada
+	* nyo_kannada
+	* p_kannada
+	* ph_kannada
+	* phaa_kannada
+	* phau_kannada
+	* rVocalic_kannada
+	* r_kannada
+	* rrVocalic_kannada
+	* rr_kannada
+	* rraa_kannada
+	* rrau_kannada
+	* rre_kannada
+	* rro_kannada
+	* s_kannada
+	* sh_kannada
+	* sh_ri_kannada
+	* sha_kannada
+	* sha_kannada.base
+	* she_kannada
+	* ss_kannada
+	* ssa_kannada
+	* ssa_kannada.base
+	* sse_kannada
+	* ssi_kannada
+	* t_kannada
+	* th_kannada
+	* three_kannada
+	* tt_kannada
+	* ttau_kannada
+	* tth_kannada
+	* v_kannada
+	* va_kannada.base
+	* y_kannada
+	* ya_kannada
+	* ya_kannada.base
+	* ye_kannada and yo_kannada
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada ExtraBold' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -307,7 +750,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -330,7 +773,7 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* aa_kannada (U+0C86): L<<607.0,271.0>--<603.0,271.0>> -> L<<603.0,271.0>--<397.0,271.0>> 
+	* aa_kannada (U+0C86): L<<607.0,271.0>--<603.0,271.0>> -> L<<603.0,271.0>--<397.0,271.0>>
 
 	* ta_kannada (U+0CA4): L<<355.0,424.0>--<354.0,424.0>> -> L<<354.0,424.0>--<47.0,424.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -348,7 +791,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* ycircumflex (U+0177): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296
 
-	* ydieresis (U+00FF): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 
+	* ydieresis (U+00FF): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296
 
 	* ygrave (U+1EF3): B<<329.0,175.5>-<335.0,150.0>-<337.0,131.0>>/B<<337.0,131.0>-<339.0,153.0>-<345.0,173.0>> = 11.203434865229296 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -356,10 +799,20 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
-	* nakaarapollu_kannada (U+0CDD): L<<176.0,226.0>--<387.0,225.0>> 
+	* nakaarapollu_kannada (U+0CDD): L<<176.0,226.0>--<387.0,225.0>>
 
 	* sterling (U+00A3): L<<442.0,340.0>--<284.0,341.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -367,19 +820,56 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada ExtraLight' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -407,7 +897,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -436,10 +926,20 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* a_kannada (U+0C85): B<<143.0,395.0>-<143.0,445.0>-<172.0,472.0>>/B<<172.0,472.0>-<134.0,451.0>-<108.5,401.0>> = 14.028165675859142 
+	* a_kannada (U+0C85): B<<143.0,395.0>-<143.0,445.0>-<172.0,472.0>>/B<<172.0,472.0>-<134.0,451.0>-<108.5,401.0>> = 14.028165675859142
 
 	* eth (U+00F0): B<<356.5,474.5>-<399.0,456.0>-<423.0,417.0>>/B<<423.0,417.0>-<401.0,487.0>-<370.5,540.5>> = 14.160313822966648 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[15] NotoSerifKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -447,12 +947,49 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -467,7 +1004,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada Light' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -495,7 +1032,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -536,11 +1073,105 @@ The following glyphs do not have the recommended number of contours:
 
 	* t (U+0074): X=297.0,Y=1.0 (should be at baseline 0?)
 
-	* y (U+0079): X=269.0,Y=-1.0 (should be at baseline 0?) 
+	* y (U+0079): X=269.0,Y=-1.0 (should be at baseline 0?)
 
-	* 49 more.
+	* sterling (U+00A3): X=354.5,Y=-2.0 (should be at baseline 0?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* sterling (U+00A3): X=79.0,Y=-1.0 (should be at baseline 0?)
+
+	* sterling (U+00A3): X=460.5,Y=1.0 (should be at baseline 0?)
+
+	* section (U+00A7): X=362.0,Y=688.0 (should be at cap-height 690?)
+
+	* section (U+00A7): X=192.5,Y=692.0 (should be at cap-height 690?)
+
+	* ordfeminine (U+00AA): X=177.0,Y=688.0 (should be at cap-height 690?)
+
+	* yacute (U+00FD): X=269.0,Y=-1.0 (should be at baseline 0?)
+
+	* ydieresis (U+00FF): X=269.0,Y=-1.0 (should be at baseline 0?)
+
+	* ohungarumlaut (U+0151): X=361.0,Y=691.0 (should be at cap-height 690?)
+
+	* ohungarumlaut (U+0151): X=191.0,Y=691.0 (should be at cap-height 690?)
+
+	* Sacute (U+015A): X=402.0,Y=690.5 (should be at cap-height 690?)
+
+	* Scedilla (U+015E): X=402.0,Y=690.5 (should be at cap-height 690?)
+
+	* Scaron (U+0160): X=402.0,Y=690.5 (should be at cap-height 690?)
+
+	* tcaron (U+0165): X=297.0,Y=1.0 (should be at baseline 0?)
+
+	* uhungarumlaut (U+0171): X=384.0,Y=691.0 (should be at cap-height 690?)
+
+	* uhungarumlaut (U+0171): X=214.0,Y=691.0 (should be at cap-height 690?)
+
+	* ycircumflex (U+0177): X=269.0,Y=-1.0 (should be at baseline 0?)
+
+	* Scommaaccent (U+0218): X=402.0,Y=690.5 (should be at cap-height 690?)
+
+	* tcommaaccent (U+021B): X=297.0,Y=1.0 (should be at baseline 0?)
+
+	* hungarumlaut (U+02DD): X=254.0,Y=691.0 (should be at cap-height 690?)
+
+	* hungarumlaut (U+02DD): X=84.0,Y=691.0 (should be at cap-height 690?)
+
+	* hungarumlautcomb (U+030B): X=107.0,Y=691.0 (should be at cap-height 690?)
+
+	* hungarumlautcomb (U+030B): X=-63.0,Y=691.0 (should be at cap-height 690?)
+
+	* candrabindu_kannada (U+0C81): X=-392.0,Y=691.0 (should be at cap-height 690?)
+
+	* candrabindu_kannada (U+0C81): X=-202.0,Y=691.0 (should be at cap-height 690?)
+
+	* ssa_kannada (U+0CB7): X=583.0,Y=-1.5 (should be at baseline 0?)
+
+	* iiMatra_kannada (U+0CC0): X=310.0,Y=1.0 (should be at baseline 0?)
+
+	* eMatra_kannada (U+0CC6): X=-226.0,Y=688.0 (should be at cap-height 690?)
+
+	* eeMatra_kannada (U+0CC7): X=-8.0,Y=688.0 (should be at cap-height 690?)
+
+	* eeMatra_kannada (U+0CC7): X=455.0,Y=1.0 (should be at baseline 0?)
+
+	* aiMatra_kannada (U+0CC8): X=-45.0,Y=688.0 (should be at cap-height 690?)
+
+	* oMatra_kannada (U+0CCA): X=-8.0,Y=688.0 (should be at cap-height 690?)
+
+	* ooMatra_kannada (U+0CCB): X=-8.0,Y=688.0 (should be at cap-height 690?)
+
+	* ooMatra_kannada (U+0CCB): X=1091.0,Y=1.0 (should be at baseline 0?)
+
+	* length_kannada (U+0CD5): X=310.0,Y=1.0 (should be at baseline 0?)
+
+	* llVocalic_kannada (U+0CE1): X=448.0,Y=-1.0 (should be at baseline 0?)
+
+	* one_kannada (U+0CE7): X=366.0,Y=-0.5 (should be at baseline 0?)
+
+	* one_kannada (U+0CE7): X=238.5,Y=-0.5 (should be at baseline 0?)
+
+	* ygrave (U+1EF3): X=269.0,Y=-1.0 (should be at baseline 0?)
+
+	* rupeeIndian (U+20B9): X=393.0,Y=2.0 (should be at baseline 0?)
+
+	* rupeeIndian (U+20B9): X=416.0,Y=2.0 (should be at baseline 0?)
+
+	* trademark (U+2122): X=338.0,Y=691.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=328.0,Y=691.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=735.0,Y=691.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=724.0,Y=691.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=139.0,Y=689.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=93.0,Y=689.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=233.0,Y=689.0 (should be at cap-height 690?)
+
+	* trademark (U+2122): X=184.0,Y=689.0 (should be at cap-height 690?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -552,10 +1183,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* aiMatra_kannada (U+0CC8): B<<80.0,-255.5>-<54.0,-229.0>-<54.0,-188.0>>/B<<54.0,-188.0>-<49.0,-208.0>-<49.0,-234.0>> = 14.036243467926484 
+	* aiMatra_kannada (U+0CC8): B<<80.0,-255.5>-<54.0,-229.0>-<54.0,-188.0>>/B<<54.0,-188.0>-<49.0,-208.0>-<49.0,-234.0>> = 14.036243467926484
 
 	* ailength_kannada (U+0CD6): B<<-246.0,-255.5>-<-272.0,-229.0>-<-272.0,-188.0>>/B<<-272.0,-188.0>-<-277.0,-208.0>-<-277.0,-234.0>> = 14.036243467926484 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -563,12 +1204,49 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -582,16 +1260,48 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* gh_kannada
 	* ghau_kannada
 	* h_kannada
-	* ha_kannada and 35 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* ha_kannada
+	* ha_kannada.base
+	* he_kannada
+	* ii_kannada
+	* j_ny_kannada
+	* jh_kannada
+	* jha_kannada.base
+	* jhi_kannada
+	* kh_kannada
+	* kha_kannada.base
+	* l_kannada
+	* le_kannada
+	* ll_kannada
+	* lllau_kannada
+	* m_kannada
+	* ma_kannada.base
+	* n_kannada
+	* ny_kannada
+	* nyaa_kannada
+	* nyau_kannada
+	* nye_kannada
+	* nyi_kannada
+	* nyo_kannada
+	* rVocalic_kannada
+	* rrVocalic_kannada
+	* rrau_kannada
+	* sh_kannada
+	* sha_kannada
+	* sha_kannada.base
+	* she_kannada
+	* ss_kannada
+	* t_kannada
+	* v_kannada
+	* y_kannada
+	* ya_kannada.base and yo_kannada
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada Medium' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -619,7 +1329,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -642,10 +1352,20 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
-	* nakaarapollu_kannada (U+0CDD): L<<184.0,215.0>--<384.0,214.0>> 
+	* nakaarapollu_kannada (U+0CDD): L<<184.0,215.0>--<384.0,214.0>>
 
 	* sterling (U+00A3): L<<408.0,339.0>--<251.0,340.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -653,12 +1373,49 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -672,9 +1429,22 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* jh_kannada
 	* jha_kannada.base
 	* jhi_kannada
-	* kh_kannada and 16 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* kh_kannada
+	* l_kannada
+	* m_kannada
+	* ma_kannada.base
+	* n_kannada
+	* ny_kannada
+	* nyau_kannada
+	* nyi_kannada
+	* rVocalic_kannada
+	* rrVocalic_kannada
+	* sh_kannada
+	* ss_kannada
+	* t_kannada
+	* v_kannada
+	* y_kannada
+	* ya_kannada.base and yo_kannada
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -702,7 +1472,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -726,7 +1496,17 @@ The following glyphs do not have the recommended number of contours:
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
 	* ca_kannada (U+0C9A): L<<530.0,460.0>--<523.0,460.0>> -> L<<523.0,460.0>--<420.0,460.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -734,12 +1514,49 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
@@ -753,16 +1570,73 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* four_kannada
 	* gh_kannada
 	* ghau_kannada
-	* h_kannada and 60 more.
-
-Use -F or --full-lists to disable shortening of long lists.
+	* h_kannada
+	* ha_kannada
+	* ha_kannada.base
+	* he_kannada
+	* hi_kannada
+	* ii_kannada
+	* j_kannada
+	* j_ny_kannada
+	* jau_kannada
+	* jh_kannada
+	* jha_kannada.base
+	* jhi_kannada
+	* k_ss_kannada
+	* kh_kannada
+	* kha_kannada.base
+	* khe_kannada
+	* l_kannada
+	* la_kannada.base
+	* le_kannada
+	* ll_kannada
+	* lll_kannada
+	* lllau_kannada
+	* lllo_kannada
+	* llo_kannada
+	* lluu_kannada
+	* m_kannada
+	* ma_kannada.base
+	* me_kannada
+	* mo_kannada
+	* n_kannada
+	* ngau_kannada
+	* ny_kannada
+	* nya_kannada
+	* nya_kannada.base
+	* nyaa_kannada
+	* nyau_kannada
+	* nye_kannada
+	* nyi_kannada
+	* nyo_kannada
+	* phaa_kannada
+	* phau_kannada
+	* rVocalic_kannada
+	* rrVocalic_kannada
+	* rrau_kannada
+	* sh_kannada
+	* sha_kannada
+	* sha_kannada.base
+	* she_kannada
+	* ss_kannada
+	* ssa_kannada
+	* ssa_kannada.base
+	* sse_kannada
+	* ssi_kannada
+	* t_kannada
+	* tt_kannada
+	* v_kannada
+	* y_kannada
+	* ya_kannada
+	* ya_kannada.base
+	* ye_kannada and yo_kannada
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada SemiBold' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -790,7 +1664,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -815,10 +1689,20 @@ The following glyphs do not have the recommended number of contours:
 
 	* h (U+0068): L<<104.0,119.0>--<103.0,648.0>>
 
-	* h (U+0068): L<<233.0,313.0>--<234.0,115.0>> 
+	* h (U+0068): L<<233.0,313.0>--<234.0,115.0>>
 
 	* nakaarapollu_kannada (U+0CDD): L<<182.0,218.0>--<385.0,217.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -826,19 +1710,56 @@ The following glyphs do not have the recommended number of contours:
 
 
 * 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
+ * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
+ * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
+ * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
+ * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
+ * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
 * ⚠ **WARN** The combined length of family and style exceeds 27 chars in the following 'WINDOWS' entries:
  FONT_FAMILY_NAME = 'Noto Serif Kannada Thin' / SUBFAMILY_NAME = 'Regular'
 
-Please take a look at the conversation at https://github.com/googlefonts/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
+Please take a look at the conversation at https://github.com/fonttools/fontbakery/issues/2179 in order to understand the reasoning behind these name table records max-length criteria. [code: too-long]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -866,7 +1787,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -889,7 +1810,7 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* ca_kannada (U+0C9A): L<<522.0,479.0>--<516.0,479.0>> -> L<<516.0,479.0>--<390.0,479.0>> 
+	* ca_kannada (U+0C9A): L<<522.0,479.0>--<516.0,479.0>> -> L<<516.0,479.0>--<390.0,479.0>>
 
 	* ii_kannada (U+0C88): L<<618.0,256.0>--<711.0,256.0>> -> L<<711.0,256.0>--<714.0,256.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -911,7 +1832,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* sha_kannada (U+0CB6): B<<461.5,430.5>-<417.0,461.0>-<363.0,477.0>>/B<<363.0,477.0>-<419.0,447.0>-<419.0,377.0>> = 11.674228728204122
 
-	* sterling (U+00A3): B<<192.0,89.0>-<173.0,58.0>-<145.0,40.0>>/L<<145.0,40.0>--<149.0,42.0>> = 6.170175095029526 
+	* sterling (U+00A3): B<<192.0,89.0>-<173.0,58.0>-<145.0,40.0>>/L<<145.0,40.0>--<149.0,42.0>> = 6.170175095029526
 
 	* tta_kannada (U+0C9F): B<<422.5,67.0>-<400.0,102.0>-<394.0,145.0>>/B<<394.0,145.0>-<387.0,81.0>-<348.0,35.5>> = 14.185386158005459 [code: found-jaggy-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -919,65 +1840,27 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
-	* exclam (U+0021): L<<149.0,714.0>--<146.0,167.0>> 
+	* exclam (U+0021): L<<149.0,714.0>--<146.0,167.0>>
 
 	* exclamdown (U+00A1): L<<123.0,-177.0>--<126.0,370.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifKannada[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>💔 <b>ERROR:</b> Check a font's STAT table contains compulsory Axis Values. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT">com.google.fonts/check/STAT</a>)</summary><div>
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
 
-
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>💔 <b>ERROR:</b> Check variable font instances (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_instances">com.google.fonts/check/fvar_instances</a>)</summary><div>
-
-
-* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
-
-
-* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
-
-
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
-
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 aaMatra_kannada (U+0CBE), anusvara_kannada (U+0C82), anusvaraaboveright_kannada (U+0CF3), auMatra_kannada (U+0CCC), rrVocalicMatra_kannada (U+0CC4), uMatra_kannada (U+0CC1), uni1CF2 (U+1CF2), uuMatra_kannada (U+0CC2) and visarga_kannada (U+0C83) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+0C82, U+0C83, U+0CBE, U+0CC1, U+0CC2, U+0CC3, U+0CC4, U+0CD6, U+0CF3 and U+1CF2 [code: non-mark-chars]
+Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 4 | 34 | 91 | 1153 | 62 | 963 | 0 |
-| 0% | 1% | 4% | 50% | 3% | 42% | 0% |
+| 0 | 18 | 105 | 1064 | 55 | 863 | 0 |
+| 0% | 1% | 5% | 51% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
