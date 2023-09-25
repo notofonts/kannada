@@ -2,14 +2,10 @@
 
 fontbakery version: 0.9.2
 
-<details><summary><b>[15] NotoSerifKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+<details><summary><b>[14] NotoSerifKannada-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -19,38 +15,38 @@ fontbakery version: 0.9.2
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -302,17 +298,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -322,38 +314,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -541,17 +533,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[15] NotoSerifKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -561,38 +549,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -809,17 +797,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -829,38 +813,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -936,17 +920,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[15] NotoSerifKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -956,38 +936,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -1193,17 +1173,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -1213,38 +1189,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -1362,17 +1338,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[11] NotoSerifKannada-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -1382,38 +1354,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -1503,17 +1475,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[12] NotoSerifKannada-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -1523,38 +1491,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -1699,17 +1667,13 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[14] NotoSerifKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[13] NotoSerifKannada-Thin.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 979, but got 910 instead [code: ascent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -1719,38 +1683,38 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
  * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
  * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
  * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, tai-le, coptic, tifinagh, math, syriac, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, math, old-permic, malayalam, tifinagh, coptic, canadian-aboriginal, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: grantha, telugu, devanagari, sharada, tirhuta
- * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: grantha, tirhuta, devanagari, telugu
+ * U+0951 DEVANAGARI STRESS SIGN UDATTA: try adding one of: sharada, telugu, tirhuta, devanagari, grantha
+ * U+0952 DEVANAGARI STRESS SIGN ANUDATTA: try adding one of: tirhuta, grantha, telugu, devanagari
  * U+0CF3 KANNADA SIGN COMBINING ANUSVARA ABOVE RIGHT: not included in any glyphset definition
  * U+1CD0 VEDIC TONE KARSHANA: try adding one of: grantha, devanagari
  * U+1CD2 VEDIC TONE PRENKHA: try adding one of: grantha, devanagari
  * U+1CDA VEDIC TONE DOUBLE SVARITA: try adding one of: telugu, devanagari
- * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: grantha, nandinagari, tirhuta, devanagari
+ * U+1CF2 VEDIC SIGN ARDHAVISARGA: try adding one of: nandinagari, grantha, tirhuta, devanagari
  * U+1CF4 VEDIC TONE CANDRA ABOVE: try adding one of: grantha, devanagari
  * U+1CF5 VEDIC SIGN JIHVAMULIYA: try adding devanagari
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, coptic, yi, kharoshthi, kayah-li, lisu, sora-sompeng, sundanese, cham
- * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
- * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: kaithi, gujarati, mahajani, devanagari, modi, gurmukhi, khojki, khudawadi, tirhuta, nandinagari, takri
+ * U+2010 HYPHEN: try adding one of: kayah-li, kaithi, sora-sompeng, syloti-nagri, lisu, coptic, sundanese, cham, yi, kharoshthi
+ * U+A830 NORTH INDIC FRACTION ONE QUARTER: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A831 NORTH INDIC FRACTION ONE HALF: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A832 NORTH INDIC FRACTION THREE QUARTERS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A833 NORTH INDIC FRACTION ONE SIXTEENTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A834 NORTH INDIC FRACTION ONE EIGHTH: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
+ * U+A835 NORTH INDIC FRACTION THREE SIXTEENTHS: try adding one of: takri, kaithi, khojki, modi, tirhuta, mahajani, khudawadi, gurmukhi, devanagari, gujarati, nandinagari
 
 Or you can add the above codepoints to one of the subsets supported by the font: `kannada`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -1850,17 +1814,17 @@ The following glyphs do not have the recommended number of contours:
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 18 | 105 | 1064 | 55 | 863 | 0 |
-| 0% | 1% | 5% | 51% | 3% | 41% | 0% |
+| 0 | 9 | 105 | 1064 | 55 | 872 | 0 |
+| 0% | 0% | 5% | 51% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
