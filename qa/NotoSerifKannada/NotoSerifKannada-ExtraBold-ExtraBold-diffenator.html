@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attr-before{
+                color: red;
+                cursor: text;
+            }
+            .attr-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url("old-NotoSerifKannada%5Bwght%5D.ttf");
+    font-family: "old font";
+    font-weight: 100 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url("new-NotoSerifKannada-ExtraBold.ttf");
+    font-family: "new font";
+    font-weight: 800;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-ExtraBold{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 800.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 800.0;
+}
+	  
+
+	  
+	    .new-ExtraBold{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 800;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 800;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+      <div data-path="root" data-open="0" id="difftable"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text old-ExtraBold" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        |<br>
+        <span class="tooltiptext">
+            name: VERTICAL LINE<br>
+            unicode: U+007C<br>
+            changed pixels: 5.38%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ।<br>
+        <span class="tooltiptext">
+            name: DEVANAGARI DANDA<br>
+            unicode: U+0964<br>
+            changed pixels: 5.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ॑<br>
+        <span class="tooltiptext">
+            name: DEVANAGARI STRESS SIGN UDATTA<br>
+            unicode: U+0951<br>
+            changed pixels: 2.81%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಄<br>
+        <span class="tooltiptext">
+            name: KANNADA SIGN SIDDHAM<br>
+            unicode: U+0C84<br>
+            changed pixels: 2.36%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಳ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER LLA<br>
+            unicode: U+0CB3<br>
+            changed pixels: 2.32%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೡ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VOCALIC LL<br>
+            unicode: U+0CE1<br>
+            changed pixels: 1.71%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಕ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER KA<br>
+            unicode: U+0C95<br>
+            changed pixels: 1.65%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೨<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT TWO<br>
+            unicode: U+0CE8<br>
+            changed pixels: 1.64%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೦<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT ZERO<br>
+            unicode: U+0CE6<br>
+            changed pixels: 1.63%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಢ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DDHA<br>
+            unicode: U+0CA2<br>
+            changed pixels: 1.60%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಡ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DDA<br>
+            unicode: U+0CA1<br>
+            changed pixels: 1.59%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಹ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER HA<br>
+            unicode: U+0CB9<br>
+            changed pixels: 1.58%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಆ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER AA<br>
+            unicode: U+0C86<br>
+            changed pixels: 1.56%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        %<br>
+        <span class="tooltiptext">
+            name: PERCENT SIGN<br>
+            unicode: U+0025<br>
+            changed pixels: 1.52%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಛ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER CHA<br>
+            unicode: U+0C9B<br>
+            changed pixels: 1.51%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಟ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER TTA<br>
+            unicode: U+0C9F<br>
+            changed pixels: 1.48%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಲ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER LA<br>
+            unicode: U+0CB2<br>
+            changed pixels: 1.41%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        (<br>
+        <span class="tooltiptext">
+            name: LEFT PARENTHESIS<br>
+            unicode: U+0028<br>
+            changed pixels: 1.40%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಇ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER I<br>
+            unicode: U+0C87<br>
+            changed pixels: 1.39%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ತ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER TA<br>
+            unicode: U+0CA4<br>
+            changed pixels: 1.36%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಱ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER RRA<br>
+            unicode: U+0CB1<br>
+            changed pixels: 1.24%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಯ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER YA<br>
+            unicode: U+0CAF<br>
+            changed pixels: 1.24%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಎ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER E<br>
+            unicode: U+0C8E<br>
+            changed pixels: 1.23%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಌ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VOCALIC L<br>
+            unicode: U+0C8C<br>
+            changed pixels: 1.23%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        9<br>
+        <span class="tooltiptext">
+            name: DIGIT NINE<br>
+            unicode: U+0039<br>
+            changed pixels: 1.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಬ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER BA<br>
+            unicode: U+0CAC<br>
+            changed pixels: 1.22%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಶ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER SHA<br>
+            unicode: U+0CB6<br>
+            changed pixels: 1.21%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಏ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER EE<br>
+            unicode: U+0C8F<br>
+            changed pixels: 1.17%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ನ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NA<br>
+            unicode: U+0CA8<br>
+            changed pixels: 1.15%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೪<br>
+        <span class="tooltiptext">
+            name: KANNADA DIGIT FOUR<br>
+            unicode: U+0CEA<br>
+            changed pixels: 1.15%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ವ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER VA<br>
+            unicode: U+0CB5<br>
+            changed pixels: 1.09%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ರ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER RA<br>
+            unicode: U+0CB0<br>
+            changed pixels: 1.06%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೞ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER FA<br>
+            unicode: U+0CDE<br>
+            changed pixels: 1.05%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಧ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DHA<br>
+            unicode: U+0CA7<br>
+            changed pixels: 1.04%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ದ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER DA<br>
+            unicode: U+0CA6<br>
+            changed pixels: 1.04%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಖ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER KHA<br>
+            unicode: U+0C96<br>
+            changed pixels: 1.03%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಮ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER MA<br>
+            unicode: U+0CAE<br>
+            changed pixels: 1.03%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಞ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER NYA<br>
+            unicode: U+0C9E<br>
+            changed pixels: 1.03%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಥ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER THA<br>
+            unicode: U+0CA5<br>
+            changed pixels: 1.03%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ೈ<br>
+        <span class="tooltiptext">
+            name: KANNADA VOWEL SIGN AI<br>
+            unicode: U+0CC8<br>
+            changed pixels: 1.01%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        3<br>
+        <span class="tooltiptext">
+            name: DIGIT THREE<br>
+            unicode: U+0033<br>
+            changed pixels: 1.00%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಐ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER AI<br>
+            unicode: U+0C90<br>
+            changed pixels: 1.00%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಝ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER JHA<br>
+            unicode: U+0C9D<br>
+            changed pixels: 0.94%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಠ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER TTHA<br>
+            unicode: U+0CA0<br>
+            changed pixels: 0.93%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ಘ<br>
+        <span class="tooltiptext">
+            name: KANNADA LETTER GHA<br>
+            unicode: U+0C98<br>
+            changed pixels: 0.92%
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-ExtraBold" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-ExtraBold" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+<script>var fontdiff = {"avar": {"tableTag": ["avar", null], "segments": {"wght": {"-1.0": [-1.0, null], "-0.66668701171875": [-0.78790283203125, null], "-0.33331298828125": [-0.45452880859375, null], "0.0": [0.0, null], "0.20001220703125": [0.15997314453125, null], "0.4000244140625": [0.3599853515625, null], "0.5999755859375": [0.58001708984375, null], "0.79998779296875": [0.80999755859375, null], "1.0": [1.0, null]}}, "table": {"Version": [65536, null], "Reserved": [0, null], "AxisCount": [1, null], "AxisSegmentMap": {"0": {"PositionMapCount": [9, null], "AxisValueMap": {"0": {"FromCoordinate": [-1.0, null], "ToCoordinate": [-1.0, null]}, "1": {"FromCoordinate": [-0.66668701171875, null], "ToCoordinate": [-0.78790283203125, null]}, "2": {"FromCoordinate": [-0.33331298828125, null], "ToCoordinate": [-0.45452880859375, null]}, "3": {"FromCoordinate": [0.0, null], "ToCoordinate": [0.0, null]}, "4": {"FromCoordinate": [0.20001220703125, null], "ToCoordinate": [0.15997314453125, null]}, "5": {"FromCoordinate": [0.4000244140625, null], "ToCoordinate": [0.3599853515625, null]}, "6": {"FromCoordinate": [0.5999755859375, null], "ToCoordinate": [0.58001708984375, null]}, "7": {"FromCoordinate": [0.79998779296875, null], "ToCoordinate": [0.80999755859375, null]}, "8": {"FromCoordinate": [1.0, null], "ToCoordinate": [1.0, null]}}}}}, "majorVersion": [1, null], "minorVersion": [0, null]}, "prep": {"tableTag": ["prep", null]}, "GDEF": {"table": {"MarkGlyphSetsDef": {"MarkSetCount": [5, 4], "Coverage": {"4": {"glyphs": {"0": ["anusvara_kannada", null], "1": ["visarga_kannada", null], "2": ["aaMatra_kannada", null], "3": ["uMatra_kannada", null], "4": ["uuMatra_kannada", null], "5": ["rrVocalicMatra_kannada", null], "6": ["auMatra_kannada", null], "7": ["anusvaraaboveright_kannada", null], "8": ["uni1CF2", null]}}}}, "Version": [65539, 65538], "GlyphClassDef": {"classDefs": {"dottedCircle": [null, 1], "uni200C": [3, null], "uni25CC": [1, null], "uni200D": [3, null], "zerowidthjoiner": [null, 3], "length_kannada": [null, 3], "zerowidthnonjoiner": [null, 3]}}, "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [3, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [0.58001708984375, null], "EndCoord": [1.0, null]}}}, "2": {"VarRegionAxis": {"0": {"StartCoord": [0.58001708984375, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [9, null], "VarData": {"0": {"ItemCount": [32, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [-64, null]}, "1": {"0": [-58, null]}, "2": {"0": [-40, null]}, "3": {"0": [-34, null]}, "4": {"0": [-30, null]}, "5": {"0": [-24, null]}, "6": {"0": [-20, null]}, "7": {"0": [-18, null]}, "8": {"0": [-16, null]}, "9": {"0": [-14, null]}, "10": {"0": [-10, null]}, "11": {"0": [-8, null]}, "12": {"0": [-6, null]}, "13": {"0": [-4, null]}, "14": {"0": [2, null]}, "15": {"0": [4, null]}, "16": {"0": [8, null]}, "17": {"0": [10, null]}, "18": {"0": [14, null]}, "19": {"0": [16, null]}, "20": {"0": [20, null]}, "21": {"0": [24, null]}, "22": {"0": [30, null]}, "23": {"0": [34, null]}, "24": {"0": [40, null]}, "25": {"0": [58, null]}, "26": {"0": [64, null]}, "27": {"0": [68, null]}, "28": {"0": [74, null]}, "29": {"0": [84, null]}, "30": {"0": [92, null]}, "31": {"0": [112, null]}}}, "1": {"ItemCount": [22, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [2, null]}, "Item": {"0": {"0": [-24, null]}, "1": {"0": [-18, null]}, "2": {"0": [-14, null]}, "3": {"0": [-10, null]}, "4": {"0": [-8, null]}, "5": {"0": [-6, null]}, "6": {"0": [-4, null]}, "7": {"0": [-2, null]}, "8": {"0": [4, null]}, "9": {"0": [5, null]}, "10": {"0": [6, null]}, "11": {"0": [10, null]}, "12": {"0": [14, null]}, "13": {"0": [18, null]}, "14": {"0": [20, null]}, "15": {"0": [24, null]}, "16": {"0": [30, null]}, "17": {"0": [34, null]}, "18": {"0": [40, null]}, "19": {"0": [48, null]}, "20": {"0": [64, null]}, "21": {"0": [84, null]}}}, "2": {"ItemCount": [16, null], "NumShorts": [1, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [132, null]}, "1": {"0": [146, null]}, "2": {"0": [152, null]}, "3": {"0": [156, null]}, "4": {"0": [162, null]}, "5": {"0": [166, null]}, "6": {"0": [170, null]}, "7": {"0": [176, null]}, "8": {"0": [186, null]}, "9": {"0": [190, null]}, "10": {"0": [206, null]}, "11": {"0": [250, null]}, "12": {"0": [264, null]}, "13": {"0": [308, null]}, "14": {"0": [312, null]}, "15": {"0": [522, null]}}}, "3": {"ItemCount": [96, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-78, null], "1": [-10, null]}, "1": {"0": [-68, null], "1": [-4, null]}, "2": {"0": [-60, null], "1": [-6, null]}, "3": {"0": [-58, null], "1": [10, null]}, "4": {"0": [-54, null], "1": [2, null]}, "5": {"0": [-54, null], "1": [30, null]}, "6": {"0": [-52, null], "1": [2, null]}, "7": {"0": [-52, null], "1": [6, null]}, "8": {"0": [-50, null], "1": [-14, null]}, "9": {"0": [-50, null], "1": [2, null]}, "10": {"0": [-50, null], "1": [4, null]}, "11": {"0": [-48, null], "1": [2, null]}, "12": {"0": [-44, null], "1": [2, null]}, "13": {"0": [-44, null], "1": [6, null]}, "14": {"0": [-40, null], "1": [-26, null]}, "15": {"0": [-40, null], "1": [-6, null]}, "16": {"0": [-40, null], "1": [2, null]}, "17": {"0": [-34, null], "1": [2, null]}, "18": {"0": [-34, null], "1": [16, null]}, "19": {"0": [-30, null], "1": [-10, null]}, "20": {"0": [-30, null], "1": [18, null]}, "21": {"0": [-28, null], "1": [-8, null]}, "22": {"0": [-26, null], "1": [18, null]}, "23": {"0": [-25, null], "1": [8, null]}, "24": {"0": [-24, null], "1": [-8, null]}, "25": {"0": [-24, null], "1": [2, null]}, "26": {"0": [-24, null], "1": [26, null]}, "27": {"0": [-20, null], "1": [-16, null]}, "28": {"0": [-20, null], "1": [-10, null]}, "29": {"0": [-20, null], "1": [-6, null]}, "30": {"0": [-20, null], "1": [-4, null]}, "31": {"0": [-20, null], "1": [4, null]}, "32": {"0": [-20, null], "1": [10, null]}, "33": {"0": [-18, null], "1": [6, null]}, "34": {"0": [-14, null], "1": [-14, null]}, "35": {"0": [-14, null], "1": [-10, null]}, "36": {"0": [-14, null], "1": [-4, null]}, "37": {"0": [-14, null], "1": [4, null]}, "38": {"0": [-10, null], "1": [-14, null]}, "39": {"0": [-10, null], "1": [-8, null]}, "40": {"0": [-10, null], "1": [-6, null]}, "41": {"0": [-10, null], "1": [-4, null]}, "42": {"0": [-10, null], "1": [2, null]}, "43": {"0": [-10, null], "1": [4, null]}, "44": {"0": [-10, null], "1": [10, null]}, "45": {"0": [-10, null], "1": [20, null]}, "46": {"0": [-8, null], "1": [-4, null]}, "47": {"0": [-8, null], "1": [6, null]}, "48": {"0": [-6, null], "1": [-16, null]}, "49": {"0": [-6, null], "1": [-10, null]}, "50": {"0": [-6, null], "1": [-6, null]}, "51": {"0": [-6, null], "1": [8, null]}, "52": {"0": [-4, null], "1": [-10, null]}, "53": {"0": [-4, null], "1": [-4, null]}, "54": {"0": [-4, null], "1": [-2, null]}, "55": {"0": [-4, null], "1": [6, null]}, "56": {"0": [0, null], "1": [-6, null]}, "57": {"0": [0, null], "1": [-4, null]}, "58": {"0": [0, null], "1": [4, null]}, "59": {"0": [0, null], "1": [6, null]}, "60": {"0": [0, null], "1": [8, null]}, "61": {"0": [0, null], "1": [10, null]}, "62": {"0": [0, null], "1": [14, null]}, "63": {"0": [0, null], "1": [16, null]}, "64": {"0": [0, null], "1": [20, null]}, "65": {"0": [0, null], "1": [24, null]}, "66": {"0": [0, null], "1": [58, null]}, "67": {"0": [2, null], "1": [-6, null]}, "68": {"0": [2, null], "1": [-2, null]}, "69": {"0": [3, null], "1": [-5, null]}, "70": {"0": [4, null], "1": [-10, null]}, "71": {"0": [4, null], "1": [-4, null]}, "72": {"0": [4, null], "1": [4, null]}, "73": {"0": [4, null], "1": [8, null]}, "74": {"0": [6, null], "1": [-2, null]}, "75": {"0": [6, null], "1": [14, null]}, "76": {"0": [8, null], "1": [8, null]}, "77": {"0": [10, null], "1": [-12, null]}, "78": {"0": [10, null], "1": [-10, null]}, "79": {"0": [10, null], "1": [-4, null]}, "80": {"0": [10, null], "1": [2, null]}, "81": {"0": [10, null], "1": [6, null]}, "82": {"0": [10, null], "1": [10, null]}, "83": {"0": [10, null], "1": [28, null]}, "84": {"0": [10, null], "1": [30, null]}, "85": {"0": [14, null], "1": [-10, null]}, "86": {"0": [14, null], "1": [10, null]}, "87": {"0": [16, null], "1": [-10, null]}, "88": {"0": [16, null], "1": [-4, null]}, "89": {"0": [16, null], "1": [6, null]}, "90": {"0": [16, null], "1": [10, null]}, "91": {"0": [20, null], "1": [-10, null]}, "92": {"0": [24, null], "1": [10, null]}, "93": {"0": [38, null], "1": [-2, null]}, "94": {"0": [48, null], "1": [-10, null]}, "95": {"0": [84, null], "1": [74, null]}}}, "4": {"ItemCount": [151, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [2, null]}, "Item": {"0": {"0": [-68, null], "1": [-20, null]}, "1": {"0": [-64, null], "1": [-6, null]}, "2": {"0": [-58, null], "1": [16, null]}, "3": {"0": [-54, null], "1": [-14, null]}, "4": {"0": [-54, null], "1": [10, null]}, "5": {"0": [-48, null], "1": [-4, null]}, "6": {"0": [-48, null], "1": [6, null]}, "7": {"0": [-44, null], "1": [-4, null]}, "8": {"0": [-44, null], "1": [4, null]}, "9": {"0": [-44, null], "1": [10, null]}, "10": {"0": [-44, null], "1": [12, null]}, "11": {"0": [-42, null], "1": [4, null]}, "12": {"0": [-40, null], "1": [-20, null]}, "13": {"0": [-38, null], "1": [-4, null]}, "14": {"0": [-38, null], "1": [10, null]}, "15": {"0": [-38, null], "1": [14, null]}, "16": {"0": [-36, null], "1": [-2, null]}, "17": {"0": [-36, null], "1": [4, null]}, "18": {"0": [-34, null], "1": [-34, null]}, "19": {"0": [-34, null], "1": [-30, null]}, "20": {"0": [-34, null], "1": [-20, null]}, "21": {"0": [-34, null], "1": [-14, null]}, "22": {"0": [-34, null], "1": [-6, null]}, "23": {"0": [-34, null], "1": [4, null]}, "24": {"0": [-34, null], "1": [6, null]}, "25": {"0": [-33, null], "1": [-3, null]}, "26": {"0": [-32, null], "1": [10, null]}, "27": {"0": [-30, null], "1": [-40, null]}, "28": {"0": [-30, null], "1": [-30, null]}, "29": {"0": [-30, null], "1": [4, null]}, "30": {"0": [-30, null], "1": [10, null]}, "31": {"0": [-28, null], "1": [-2, null]}, "32": {"0": [-28, null], "1": [2, null]}, "33": {"0": [-26, null], "1": [-14, null]}, "34": {"0": [-26, null], "1": [-2, null]}, "35": {"0": [-24, null], "1": [-24, null]}, "36": {"0": [-24, null], "1": [-6, null]}, "37": {"0": [-24, null], "1": [10, null]}, "38": {"0": [-24, null], "1": [20, null]}, "39": {"0": [-24, null], "1": [24, null]}, "40": {"0": [-24, null], "1": [30, null]}, "41": {"0": [-22, null], "1": [-2, null]}, "42": {"0": [-22, null], "1": [2, null]}, "43": {"0": [-20, null], "1": [-30, null]}, "44": {"0": [-20, null], "1": [-16, null]}, "45": {"0": [-20, null], "1": [-10, null]}, "46": {"0": [-20, null], "1": [4, null]}, "47": {"0": [-20, null], "1": [10, null]}, "48": {"0": [-20, null], "1": [14, null]}, "49": {"0": [-20, null], "1": [20, null]}, "50": {"0": [-18, null], "1": [-3, null]}, "51": {"0": [-18, null], "1": [-2, null]}, "52": {"0": [-18, null], "1": [-1, null]}, "53": {"0": [-18, null], "1": [2, null]}, "54": {"0": [-18, null], "1": [20, null]}, "55": {"0": [-16, null], "1": [-10, null]}, "56": {"0": [-16, null], "1": [-3, null]}, "57": {"0": [-16, null], "1": [10, null]}, "58": {"0": [-14, null], "1": [-20, null]}, "59": {"0": [-14, null], "1": [-14, null]}, "60": {"0": [-14, null], "1": [-10, null]}, "61": {"0": [-14, null], "1": [-6, null]}, "62": {"0": [-14, null], "1": [6, null]}, "63": {"0": [-14, null], "1": [10, null]}, "64": {"0": [-14, null], "1": [16, null]}, "65": {"0": [-14, null], "1": [20, null]}, "66": {"0": [-14, null], "1": [24, null]}, "67": {"0": [-12, null], "1": [-5, null]}, "68": {"0": [-12, null], "1": [-2, null]}, "69": {"0": [-12, null], "1": [2, null]}, "70": {"0": [-10, null], "1": [-24, null]}, "71": {"0": [-10, null], "1": [-18, null]}, "72": {"0": [-10, null], "1": [-10, null]}, "73": {"0": [-10, null], "1": [-6, null]}, "74": {"0": [-10, null], "1": [2, null]}, "75": {"0": [-10, null], "1": [10, null]}, "76": {"0": [-10, null], "1": [14, null]}, "77": {"0": [-10, null], "1": [20, null]}, "78": {"0": [-10, null], "1": [24, null]}, "79": {"0": [-10, null], "1": [40, null]}, "80": {"0": [-9, null], "1": [3, null]}, "81": {"0": [-8, null], "1": [-8, null]}, "82": {"0": [-8, null], "1": [-6, null]}, "83": {"0": [-8, null], "1": [-4, null]}, "84": {"0": [-8, null], "1": [6, null]}, "85": {"0": [-7, null], "1": [1, null]}, "86": {"0": [-7, null], "1": [8, null]}, "87": {"0": [-6, null], "1": [-20, null]}, "88": {"0": [-6, null], "1": [-10, null]}, "89": {"0": [-6, null], "1": [4, null]}, "90": {"0": [-6, null], "1": [8, null]}, "91": {"0": [-6, null], "1": [10, null]}, "92": {"0": [-4, null], "1": [-24, null]}, "93": {"0": [-4, null], "1": [-14, null]}, "94": {"0": [-4, null], "1": [-10, null]}, "95": {"0": [-4, null], "1": [-8, null]}, "96": {"0": [-4, null], "1": [-4, null]}, "97": {"0": [-4, null], "1": [4, null]}, "98": {"0": [-4, null], "1": [6, null]}, "99": {"0": [-4, null], "1": [10, null]}, "100": {"0": [-4, null], "1": [16, null]}, "101": {"0": [-4, null], "1": [24, null]}, "102": {"0": [-2, null], "1": [-22, null]}, "103": {"0": [-2, null], "1": [8, null]}, "104": {"0": [-2, null], "1": [36, null]}, "105": {"0": [1, null], "1": [-1, null]}, "106": {"0": [2, null], "1": [-24, null]}, "107": {"0": [3, null], "1": [1, null]}, "108": {"0": [4, null], "1": [-20, null]}, "109": {"0": [4, null], "1": [-10, null]}, "110": {"0": [4, null], "1": [-6, null]}, "111": {"0": [4, null], "1": [-4, null]}, "112": {"0": [4, null], "1": [4, null]}, "113": {"0": [4, null], "1": [8, null]}, "114": {"0": [6, null], "1": [-4, null]}, "115": {"0": [6, null], "1": [6, null]}, "116": {"0": [6, null], "1": [10, null]}, "117": {"0": [6, null], "1": [74, null]}, "118": {"0": [8, null], "1": [-14, null]}, "119": {"0": [8, null], "1": [-10, null]}, "120": {"0": [8, null], "1": [-2, null]}, "121": {"0": [10, null], "1": [-10, null]}, "122": {"0": [10, null], "1": [-4, null]}, "123": {"0": [10, null], "1": [4, null]}, "124": {"0": [10, null], "1": [6, null]}, "125": {"0": [10, null], "1": [14, null]}, "126": {"0": [10, null], "1": [16, null]}, "127": {"0": [10, null], "1": [20, null]}, "128": {"0": [12, null], "1": [-10, null]}, "129": {"0": [14, null], "1": [-10, null]}, "130": {"0": [14, null], "1": [-4, null]}, "131": {"0": [14, null], "1": [-2, null]}, "132": {"0": [14, null], "1": [6, null]}, "133": {"0": [14, null], "1": [14, null]}, "134": {"0": [14, null], "1": [20, null]}, "135": {"0": [16, null], "1": [6, null]}, "136": {"0": [18, null], "1": [-6, null]}, "137": {"0": [18, null], "1": [4, null]}, "138": {"0": [18, null], "1": [10, null]}, "139": {"0": [20, null], "1": [10, null]}, "140": {"0": [20, null], "1": [34, null]}, "141": {"0": [22, null], "1": [2, null]}, "142": {"0": [24, null], "1": [10, null]}, "143": {"0": [24, null], "1": [12, null]}, "144": {"0": [24, null], "1": [14, null]}, "145": {"0": [30, null], "1": [-7, null]}, "146": {"0": [30, null], "1": [20, null]}, "147": {"0": [30, null], "1": [48, null]}, "148": {"0": [32, null], "1": [2, null]}, "149": {"0": [42, null], "1": [2, null]}, "150": {"0": [42, null], "1": [14, null]}}}, "5": {"ItemCount": [220, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [1, null], "1": [2, null]}, "Item": {"error": ["There are 220 changes, check manually!", ""]}}, "6": {"ItemCount": [2722, null], "NumShorts": [0, null], "VarRegionCount": [3, null], "VarRegionIndex": {"0": [0, null], "1": [1, null], "2": [2, null]}, "Item": {"error": ["There are 2722 changes, check manually!", ""]}}, "7": {"ItemCount": [22, null], "NumShorts": [1, null], "VarRegionCount": [3, null], "VarRegionIndex": {"0": [2, null], "1": [0, null], "2": [1, null]}, "Item": {"0": {"0": [-162, null], "1": [-44, null], "2": [52, null]}, "1": {"0": [-146, null], "1": [-34, null], "2": [10, null]}, "2": {"0": [-474, null], "1": [-34, null], "2": [68, null]}, "3": {"0": [132, null], "1": [-34, null], "2": [82, null]}, "4": {"0": [152, null], "1": [-18, null], "2": [84, null]}, "5": {"0": [146, null], "1": [-16, null], "2": [86, null]}, "6": {"0": [138, null], "1": [-14, null], "2": [78, null]}, "7": {"0": [142, null], "1": [-10, null], "2": [84, null]}, "8": {"0": [142, null], "1": [-4, null], "2": [70, null]}, "9": {"0": [142, null], "1": [0, null], "2": [78, null]}, "10": {"0": [128, null], "1": [4, null], "2": [84, null]}, "11": {"0": [162, null], "1": [6, null], "2": [94, null]}, "12": {"0": [156, null], "1": [6, null], "2": [98, null]}, "13": {"0": [132, null], "1": [10, null], "2": [72, null]}, "14": {"0": [148, null], "1": [10, null], "2": [78, null]}, "15": {"0": [142, null], "1": [10, null], "2": [84, null]}, "16": {"0": [136, null], "1": [10, null], "2": [88, null]}, "17": {"0": [132, null], "1": [20, null], "2": [54, null]}, "18": {"0": [130, null], "1": [28, null], "2": [68, null]}, "19": {"0": [170, null], "1": [28, null], "2": [98, null]}, "20": {"0": [132, null], "1": [30, null], "2": [74, null]}, "21": {"0": [146, null], "1": [58, null], "2": [0, null]}}}, "8": {"ItemCount": [4, null], "NumShorts": [3, null], "VarRegionCount": [3, null], "VarRegionIndex": {"0": [0, null], "1": [1, null], "2": [2, null]}, "Item": {"0": {"0": [-228, null], "1": [-192, null], "2": [-176, null]}, "1": {"0": [92, null], "1": [166, null], "2": [170, null]}, "2": {"0": [132, null], "1": [192, null], "2": [208, null]}, "3": {"0": [180, null], "1": [24, null], "2": [96, null]}}}}}}}, "maxp": {"maxCompositePoints": [237, 209], "maxPoints": [239, 206], "maxCompositeContours": [7, 6]}, "hmtx": {"metrics": {"error": ["There are 413 changes, check manually!", ""]}}, "post": {"extraNames": {"2": ["uni00A0", "nbspace"], "364": ["uni20B9", "rupeeIndian"], "365": ["uni25CC", "dottedCircle"], "366": ["uni200B", "zerowidthspace"], "367": ["uni200D", "zerowidthjoiner"], "368": ["uni200C", "zerowidthnonjoiner"]}}, "name": {"6/3/1/1033": ["NotoSerifKannada-Regular", "NotoSerifKannada-ExtraBold"], "257/3/1/1033": ["Weight", null], "262/3/1/1033": ["Medium", null], "266/3/1/1033": ["Black", null], "4/3/1/1033": ["Noto Serif Kannada Regular", "Noto Serif Kannada ExtraBold"], "261/1/0/0": ["Regular", null], "265/3/1/1033": ["ExtraBold", null], "258/1/0/0": ["Thin", null], "259/1/0/0": ["ExtraLight", null], "25/3/1/1033": ["NotoSerifKannada", null], "1/3/1/1033": ["Noto Serif Kannada", "Noto Serif Kannada ExtraBold"], "265/1/0/0": ["ExtraBold", null], "3/3/1/1033": ["2.005;GOOG;NotoSerifKannada-Regular", "2.005;GOOG;NotoSerifKannada-ExtraBold"], "258/3/1/1033": ["Thin", null], "17/3/1/1033": [null, "ExtraBold"], "264/1/0/0": ["Bold", null], "262/1/0/0": ["Medium", null], "257/1/0/0": ["Weight", null], "260/3/1/1033": ["Light", null], "263/3/1/1033": ["SemiBold", null], "16/3/1/1033": [null, "Noto Serif Kannada"], "259/3/1/1033": ["ExtraLight", null], "261/3/1/1033": ["Regular", null], "260/1/0/0": ["Light", null], "263/1/0/0": ["SemiBold", null], "266/1/0/0": ["Black", null], "264/3/1/1033": ["Bold", null]}, "MVAR": {"tableTag": ["MVAR", null], "table": {"Version": [65536, null], "Reserved": [0, null], "ValueRecordSize": [8, null], "ValueRecordCount": [2, null], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [3, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [0.58001708984375, null], "EndCoord": [1.0, null]}}}, "2": {"VarRegionAxis": {"0": {"StartCoord": [0.58001708984375, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [1, null], "VarData": {"0": {"ItemCount": [2, null], "NumShorts": [0, null], "VarRegionCount": [3, null], "VarRegionIndex": {"0": [0, null], "1": [1, null], "2": [2, null]}, "Item": {"0": {"0": [-44, null], "1": [14, null], "2": [19, null]}, "1": {"0": [-26, null], "1": [9, null], "2": [12, null]}}}}}, "ValueRecord": {"0": {"ValueTag": ["stro", null], "VarIdx": [1, null]}, "1": {"ValueTag": ["xhgt", null], "VarIdx": [0, null]}}}}, "HVAR": {"tableTag": ["HVAR", null], "table": {"Version": [65536, null], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [3, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [0.58001708984375, null], "EndCoord": [1.0, null]}}}, "2": {"VarRegionAxis": {"0": {"StartCoord": [0.58001708984375, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [2, null], "VarData": {"0": {"ItemCount": [250, null], "NumShorts": [0, null], "VarRegionCount": [3, null], "VarRegionIndex": {"0": [0, null], "1": [1, null], "2": [2, null]}, "Item": {"error": ["There are 250 changes, check manually!", ""]}}, "1": {"ItemCount": [6, null], "NumShorts": [2, null], "VarRegionCount": [3, null], "VarRegionIndex": {"0": [0, null], "1": [2, null], "2": [1, null]}, "Item": {"0": {"0": [-171, null], "1": [113, null], "2": [76, null]}, "1": {"0": [-113, null], "1": [187, null], "2": [118, null]}, "2": {"0": [-79, null], "1": [131, null], "2": [82, null]}, "3": {"0": [-77, null], "1": [190, null], "2": [118, null]}, "4": {"0": [-53, null], "1": [133, null], "2": [82, null]}, "5": {"0": [-52, null], "1": [161, null], "2": [100, null]}}}}}, "AdvWidthMap": {"mapping": {"error": ["There are 419 changes, check manually!", ""]}}}}, "gvar": {"tableTag": ["gvar", null], "version": [1, null], "reserved": [0, null], "axisCount": [1, null], "sharedTupleCount": [3, null], "offsetToSharedTuples": [1700, null], "glyphCount": [419, null], "flags": [1, null], "offsetToGlyphVariationData": [1706, null]}, "STAT": {"axis values": {"Thin": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [100.0, null]}, "ExtraLight": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [200.0, null]}, "Light": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [300.0, null]}, "Regular": {"format": [3, null], "AxisIndex": [0, null], "Flags": [2, null], "Value": [400.0, null]}, "Medium": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [500.0, null]}, "SemiBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [600.0, null]}, "Bold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [700.0, null]}, "ExtraBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [800.0, null]}, "Black": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [900.0, null]}}, "design axis records": {"wght": {"order": [0, null], "AxisName": ["Weight", null]}}}, "fvar": {"axes": {"wght": {"minValue": [100.0, null], "maxValue": [900.0, null], "defaultValue": [400.0, null], "axisName": ["Weight", null]}}, "instances": {"Thin": {"coordinates": {"wght": [100.0, null]}, "flags": [0, null]}, "ExtraLight": {"coordinates": {"wght": [200.0, null]}, "flags": [0, null]}, "Light": {"coordinates": {"wght": [300.0, null]}, "flags": [0, null]}, "Regular": {"coordinates": {"wght": [400.0, null]}, "flags": [0, null]}, "Medium": {"coordinates": {"wght": [500.0, null]}, "flags": [0, null]}, "SemiBold": {"coordinates": {"wght": [600.0, null]}, "flags": [0, null]}, "Bold": {"coordinates": {"wght": [700.0, null]}, "flags": [0, null]}, "ExtraBold": {"coordinates": {"wght": [800.0, null]}, "flags": [0, null]}, "Black": {"coordinates": {"wght": [900.0, null]}, "flags": [0, null]}}}, "head": {"checkSumAdjustment": [95715554, 4013112452], "modified": [3778580849, 3809453792], "xMin": [-604, -645], "xMax": [1606, 1674], "yMax": [879, 900]}, "hhea": {"minLeftSideBearing": [-604, -645], "advanceWidthMax": [1658, 1723], "xMaxExtent": [1606, 1674], "caretSlopeRise": [1, 1000], "minRightSideBearing": [-273, -294]}, "cmap": {"0x200B": ["uni200B", "zerowidthspace"], "0x25CC": ["uni25CC", "dottedCircle"], "0x20B9": ["uni20B9", "rupeeIndian"], "0x00A0": ["uni00A0", "nbspace"], "0x200D": ["uni200D", "zerowidthjoiner"], "0x200C": ["uni200C", "zerowidthnonjoiner"]}, "glyf": {"_reverseGlyphOrder": {"dottedCircle": [null, 415], "uni200C": [418, null], "nbspace": [null, 4], "uni00A0": [4, null], "uni25CC": [415, null], "zerowidthspace": [null, 416], "uni200D": [417, null], "rupeeIndian": [null, 414], "zerowidthjoiner": [null, 417], "zerowidthnonjoiner": [null, 418], "uni20B9": [414, null], "uni200B": [416, null]}, "glyphOrder": {"4": ["uni00A0", "nbspace"], "414": ["uni20B9", "rupeeIndian"], "415": ["uni25CC", "dottedCircle"], "416": ["uni200B", "zerowidthspace"], "417": ["uni200D", "zerowidthjoiner"], "418": ["uni200C", "zerowidthnonjoiner"]}, "axisTags": {"0": ["wght", null]}, "glyphs": {"error": ["There are 410 changes, check manually!", ""]}}, "OS/2": {"sxHeight": [547, 564], "panose": {"bWeight": [0, 9], "bStrokeVariation": [0, 5], "bMidline": [0, 2], "bSerifStyle": [0, 2], "bLetterForm": [0, 2], "bFamilyType": [0, 2], "bProportion": [0, 2], "bArmStyle": [0, 5], "bContrast": [0, 6], "bXHeight": [0, 4]}, "yStrikeoutPosition": [328, 338], "xAvgCharWidth": [809, 835], "usWeightClass": [400, 800]}, "gasp": {"tableTag": ["gasp", null], "version": [1, null], "gaspRange": {"65535": [15, null]}}};</script>
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
