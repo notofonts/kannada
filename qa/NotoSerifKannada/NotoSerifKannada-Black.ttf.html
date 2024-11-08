@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Diffenator3</title>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+	<style type="text/css">
+		@font-face {
+      font-family: "Font Before";
+      src: url();
+    }
+
+    @font-face {
+      font-family: "Font After";
+      src: url();
+    }
+
+    .font-before, .font-after {
+      font-variation-settings: "wght" 400, "wdth" 100;
+    }
+
+    .font-before {
+      font-family: "Font Before", "Adobe Notdef";
+    }
+
+    .font-after {
+      font-family: "Font After", "Adobe Notdef";
+    }
+
+	:root {
+	--node-pt-size: 40px;
+	}
+
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #b3d4f5 !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    background-color: #ced9e4 !important;
+}
+.nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.nav-pills .nav-link{
+    background-color: #9fcaf5 !important;
+}
+h4 {
+    color: #6f7882 !important;
+}
+
+@font-face {
+    font-family: "Adobe NotDef";
+    src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+}
+
+.box-title {
+    width: 100%;
+    font-size: 8pt;
+    font-weight: 700;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    margin-bottom: 10pt;
+    display: block;
+}
+
+.box {
+    margin-bottom: 20pt;
+    width: 100%;
+    float: left;
+}
+
+.box-text {}
+
+#ui-nav {
+    position: fixed;
+    right: 20px;
+    z-index: 100;
+}
+
+#font-toggle {}
+
+.ui-nav-item {
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: block;
+    font-size: 14pt;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Stuff needed for the table differ */
+body {
+    font-family: Helvetica;
+}
+
+.node {
+    font-family: courier;
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+    padding: 5px;
+    display: block;
+    border: 1px dashed grey;
+    background-color: #e9e9ee;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.attr-before {
+    color: green;
+    cursor: text;
+}
+
+.attr-after {
+    color: red;
+    cursor: text;
+}
+
+.leaf {
+    font-weight: bold;
+}
+
+.old .cell .new {
+    display: none;
+}
+
+.new .cell .old {
+    display: none;
+}
+
+.both .cell .old {
+    opacity: 0.75;
+    color: red;
+}
+
+.both .cell .new {
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    color: green;
+}
+
+.spacer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#ot-panel {
+    max-height: 400px;
+    overflow-y: scroll;
+    background: white;
+    padding: 10px;
+    display: none;
+   }
+
+   .cell{
+    z-index: -100;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5pt;
+    margin: 5pt;
+    width: 50pt;
+    font-size: var(--node-pt-size);
+    line-height: calc(var(--node-pt-size) * 1.5);
+  }
+  .cell-word{
+    z-index: -100;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5pt;
+    margin: 5pt;
+    font-size: var(--node-pt-size);
+    line-height: calc(var(--node-pt-size) * 1.5);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .cell-glyph{
+    z-index: -100;
+    float: left;
+    display: block;
+    text-align: center;
+    border-radius: 5pt;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5pt;
+    margin: 5pt;
+    width: calc(var(--node-pt-size) * 2);
+    min-height: calc(var(--node-pt-size) * 2);
+    font-size: var(--node-pt-size);
+  }
+  .cell-glyph.font-before, .cell-word.font-before {
+    background: #eff6f2;
+  }
+  .cell-glyph.font-after, .cell-word.font-after {
+    background: #f7f4f4;
+  }
+
+  .cell-glyph:hover {
+    box-shadow: none;
+    background: #f0f0f5;
+  }
+  .cat-strings .cell {
+    clear: both;
+    position: static;
+    float: none;
+    text-align: left;
+  }
+  .codepoint {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    line-height: 10pt;
+  }
+  .box-title {
+    clear: both;
+  }
+  .node.closed::before {
+    content: "+";
+    margin-right: 5pt;
+  }
+  .node.open::before {
+    content: "-";
+    margin-right: 5pt;
+  }
+
+  .tooltip pre {
+    background-color: #6f7882;
+    padding: 5px;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .tooltip {
+    line-height: 1em;
+  }
+  .tooltip-inner {
+    max-width: 300px;
+  }
+
+  h1,h2,h3,h4,h5 {
+    clear: both;
+  }
+
+  #locationnav li {
+    white-space: wrap;
+  }
+
+  #userdefined div { width: 100%; }
+  
+/* The following rules are used in the WASM version, not in the CLI version.
+   But we keep them here so we can share them between the two versions. */
+
+   .modal-dialog {
+    max-width: 100% !important;
+    margin: 0 !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+  }
+
+  .fontdrop {
+    padding: 30px;
+    border-radius: 20px;
+    outline: 3px dashed #ffffffff;
+    outline-offset: -20px;
+  }
+
+  #fontbefore {
+    background-color: #ddffdddd;
+  }
+
+  #fontafter {
+    background-color: #ffdddddd;
+  }
+
+  .dragging {
+    background-image: linear-gradient(rgb(0 0 0/5%) 0 0);
+    outline: 5px dashed #ffffffff;
+  }
+
+  #diffkerns {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+		</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+		<div id="ui-nav">
+		  <div class="ui-nav-item" id="fonttoggle">Old</div>
+		  <div class="ui-nav-item" id="fontanimate">Animate</div>
+		  <div id="axes">
+		  </div>
+		</div>
+	
+	<div class="row">
+		<div class="col-2">
+			<ul class="nav nav-pills" id="locationnav">
+			</ul>
+		</div>
+		<div class="col-9 mt-3">
+			<div id="title"></div>
+			<div id="cmapdiff"> </div>
+			<div id="main"></div>
+			<div id="userdefined">
+				<h4>User defined sample text</h4>
+				<div contenteditable="true" class="font-before cell-word">
+					You can type your own text here to see it previewed in the fonts.
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div id="diffkerns"> </div>
+			<div id="difftable"> </div>
+		</div>
+	</div>
+	<script type="module">
+		function renderTableDiff(node, toplevel) {
+  var wrapper = $("<div> </div>");
+  if (!node) {
+    return wrapper;
+  }
+  if (Array.isArray(node) && node.length == 2) {
+    var before = $("<span/>");
+    before.addClass("attr-before");
+    before.html(" " + node[0] + " ");
+    var after = $("<span/>");
+    after.addClass("attr-after");
+    after.append(renderTableDiff(node[1], true).children());
+    wrapper.append(before);
+    wrapper.append(after);
+    return wrapper;
+  }
+  if (node.constructor != Object) {
+    var thing = $("<span/>");
+    thing.html(node);
+    wrapper.append(thing);
+    return wrapper;
+  }
+  for (const [key, value] of Object.entries(node)) {
+    var display = $("<div/>");
+    display.addClass("node");
+    if (!toplevel) {
+      display.hide();
+    }
+    display.append(key);
+    display.append(renderTableDiff(value, false).children());
+    if (display.children(".node").length > 0) {
+      display.addClass("closed");
+    }
+    wrapper.append(display);
+  }
+  return wrapper;
+}
+
+function addAGlyph(glyph, where) {
+  let title = "";
+  if (glyph.name) {
+    title = "name: " + glyph.name;
+  }
+  let cp =
+    "<br>U+" +
+    glyph.string.codePointAt(0).toString(16).padStart(4, "0").toUpperCase();
+  where.append(`
+        <div class="cell-glyph font-before">
+        <div data-toggle="tooltip" data-html="true" data-title="${glyph.differing_pixels} pixels"> ${glyph.string}
+        <div class="codepoint" data-toggle="tooltip" data-html="true" data-title="${title}">
+		${cp}
+        </div>
+        </div>
+    `);
+}
+
+function addAWord(diff, where) {
+  if (!diff.buffer_b) {
+    diff.buffer_b = diff.buffer_a;
+  }
+  where.append(`
+		<div class="cell-word font-before">
+		<span data-toggle="tooltip" data-html="true" data-title="Before: <pre>${diff.buffer_a}</pre>After: <pre>${diff.buffer_b}</pre><br>difference: ${diff.differing_pixels} pixels">
+		${diff.word}
+		</span>
+		</div>
+	`);
+}
+
+function diffTables(report) {
+  $("#difftable").empty();
+  $("#difftable").append(`<h4 class="mt-2 box-title">Table-level details</h4>`);
+  $("#difftable").append(
+    renderTableDiff({ tables: report["tables"] }, true).children()
+  );
+  $("#difftable .node").on("click", function (e) {
+    $(this).toggleClass("closed open");
+    $(this).children(".node").toggle();
+    e.stopPropagation();
+  });
+}
+function diffKerns(report) {
+  $("#diffkerns").empty();
+  $("#diffkerns").append(`<h4 class="mt-2">Modified Kerns</h4>`);
+  $("#diffkerns").append(
+    `<table class="table table-striped" id="diffkerns"><tr><th>Pair</th><th>Old</old><th>New</th></table>`
+  );
+  for (let [pair, value] of Object.entries(report["kerns"])) {
+    if (pair == "error") {
+      $("#diffkerns").append(`<p class="text-danger">Error: ${value}</p>`);
+      continue;
+    } else {
+      let row = $("<tr>");
+      row.append(`<td>${pair}</td>`);
+      row.append(`<td>${serializeKernBefore(value)}</td>`);
+      row.append(`<td>${serializeKernAfter(value)}</td>`);
+      $("#diffkerns table").append(row);
+    }
+  }
+}
+
+function serializeKernBefore(kern) {
+  if (Array.isArray(kern)) {
+    return serializeKern(kern[0], -1);
+  }
+  return serializeKern(kern, 0);
+}
+
+function serializeKernAfter(kern) {
+  if (Array.isArray(kern)) {
+    return serializeKern(kern[1], -1);
+  }
+  return serializeKern(kern, 1);
+}
+
+function serializeKern(kern, index) {
+  let string = "";
+  if (kern === null || kern === undefined) {
+    return "(null)";
+  }
+  if (kern.x) {
+    string += serializeKernValue(kern.x, index);
+  } else if (kern.y) {
+    string = "0";
+  }
+
+  if (kern.y) {
+    string += "," + serializeKernValue(kern.y, index);
+  }
+  if (!kern.x_placement && !kern.y_placement) {
+    return string;
+  }
+  string += "@";
+  if (kern.x_placement) {
+    string += serializeKernValue(kern.x_placement, index);
+  } else if (kern.y_placement) {
+    string += "0";
+  }
+  if (kern.y_placement) {
+    string += "," + serializeKernValue(kern.y_placement, index);
+  }
+  return string;
+}
+
+function serializeKernValue(kern, index) {
+  if (typeof kern == "number") {
+    return kern;
+  }
+  let string = "(";
+  let verybig = Object.entries(kern).length > 5;
+  for (let [key, value] of Object.entries(kern)) {
+    if (key == "default") {
+      string += value[index] + " ";
+    } else {
+      string += value[index] + "@" + key + " ";
+    }
+    if (verybig) {
+      string += "<br>";
+    }
+  }
+  return string.trim() + ")";
+}
+
+function cmapDiff(report) {
+  if (report.cmap_diff && (report.cmap_diff.new || report.cmap_diff.missing)) {
+    $("#cmapdiff").append(
+      `<h4 class="mt-2">Added and Removed Encoded Glyphs</h4>`
+    );
+    if (report["cmap_diff"]["new"]) {
+      $("#cmapdiff").append(`<h4 class="box-title">Added Glyphs</h4>`);
+      let added = $("<div>");
+      for (let glyph of report["cmap_diff"]["new"]) {
+        addAGlyph(glyph, added);
+      }
+      $("#cmapdiff").append(added);
+    }
+
+    if (report["cmap_diff"]["missing"]) {
+      $("#cmapdiff").append(`<h4 class="box-title">Removed Glyphs</h4>`);
+      let missing = $("<div>");
+      for (let glyph of report["cmap_diff"]["missing"]) {
+        addAGlyph(glyph, missing);
+      }
+      $("#cmapdiff").append(missing);
+    }
+  } else {
+    $("#cmapdiff").append(`<p>No changes to encoded glyphs</p>`);
+  }
+}
+
+function setupAnimation() {
+  $("#fonttoggle").click(function () {
+    if ($(this).text() == "Old") {
+      $(this).text("New");
+      $(".font-before").removeClass("font-before").addClass("font-after");
+    } else {
+      $(this).text("Old");
+      $(".font-after").removeClass("font-after").addClass("font-before");
+    }
+  });
+
+  let animationHandle;
+  function animate() {
+    $("#fonttoggle").click();
+    animationHandle = setTimeout(animate, 1000);
+  }
+  $("#fontanimate").click(function () {
+    if ($(this).text() == "Animate") {
+      $(this).text("Stop");
+      animate();
+    } else {
+      $(this).text("Animate");
+      clearTimeout(animationHandle);
+    }
+  });
+}
+
+export {
+  renderTableDiff,
+  addAGlyph,
+  addAWord,
+  cmapDiff,
+  diffTables,
+  diffKerns,
+  setupAnimation,
+};
+
+	var report = {"tables":{"GDEF":{"glyph_classes":{"length_kannada":[null,"Mark"]}},"GPOS":{"feature_list":{"abvm":{"1":[null,54]},"blwm":{"0":[54,55]},"mark":{"0":[55,56],"1":[null,57],"2":[null,58]}},"lookup_list":{"53":{"0":{"marks":{"anchor_0":{"candrabindu_anudatta_knda":{"y":[1027,276]}},"anchor_1":[{"halant_kannada":{"x":-483,"y":416},"halant_kannada.calt":{"x":-483,"y":436}},null]},"bases":{"jihvamuliya_kannada":{"anchor_1":[{"x":436,"y":486},null]},"upadhmaniya_kannada":{"anchor_1":[{"x":630,"y":456},null]},"phaa_kannada":{"anchor_1":[{"x":571,"y":416},null]},"nge_kannada":{"anchor_1":[{"x":838,"y":436},null]},"nye_kannada":{"anchor_1":[{"x":979,"y":416},null]},"tte_kannada":{"anchor_1":[{"x":567,"y":416},null]},"rre_kannada":{"anchor_1":[{"x":892,"y":436},null]},"llle_kannada":{"anchor_1":[{"x":886,"y":436},null]},"phau_kannada":{"anchor_1":[{"x":571,"y":416},null]},"ka_kannada.base":{"anchor_1":[{"x":396,"y":416},null]},"kha_kannada.base":{"anchor_1":[{"x":672,"y":416},null]},"ga_kannada.base":{"anchor_1":[{"x":433,"y":416},null]},"cha_kannada.base":{"anchor_1":[{"x":584,"y":416},null]},"jha_kannada.base":{"anchor_1":[{"x":1118,"y":416},null]},"ttha_kannada.base":{"anchor_1":[{"x":439,"y":416},null]},"dda_kannada.base":{"anchor_1":[{"x":560,"y":416},null]},"ddha_kannada.base":{"anchor_1":[{"x":559,"y":416},null]},"ta_kannada.base":{"anchor_1":[{"x":397,"y":416},null]},"tha_kannada.base":{"anchor_1":[{"x":559,"y":416},null]},"da_kannada.base":{"anchor_1":[{"x":560,"y":416},null]},"dha_kannada.base":{"anchor_1":[{"x":560,"y":416},null]},"na_kannada.base":{"anchor_1":[{"x":485,"y":416},null]},"pa_kannada.base":{"anchor_1":[{"x":571,"y":416},null]},"pha_kannada.base":{"anchor_1":[{"x":574,"y":416},null]},"ba_kannada.base":{"anchor_1":[{"x":557,"y":416},null]},"bha_kannada.base":{"anchor_1":[{"x":557,"y":416},null]},"ma_kannada.base":{"anchor_1":[{"x":905,"y":416},null]},"ya_kannada.base":{"anchor_1":[{"x":1076,"y":416},null]},"ra_kannada.base":{"anchor_1":[{"x":439,"y":416},null]},"la_kannada.base":{"anchor_1":[{"x":560,"y":416},null]},"lla_kannada.base":{"anchor_1":[{"x":513,"y":416},null]},"va_kannada.base":{"anchor_1":[{"x":559,"y":416},null]},"sha_kannada.base":{"anchor_1":[{"x":492,"y":416},null]},"ssa_kannada.base":{"anchor_1":[{"x":574,"y":416},null]},"sa_kannada.base":{"anchor_1":[{"x":485,"y":416},null]},"ha_kannada.base":{"anchor_1":[{"x":571,"y":416},null]},"k_ssa_kannada.base":{"anchor_1":[{"x":396,"y":416},null]},"j_nya_kannada.base":{"anchor_1":[{"x":543,"y":436},null]},"k_kannada":{"anchor_1":[{"x":396,"y":416},null]},"kh_kannada":{"anchor_1":[{"x":672,"y":416},null]},"g_kannada":{"anchor_1":[{"x":433,"y":416},null]},"gh_kannada":{"anchor_1":[{"x":757,"y":416},null]},"ng_kannada":{"anchor_1":[{"x":838,"y":436},null]},"c_kannada":{"anchor_1":[{"x":611,"y":436},null]},"ch_kannada":{"anchor_1":[{"x":584,"y":416},null]},"j_kannada":{"anchor_1":[{"x":543,"y":436},null]},"jh_kannada":{"anchor_1":[{"x":1118,"y":416},null]},"ny_kannada":{"anchor_1":[{"x":978,"y":416},null]},"tt_kannada":{"anchor_1":[{"x":567,"y":416},null]},"tth_kannada":{"anchor_1":[{"x":439,"y":416},null]},"dd_kannada":{"anchor_1":[{"x":560,"y":416},null]},"ddh_kannada":{"anchor_1":[{"x":559,"y":416},null]},"nn_kannada":{"anchor_1":[{"x":518,"y":415},null]},"t_kannada":{"anchor_1":[{"x":397,"y":416},null]},"th_kannada":{"anchor_1":[{"x":559,"y":416},null]},"d_kannada":{"anchor_1":[{"x":560,"y":416},null]},"dh_kannada":{"anchor_1":[{"x":560,"y":416},null]},"n_kannada":{"anchor_1":[{"x":485,"y":416},null]},"p_kannada":{"anchor_1":[{"x":571,"y":416},null]},"ph_kannada":{"anchor_1":[{"x":574,"y":416},null]},"b_kannada":{"anchor_1":[{"x":557,"y":416},null]},"bh_kannada":{"anchor_1":[{"x":557,"y":416},null]},"m_kannada":{"anchor_1":[{"x":905,"y":416},null]},"y_kannada":{"anchor_1":[{"x":1076,"y":416},null]},"r_kannada":{"anchor_1":[{"x":439,"y":416},null]},"rr_kannada":{"anchor_1":[{"x":890,"y":436},null]},"l_kannada":{"anchor_1":[{"x":560,"y":416},null]},"ll_kannada":{"anchor_1":[{"x":513,"y":416},null]},"v_kannada":{"anchor_1":[{"x":559,"y":416},null]},"sh_kannada":{"anchor_1":[{"x":492,"y":416},null]},"ss_kannada":{"anchor_1":[{"x":574,"y":416},null]},"s_kannada":{"anchor_1":[{"x":485,"y":416},null]},"h_kannada":{"anchor_1":[{"x":571,"y":416},null]},"lll_kannada":{"anchor_1":[{"x":884,"y":436},null]},"k_ss_kannada":{"anchor_1":[{"x":396,"y":416},null]},"j_ny_kannada":{"anchor_1":[{"x":543,"y":436},null]}}}},"54":{"0":{"marks":{"anchor_0":{"nukta_kannada":[{"x":-297,"y":0},null],"nukta_kannada.calt":[{"x":0,"y":0},null],"nukta_kannada.calt.01":[{"x":0,"y":0},null],"halant_kannada":[null,{"x":-483,"y":416}],"halant_kannada.calt":[null,{"x":-483,"y":436}]}},"bases":{"error":"There are 229 changes, check manually!"}}},"55":{"0":{"marks":{"anchor_0":{"candrabindu_kannada":[{"x":-297,"y":276},null],"udatta_deva":[{"x":-297,"y":276},null],"anudatta_deva":[{"x":-297,"y":1027},null],"uni1CD0":[{"x":-297,"y":276},null],"uni1CD2":[{"x":-297,"y":276},null],"doubleSvarita_vedic":[{"x":-297,"y":276},null],"uni1CF4":[{"x":-297,"y":276},null],"candrabindu_udatta_knda":[{"x":-297,"y":276},null],"candrabindu_anudatta_knda":[{"x":-297,"y":1027},null],"candrabindu_1CDA_knda":[{"x":-297,"y":276},null],"anudatta_deva.low":[{"x":-297,"y":1027},null],"anudatta_deva.lower":[{"x":-297,"y":1027},null],"nukta_kannada":[null,{"x":-297,"y":0}],"nukta_kannada.calt":[null,{"x":0,"y":0}],"nukta_kannada.calt.01":[null,{"x":0,"y":0}]},"anchor_1":[{"nukta_kannada":{"x":-297,"y":0},"nukta_kannada.calt":{"x":0,"y":0},"nukta_kannada.calt.01":{"x":0,"y":0}},null],"anchor_2":[{"halant_kannada":{"x":-483,"y":416},"halant_kannada.calt":{"x":-483,"y":436}},null]},"bases":{"error":"There are 238 changes, check manually!"}}},"56":[null,[{"type":"mark_to_base","marks":{"anchor_0":{"nukta_kannada":{"x":-297,"y":0},"nukta_kannada.calt":{"x":0,"y":0},"nukta_kannada.calt.01":{"x":0,"y":0}}},"bases":{"gha_kannada.base":{"anchor_0":{"x":397,"y":0}},"nga_kannada.base":{"anchor_0":{"x":395,"y":0}},"ca_kannada.base":{"anchor_0":{"x":395,"y":0}},"ja_kannada.base":{"anchor_0":{"x":395,"y":0}},"nya_kannada.base":{"anchor_0":{"x":443,"y":-110}},"tta_kannada.base":{"anchor_0":{"x":408,"y":0}},"nna_kannada.base":{"anchor_0":{"x":355,"y":0}},"rra_kannada.base":{"anchor_0":{"x":416,"y":0}},"llla_kannada.base":{"anchor_0":{"x":416,"y":0}},"dottedCircle":{"anchor_0":{"x":284,"y":-6}}}}]],"57":[null,[{"type":"mark_to_base","marks":{"anchor_0":{"candrabindu_kannada":{"x":-297,"y":276},"udatta_deva":{"x":-297,"y":276},"anudatta_deva":{"x":-297,"y":1027},"uni1CD0":{"x":-297,"y":276},"uni1CD2":{"x":-297,"y":276},"doubleSvarita_vedic":{"x":-297,"y":276},"uni1CF4":{"x":-297,"y":276},"candrabindu_udatta_knda":{"x":-297,"y":276},"candrabindu_anudatta_knda":{"x":-297,"y":276},"candrabindu_1CDA_knda":{"x":-297,"y":276},"anudatta_deva.low":{"x":-297,"y":1027},"anudatta_deva.lower":{"x":-297,"y":1027}}},"bases":{"zero_kannada":{"anchor_0":{"x":302,"y":566}},"one_kannada":{"anchor_0":{"x":311,"y":566}},"two_kannada":{"anchor_0":{"x":311,"y":566}},"three_kannada":{"anchor_0":{"x":331,"y":566}},"four_kannada":{"anchor_0":{"x":344,"y":566}},"five_kannada":{"anchor_0":{"x":370,"y":566}},"six_kannada":{"anchor_0":{"x":304,"y":566}},"seven_kannada":{"anchor_0":{"x":305,"y":566}},"eight_kannada":{"anchor_0":{"x":369,"y":566}},"nine_kannada":{"anchor_0":{"x":302,"y":566}},"gha_kannada.base":{"anchor_0":{"x":462,"y":566}},"nga_kannada.base":{"anchor_0":{"x":376,"y":566}},"ca_kannada.base":{"anchor_0":{"x":393,"y":566}},"ja_kannada.base":{"anchor_0":{"x":376,"y":566}},"nya_kannada.base":{"anchor_0":{"x":479,"y":566}},"tta_kannada.base":{"anchor_0":{"x":390,"y":566}},"nna_kannada.base":{"anchor_0":{"x":434,"y":566}},"rra_kannada.base":{"anchor_0":{"x":415,"y":566}},"llla_kannada.base":{"anchor_0":{"x":415,"y":566}},"jihvamuliyaSign_vedic":{"anchor_0":{"x":308,"y":566}},"dottedCircle":{"anchor_0":{"x":293,"y":566}}}}]],"58":[null,[{"type":"mark_to_base","marks":{"anchor_0":{"halant_kannada":{"x":-483,"y":416},"halant_kannada.calt":{"x":-483,"y":436}}},"bases":{"gha_kannada.base":{"anchor_0":{"x":757,"y":416}},"nga_kannada.base":{"anchor_0":{"x":838,"y":436}},"ca_kannada.base":{"anchor_0":{"x":611,"y":436}},"ja_kannada.base":{"anchor_0":{"x":543,"y":436}},"nya_kannada.base":{"anchor_0":{"x":978,"y":416}},"tta_kannada.base":{"anchor_0":{"x":567,"y":416}},"nna_kannada.base":{"anchor_0":{"x":518,"y":415}},"rra_kannada.base":{"anchor_0":{"x":890,"y":436}},"llla_kannada.base":{"anchor_0":{"x":884,"y":436}},"jihvamuliyaSign_vedic":{"anchor_0":{"x":436,"y":486}},"dottedCircle":{"anchor_0":{"x":426,"y":422}}}}]]}},"head":{"checksum_adjustment":[2269137094,3890581192],"modified":[3778581014,3813913306]},"hhea":{"caret_slope_rise":[1,1000]}},"cmap_diff":{},"locations":[{"location":"Default","words":{}}]};
+		function buildLocation_statichtml(loc) {
+  // Set font styles to appropriate axis locations
+  let rule = document.styleSheets[0].cssRules[2].style;
+  let cssSetting = "";
+  let textLocation = "Default";
+  if (loc.coords) {
+    cssSetting = Object.entries(loc.coords)
+      .map(function ([axis, value]) {
+        return `"${axis}" ${value}`;
+      })
+      .join(", ");
+    textLocation = Object.entries(loc.coords)
+      .map(function ([axis, value]) {
+        return `${axis}=${value}`;
+      })
+      .join(" ");
+    rule.setProperty("font-variation-settings", cssSetting);
+  }
+
+  $("#main").empty();
+
+  $("#title").html(`<h4 class="mt-2">${textLocation}</h2>`);
+
+  if (loc.glyphs) {
+    $("#main").append("<h4>Modified Glyphs</h4>");
+    let glyphs = $("<div>");
+    for (let glyph of loc.glyphs) {
+      addAGlyph(glyph, glyphs);
+    }
+    $("#main").append(glyphs);
+  }
+
+  if (loc.words) {
+    $("#main").append("<h4>Modified Words</h4>");
+    for (let [script, words] of Object.entries(loc.words)) {
+      let scriptTitle = $(`<h6>${script}</h6>`);
+      $("#main").append(scriptTitle);
+      let worddiv = $("<div>");
+      for (let word of words) {
+        addAWord(word, worddiv);
+      }
+      $("#main").append(worddiv);
+    }
+  }
+  $('[data-toggle="tooltip"]').tooltip();
+}
+
+$(function () {
+  if (report["tables"]) {
+    diffTables(report);
+  }
+  if (report["kerns"]) {
+    diffKerns(report);
+  }
+  cmapDiff(report);
+  $('[data-toggle="tooltip"]').tooltip();
+  if (!report["locations"]) {
+    $("#title").html("<h4 class='mt-2'>No differences found</h4>");
+    $("#ui-nav").hide();
+    return;
+  }
+
+  for (var [index, loc] of report["locations"].entries()) {
+    var loc_nav = $(`<li class="nav-item">
+		<a class="nav-link text-secondary" href="#" data-index="${index}">${loc.location.replaceAll(
+      ",",
+      ",\u200b"
+    )}</a>
+	</li>`);
+    $("#locationnav").append(loc_nav);
+  }
+  $("#locationnav li a").on("click", function (e) {
+    $("#locationnav li a").removeClass("active");
+    $(this).addClass("active");
+    buildLocation_statichtml(report.locations[$(this).data("index")]);
+  });
+  $("#locationnav li a").eq(0).click();
+
+  document.styleSheets[0].cssRules[0].style.setProperty(
+    "src",
+    "url(old-NotoSerifKannada-Black.ttf)"
+  );
+  document.styleSheets[0].cssRules[1].style.setProperty(
+    "src",
+    "url(new-NotoSerifKannada-Black.ttf)"
+  );
+  setupAnimation();
+});
+
+	</script>
+</body>
+
+</html>
